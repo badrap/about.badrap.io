@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD041-->
+<!-- markdownlint-disable MD002-->
 
 Bad guys hack normal people in order to hide their tracks online.
 
