@@ -1,3 +1,7 @@
+---
+title: Don't be an attacker!
+layout: default
+---
 <!-- markdownlint-disable MD041-->
 <!-- markdownlint-disable MD002-->
 
@@ -17,6 +21,3 @@ Your devices can.
 Smart reseachers scan the Internet to find devices that can be turned into attackers.
 We are working on a way to help them to alert your if they find out something you should
 fix in order not be turned into an attacker.
-
-----
-Made with ✂ in Finland
