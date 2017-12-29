@@ -9,17 +9,101 @@ body, html {
   height: 100%;
 }
 
-body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+.bottom {
+  align-self: flex-end;
+  margin-top: 77px;
 }
 
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #4c4d4f !important;
+  font-size: 13pt;   
+}
+
+.rapdark {
+  background-color: #1c2022;
+  color: #fff;
+}
+
+.icons {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.rapborder {
+  border-style: solid;
+  border-width: 0px;
+  border-right-width: 0.5px;
+  border-color: #999;
+}
+
+@media(max-width:990px) {
+  .rapborder {
+    border-style: none;
+  }
+}
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-weight: 800;
+  color: #80217e;
+  font-size: 36pt;
+}
+
+h2 {
+  color: #000;
+  font-size: 22pt;
+  margin-top: 30px;
+}
+
+.headline {
+  margin-top: 6rem;
+}
+
+.tag-1 {
+  color: #fff;
+  margin-top: 0;
+}
+
+.tag-2 {
+  color: #d53add;
+  margin-top: 0;
+}
+.cartoon {
+  background-image: url("../pmtassets/cartoon.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+
+}
+p {
+  color: #4c4d4f;
+  font-size: 12pt;
+}
+
+p.mb-10 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+p.spacey {
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+
+.internet-connected-devices {
+  background-image: url("../pmtassets/internet-connected-devices.png")
+}
 .intro-header {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
   color: #f8f8f8;
-  background: url(../img/intro-bg.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -71,7 +155,6 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .network-name {
   text-transform: uppercase;
-  font-size: 14px;
   font-weight: 400;
   letter-spacing: 2px;
 }
@@ -100,7 +183,6 @@ body, h1, h2, h3, h4, h5, h6 {
 .banner {
   padding: 100px 0;
   color: #f8f8f8;
-  background: url(../img/banner-bg.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -142,11 +224,33 @@ body, h1, h2, h3, h4, h5, h6 {
   }
 }
 
-footer {
-  padding: 50px 0;
+aside {
   background-color: #f8f8f8;
+}
+.banner {
+  padding: 30px;
+
 }
 
 p.copyright {
   margin: 15px 0 0;
 }
+
+.internet-connected-devices {
+  background-image: url("../pmtassets/internet-connected-devices.png")
+}
+
+.intro-social-buttons i {
+  font-size: 50%;
+}
+.features-icons {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  .features-icons .features-icons-item {
+    max-width: 20rem; }
+    .features-icons .features-icons-item .features-icons-icon {
+      height: 11rem; }
+      .features-icons .features-icons-item .features-icons-icon i {
+        font-size: 4.5rem; }
+    .features-icons .features-icons-item:hover .features-icons-icon i {
+      font-size: 5rem; }
