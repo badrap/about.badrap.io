@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>What is Badrap trying to solve?</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:600,800" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/landing-page.css" rel="stylesheet">
+  <style>
+    h4 {
+      margin-top: 2rem;
+      color: #80217e;
+    }
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110483098-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110483098-1');
+  </script>
+
+  <!-- open graph -->
+  <meta property="og:title" content="Guard the networks you care about" />
+  <meta property="og:description" content="Badrap helps you to check if your devices or networks can be hacked, and to fix any problems that are found either now or in the future." />
+  <meta property="og:url" content="http://www.badrap.io/help/" />
+  <meta property="og:image" content="http://www.badrap.io/img/social-opengraph.jpg"/>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@BadRapIO" />
+  <meta name="twitter:creator" content="@BadRapIO" />
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../img/badrap-logo.svg" alt="badrap" height="100">
+      </a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row" style="margin-top: 3rem; margin-bottom: 2rem;">
+      <div class="col-md-6">
+        <h1>
+          What is Badrap trying to solve?
+        </h1>
+        <p>
+          Netizens read news about vulnerabilities in their devices all the time. They are worried if their own networks or the networks
+          of their loved ones, workplaces or friends are affected. For some vulnerabilities there may be ways to check if you are
+          affected, but this is not always the case.</p>
+        <p>
+          Investigating requires too much time and expertise to make it generally viable
+          even for netizens who have some technical knowledge. It is even harder for regular users, who may not even know that the
+          problem exists. With Badrap, netizens and end users can check if their devices and networks need to be fixed. Badrap can
+          also point users to helpers, who can assist in fixing the problems.
+        </p>
+      </div>
+      <div class="col-md-6 cartoon"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <h4>What can I do to help?</h4>
+        <p>
+          You are researching vulnerabilities or gathering knowledge about incidents or infections. You already have some data about
+          devices which might be affected. Optimally you have done some scans or observed traffic coming from infected hosts, and you
+          know about some IP addresses that are affected by certain vulnerabilities.
+        </p>
+        <p>
+          However, you may not have an easy way to reach the network or device owners directly and help them fix their problems. Perhaps
+          you have been thinking of creating a Heartbleed-style website to talk about your findings. Perhaps you are working with a
+          CERT organization. Perhaps you plan to tweet about what you found and hope someone famous enough retweets your story.
+        </p>
+        <p>
+          Badrap changes the last mile in vulnerability coordination: we provide a channel so that you can directly tell about the
+          problem to people that are affected. Netizens can easily check if their IP address is found within your data. You get to
+          feed your findings to netizens, provide instructions on how to fix the problems, and help the world become a better place.
+          You help netizens in a concrete and tangible way, and ensure your hard work ultimately goes to a good cause.
+        </p>
+
+      </div>
+      <div class="col-md-5 offset-md-1">
+        <h4>How do I provide data?</h4>
+
+        <p>
+          It's simple. You let us know that you have some interesting data that you want to provide to netizens. We will provide you
+          a way to write some metadata about your feed. Metadata means simple things like feed name, description, and remediation instructions
+          for netizens. We will then send you an API token and some instructions on uploading. Then you can just push your data as
+          line-based JSON to our API endpoint with nghttp, curl, whatever you like. At a minimum, each entry in your feed should contain an IP
+          address.
+        </p>
+        <p>
+          Use the form below to tell us about your data.
+        </p>
+        <p>
+          <a class="btn btn-info" href="https://goo.gl/Lfa67y" target="_blank" role="button">Tell us about your data</a>
+        </p>
+
+        <h4>What's the catch?</h4>
+        <p>
+          No catch. We don't plan to take money from you or the netizens. We don't plan to sell your data to third parties. We just
+          want to try if something like this is useful, and if it makes the world a better place. We plan to test the service for netizens
+          with a limited pilot at <a href="https://beta.testaaverkkosi.fi">https://beta.testaaverkkosi.fi</a>
+          on Jan-Feb 2018.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <aside class="banner" id="contact" style="margin-top: 3rem;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 h-50 text-center text-lg-left my-auto">
+          <p class="text-muted mb-4 mb-lg-0">
+            Badrap Oy
+            <br> Business ID: 2846254-9
+            <br>
+          </p>
+        </div>
+        <div class="col-lg-3 text-center text-lg-center my-auto">
+          <p class="text-muted mb-4 mb-lg-0">
+
+            Teknologiantie 18 B
+            <br> 90540 Oulu, Finland
+
+          </p>
+        </div>
+        <div class="col-lg-6 text-center text-lg-center my-auto">
+          <ul class="list-inline banner-social-buttons">
+            <li class="list-inline-item">
+              <a href="https://medium.com/badrapio" class="btn btn-secondary btn-md">
+                <i class="fa fa-medium fa-fw"></i>
+                <span class="network-name">Medium</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="http://www.twitter.com/badrapio/" class="btn btn-secondary btn-md">
+                <i class="fa fa-twitter fa-fw"></i>
+                <span class="network-name">Twitter</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/badrap" class="btn btn-secondary btn-md">
+                <i class="fa fa-github fa-fw"></i>
+                <span class="network-name">Github</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/popper/popper.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
