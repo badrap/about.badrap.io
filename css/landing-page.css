@@ -18,7 +18,7 @@ body, html {
   display: block;
   padding: 0.5rem 1rem;
   color: #4c4d4f !important;
-  font-size: 13pt;   
+  font-size: 13pt;
 }
 
 .rapdark {
@@ -45,12 +45,12 @@ body, html {
 }
 body, h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
-  font-weight: 600;
+  font-weight: 400;
   padding-bottom: 20px;
 }
 
 h1 {
-  font-weight: 800;
+  font-weight: 400;
   color: #80217e;
   font-size: 36pt;
 }
@@ -215,7 +215,7 @@ p.spacey {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 3em;
   }
- 
+
   ul.banner-social-buttons {
     float: none;
   }
