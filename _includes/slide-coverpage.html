@@ -1,0 +1,9 @@
+<section>
+    <img src="{{slide.img.src}}" width="{{slide.img.width}}" alt="{{slide.img.alt}}">
+    <h3>{{slide.subtitle}}</h3>
+    {% if slide.notes != null %}
+	<aside class="notes">
+        {{slide.notes}}
+    </aside>
+    {% endif %}
+</section>
