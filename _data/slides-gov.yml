@@ -1,0 +1,117 @@
+- slide: title
+  title:
+  subtitle: For the Government
+  layout: slide-coverpage
+  img:
+    src: ../../img/badrap-logo.svg
+    alt: Badrap logo
+    width: 30%
+
+- slide: PROBLEM
+  title: The Problem
+  subtitle: Too many vulnerable devices in the net
+  img:
+    src: ../img/issues.png
+    alt: "Too many vulnerabilities"
+
+- slide: PROBLEM
+  title: It is big
+  subtitle: The previous slide showed just few examples.
+  text: There are a many different types of issues, and they come in numbers.
+  img:
+    src: ../img/few-examples.png
+    alt: "few examples"
+    width: 50%
+
+- slide: REAL WORLD CONNECTION
+  title: A problem for the online society
+  video:
+      src: ../img/symptoms.png
+      alt: "society"
+      width: 80%
+
+- slide: REAL WORLD CONNECTION
+  title: And a problem for the unaware victims
+  img:
+      src: ../img/cartoon.jpg
+      alt: "society"
+      width: 80%
+
+- slide: THERE IS HOPE
+  title: Making them aware
+  subtitle: has a huge impact.
+  notes: Case Elisa - One of the Finnish ISPs lost the capability to notify their customers in 2011. By 2014 85% of the infections were on their network. When they got the capability back, situation was normalised.
+  img:
+    src: ../img/case-elisa.svg
+    alt: case Elisa
+    width: 90%
+
+- slide: PREVIOUS SOLUTION - ISPs
+  title: The model today 
+  subtitle:  Diligent governments rely on ISPs. 
+  text: <em>All</em> ISPs understand the cost of notification well.<br><em>Some</em> understand the benefits well.<br>->Progress not fast enough.
+  img:
+    src: ../img/gov-relies-isp.svg
+    alt: Gov relies ISP
+    width: 80%
+
+- slide: BRIDGE TO THE SOLUTIONS
+  title: We asked ourselves
+  subtitle: Could we do anything to help scale the reporting?
+  text: We thought about HackerOne, Bugcrowd, Synack and even AirBnB - and thought <em>YES</em>!
+  img:
+    src: ../img/bountiesgrow.jpg
+    alt: Bounties Grow
+    width: 100%
+- slide: BEGIN NEW SOLUTION
+  title: Badrap
+  subtitle: A scalable way to serve the netizens!
+  img:
+    src: ../img/cartoon.jpg
+    alt: Netizens
+    width: 50%
+
+- slide: solution
+  title: Information sharing rethought
+  text: >
+      <em>Already reporting?</em> Badrap complements your current process.<br>
+      <em>Not reporting yet?</em> Now there is an easy way to get started!
+  img:
+    src: ../img/badrap-model.png
+    alt: Badrap Model
+    width: 80%
+
+- slide: HOW
+  title: A country-specific service for the Netizen
+  text: Easy-to-spell domain. Check the IP in use. Option to localise.
+  img:
+    src: ../img/website-check.jpg
+    width: 80%
+
+- slide: HOW
+  title: Users can subscribe to alerts for the IPs they use
+  text:
+  img:
+    src: ../img/manage-your-ips.jpg
+    alt: manage
+    width: 80%
+
+- slide: HOW
+  title: Get instructions
+  text:
+  img:
+    src: ../img/get-instructions.jpg
+    alt: manage
+    width: 80%
+
+- slide: HOW
+  title: Be ready for compelling events
+  img:
+    src: ../img/dontbe.jpg
+    alt: Don't be attacker banner
+    width: 70%
+
+- slide: Study
+  title: Like the idea? 
+  subtitle: Tell your contact you would like to talk to us.
+  text: <a href="index.html"> &gt; Back to Jani's letter. </a>

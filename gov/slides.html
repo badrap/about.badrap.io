@@ -1,0 +1,21 @@
+---
+layout: slides
+title: Badrap for Gov
+---
+
+{% for slide in site.data.slides-gov %}
+
+    <!--- post post post -->
+
+    {% if slide.layout == null %}
+        {% assign layout = "slide-default" %}
+    {% else %}
+        {% assign layout = slide.layout %}
+    {% endif %}
+
+    {% include {{layout}}.html %}
+
+    <!--- END post post post -->
+
+
+{% endfor %}

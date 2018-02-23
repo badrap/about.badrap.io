@@ -1,0 +1,9 @@
+<section>
+    <h2>{{slide.title}} </h2>
+    <h3>{{slide.subtitle}}</h3>
+    <p>{{slide.text}}</p>
+    {% if slide.layout == null %}
+    <img src="{{slide.img.src}}" width="{{slide.img.width}}" alt="{{slide.img.alt}}">
+    {% endif %}
+  
+</section>
