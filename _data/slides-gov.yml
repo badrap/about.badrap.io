@@ -25,10 +25,10 @@
 
 - slide: REAL WORLD CONNECTION
   title: A problem for the online society
-  video:
-      src: ../img/symptoms.png
-      alt: "society"
-      width: 80%
+  img:
+    src: ../img/evolving.jpg
+    alt: "society"
+    width: 70%
 
 - slide: REAL WORLD CONNECTION
   title: And a problem for the unaware victims
