@@ -18,7 +18,7 @@
   <!-- Custom styles for this template -->
   <link href="css/landing-page.css" rel="stylesheet">
 
-  {% if site.google_tag_manager and jekyll.environment == 'production' %}
+  {% if site.google_tag_manager and jekyll.environment != 'test' %}
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -59,7 +59,7 @@
 
 <body>
 
-    {% if site.google_tag_manager and jekyll.environment == 'production' %}
+    {% if site.google_tag_manager and jekyll.environment != 'test' %}
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{site.google_tag_manager}}"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
