@@ -11,7 +11,7 @@
   title: The Problem
   subtitle: Too many vulnerable devices in the net
   img:
-    src: ../img/issues.png
+    src: ../img/issues.jpg
     alt: "Too many vulnerabilities"
 
 - slide: PROBLEM
@@ -19,7 +19,7 @@
   subtitle: The previous slide showed just few examples.
   text: There are a many different types of issues, and they come in numbers.
   img:
-    src: ../img/few-examples.png
+    src: ../img/few-examples.jpg
     alt: "few examples"
     width: 50%
 
@@ -51,7 +51,7 @@
   subtitle:  Diligent governments rely on ISPs. 
   text: <em>All</em> ISPs understand the cost of notification well.<br><em>Some</em> understand the benefits well.<br>->Progress not fast enough.
   img:
-    src: ../img/gov-relies-isp.svg
+    src: ../img/gov-relies-isp.jpg
     alt: Gov relies ISP
     width: 80%
 
@@ -77,7 +77,7 @@
       <em>Already reporting?</em> Badrap complements your current process.<br>
       <em>Not reporting yet?</em> Now there is an easy way to get started!
   img:
-    src: ../img/badrap-model.png
+    src: ../img/badrap-model.jpg
     alt: Badrap Model
     width: 80%
 
