@@ -1,0 +1,8 @@
+- slide: title
+  title: 
+  subtitle: Company Intro
+  layout: slide-coverpage
+  img:
+    src: ../../img/badrap-logo.svg
+    alt: Badrap logo
+    width: 30%
