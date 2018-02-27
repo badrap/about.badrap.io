@@ -81,6 +81,12 @@
     alt: Badrap Model
     width: 80%
 
+- slide: NETIZENS-GUARDIANS
+  title: Streetwise Netizens
+  img:
+      src: ../img/guardian-netizens.jpg
+      alt: Guardian Netizens Spreading the Word
+    
 - slide: HOW
   title: A country-specific service for the Netizen
   text: Easy-to-spell domain. Check the IP in use. Option to localise.
