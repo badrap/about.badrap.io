@@ -8,18 +8,29 @@
     width: 30%
 
 - slide: mission
-  title: Badrap's mission
-  subtitle: To democratise the security information sharing.
-  text: > 
-    <br><br>Imagine the society before and after we became aware of bacteria and good 
-    hygiene practices.
-    We want equivalent  effect for the online world.
+  title: We want to
+  text: democratise the security information sharing
+
 
 - slide: Vision
-  title: Badrap's vision
+  title: Mind the gap!
+  img: 
+    src: bridge.jpg
+    width: 80%
   text: Right now we have <em>those who know</em> about security issues, and those <em>who need to know</em>. 
-    <br><br>We envision a world where these two groups have no issues connecting.
+    We envision a world where these two groups have no issues connecting.
 
+- slide: Who
+  title: How
+  text: >
+    Expensive space & military technology becomes consumer commodity over time. Governments and large
+    corporations have enjoyed the benefits of threat intelligence for awhile now. It is time for others 
+    get to enjoy it too. We are going to tear 
+    down the barries of information sharing. Complexity, cost, awareness and apprehension.  
+
+- slide: HOW
+  title: Our status
+  text: We have assembled an excellent and experienced team. We have what it takes to build online products, simplify, scale and popularize them for the masses. We have launched a pilot service to validate the technology, analytics, messaging and public interest. Next we will validate the business.
 - slide: Who
   title: The team
   layout: slide-team
@@ -72,12 +83,13 @@
     <ol> 
       <li><em>Impact</em> - leave the world in a better shape than we got it </li>
       <li><em>Back to basics</em> - in the world of Supermen, the bicycle repairman is the hero.</li>
-      <li><em>Business</em> - we can't keep doing what we do if it is not financially viable.</li>
+      <li><em>Business</em> - well running business means freedom to operate. Freedom to operate means
+      we can stay true to our mission.</li>
     </ol>
-    
+
 - slide: none
   title: Funded by 
-  layout: slide-two-columns
+  layout: slide-two-images
   img1: ../img/scanabc.jpg
   img1-link: http://www.scanabc.com"
   img1-caption: Ääkköset Oy invests in inspiring innovations driven by true entrepreneurs.

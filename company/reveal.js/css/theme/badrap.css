@@ -26,6 +26,10 @@ div.column img {
   margin: 0 !important;
 }
 
+div.column {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 section.present li {
   color: #020202;
   font-size: 20px;
