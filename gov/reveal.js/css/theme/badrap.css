@@ -52,7 +52,8 @@ body {
   letter-spacing: normal;
   text-transform: uppercase;
   text-shadow: none;
-  word-wrap: break-word; }
+  word-wrap: break-word; 
+}
 
 .reveal h1 {
   font-size: 2.2em; }
@@ -64,7 +65,6 @@ body {
   font-size: 0.8em; 
   color: #4c4c4e;
   text-transform: none;
-
 }
 
 .reveal h4 {
