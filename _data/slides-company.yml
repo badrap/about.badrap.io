@@ -6,3 +6,83 @@
     src: ../../img/badrap-logo.svg
     alt: Badrap logo
     width: 30%
+
+- slide: mission
+  title: Badrap's mission
+  subtitle: To democratise the security information sharing.
+  text: > 
+    <br><br>Imagine the society before and after we became aware of bacteria and good 
+    hygiene practices.
+    We want equivalent  effect for the online world.
+
+- slide: Vision
+  title: Badrap's vision
+  text: Right now we have <em>those who know</em> about security issues, and those <em>who need to know</em>. 
+    <br><br>We envision a world where these two groups have no issues connecting.
+
+- slide: Who
+  title: The team
+  layout: slide-team
+  team:
+    - name: Jani Kenttälä
+      title: CEO
+      face: ../img/jani2.jpg
+      facepos: 50% 70%
+      linkedin: https://www.linkedin.com/in/janikenttala/
+      twitter: https://twitter.com/janikenttala
+      medium: https://medium.com/@janikenttala
+      github: https://github.com/evilon
+
+    - name: Joachim Viide
+      title: CTO
+      linkedin: https://www.linkedin.com/in/jviide/  
+      twitter: https://twitter.com/jviide
+      github: https://github.com/jviide
+      medium: https://medium.com/@jviide
+      face: ../img/jviide.jpg
+
+    - name: Heikki Kortti
+      title: Netizens
+
+    - name: Ville Alatalo
+      title: Netizens 
+      linkedin: https://www.linkedin.com/in/alatalo/
+      twitter: https://twitter.com/alatalo
+      github: https://github.com/alatalo
+      medium: https://medium.com/@ville.alatalo
+      face: ../img/ville.jpg  
+
+    - name: Hillar Aarelaid
+      title: Security Researchers
+      linkedin: https://www.linkedin.com/in/hillaraarelaid/
+      github: https://github.com/hillar
+      face: ../img/hillar.jpg
+
+    - name: Petteri Parhi
+      title: Netizens
+      linkedin: https://www.linkedin.com/in/pparhi/
+      twitter: https://twitter.com/Orbitrek
+      medium: https://medium.com/@petteriparhi  
+      face: ../img/petteri.jpg
+      facepos: 50% 0%
+
+- slide: values
+  title: What drives us
+  text: >
+    <ol> 
+      <li><em>Impact</em> - leave the world in a better shape than we got it </li>
+      <li><em>Back to basics</em> - in the world of Supermen, the bicycle repairman is the hero.</li>
+      <li><em>Business</em> - we can't keep doing what we do if it is not financially viable.</li>
+    </ol>
+    
+- slide: none
+  title: Funded by 
+  layout: slide-two-columns
+  img1: ../img/scanabc.jpg
+  img1-link: http://www.scanabc.com"
+  img1-caption: Ääkköset Oy invests in inspiring innovations driven by true entrepreneurs.
+  img2: ../img/businessfinland.jpg
+  img2-link: https://www.businessfinland.fi
+  img2-caption: Business Finland is the Finnish innovation funding, trade, investment, and travel promotion organisation.
+
+
