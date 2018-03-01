@@ -14,9 +14,6 @@
 
 - slide: Vision
   title: Mind the gap!
-  img: 
-    src: bridge.jpg
-    width: 80%
   text: Right now we have <em>those who know</em> about security issues, and those <em>who need to know</em>. 
     We envision a world where these two groups have no issues connecting.
 
@@ -30,7 +27,10 @@
 
 - slide: HOW
   title: Our status
-  text: We have assembled an excellent and experienced team. We have what it takes to build online products, simplify, scale and popularize them for the masses. We have launched a pilot service to validate the technology, analytics, messaging and public interest. Next we will validate the business.
+  text: >
+    We have assembled an excellent and experienced team.<br><br>
+    We have what it takes to build online products,<br>simplify, scale and popularize them for the masses.<br><br>
+    We have launched a pilot service to validate the<br>team, technology, analytics, messaging and public interest.<br><br>Next we will validate the business.
 - slide: Who
   title: The team
   layout: slide-team
@@ -54,6 +54,8 @@
 
     - name: Heikki Kortti
       title: Netizens
+      face: ../img/heikki.jpg
+      facepos: 50% 0%
 
     - name: Ville Alatalo
       title: Netizens 

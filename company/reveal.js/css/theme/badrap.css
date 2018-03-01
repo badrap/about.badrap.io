@@ -35,6 +35,12 @@ section.present li {
   font-size: 20px;
   margin-bottom: 20px;
 }
+
+section.present p {
+  line-height: 1.8;
+  padding-left: 3g0px;
+  padding-right: 30px;
+}
 p.caption {
   font-size: 10px !important;
   margin-top: 0;
