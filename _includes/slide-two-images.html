@@ -1,0 +1,31 @@
+<section>
+    <h2>{{slide.title}} </h2>
+    <h3>{{slide.subtitle}}</h3>
+    <div class="container">
+        <div class="column">
+            {% if slide.img1-link %}
+            <a href="{{slide.img1-link}}" target="_blank">
+            {% endif %}
+
+            <img src="{{slide.img1}}">
+            {% if slide.img1-link %}
+            </a>
+            {% endif %}
+            
+            <p class="caption">{{slide.img1-caption}}</p>  
+        </div>
+        <div class="column">
+                {% if slide.img2-link %}
+                <a href="{{slide.img2-link}}" target="_blank">
+                {% endif %}
+    
+                <img src="{{slide.img2}}">
+                {% if slide.img2-link %}
+                </a>
+                {% endif %}
+                
+                <p class="caption">{{slide.img2-caption}}</p>  
+
+        </div>       
+    </div>
+</section>

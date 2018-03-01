@@ -1,0 +1,45 @@
+<section>
+    <h2>{{slide.title}} </h2>
+    <h3>{{slide.subtitle}}</h3>
+    <div class="people-grid">
+    {% for person in slide.team %}
+        <div class="grid-card">
+            <!-- picture -->
+            <div class="picture" style="background-image: url({{person.face}});
+                                        background-position: {{person.facepos}}">
+            </div>
+            <div class="social">
+                    {% if person.linkedin != null %}
+                    <a href="{{person.linkedin}}">
+                    <i class="fa fa-linkedin"></i>
+                    </a>
+                {% endif %}
+    
+                {% if person.twitter != null %}
+                    <a href="{{person.twitter}}">
+                    <i class="fa fa-twitter"></i>
+                    </a>
+                    {% endif %}
+    
+                {% if person.medium != null %}
+                    <a href="{{person.medium}}">
+                    <i class="fa fa-medium"></i>
+                    </a>
+                    {% endif %}
+    
+                {% if person.github != null %}
+                    <a href="{{person.github}}">
+                    <i class="fa fa-github"></i>
+                    </a>
+                {% endif %}
+
+            </div>
+            <div class="name">
+                <p>{{person.name}}, {{person.title}}</p>
+            </div>
+        </div>
+    {% endfor %}
+
+    </div>
+
+</section>

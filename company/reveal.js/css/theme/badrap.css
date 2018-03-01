@@ -14,6 +14,89 @@ body {
   background: #fff;
   background-color: #fff; }
 
+.container {
+  width: 850px;
+  height: 500px;
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 40px;
+}
+
+div.column img {
+  margin: 0 !important;
+}
+
+div.column {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+section.present li {
+  color: #020202;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+section.present p {
+  line-height: 1.8;
+  padding-left: 3g0px;
+  padding-right: 30px;
+}
+p.caption {
+  font-size: 10px !important;
+  margin-top: 0;
+}
+
+.people-grid {
+  display: grid;
+  grid-column-gap: 40px;
+  grid-row-gap: 15px;
+  grid-template-columns: 285px 285px 285px;
+  grid-template-rows: 292px 292px;
+  width: 935px;
+  height: 600px;
+}
+
+.grid-card {
+  display: grid;
+  grid-template-columns: 225px 50px;
+  grid-template-rows: 240px 50px;
+}
+
+div.picture {
+  background-color: #f6f6f6;
+  grid-row: 1/1;
+  grid-column: 1/1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+div.social {
+  grid-row: 1/1;
+  grid-column: 2/2;
+}
+
+div.name {
+  grid-row: 2/2;
+  grid-column: span 1;
+}
+
+div.name p {
+  font-size: 15px;
+  color: #020202;
+  margin-top: 10px;
+}
+
+.fa {
+  color: #ccc;
+  font-size: 25px !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 0.25rem;
+
+}
 .reveal {
   font-family: "Montserrat", "Source Sans Pro", Helvetica, sans-serif;
   font-size: 42px;
@@ -52,8 +135,7 @@ body {
   letter-spacing: normal;
   text-transform: uppercase;
   text-shadow: none;
-  word-wrap: break-word; 
-}
+  word-wrap: break-word; }
 
 .reveal h1 {
   font-size: 2.2em; }
@@ -65,6 +147,7 @@ body {
   font-size: 0.8em; 
   color: #4c4c4e;
   text-transform: none;
+
 }
 
 .reveal h4 {
@@ -98,11 +181,9 @@ body {
   max-height: 95%; }
 
 .reveal strong,
-.reveal b {
-  font-weight: bold; }
+.reveal b { font-weight: bold; }
 
-.reveal em {
-  font-style: italic; }
+.reveal em { font-style: italic; }
 
 .reveal ol,
 .reveal dl,
