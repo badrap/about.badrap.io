@@ -89,22 +89,22 @@
     
 - slide: HOW
   title: A country-specific service for the Netizen
-  text: Easy-to-spell domain. Check the IP in use. Option to localise.
+  text: A free check for the IP currently in use. By registering, netizen gets additional features, and we now are able to reach the netizen.
   img:
-    src: ../img/website-check.jpg
-    width: 80%
+    src: ../img/website-check2.jpg
+    width: 60%
 
 - slide: HOW
   title: Users can subscribe to alerts for the IPs they use
   text:
   img:
-    src: ../img/manage-your-ips.jpg
+    src: ../img/manage-your-ips2.jpg
     alt: manage
     width: 80%
 
 - slide: HOW
   title: Get instructions
-  text:
+  text:  A screenshot from the Finnish site.<br>Netizen gets a human-friendly problem description, free instructions and also pointers to commercial services.
   img:
     src: ../img/get-instructions.jpg
     alt: manage
