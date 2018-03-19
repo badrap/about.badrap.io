@@ -1,0 +1,21 @@
+---
+layout: slides
+title: GDRP 72 Hours
+---
+
+{% for slide in site.data.slides-gdpr %}
+
+    <!--- post post post -->
+
+    {% if slide.layout == null %}
+        {% assign layout = "slide-default" %}
+    {% else %}
+        {% assign layout = slide.layout %}
+    {% endif %}
+
+    {% include {{layout}}.html %}
+
+    <!--- END post post post -->
+
+
+{% endfor %}
