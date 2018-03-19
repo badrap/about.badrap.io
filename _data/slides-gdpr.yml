@@ -1,0 +1,67 @@
+- slide: title
+  title:
+  subtitle: GDPR 72 hours notification
+  layout: slide-coverpage
+  img:
+    src: ../../img/badrap-logo.svg
+    alt: Badrap logo
+    width: 30%
+
+- slide: PROBLEM
+  title: The Problem
+  subtitle: GDPR 72 hours rule is tough and comes with penalties.
+  img:
+    src: img/penalties.jpg
+    alt: penalties
+
+- slide: PROBLEM
+  title: The Problem
+  subtitle: The good news - acting diligently lowers the penalties.
+  img:
+    src: img/lower-penalty.jpg
+    alt: "few examples"
+
+- slide: Time problem
+  title: 72 hours is too short
+  subtitle: for a waterfall model.
+  text: It is unrealistic to assume that tasks are completed and closed within 18 hours.
+  img:
+    src: img/waterfall.svg
+    alt: waterfall
+
+- slide: Time solution
+  title: You need an agile team 
+  subtitle: with highly efficient communication
+  text: The response team needs to be able to collaborate efficiently since the get-go. 
+  img:
+    src: img/agile.svg
+    alt: agile
+    width: 50%
+
+- slide: Problem 2
+  title: When your system is potentially compromised 
+  subtitle: you need a backup plan
+  text: >
+      In the beginning <em>you don't know the scope</em> of the issue.<br>
+      Using potentially compromised services might lead to further leaks.
+ 
+- slide: BEGIN NEW SOLUTION
+  title: GDPR 72h service
+  subtitle: Security, Legal and Media Pro's - we got your back!
+  img:
+    src: img/72h.svg
+    alt: 72h
+    width: 50%
+
+- slide: BEGIN NEW SOLUTION
+  title: People, workflows and tools
+  subtitle: for the 72h challenge
+  text: Cross-domain experts and technology working well together.
+  img:
+    src: img/collaboration.svg
+    alt: collaboration
+    width: 50%
+
+- slide: Study
+  title: To be continued
+  subtitle: company/people/expertise intros.
