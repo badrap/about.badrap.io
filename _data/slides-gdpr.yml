@@ -9,17 +9,11 @@
 
 - slide: PROBLEM
   title: The Problem
-  subtitle: GDPR 72 hours rule is tough and comes with penalties.
+  subtitle: GDPR 72 hours notification rule is tough and comes with penalties.
   img:
     src: img/penalties.jpg
     alt: penalties
 
-- slide: PROBLEM
-  title: The Problem
-  subtitle: The good news - acting diligently lowers the penalties.
-  img:
-    src: img/lower-penalty.jpg
-    alt: "few examples"
 
 - slide: Time problem
   title: 72 hours is too short
