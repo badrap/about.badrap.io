@@ -8,30 +8,15 @@
     width: 30%
 
 - slide: PROBLEM
-  title: The Problem
-  subtitle: Too many vulnerable devices in the net
+  title: A problem for the online society
+  subtitle: Too many vulnerable devices connected.
   img:
     src: ../img/issues.jpg
     alt: "Too many vulnerabilities"
-
-- slide: PROBLEM
-  title: It is big
-  subtitle: The previous slide showed just few examples.
-  text: There are a many different types of issues, and they come in numbers.
-  img:
-    src: ../img/few-examples.jpg
-    alt: "few examples"
-    width: 50%
-
-- slide: REAL WORLD CONNECTION
-  title: A problem for the online society
-  img:
-    src: ../img/evolving.jpg
-    alt: "society"
     width: 70%
 
 - slide: REAL WORLD CONNECTION
-  title: And a problem for the unaware victims
+  title: A problem for the unaware victims
   img:
       src: ../img/cartoon.jpg
       alt: "society"
