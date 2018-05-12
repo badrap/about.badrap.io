@@ -13,7 +13,18 @@ body, html {
   align-self: flex-end;
   margin-top: 77px;
 }
+.bottom {
+  vertical-align: bottom;
+}
+#navbarResponsive {
+  background-color: #eee;
+  border-width: 1px;
+  border-color: black;
+}
 
+.container.left {
+  justify-content: left;
+}
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
