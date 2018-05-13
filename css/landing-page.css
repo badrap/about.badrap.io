@@ -13,18 +13,26 @@ body, html {
   align-self: flex-end;
   margin-top: 77px;
 }
-.bottom {
-  vertical-align: bottom;
-}
-#navbarResponsive {
-  background-color: #eee;
-  border-width: 1px;
-  border-color: black;
+
+.menuhalf { 
+  max-width: 500px;
 }
 
-.container.left {
-  justify-content: left;
+.menuright {
+  width: 50%;
 }
+
+@media(max-width:991px) {
+  .menuright {
+    display: none;
+    background-color: #0f8;
+  }
+}
+
+
+
+
+
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
@@ -92,7 +100,7 @@ h2 {
   background-position: 100% 100%;
 }
 
-@media(max-width:992px) {
+@media(max-width:991px) {
   .cartoonbg {
     background-image: none;
   }
