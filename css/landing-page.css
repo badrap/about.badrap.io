@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
 
+
 body, html {
   width: 100%;
   height: 100%;
@@ -14,88 +15,28 @@ body, html {
   margin-top: 77px;
 }
 
-.menuhalf { 
-  max-width: 500px;
+.row {   
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-.menuright {
-  width: 50%;
+/* #menu */
+.navbar { padding: 0;}
+.menuhalf { max-width: 500px; }
+.menuspace { width: 50%; }
+@media(max-width:991px) { .menuspace {display: none; }}
+
+/* #endmenu */
+
+/* #heading */
+.logo {
+  margin-left: 120px;
 }
 
-@media(max-width:991px) {
-  .menuright {
-    display: none;
-    background-color: #0f8;
-  }
-}
 
-
-
-
-
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: #4c4d4f !important;
-  font-size: 13pt;
-}
-
-.rapdark {
-  background-color: #1c2022;
-  color: #fff;
-}
-
-.icons {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-.rapborder {
-  border-style: solid;
-  border-width: 0px;
-  border-right-width: 0.5px;
-  border-color: #999;
-}
-
-@media(max-width:990px) {
-  .rapborder {
-    border-style: none;
-  }
-}
-body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat";
-  font-weight: 400;
-  padding-bottom: 20px;
-}
-
-h1 {
-  font-weight: 400;
-  color: #80217e;
-  font-size: 36pt;
-}
-
-h2 {
-  color: #000;
-  font-size: 22pt;
-  margin-top: 30px;
-}
-
-.headline {
-  margin-top: 6rem;
-}
-
-.tag-1 {
-  color: #fff;
-  margin-top: 0;
-}
-
-.tag-2 {
-  color: #d53add;
-  margin-top: 0;
-}
 .cartoonbg {
   background-image: url("../pmtassets/cartoon.jpg");
-  background-size: 55%;
+  background-size: 48%;
   background-repeat: no-repeat;
   background-position: 100% 100%;
 }
@@ -104,53 +45,165 @@ h2 {
   .cartoonbg {
     background-image: none;
   }
+  .logo {
+    margin-left: 130px;
+  }
 }
 
 @media(min-width:1200px) {
   .cartoonbg {
-    background-size: 50%;
-    background-position: 100% 100%;
+    background-size: 40%;
+    background-position: 95% 100%;
+  }
+}
+
+@media(min-width:1500px) {
+  .cartoonbg {
+    background-size: 35%;
+    background-position: 90% 100%;
   }
 }
 
 @media(min-width:1725px) {
   .cartoonbg {
-    background-size: 40%;
-    background-position: 80% 100%;
+    background-size: 30%;
+    background-position: 85% 100%;
   }
 }
 
 @media(min-width:2168px) {
   .cartoonbg {
-    background-size: 30%;
-    background-position: 70% 100%;
+    background-size: 25%;
+    background-position: 80% 100%;
   }
 }
+
+/* #endheading */
+
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #4c4d4f !important;
+  font-size: 12pt;
+  text-transform: none;
+}
+
+/* #black icon area */
+
+.rapdark {
+  background-color: #1c2022;
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: 0px;
+}
+
+.icons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 100px;
+}
+
+.rapborder {
+  border-style: solid;
+  border-width: 0px;
+  border-right-width: 0.5px;
+  border-color: #999;
+  margin-left: 0;
+}
+
+.rapborder-on-white {
+  border-style: solid;
+  border-width: 0px;
+  border-right-width: 0.5px;
+  border-color: #e3e3e3;
+  margin-left: 0;
+}
+@media(max-width:990px) {
+  .rapborder {
+    border-style: none;
+  }
+}
+
+.tag-1 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 10pt;
+
+}
+
+.tag-2 {
+  color: #d53ad1;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 10pt;
+
+  text-transform: uppercase;
+
+}
+
+.btn-rap {
+  background-color: #92278f;
+  color: #fff;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 10pt;
+  font-weight: 400;
+}
+/* #endblack icon area */
+
+/* #global */
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-weight: 800;
+  color: #80217e;
+  font-size: 26pt;
+}
+
+
+h2 {
+  color: #000;
+  font-size: 22pt;
+  font-weight: 900;
+  margin-top: 30px;
+}
+
+.headline {
+  text-transform: uppercase;
+  margin-top: 2rem;
+  justify-items: left;
+
+}
+
 p {
   color: #4c4d4f;
   font-size: 12pt;
 }
 
 p.mb-10 {
-  padding-top: 20px;
+  padding-top: 0px;
   padding-bottom: 20px;
-}
-p.spacey {
-  padding-right: 60px;
-  padding-left: 60px;
+  font-size: 12pt;
 }
 
-
-.internet-connected-devices {
-  background-image: url("../pmtassets/internet-connected-devices.png")
-}
-.intro-header {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-  color: #f8f8f8;
-  background-size: cover;
-}
 
 .intro-message {
   position: relative;
@@ -158,20 +211,14 @@ p.spacey {
   padding-bottom: 20%;
 }
 
-.intro-message>h1 {
-  margin: 0;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-  font-size: 5em;
-}
-
-.intro-divider {
-  width: 400px;
-  border-top: 1px solid #f8f8f8;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.intro-message>h3 {
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+@media(max-width:767px) {
+  .row { 
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .logo {
+    margin-left: 30px;
+  }
 }
 
 .intro-social-buttons i {
@@ -205,26 +252,6 @@ p.spacey {
   font-size: 10pt;
 }
 
-.content-section-a {
-  padding: 50px 0;
-  background-color: #f8f8f8;
-}
-
-.content-section-b {
-  padding: 50px 0;
-  border-top: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
-}
-
-.section-heading {
-  margin-bottom: 30px;
-}
-
-.section-heading-spacer {
-  float: left;
-  width: 200px;
-  border-top: 3px solid #e7e7e7;
-}
 
 .banner {
   padding: 100px 0;
@@ -242,9 +269,8 @@ p.spacey {
   margin-bottom: 0;
 }
 
-.banner-social-buttons {
-  float: right;
-  margin-top: 0;
+.bitwider {
+  margin: 0;
 }
 
 @media(max-width:1199px) {
@@ -254,25 +280,7 @@ p.spacey {
   }
 }
 
-@media(max-width:767px) {
-  .banner h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    font-size: 3em;
-  }
 
-  ul.banner-social-buttons {
-    float: none;
-  }
-  ul.banner-social-buttons>li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  ul.banner-social-buttons>li:last-child {
-    margin-bottom: 0;
-  }
-}
 
 aside {
   background-color: #f8f8f8;
@@ -282,26 +290,3 @@ aside#contact.banner {
   padding-top: 70px;
   padding-bottom: 70px;
 }
-
-p.copyright {
-  margin: 15px 0 0;
-}
-
-.internet-connected-devices {
-  background-image: url("../pmtassets/internet-connected-devices.png")
-}
-
-.intro-social-buttons i {
-  font-size: 50%;
-}
-.features-icons {
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
-  .features-icons .features-icons-item {
-    max-width: 20rem; }
-    .features-icons .features-icons-item .features-icons-icon {
-      height: 11rem; }
-      .features-icons .features-icons-item .features-icons-icon i {
-        font-size: 4.5rem; }
-    .features-icons .features-icons-item:hover .features-icons-icon i {
-      font-size: 5rem; }
