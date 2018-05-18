@@ -1,0 +1,102 @@
+/* #temp */
+
+/* #endtemp */
+
+/* #nav */
+#mainNav .navbar-shrink {
+    background-color: #f6f6a0;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    color: black;
+}
+
+.menuhalf { max-width: 500px; }
+.menuspace { width: 50%; }
+@media(max-width:991px) { .menuspace {display: none; }}
+
+/* #endnav */
+
+/* #header */
+
+header.masthead {
+    background-image: url("../img/cartoon.jpg");
+    background-size: 80%;
+    background-position-x: 100%;
+    background-position-y: 100%;
+    text-align: left;
+}
+
+@media (min-width: 2000px) {
+    header.masthead { background-position-x: 70%; background-size: 27%;}
+}
+
+@media (min-width: 1800px) and (max-width: 1999px) {
+    header.masthead { background-position-x: 75%; background-size: 34%;}
+}
+
+@media (min-width: 1600px) and (max-width: 1799px) {
+    header.masthead { background-position-x: 80%; background-size: 38%;}
+}
+
+@media (min-width: 1400px) and (max-width: 1599px) {
+    header.masthead { background-position-x: 84%; background-size: 40%;}
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    header.masthead { background-position-x: 95%; background-size: 45%;}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    header.masthead { background-position-x: 100%; background-size: 60%;}
+}
+
+@media (max-width: 992px) {
+    header.masthead { background-image: none;}
+}
+
+header.masthead .intro-text {
+    padding-top: 20px;
+    padding-bottom: 20px;;
+}
+
+.intro-lead-in {
+    padding-top: 90px;
+}
+
+.intro-lead-in h1 {
+    font-weight: 800;
+    color: #80217e;
+    font-size: 26pt;
+    text-transform: uppercase;
+    font-style: normal;
+    justify-items: left;
+
+
+}
+
+.intro-lead-in p {
+    color: black;
+    font-size: 12pt;
+    font-style: normal;
+    justify-items: left;
+
+}
+/* #endheder */
+
+/* #global */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #4c4d4f;
+    font-size: 12pt;
+  }
+  
+/* #endglobal */
+
+/* #scale */
