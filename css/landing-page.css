@@ -11,7 +11,6 @@ body, html {
 }
 
 .bottom {
-  align-self: flex-end;
   margin-top: 77px;
 }
 
@@ -19,9 +18,9 @@ body, html {
   margin-left: 100px;
   margin-right: 100px;
 }
-
+/* 
 /* #menu */
-.navbar { padding: 0;}
+.navbar {padding: 0;}
 .menuhalf { max-width: 500px; }
 .menuspace { width: 50%; }
 @media(max-width:991px) { .menuspace {display: none; }}
@@ -33,12 +32,13 @@ body, html {
   margin-left: 120px;
 }
 
-
+ */
 .cartoonbg {
   background-image: url("../pmtassets/cartoon.jpg");
   background-size: 48%;
   background-repeat: no-repeat;
   background-position: 100% 100%;
+
 }
 
 @media(max-width:991px) {
@@ -59,21 +59,21 @@ body, html {
 
 @media(min-width:1500px) {
   .cartoonbg {
-    background-size: 35%;
+    background-size: 30%;
     background-position: 90% 100%;
   }
 }
 
 @media(min-width:1725px) {
   .cartoonbg {
-    background-size: 30%;
+    background-size: 25%;
     background-position: 85% 100%;
   }
 }
 
 @media(min-width:2168px) {
   .cartoonbg {
-    background-size: 25%;
+    background-size: 20%;
     background-position: 80% 100%;
   }
 }
@@ -83,10 +83,9 @@ body, html {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
   color: #4c4d4f !important;
   font-size: 12pt;
-  text-transform: none;
 }
 
 /* #black icon area */
