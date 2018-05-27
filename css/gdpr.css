@@ -4,13 +4,6 @@
     text-shadow: 1px 2px 20px rgba(136, 0, 143, 0.3);
 
 }
-.connects {
-    background-image: url('../img/badrap-connects.svg'); 
-    min-height: 700px;
-    background-size: 35%;
-    background-color: #fff;
-    background-position: 10% 50%;	   
-}
 
 .gdprpic { 
     background-image: url('../img/gdpr72-bg.jpg'); 

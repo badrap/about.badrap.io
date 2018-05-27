@@ -4,8 +4,6 @@
 
 /* #nav */
 
-
-
 #mainNav .navbar-nav .nav-item .nav-link {
     color: black;
     font-size: 8pt;
@@ -42,13 +40,11 @@ header.masthead {
     background-position-x: 100%;
     background-position-y: 100%;
     text-align: left;
-    border: black 1px dotted;
 }
 
 header.masthead .intro-text {
     padding-top: 20px;
     padding-bottom: 20px;
-    ;
 }
 
 .intro-lead-in {
@@ -132,6 +128,7 @@ header.masthead .intro-text {
 .fa-heart.tag-2 {
     font-size: 25pt;
 }
+
 .btn-rap {
     background-color: #92278f;
     color: #fff;
@@ -168,6 +165,11 @@ header.masthead .intro-text {
 .gdpr72h {
     background-image: url("../img/gdpr72-logo.svg");
 }
+
+.connects {
+    background-image: url('../img/badrap-connects.svg'); 
+}
+
 /* #endcontent */
 
 /* #contactbanner */
@@ -193,7 +195,13 @@ aside#contact.banner {
 /* #global */
 
 
+.section {
+    padding-top: 0;
+}
 
+.space {
+    min-height: 70vh;
+}
 body,
 h1,
 h2,
@@ -215,6 +223,9 @@ h1 {
     justify-items: left;
 }
 
+h3 {
+    padding-top: 30px;
+}
 p {
     font-family: 'Montserrat', sans-serif;
     color: #4c4d4f;
