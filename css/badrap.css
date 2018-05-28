@@ -77,6 +77,9 @@ header.masthead .intro-text {
     color: #eeeeee;
 }
 
+.darker {
+    background-color: #fffbff;
+}
 .rapdark {
     background-color: #1c2022;
     color: #fff !important;
@@ -87,6 +90,10 @@ header.masthead .intro-text {
 
 .rapdark h1 {
     color: #fff !important;
+}
+
+.rapdark p {
+    color: #eee !important;
 }
 
 .icons {
@@ -151,14 +158,25 @@ header.masthead .intro-text {
     background-size: cover;
 }
 
-.vulnpic {
-    background-image: url("../img/vulnerable-devices.svg");
+.vulnpic-individuals {
+    background-image: url("../img/vulnerable-devices-individuals.svg");
 }
 
-.breaches {
-    background-image: url("../img/data-breaches.svg");
+.vulnpic-enterprises {
+    background-image: url("../img/vulnerable-devices-enterprises.svg");
 }
 
+.breaches-individuals {
+    background-image: url("../img/data-breaches-individuals.svg");
+}
+
+.leaks-individuals {
+    background-image: url("../img/data-breaches-individuals.svg");
+}
+
+.breaches-enterprises {
+    background-image: url("../img/data-breaches-enterprises.svg");
+}
 .assets {
     background-image: url("../img/asset-monitoring.svg");
 }
@@ -169,6 +187,10 @@ header.masthead .intro-text {
 
 .connects {
     background-image: url('../img/badrap-connects.svg'); 
+}
+
+.badrap-researcher {
+    background-image: url('../img/badrap-researchers.svg'); 
 }
 
 /* #endcontent */
@@ -196,12 +218,13 @@ aside#contact.banner {
 /* #global */
 
 
-.section {
+section {
     padding-top: 0;
+
 }
 
 .space {
-    min-height: 70vh;
+    min-height: 80vh;
 }
 body,
 h1,
