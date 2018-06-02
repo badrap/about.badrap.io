@@ -9,11 +9,10 @@ twitter: "@BadRapIO"
 styles: 
   - vendor/agency/css/agency.min.css
   - css/badrap.css
-  - css/gdpr.css
 ---
 
 <!-- Header -->
-<header class="masthead">
+<header class="masthead" id="page-top">
     <div class="container">
         <div class="intro-text">
             <div class="row">
@@ -37,44 +36,52 @@ styles:
 
 <div class="container-fluid rapdark">
     <div class="row my-0 justify-content-center">
-        <div class="col-md-4 col-sm-6 mx-auto text-center rapborder">
-            <p class="tag-1">Security Researchers</p>
-            <i class="fas fa-user-ninja fa-7x py-3"></i>
-            <br>
-            <i class="fas fa-heart tag-2"></i>
-            </p>
-            <p class="tag-1">Companies and individuals</p>
-            <button type="button" class="btn btn-rap">Read More</button>
-        </div>
+            <div class="col-md-4 mx-auto text-center rapborder">
+                    <p class="tag-1">Individuals</p>
+        
+                    <i class="fas fa-users fa-5x py-3"></i>
+                    <br>
+                    <i class="fas fa-heart tag-2"></i>
+                    </p>
+                    <p class="tag-1">Security Researchers and Companies</p>
+                    <a href="#individuals" class="js-scroll-trigger">
+                        <button type="button" class="btn btn-rap">Read more</button>
+                    </a>
+                </div>
+
         <div class="col-md-4 col-sm-6 mx-auto text-center rapborder">
             <p class="tag-1">Companies</p>
 
-            <i class="fas fa-handshake fa-7x py-3"></i>
+            <i class="fas fa-handshake fa-5x py-3"></i>
             <br>
             <i class="fas fa-heart tag-2"></i>
             </p>
             <p class="tag-1">Security Researhers and individuals</p>
-            <button type="button" class="btn btn-rap">Read more</button>
+            <a href="#companies" class="js-scroll-trigger">
+                <button type="button" class="btn btn-rap">Read more</button>
+            </a>
         </div>
 
-        <div class="col-md-4 mx-auto text-center">
-            <p class="tag-1">Individuals</p>
-
-            <i class="fas fa-users fa-7x py-3"></i>
+        <div class="col-md-4 col-sm-6 mx-auto text-center">
+            <p class="tag-1">Security Researchers</p>
+            <i class="fas fa-user-ninja fa-5x py-3"></i>
             <br>
             <i class="fas fa-heart tag-2"></i>
             </p>
-            <p class="tag-1">Security Researchers and Companies</p>
-            <button type="button" class="btn btn-rap">Read more</button>
+            <p class="tag-1">Companies and individuals</p>
+            <a href="#researchers" class="js-scroll-trigger">
+                <button type="button" class="btn btn-rap">Read More</button>
+            </a>
         </div>
+
     </div>
 </div>
 
 <div class="container-fluid">
     <div class="row space">
-        <div class="col-md-5 illustrate connects"></div>
-        <div class="col-md-1"></div>
-        <div class="col-md-6 col-lg-6 col-xl-6 my-auto">
+
+        <div class="col-md-6 illustrate connects order-md-1 order-sm-2 order-2"></div>
+        <div class="col-md-6 col-lg-6 col-xl-6 my-auto order-md-2 order-sm-1 order-1">
             <h1>Sharing is caring.
                 <br>We connect people who care.</h1>
             <p> When
@@ -91,5 +98,7 @@ styles:
 </div>
 </div>
 
-{% include frontpage-enterprises.html %} {% include frontpage-individuals.html %}
-{% include frontpage-researchers.html %} {% include frontpage-team.html %}
+{% include frontpage-individuals.html %}
+{% include frontpage-companies.html %} 
+{% include frontpage-researchers.html %} 
+{% include frontpage-team.html %}

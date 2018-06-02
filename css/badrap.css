@@ -22,6 +22,9 @@
     background-color: #f6f6f6;
 }
 
+navlink.active {
+    color: #f00;
+}
 .menuhalf {
     max-width: 500px;
 }
@@ -80,12 +83,17 @@ header.masthead .intro-text {
 .darker {
     background-color: #fffbff;
 }
+
 .rapdark {
     background-color: #1c2022;
     color: #fff !important;
     padding-top: 30px;
     padding-bottom: 30px;
     border: 0px;
+}
+
+.bg-dark p, h4, h3 {
+    color: #fff;
 }
 
 .rapdark h1 {
@@ -113,6 +121,16 @@ header.masthead .intro-text {
     margin-left: 0;
 }
 
+.companypic { 
+    background-image: url('../img/gdpr72-bg.jpg'); 
+    min-height: 700px;	
+}
+
+.researcher { 
+    background-image: linear-gradient(to bottom, rgba(227, 1, 238, 0.7), 
+    rgba(255, 67, 53, 0.7)), url('../img/lake.jpg'); 
+    min-height: 600px;
+}
 .tag-1 {
     color: #fff;
     margin-top: 0;
@@ -158,12 +176,16 @@ header.masthead .intro-text {
     background-size: cover;
 }
 
+.headerbanner h1, h2, h3 {
+    color: #fff;
+}
+
 .vulnpic-individuals {
     background-image: url("../img/vulnerable-devices-individuals.svg");
 }
 
-.vulnpic-enterprises {
-    background-image: url("../img/vulnerable-devices-enterprises.svg");
+.vulnpic-companies {
+    background-image: url("../img/vulnerable-devices-companies.svg");
 }
 
 .breaches-individuals {
@@ -174,8 +196,8 @@ header.masthead .intro-text {
     background-image: url("../img/data-breaches-individuals.svg");
 }
 
-.breaches-enterprises {
-    background-image: url("../img/data-breaches-enterprises.svg");
+.breaches-companies {
+    background-image: url("../img/data-breaches-companies.svg");
 }
 .assets {
     background-image: url("../img/asset-monitoring.svg");
@@ -187,6 +209,9 @@ header.masthead .intro-text {
 
 .connects {
     background-image: url('../img/badrap-connects.svg'); 
+    margin-top: auto;
+    margin-bottom: auto;
+ 
 }
 
 .badrap-researcher {
@@ -217,14 +242,16 @@ aside#contact.banner {
 
 /* #global */
 
-
+section.anchor {
+    padding-top: 0px; 
+}
 section {
     padding-top: 0;
 
 }
 
 .space {
-    min-height: 80vh;
+    min-height: 70vh;
 }
 body,
 h1,
@@ -245,15 +272,38 @@ h1 {
     text-transform: uppercase;
     font-style: normal;
     justify-items: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
 }
 
-h3 {
+h2, h3 {
     padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+.lightbg h2, h3 {
+    color: #222;
+}
+
+.darkbg h3 {
+    color: #fff;
+}
+button {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.rapdark h3 {
+    color: #fff;
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
     color: #4c4d4f;
     font-size: 12pt;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .btn {
