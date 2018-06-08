@@ -6,8 +6,19 @@
             <p>{{slide.text}}</p>  
         </div>
 
-        <div class="column" style="background-image: url({{slide.img}});
-        background-position: {{slide.imgposition}}">
+        <!-- css file takes precedence, can't set default background-size there. So we set it below. -->
+
+        <div class="background-image" style="background-image: url({{slide.img.src}});
+        background-position: {{slide.img.position}};
+
+        {% if slide.img.background-size %}
+            background-size: {{slide.img.background-size}}
+        {% else %}
+            background-size: cover;
+        {% endif %}
+
+        ">
+
         </div>
     </div>
 </section>

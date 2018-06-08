@@ -5,8 +5,11 @@
     {% for person in slide.team %}
         <div class="grid-card">
             <!-- picture -->
-            <div class="picture" style="background-image: url({{person.face}});
+            <div class="picture revealit" style="background-image: url({{person.face}});
                                         background-position: {{person.facepos}}">
+                {% if person.description %}
+                <div class="onhover"><p class="bio">{{person.description}}</p></div>
+                {% endif %}
             </div>
             <div class="social">
                     {% if person.linkedin != null %}

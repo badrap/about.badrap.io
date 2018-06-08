@@ -1,0 +1,148 @@
+- slide: title
+  title:
+  subtitle: GDPR 72 hours notification service
+  layout: slide-coverpage
+  img:
+    src: ../../img/badrap-logo.svg
+    alt: Badrap logo
+    width: 30%
+
+- slide: PROBLEM
+  title: The Problem
+  subtitle: GDPR 72 hours notification rule is tough and comes with penalties.
+  img:
+    src: img/penalties.jpg
+    alt: penalties
+
+- slide: Time problem
+  title: 72 hours is too short
+  subtitle: for a waterfall-style collaboration. 
+  img:
+    src: img/waterfall.svg
+    alt: waterfall
+
+- slide: Problem 2
+  title: When you have been compromised 
+  subtitle: you need a backup for collaboration/investigation
+  text: >
+      In the beginning <em>you don't know the scope</em> of the issue.<br>
+      Using potentially compromised services might lead to further leaks.
+ 
+- slide: BEGIN NEW SOLUTION
+  title: Introducing GDPR 72h service
+  subtitle: Security, Legal and Media Pro's - we got your back!
+  img:
+    src: img/72h.svg
+    alt: 72h
+    width: 50%
+
+- slide: BEGIN NEW SOLUTION
+  title: People, workflows and tools
+  subtitle: for the 72h challenge
+  text: Cross-domain experts and technology working well together.
+  img:
+    src: img/collaboration.svg
+    alt: collaboration
+    width: 50%
+
+- slide: Time solution
+  title: Experts from relevant fields
+  subtitle: playing well together
+  text:
+  img:
+    src: img/agile.svg
+    alt: agile
+    width: 50%
+
+- slide: B
+  title: Badrap
+  text: Last mile messaging & secure collaboration
+
+- slide: references
+  title: Collaborative security audits
+  layout: slide-image-and-text
+  text: >
+    <i>With Clarified Networks<small>(1)</small> we had true situational awareness, real collaboration and the ability to steer the process.
+    <br><br><small></i>Jaan Priisalu<br>A head of IT risk management in Swedbank baltic, 2008<br>(1) Our previous company. </small>
+  img: 
+    src: img/jaan.jpg
+    alt: Jaan
+    position: 90% 50%
+
+- slide: references
+  title: Cyber Defence Exercises
+  layout: slide-image-and-text
+  text: >
+    NATO Live fire cyber exercises - clarifying the situation under pressure and on the fly. Requires the right tools, good communication and ability to simplifying the message.
+  img: 
+    src: img/cyberrange.jpg
+    alt: Jaan
+    position: 50% 50%;
+    background-size: contain
+
+- slide: Who
+  title: The team
+  layout: slide-team
+  team:
+    - name: Jani Kenttälä
+      title: CEO
+      face: ../img/jani2.jpg
+      description: >
+          20 years of experience in information security. 
+          11 years as enterpreneur. Driven by impact. 
+          2 exits from previous companies. Jani productizes, popularizes and sells.
+      facepos: 50% 70%
+      linkedin: https://www.linkedin.com/in/janikenttala/
+      twitter: https://twitter.com/janikenttala
+      medium: https://medium.com/@janikenttala
+      github: https://github.com/evilon
+
+    - name: Joachim Viide
+      title: CTO
+      description: >
+         The main architect and a developer of two successful security products. 
+         16 years of experience as a developer and always up to date with latest tech.
+
+      linkedin: https://www.linkedin.com/in/jviide/  
+      twitter: https://twitter.com/jviide
+      github: https://github.com/jviide
+      medium: https://medium.com/@jviide
+      face: ../img/jviide.jpg
+
+    - name: Heikki Kortti
+      title: Netizens
+      face: ../img/heikki.jpg
+      description: >
+         Pre & post-sales sales engineer and team leader at Codenomicon for 14 years. 
+         Authored the product documentation, sales collateral and marketing material. 
+         Knows 11 languages and a co-founder of an ISP.
+      facepos: 50% 0%
+
+    - name: Ville Alatalo
+      title: Netizens
+      description: >
+        A front-end developer and an ad agency in one package. Develop, run in the cloud, market, measure, repeat. Ville does it all and does it well.
+      linkedin: https://www.linkedin.com/in/alatalo/
+      twitter: https://twitter.com/alatalo
+      github: https://github.com/alatalo
+      medium: https://medium.com/@ville.alatalo
+      face: ../img/ville.jpg  
+
+    - name: Hillar Aarelaid
+      title: Security Researchers
+      description: >
+        Worked with the security community over a decade. 
+        Protected Estonia as the head of CERT-EE, Police and CIO of the net-elections.
+      linkedin: https://www.linkedin.com/in/hillaraarelaid/
+      github: https://github.com/hillar
+      face: ../img/hillar.jpg
+
+    - name: Petteri Parhi
+      title: Netizens
+      description: >
+        Petteri writes 
+      linkedin: https://www.linkedin.com/in/pparhi/
+      twitter: https://twitter.com/Orbitrek
+      medium: https://medium.com/@petteriparhi  
+      face: ../img/petteri.jpg
+      facepos: 50% 0%
