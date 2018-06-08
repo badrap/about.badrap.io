@@ -9,9 +9,20 @@ body, html {
   height: 100%;
 }
 
+ul.navbar-nav
+{                 
+   vertical-align: bottom;
+}
+
+ul.navbar-nav li
+{    
+   display: inline-block;
+   text-align: center;
+}
+
 .bottom {
   align-self: flex-end;
-  margin-top: 77px;
+  padding-top: 77px;
 }
 
 .btn {

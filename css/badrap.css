@@ -76,9 +76,6 @@ header.masthead .intro-text {
 
 /* #icons */
 
-.fas {
-    color: #eeeeee;
-}
 
 .darker {
     background-color: #fffbff;
@@ -86,23 +83,30 @@ header.masthead .intro-text {
 
 .rapdark {
     background-color: #1c2022;
-    color: #fff !important;
     padding-top: 30px;
     padding-bottom: 30px;
     border: 0px;
 }
 
-.bg-dark p, h4, h3 {
-    color: #fff;
+.rapdark p { color: #eee; }
+.rapdark i { color: #eee; }
+
+.rapwhite p { color: #4c4d4f; }
+.rapwhite i { color: #4c4d4f; }
+
+
+.bg-dark p, h4, h3, i {
+    color: #eee;
+}
+
+.white-fg {
+    color: #eee;
 }
 
 .rapdark h1 {
     color: #fff !important;
 }
 
-.rapdark p {
-    color: #eee !important;
-}
 
 .icons {
     display: block;
@@ -126,34 +130,37 @@ header.masthead .intro-text {
     min-height: 700px;	
 }
 
-.researcher { 
+.researcherpic { 
     background-image: linear-gradient(to bottom, rgba(227, 1, 238, 0.7), 
     rgba(255, 67, 53, 0.7)), url('../img/lake.jpg'); 
     min-height: 600px;
 }
-.tag-1 {
-    color: #fff;
-    margin-top: 0;
+
+.placeholderpic { 
+    background-image: linear-gradient(to bottom, rgba(227, 1, 238, 0.7), 
+    rgba(255, 67, 53, 0.7)), url('../img/lake.jpg'); 
+    min-height: 600px;
+}
+
+.tag {
+    margin-top: 20px;
     margin-bottom: 20px;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 10pt;
 }
 
+.tag-white {
+    color: #fff;
+}
 
-.tag-2 {
+.tag-pink {
     color: #d53ad1;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 600;
-    font-size: 10pt;
-    text-transform: uppercase;
 }
 
-.fa-heart.tag-2 {
-    font-size: 25pt;
+.fas-dark {
+    color: #222;
 }
-
 .btn-rap {
     background-color: #92278f;
     color: #fff;
@@ -175,11 +182,9 @@ header.masthead .intro-text {
 .headerbanner {
     background-size: cover;
 }
-
-.headerbanner h1, h2, h3 {
+.headerbanner h1,h2,h3 {
     color: #fff;
 }
-
 .vulnpic-individuals {
     background-image: url("../img/vulnerable-devices-individuals.svg");
 }
@@ -277,38 +282,54 @@ h1 {
     margin-top: 20px;
 }
 
-h2, h3 {
+h2, h3, h4, h5 {
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.lightbg h2, h3 {
+.lightbg h2, h3, h4, h5 {
     color: #222;
 }
 
-.darkbg h3 {
-    color: #fff;
-}
 button {
     margin-left: 20px;
     margin-right: 20px;
 }
-.rapdark h3 {
+.rapdark h3, li {
     color: #fff;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
-    color: #4c4d4f;
     font-size: 12pt;
     padding-left: 20px;
     padding-right: 20px;
 }
 
+
 .btn {
     font-weight: 400;
 }
+
+table {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+th {
+    font-weight: 400;
+}
+a {
+    color: #80217e
+}
+
+p.dark {
+    color: #4c4d4f;
+}
+p.white {
+    color: white;
+}
+
 
 /* #endglobal */
 

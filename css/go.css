@@ -1,0 +1,32 @@
+.gobanner {
+    background-size: cover;
+}
+
+h4.go {
+	margin-top: 35px;
+	text-align: center;
+	text-shadow: -2px 2px 50px rgba(30,30,30,0.6);
+	font-style: italic;
+}
+
+h1.go, h2.go, h3.go, h4.go {
+    color: #fff;
+}
+
+h1.go, h2.go, h3.go, h4.go {
+	font-weight: 700;
+	text-align: center;
+	text-shadow: -5px 3px 50px rgba(30,30,30,0.6);
+	font-style: italic;
+}
+h1.go {
+	font-size: 60pt;
+}
+
+hr.go {
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 40px;
+	height: 0px;
+	border-bottom: 4px solid #fff;
+}
