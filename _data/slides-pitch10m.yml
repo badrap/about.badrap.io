@@ -14,21 +14,67 @@
     class: whitebox
     width: 50%
     float: right
-  section-parameters: data-background-image="../../img/slides/govware.jpg"
   title: The problem
   subtitle: How do you know if
+
+- slide: Domain Expertice
+  box: 
+    class: whitebox
+    width: 50%
+    float: right
+  section-parameters: data-background-image="../../img/slides/govware.jpg"
+  title: Experience
+  text: <em>8 years</em> with the security community, national civil cyber defence and critical enterprises. Previous exits.
+
 - slide: Why do we do it
-  title: Why we do it
-  text: Right now we have <em>those who know</em> about security issues, and those <em>who need to know</em>. 
-    We want to connect them on an unprecedented scale.
+  layout: slide-image-and-text
+  title: Solution
+  subtitle: A marketplace for security information
+  text: Rethink sharing for scale.
+  img: 
+    src: ../../img/badrap-connects.svg
+    position: 50% 50%
 
 - slide: How are we going to do it
-  title: How
-  text: >
-    Expensive ...
+  layout: slide-image-and-text
+  title: Bounties
+  subtitle: HackerOne Model
+  text: $20M paid bounties, raised $74M 
+  img:
+    src: ../../img/slides/models.jpg
+    position: 50% 50%
 
+- slide: demo
+  layout: slide-image-and-text
+  title: Status
+  subtitle: Validated&#58;
+  text: >
+     <ul>
+      <li>Core techologies </li>
+      <li>Popularisation and Analytics </li>
+      <li>Researcher -> Individual flow</li>
+      <li><a href="https://testaaverkkosi.fi">testaaverkkosi.fi</a></li>
+     <ul>    
+  img:
+    src: ../../img/slides/testaaverkkosi-2018-01.jpg
+    position: 50% 50%
+  
+- slide: demo
+  layout: slide-image-and-text
+  title: Status
+  subtitle: Next
+  text: >
+     <ul>
+      <li>International site</li>
+      <li>Localisation</li>
+      <li>Data Leaks with Companies</li>
+     <ul>    
+  img:
+    src: ../../img/slides/testaaverkkosi-2018-01.jpg
+    position: 50% 50%
+  
 - slide: We have an awesome team
-  title: The team
+  title: The awesomers
   layout: slide-team
   team:
     - name: Jani Kenttälä
@@ -48,18 +94,21 @@
       medium: https://medium.com/@jviide
       face: ../img/jviide.jpg
 
-    - name: Heikki Kortti
-      title: Netizens
-      face: ../img/heikki.jpg
-      facepos: 50% 0%
+    - name:
+
 
     - name: Ville Alatalo
-      title: Netizens 
+      title: DevPubOps 
       linkedin: https://www.linkedin.com/in/alatalo/
       twitter: https://twitter.com/alatalo
       github: https://github.com/alatalo
       medium: https://medium.com/@ville.alatalo
       face: ../img/ville.jpg  
+
+    - name: Heikki Kortti
+      title: Netizens
+      face: ../img/heikki.jpg
+      facepos: 50% 0%
 
     - name: Hillar Aarelaid
       title: Security Researchers
@@ -67,27 +116,22 @@
       github: https://github.com/hillar
       face: ../img/hillar.jpg
 
-    - name: Petteri Parhi
-      title: Netizens
-      linkedin: https://www.linkedin.com/in/pparhi/
-      twitter: https://twitter.com/Orbitrek
-      medium: https://medium.com/@petteriparhi  
-      face: ../img/petteri.jpg
-      facepos: 50% 0%
 
 - slide: But we need help
+  layout: slide-default
   title: Help
   text: >
-    W..
+    Achieve air dominance and leadership in this space.<br>Recruits, bounties and pressworthy cases with NGOs.<br>One year runway.
 
 - slide: none
   title: Funded by 
   layout: slide-two-images
-  img1: ../img/scanabc.jpg
-  img1-link: http://www.scanabc.com"
-  img1-caption: Ääkköset Oy invests in inspiring innovations driven by true entrepreneurs.
-  img2: ../img/businessfinland.jpg
-  img2-link: https://www.businessfinland.fi
-  img2-caption: Business Finland is the Finnish innovation funding, trade, investment, and travel promotion organisation.
+  img1: 
+    src: ../img/scanabc.jpg
+    caption: Ääkköset Oy invests in inspiring innovations driven by true entrepreneurs.
+  img2: 
+    src: ../img/businessfinland.jpg
+    link: https://www.businessfinland.fi
+    caption: Business Finland is the Finnish innovation funding, trade, investment, and travel promotion organisation.
 
 
