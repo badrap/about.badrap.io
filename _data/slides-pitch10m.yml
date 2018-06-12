@@ -9,20 +9,20 @@
     width: 30%
 
 - slide: what is the problem we solve
-  layout: slide-carousel
   box: 
     class: whitebox
     width: 50%
     float: right
   title: The problem
-  subtitle: How do you know if
+  subtitle: Today access to security information is still a privilege of a few.
+  section-parameters: data-background-image="../../img/slides/problem.jpg"
 
 - slide: Domain Expertice
   box: 
     class: whitebox
     width: 50%
     float: right
-  section-parameters: data-background-image="../../img/slides/govware.jpg"
+  section-parameters: data-background-image="../../img/slides/govware.jpg" 
   title: Experience
   text: <em>8 years</em> with the security community, national civil cyber defence and critical enterprises. Previous exits.
 
@@ -56,7 +56,7 @@
       <li><a href="https://testaaverkkosi.fi">testaaverkkosi.fi</a></li>
      <ul>    
   img:
-    src: ../../img/slides/testaaverkkosi-2018-01.jpg
+    src: ../../img/slides/tivi.jpg
     position: 50% 50%
   
 - slide: demo
