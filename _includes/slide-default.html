@@ -1,9 +1,23 @@
-<section>
+
+<section {{slide.section-parameters}}>
+<div class="{{slide.box.class}}" style="width: {{slide.box.width}}; float: {{slide.box.float}}">
+
+    {% if slide.title %}
     <h2>{{slide.title}} </h2>
+    {% endif %}
+
+    {% if slide.subtitle %}
     <h3>{{slide.subtitle}}</h3>
+    {% endif %}
+
+    {% if slide.text %}
     <p>{{slide.text}}</p>
-    {% if slide.layout == null %}
+    {% endif
+         %}
+    {% if slide.img.src %}
     <img src="{{slide.img.src}}" width="{{slide.img.width}}" alt="{{slide.img.alt}}">
     {% endif %}
-  
+
+</div>
+
 </section>
