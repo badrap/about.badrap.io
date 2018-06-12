@@ -14,7 +14,7 @@
     width: 50%
     float: right
   title: The problem
-  subtitle: Today access to security information is still a privilege of a few.
+  text: Today access to security information is still a privilege of a few.
   section-parameters: data-background-image="../../img/slides/problem.jpg"
 
 - slide: Domain Expertice
