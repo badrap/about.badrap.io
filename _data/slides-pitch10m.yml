@@ -1,0 +1,137 @@
+- slide: title
+  title: Badrap
+  subtitle: The Security Information Marketplace
+  section-parameters: data-background-image="./../img/slides/estonia.jpg"
+  layout: slide-coverpage
+  img:
+    src: ../../img/badrap-logo.svg
+    alt: Badrap logo
+    width: 30%
+
+- slide: what is the problem we solve
+  box: 
+    class: whitebox
+    width: 50%
+    float: right
+  title: The problem
+  subtitle: Today access to security information is still a privilege of a few.
+  section-parameters: data-background-image="../../img/slides/problem.jpg"
+
+- slide: Domain Expertice
+  box: 
+    class: whitebox
+    width: 50%
+    float: right
+  section-parameters: data-background-image="../../img/slides/govware.jpg" 
+  title: Experience
+  text: <em>8 years</em> with the security community, national civil cyber defence and critical enterprises. Previous exits.
+
+- slide: Why do we do it
+  layout: slide-image-and-text
+  title: Solution
+  subtitle: A marketplace for security information
+  text: Rethink sharing for scale.
+  img: 
+    src: ../../img/badrap-connects.svg
+    position: 50% 50%
+
+- slide: How are we going to do it
+  layout: slide-image-and-text
+  title: Bounties
+  subtitle: HackerOne Model
+  text: $20M paid bounties, raised $74M 
+  img:
+    src: ../../img/slides/models.jpg
+    position: 50% 50%
+
+- slide: demo
+  layout: slide-image-and-text
+  title: Status
+  subtitle: Validated&#58;
+  text: >
+     <ul>
+      <li>Core techologies </li>
+      <li>Popularisation and Analytics </li>
+      <li>Researcher -> Individual flow</li>
+      <li><a href="https://testaaverkkosi.fi">testaaverkkosi.fi</a></li>
+     <ul>    
+  img:
+    src: ../../img/slides/tivi.jpg
+    position: 50% 50%
+  
+- slide: demo
+  layout: slide-image-and-text
+  title: Status
+  subtitle: Next
+  text: >
+     <ul>
+      <li>International site</li>
+      <li>Localisation</li>
+      <li>Data Leaks with Companies</li>
+     <ul>    
+  img:
+    src: ../../img/slides/testaaverkkosi-2018-01.jpg
+    position: 50% 50%
+  
+- slide: We have an awesome team
+  title: The awesomers
+  layout: slide-team
+  team:
+    - name: Jani Kenttälä
+      title: CEO
+      face: ../img/jani2.jpg
+      facepos: 50% 70%
+      linkedin: https://www.linkedin.com/in/janikenttala/
+      twitter: https://twitter.com/janikenttala
+      medium: https://medium.com/@janikenttala
+      github: https://github.com/evilon
+
+    - name: Joachim Viide
+      title: CTO
+      linkedin: https://www.linkedin.com/in/jviide/  
+      twitter: https://twitter.com/jviide
+      github: https://github.com/jviide
+      medium: https://medium.com/@jviide
+      face: ../img/jviide.jpg
+
+    - name:
+
+
+    - name: Ville Alatalo
+      title: DevPubOps 
+      linkedin: https://www.linkedin.com/in/alatalo/
+      twitter: https://twitter.com/alatalo
+      github: https://github.com/alatalo
+      medium: https://medium.com/@ville.alatalo
+      face: ../img/ville.jpg  
+
+    - name: Heikki Kortti
+      title: Netizens
+      face: ../img/heikki.jpg
+      facepos: 50% 0%
+
+    - name: Hillar Aarelaid
+      title: Security Researchers
+      linkedin: https://www.linkedin.com/in/hillaraarelaid/
+      github: https://github.com/hillar
+      face: ../img/hillar.jpg
+
+
+- slide: But we need help
+  layout: slide-default
+  title: Help
+  text: >
+    Achieve air dominance and leadership in this space.<br>Recruits, bounties and pressworthy cases with NGOs.<br>One year runway.
+
+- slide: none
+  title: Funded by 
+  layout: slide-two-images
+  img1: 
+    src: ../img/scanabc.jpg
+    caption: Ääkköset Oy invests in inspiring innovations driven by true entrepreneurs.
+  img2: 
+    src: ../img/businessfinland.jpg
+    link: https://www.businessfinland.fi
+    caption: Business Finland is the Finnish innovation funding, trade, investment, and travel promotion organisation.
+
+
