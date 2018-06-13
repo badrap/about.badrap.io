@@ -24,13 +24,13 @@
     float: right
   section-parameters: data-background-image="../../img/slides/govware.jpg" 
   title: Experience
-  text: <em>8 years</em> with the security community, national civil cyber defence and critical enterprises. Previous exits.
+  text: <em>8 years</em> we worked them and witnessed awesome results.
 
 - slide: Why do we do it
   layout: slide-image-and-text
   title: Solution
-  subtitle: A marketplace for security information
-  text: Rethink sharing for scale.
+  subtitle: Rethink sharing for scale
+  text: A marketplace for security information
   img: 
     src: ../../img/badrap-connects.svg
     position: 50% 50%
