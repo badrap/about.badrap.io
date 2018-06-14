@@ -68,7 +68,6 @@ header.masthead .intro-text {
     border: 0px;
 }
 
-
 .rapborder {
     border-style: solid;
     border-width: 0px;
@@ -95,7 +94,6 @@ header.masthead .intro-text {
     background-position: 50% 50%;
     min-height: 400px;
 }
-
 
 .connects {
     background-image: url('../img/badrap-connects.svg');
@@ -178,7 +176,9 @@ h5 {
     color: #4c4d4f !important;
 }
 
-.rapdark h1, p, i {
+.rapdark h1,
+p,
+i {
     color: #fff;
 }
 
@@ -267,9 +267,6 @@ a {
         background-image: none;
     }
 }
-
-
-
 
 /* To be used later
 
