@@ -18,18 +18,6 @@
     background-color: #f6f6f6;
 }
 
-navlink.active {
-    color: #f00;
-}
-
-.menuhalf {
-    max-width: 500px;
-}
-
-.menuspace {
-    width: 50%;
-}
-
 /* #endnav */
 
 /* #header */
@@ -73,10 +61,6 @@ header.masthead .intro-text {
 
 /* #icons */
 
-.darker {
-    background-color: #fffbff;
-}
-
 .rapdark {
     background-color: #1c2022;
     padding-top: 30px;
@@ -84,45 +68,6 @@ header.masthead .intro-text {
     border: 0px;
 }
 
-.rapdark p {
-    color: #eee;
-}
-
-.rapdark i {
-    color: #eee;
-}
-
-.rapwhite p {
-    color: #4c4d4f;
-}
-
-.rapwhite i {
-    color: #4c4d4f;
-}
-
-.bg-dark p,
-h4,
-h3,
-i {
-    color: #eee;
-}
-
-.white-fg {
-    color: #eee;
-}
-
-.rapdark h1 {
-    color: #fff !important;
-}
-
-.icons {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    width: 100px;
-}
 
 .rapborder {
     border-style: solid;
@@ -132,46 +77,12 @@ i {
     margin-left: 0;
 }
 
-.companypic {
-    background-image: url('../img/gdpr72-bg.jpg');
-    min-height: 700px;
-}
-
-.researcherpic {
-    background-image: linear-gradient(to bottom, rgba(227, 1, 238, 0.7), rgba(255, 67, 53, 0.7)), url('../img/lake.jpg');
-    min-height: 600px;
-}
-
-.placeholderpic {
-    background-image: linear-gradient(to bottom, rgba(227, 1, 238, 0.7), rgba(255, 67, 53, 0.7)), url('../img/lake.jpg');
-    min-height: 600px;
-}
-
 .tag {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 10pt;
-}
-
-.tag-white {
-    color: #fff;
-}
-
-.tag-pink {
-    color: #d53ad1;
-}
-
-.fas-dark {
-    color: #222;
-}
-
-.btn-rap {
-    background-color: #92278f;
-    color: #fff;
-    font-size: 10pt;
-    font-weight: 400;
 }
 
 /* #endicons*/
@@ -185,52 +96,11 @@ i {
     min-height: 400px;
 }
 
-.headerbanner {
-    background-size: cover;
-}
-
-.headerbanner h1,
-h2,
-h3 {
-    color: #fff;
-}
-
-.vulnpic-individuals {
-    background-image: url("../img/vulnerable-devices-individuals.svg");
-}
-
-.vulnpic-companies {
-    background-image: url("../img/vulnerable-devices-companies.svg");
-}
-
-.breaches-individuals {
-    background-image: url("../img/data-breaches-individuals.svg");
-}
-
-.leaks-individuals {
-    background-image: url("../img/data-breaches-individuals.svg");
-}
-
-.breaches-companies {
-    background-image: url("../img/data-breaches-companies.svg");
-}
-
-.assets {
-    background-image: url("../img/asset-monitoring.svg");
-}
-
-.gdpr72h {
-    background-image: url("../img/gdpr72-logo.svg");
-}
 
 .connects {
     background-image: url('../img/badrap-connects.svg');
     margin-top: auto;
     margin-bottom: auto;
-}
-
-.badrap-researcher {
-    background-image: url('../img/badrap-researchers.svg');
 }
 
 /* #endcontent */
@@ -282,8 +152,6 @@ h6 {
 }
 
 h1 {
-    font-weight: 700;
-    color: #80217e;
     font-size: 26pt;
     text-transform: uppercase;
     font-style: normal;
@@ -302,11 +170,16 @@ h5 {
     padding-right: 20px;
 }
 
-.lightbg h2,
-h3,
-h4,
-h5 {
-    color: #222;
+.rapwhite h1 {
+    color: #80217e;
+}
+
+.rapwhite p {
+    color: #4c4d4f !important;
+}
+
+.rapdark h1, p, i {
+    color: #fff;
 }
 
 button {
@@ -341,14 +214,6 @@ th {
 
 a {
     color: #80217e
-}
-
-p.dark {
-    color: #4c4d4f;
-}
-
-p.white {
-    color: white;
 }
 
 /* #endglobal */
@@ -402,3 +267,113 @@ p.white {
         background-image: none;
     }
 }
+
+
+
+
+/* To be used later
+
+.menuhalf {
+    max-width: 500px;
+}
+
+.menuspace {
+    width: 50%;
+}
+
+
+.headerbanner {
+    background-size: cover;
+}
+
+.headerbanner h1,
+h2,
+h3 {
+    color: #fff;
+}
+
+navlink.active {
+    color: #f00;
+}
+
+.vulnpic-individuals {
+    background-image: url("../img/vulnerable-devices-individuals.svg");
+}
+
+.vulnpic-companies {
+    background-image: url("../img/vulnerable-devices-companies.svg");
+}
+
+.breaches-individuals {
+    background-image: url("../img/data-breaches-individuals.svg");
+}
+
+.leaks-individuals {
+    background-image: url("../img/data-breaches-individuals.svg");
+}
+
+.breaches-companies {
+    background-image: url("../img/data-breaches-companies.svg");
+}
+
+.assets {
+    background-image: url("../img/asset-monitoring.svg");
+}
+
+.gdpr72h {
+    background-image: url("../img/gdpr72-logo.svg");
+}
+
+
+.badrap-researcher {
+    background-image: url('../img/badrap-researchers.svg');
+}
+
+.rapdark p {
+    color: #eee;
+}
+
+ite p {
+    color: #4c4d4f;
+}
+
+.rapwhite i {
+    color: #4c4d4f;
+}
+
+.icons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 100px;
+}
+
+
+.companypic {
+    background-image: url('../img/gdpr72-bg.jpg');
+    min-height: 700px;
+}
+
+.researcherpic {
+    background-image: linear-gradient(to bottom, rgba(227, 1, 238, 0.7), rgba(255, 67, 53, 0.7)), url('../img/lake.jpg');
+    min-height: 600px;
+}
+
+.placeholderpic {
+    background-image: linear-gradient(to bottom, rgba(227, 1, 238, 0.7), rgba(255, 67, 53, 0.7)), url('../img/lake.jpg');
+    min-height: 600px;
+}
+
+.fas-dark {
+    color: #222;
+}
+
+.btn-rap {
+    background-color: #92278f;
+    color: #fff;
+    font-size: 10pt;
+    font-weight: 400;
+}
+*/
