@@ -21,6 +21,7 @@
 navlink.active {
     color: #f00;
 }
+
 .menuhalf {
     max-width: 500px;
 }
@@ -72,7 +73,6 @@ header.masthead .intro-text {
 
 /* #icons */
 
-
 .darker {
     background-color: #fffbff;
 }
@@ -84,14 +84,26 @@ header.masthead .intro-text {
     border: 0px;
 }
 
-.rapdark p { color: #eee; }
-.rapdark i { color: #eee; }
+.rapdark p {
+    color: #eee;
+}
 
-.rapwhite p { color: #4c4d4f; }
-.rapwhite i { color: #4c4d4f; }
+.rapdark i {
+    color: #eee;
+}
 
+.rapwhite p {
+    color: #4c4d4f;
+}
 
-.bg-dark p, h4, h3, i {
+.rapwhite i {
+    color: #4c4d4f;
+}
+
+.bg-dark p,
+h4,
+h3,
+i {
     color: #eee;
 }
 
@@ -102,7 +114,6 @@ header.masthead .intro-text {
 .rapdark h1 {
     color: #fff !important;
 }
-
 
 .icons {
     display: block;
@@ -121,20 +132,18 @@ header.masthead .intro-text {
     margin-left: 0;
 }
 
-.companypic { 
-    background-image: url('../img/gdpr72-bg.jpg'); 
-    min-height: 700px;	
+.companypic {
+    background-image: url('../img/gdpr72-bg.jpg');
+    min-height: 700px;
 }
 
-.researcherpic { 
-    background-image: linear-gradient(to bottom, rgba(227, 1, 238, 0.7), 
-    rgba(255, 67, 53, 0.7)), url('../img/lake.jpg'); 
+.researcherpic {
+    background-image: linear-gradient(to bottom, rgba(227, 1, 238, 0.7), rgba(255, 67, 53, 0.7)), url('../img/lake.jpg');
     min-height: 600px;
 }
 
-.placeholderpic { 
-    background-image: linear-gradient(to bottom, rgba(227, 1, 238, 0.7), 
-    rgba(255, 67, 53, 0.7)), url('../img/lake.jpg'); 
+.placeholderpic {
+    background-image: linear-gradient(to bottom, rgba(227, 1, 238, 0.7), rgba(255, 67, 53, 0.7)), url('../img/lake.jpg');
     min-height: 600px;
 }
 
@@ -157,6 +166,7 @@ header.masthead .intro-text {
 .fas-dark {
     color: #222;
 }
+
 .btn-rap {
     background-color: #92278f;
     color: #fff;
@@ -178,9 +188,13 @@ header.masthead .intro-text {
 .headerbanner {
     background-size: cover;
 }
-.headerbanner h1,h2,h3 {
+
+.headerbanner h1,
+h2,
+h3 {
     color: #fff;
 }
+
 .vulnpic-individuals {
     background-image: url("../img/vulnerable-devices-individuals.svg");
 }
@@ -200,6 +214,7 @@ header.masthead .intro-text {
 .breaches-companies {
     background-image: url("../img/data-breaches-companies.svg");
 }
+
 .assets {
     background-image: url("../img/asset-monitoring.svg");
 }
@@ -209,14 +224,13 @@ header.masthead .intro-text {
 }
 
 .connects {
-    background-image: url('../img/badrap-connects.svg'); 
+    background-image: url('../img/badrap-connects.svg');
     margin-top: auto;
     margin-bottom: auto;
- 
 }
 
 .badrap-researcher {
-    background-image: url('../img/badrap-researchers.svg'); 
+    background-image: url('../img/badrap-researchers.svg');
 }
 
 /* #endcontent */
@@ -244,16 +258,17 @@ aside#contact.banner {
 /* #global */
 
 section.anchor {
-    padding-top: 0px; 
+    padding-top: 0px;
 }
+
 section {
     padding-top: 0;
-
 }
 
 .space {
     min-height: 70vh;
 }
+
 body,
 h1,
 h2,
@@ -278,13 +293,19 @@ h1 {
     margin-top: 20px;
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.lightbg h2, h3, h4, h5 {
+.lightbg h2,
+h3,
+h4,
+h5 {
     color: #222;
 }
 
@@ -292,7 +313,9 @@ button {
     margin-left: 20px;
     margin-right: 20px;
 }
-.rapdark h3, li {
+
+.rapdark h3,
+li {
     color: #fff;
 }
 
@@ -303,7 +326,6 @@ p {
     padding-right: 20px;
 }
 
-
 .btn {
     font-weight: 400;
 }
@@ -312,9 +334,11 @@ table {
     margin-left: 20px;
     margin-right: 20px;
 }
+
 th {
     font-weight: 400;
 }
+
 a {
     color: #80217e
 }
@@ -322,10 +346,10 @@ a {
 p.dark {
     color: #4c4d4f;
 }
+
 p.white {
     color: white;
 }
-
 
 /* #endglobal */
 
