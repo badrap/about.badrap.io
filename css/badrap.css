@@ -40,7 +40,6 @@ header.masthead .intro-text {
 }
 
 .intro-lead-in h1 {
-    font-weight: 800;
     color: #80217e;
     font-size: 26pt;
     text-transform: uppercase;
@@ -107,7 +106,6 @@ header.masthead .intro-text {
 
 .network-name {
     text-transform: uppercase;
-    font-weight: 400;
     letter-spacing: 2px;
     font-size: 10pt;
 }
