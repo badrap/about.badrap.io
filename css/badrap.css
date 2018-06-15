@@ -1,5 +1,9 @@
 /* #nav */
 
+#mainNav {
+    background-color: transparent;
+}
+
 #mainNav .navbar-nav .nav-item .nav-link {
     color: black;
     font-size: 8pt;
@@ -16,6 +20,36 @@
     padding-top: 0;
     padding-bottom: 0;
     background-color: #f6f6f6;
+    transition: all 0.3s;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #1c2022;
+}
+
+a:hover {
+    color: #80217e;
+}
+
+#mainNav a {
+    text-decoration: none;
+}
+
+#mainNav .navbar-toggler {
+    background-color: #1c2022;
+}
+
+#mainNav {
+    background-color: transparent;
+}
+
+.navbar-inner {
+    background-color: transparent;
+}
+
+.navbar-brand {
+    margin-left: 25px;
 }
 
 /* #endnav */
@@ -35,10 +69,6 @@ header.masthead .intro-text {
     padding-bottom: 20px;
 }
 
-.intro-lead-in {
-    padding-top: 90px;
-}
-
 .intro-lead-in h1 {
     color: #80217e;
     font-size: 26pt;
@@ -52,7 +82,7 @@ header.masthead .intro-text {
     color: black;
     font-size: 12pt;
     font-style: normal;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     justify-items: left;
 }
 
@@ -190,6 +220,10 @@ li {
     color: #fff;
 }
 
+.fa-heart {
+    color: #d53ad1;
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
@@ -211,12 +245,18 @@ th {
 }
 
 a {
-    color: #80217e
+    color: #80217e;
+    text-decoration: underline;
+}
+
+a.btn {
+    text-decoration: none;
 }
 
 #team {
     padding-bottom: 0;
 }
+
 /* #endglobal */
 
 /* #scale */
@@ -224,7 +264,7 @@ a {
 @media (min-width: 2000px) {
     header.masthead {
         background-position-x: 80%;
-        background-size: 35%;
+        background-size: 33%;
     }
 }
 
@@ -245,7 +285,7 @@ a {
 @media (min-width: 1400px) and (max-width: 1599px) {
     header.masthead {
         background-position-x: 100%;
-        background-size: 52%;
+        background-size: 50%;
     }
 }
 
