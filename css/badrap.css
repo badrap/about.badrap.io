@@ -1,0 +1,417 @@
+/* #nav */
+
+#mainNav {
+    background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    color: black;
+    font-size: 8pt;
+}
+
+#mainNav img {
+    padding-right: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 50px;
+}
+
+#mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #f6f6f6;
+    transition: all 0.3s;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #1c2022;
+}
+
+a:hover {
+    color: #80217e;
+}
+
+#mainNav a {
+    text-decoration: none;
+}
+
+#mainNav .navbar-toggler {
+    background-color: #1c2022;
+}
+
+#mainNav {
+    background-color: transparent;
+}
+
+.navbar-inner {
+    background-color: transparent;
+}
+
+.navbar-brand {
+    margin-left: 25px;
+}
+
+/* #endnav */
+
+/* #header */
+
+header.masthead {
+    background-image: url("../img/cartoon.jpg");
+    background-size: 40;
+    background-position-x: 100%;
+    background-position-y: 100%;
+    text-align: left;
+}
+
+header.masthead .intro-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.intro-lead-in h1 {
+    color: #80217e;
+    font-size: 26pt;
+    text-transform: uppercase;
+    font-style: normal;
+    margin-top: 50px;
+    justify-items: left;
+}
+
+.intro-lead-in p {
+    color: black;
+    font-size: 12pt;
+    font-style: normal;
+    margin-bottom: 0px;
+    justify-items: left;
+}
+
+/* #endheder */
+
+/* #icons */
+
+.rapdark {
+    background-color: #1c2022;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 0px;
+}
+
+.rapborder {
+    border-style: solid;
+    border-width: 0px;
+    border-right-width: 0.5px;
+    border-color: #999;
+    margin-left: 0;
+}
+
+.tag {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+
+/* #endicons*/
+
+/* #content */
+
+.illustrate {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-height: 400px;
+}
+
+.connects {
+    background-image: url('../img/badrap-connects.svg');
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* #endcontent */
+
+/* #contactbanner */
+
+.network-name {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10pt;
+}
+
+aside {
+    background-color: #f8f8f8;
+}
+
+aside#contact.banner {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* #endcontactbanner */
+
+/* #global */
+
+section.anchor {
+    padding-top: 0px;
+}
+
+section {
+    padding-top: 0;
+}
+
+.space {
+    min-height: 70vh;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 26pt;
+    text-transform: uppercase;
+    font-style: normal;
+    justify-items: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.rapwhite h1 {
+    color: #80217e;
+}
+
+.rapwhite p {
+    color: #4c4d4f !important;
+}
+
+.rapdark h1,
+p,
+i {
+    color: #fff;
+}
+
+button {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.rapdark h3,
+li {
+    color: #fff;
+}
+
+.fa-heart {
+    color: #d53ad1;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn {
+    font-weight: 400;
+}
+
+table {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+th {
+    font-weight: 400;
+}
+
+a {
+    color: #80217e;
+    text-decoration: underline;
+}
+
+a.btn {
+    text-decoration: none;
+}
+
+#team {
+    padding-bottom: 0;
+}
+
+/* #endglobal */
+
+/* #scale */
+
+@media (min-width: 2000px) {
+    header.masthead {
+        background-position-x: 80%;
+        background-size: 33%;
+    }
+}
+
+@media (min-width: 1800px) and (max-width: 1999px) {
+    header.masthead {
+        background-position-x: 85%;
+        background-size: 40%;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1799px) {
+    header.masthead {
+        background-position-x: 90%;
+        background-size: 45%;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1599px) {
+    header.masthead {
+        background-position-x: 100%;
+        background-size: 50%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    header.masthead {
+        background-position-x: 100%;
+        background-size: 55%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    header.masthead {
+        background-position-x: 100%;
+        background-size: 65%;
+    }
+}
+
+@media (max-width: 992px) {
+    header.masthead {
+        background-image: none;
+    }
+}
+
+/* To be used later
+
+.menuhalf {
+    max-width: 500px;
+}
+
+.menuspace {
+    width: 50%;
+}
+
+
+.headerbanner {
+    background-size: cover;
+}
+
+.headerbanner h1,
+h2,
+h3 {
+    color: #fff;
+}
+
+navlink.active {
+    color: #f00;
+}
+
+.vulnpic-individuals {
+    background-image: url("../img/vulnerable-devices-individuals.svg");
+}
+
+.vulnpic-companies {
+    background-image: url("../img/vulnerable-devices-companies.svg");
+}
+
+.breaches-individuals {
+    background-image: url("../img/data-breaches-individuals.svg");
+}
+
+.leaks-individuals {
+    background-image: url("../img/data-breaches-individuals.svg");
+}
+
+.breaches-companies {
+    background-image: url("../img/data-breaches-companies.svg");
+}
+
+.assets {
+    background-image: url("../img/asset-monitoring.svg");
+}
+
+.gdpr72h {
+    background-image: url("../img/gdpr72-logo.svg");
+}
+
+
+.badrap-researcher {
+    background-image: url('../img/badrap-researchers.svg');
+}
+
+.rapdark p {
+    color: #eee;
+}
+
+ite p {
+    color: #4c4d4f;
+}
+
+.rapwhite i {
+    color: #4c4d4f;
+}
+
+.icons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 100px;
+}
+
+
+.companypic {
+    background-image: url('../img/gdpr72-bg.jpg');
+    min-height: 700px;
+}
+
+.researcherpic {
+    background-image: linear-gradient(to bottom, rgba(227, 1, 238, 0.7), rgba(255, 67, 53, 0.7)), url('../img/lake.jpg');
+    min-height: 600px;
+}
+
+.placeholderpic {
+    background-image: linear-gradient(to bottom, rgba(227, 1, 238, 0.7), rgba(255, 67, 53, 0.7)), url('../img/lake.jpg');
+    min-height: 600px;
+}
+
+.fas-dark {
+    color: #222;
+}
+
+.btn-rap {
+    background-color: #92278f;
+    color: #fff;
+    font-size: 10pt;
+    font-weight: 400;
+}
+*/
