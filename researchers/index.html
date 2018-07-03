@@ -17,7 +17,7 @@ researchers:
         Established in 2004, The Shadowserver Foundation gathers intelligence on the 
         darker side of the internet. We are comprised of volunteer security professionals 
         from around the world. Our mission is to understand and help put a stop to high 
-        stakes cybercrime in the information age.<br><br>
+        stakes cybercrime in the information age.
         ShadowServer reports are available in select countries.
 
     links:
@@ -27,19 +27,27 @@ researchers:
   - name: FitSec
     logo: fitsec.png
     description: >
-        Fitsec provides customized security solutions ranging from 
+        <a href="http://www.fitsec.fi/index_en.html"  target="_blank">Fitsec</a> provides 
+        customised security solutions ranging from 
         penetration testing to hardware-based safety solutions. Among them, 
-        they provide awesome threat intelligence to keep companies and individuals aware of dangers. 
-        Fitsec provides their feeds free for individual victims. 
-        For enterprises they provide larger datasets for a price.
+        we provide threat intelligence feed to keep companies and individuals aware of malicious
+        activity in their networks. Our feeds are free for individual victims via Badrap. 
+        Enterprises can subscribe to our feeds for a price.
     links:
         linkedin: https://www.linkedin.com/company/fitsec-ltd
         web: https://www.fitsec.fi
   - name: Telia Darknet
     description: >
-        Telia Darknet is based on the great MSc thesis work by Markku Parviainen. 
-        Darknet catches machines that are scanning the network. Telia Darknet catches
-        infected computers by recording connection attempts to unused IP-addresses. 
+        Telia in Finland protects their customers with the help of their Darknet and NCSC-FI's 
+        <a href="https://www.viestintavirasto.fi/kyberturvallisuus/viestintavirastontietoturvapalvelut/havainnointijaavunanto/autoreporter.html"
+        target="_blank">
+        Autoreporter</a>
+        service. The Darknet is based on the 
+        <a href="https://tietoturva.fi/yhdistyksentoiminta/opinnaeytetyoekilpailu/aikaisemmat-opinnaeytetyoekilpailujen-voittajat/43-opinnaeytetyoekilpailun-voittajat-2010"
+        target="_blank">
+        great MSc thesis work</a> by Markku Parviainen. Telia Darknet catches
+        infected computers by recording connection attempts to unused IP-addresses. Only a fraction of our
+        findings is about our customers. That is why we offer our data for others to use and keep people secure.
     links:
         linkedin: https://fi.linkedin.com/in/markku-parviainen
         web: https://www.tietoturva.fi/yhdistyksentoiminta/opinnaeytetyoekilpailu/aikaisemmat-opinnaeytetyoekilpailujen-voittajat/43-opinnaeytetyoekilpailun-voittajat-2010
@@ -51,38 +59,37 @@ researchers:
         web: http://sicherheitstacho.eu/start/main
     description: >
         In the last couple of years, we at Deutsche Telekom’s honeypot project have 
-        setup several honeypots in our home networks, Telekom’s access networks and 
+        set up several honeypots in our home networks, Telekom’s access networks and 
         at partner locations all around the globe. The data gathered by those honeypots 
-        is a core component for our Early Warning System and feeds the data for the 
-        Sicherheitstacho / Securitydashboard.
+        is a core component of our Early Warning System and feeds the data for the 
+        <a href="http://sicherheitstacho.eu" target="_blank">Sicherheitstacho</a> security dashboard.
 ---
 
 {% for researcher in page.researchers %}
 <div class="container rapwhite">
-    <div class="row">
-        <h1>{{researcher.name}}</h1>
-    </div>
+
     <div class="row py-4 px-3">
-        <div class="tint column col-md-3 d-flex align-items-center justify-content-center">
+        <div class="circle column col-md-3 d-flex align-items-center justify-content-center">
             {% if researcher.logo %}
-            <img src="{{researcher.logo}}" alt="logo" width="100%"> 
-            {% else %}
+            <img src="{{researcher.logo}}" alt="logo" width="100%"> {% else %}
             <i class="fas fa-user-alt fa-8x" style="color: #222;"></i>
             {% endif %}
         </div>
 
-        <div class="column col-md-7 d-flex align-items-center">
+        <div class="column col-md-7 align-items-center">
+            <h1>{{researcher.name}}</h1>
+
             <p class="py-2"> {{researcher.description}} </p>
         </div>
         <div class="column col-md-2 d-flex align-items-center">
             <ul class="list-inline banner-social-buttons">
-                    {% if researcher.links.web %}
-                    <li class="list-inline-item">
-                        <a href="{{researcher.links.web}}" class="btn btn-secondary btn-md">
-                         <span class="network-name">W</span>
-                        </a>
-                    </li>
-                    {% endif %}
+                {% if researcher.links.web %}
+                <li class="list-inline-item py-1">
+                    <a href="{{researcher.links.web}}" class="btn btn-secondary btn-md">
+                        <span class="network-name">W</span>
+                    </a>
+                </li>
+                {% endif %}
                 {% if researcher.links.twitter %}
                 <li class="list-inline-item py-1">
                     <a href="{{researcher.links.twitter}}" class="btn btn-secondary btn-md">
@@ -91,14 +98,14 @@ researchers:
                 </li>
                 {% endif %}
                 {% if researcher.links.github %}
-                <li class="list-inline-item">
+                <li class="list-inline-item py-1">
                     <a href="{{researcher.links.github}}" class="btn btn-secondary btn-md">
                         <i class="fab fa-github fa-fw"></i>
                     </a>
                 </li>
                 {% endif %}
                 {% if researcher.links.linkedin %}
-                <li class="list-inline-item">
+                <li class="list-inline-item py-1">
                     <a href="{{researcher.links.linkedin}}" class="btn btn-secondary btn-md">
                         <i class="fab fa-linkedin fa-fw"></i>
                     </a>
@@ -109,4 +116,3 @@ researchers:
     </div>
 </div>
 {% endfor %}
-</pre>
