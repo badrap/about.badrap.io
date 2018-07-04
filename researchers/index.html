@@ -6,7 +6,7 @@ ogurl: http://www.badrap.io/
 ogimage: http://www.badrap.io/img/social-opengraph.jpg
 twittercard: summary_large_image
 twitter: "@BadRapIO"
-styles: 
+styles:
   - /vendor/agency/css/agency.min.css
   - /css/badrap.css
   - researchers.css
@@ -14,9 +14,9 @@ researchers:
   - name: ShadowServer Foundation
     logo: shadowserver.png
     description: >
-        Established in 2004, The Shadowserver Foundation gathers intelligence on the 
-        darker side of the internet. We are comprised of volunteer security professionals 
-        from around the world. Our mission is to understand and help put a stop to high 
+        Established in 2004, The Shadowserver Foundation gathers intelligence on the
+        darker side of the internet. We are comprised of volunteer security professionals
+        from around the world. Our mission is to understand and help put a stop to high
         stakes cybercrime in the information age.
         ShadowServer reports are available in select countries.
 
@@ -27,48 +27,80 @@ researchers:
   - name: FitSec
     logo: fitsec.png
     description: >
-        <a href="http://www.fitsec.fi/index_en.html"  target="_blank">Fitsec</a> provides 
-        customised security solutions ranging from 
-        penetration testing to hardware-based safety solutions. Among them, 
+        <a href="http://www.fitsec.fi/index_en.html" target="_blank">Fitsec</a> provides
+        customised security solutions ranging from
+        penetration testing to hardware-based safety solutions. Among them,
         we provide threat intelligence feed to keep companies and individuals aware of malicious
-        activity in their networks. Our feeds are free for individual victims via Badrap. 
+        activity in their networks. Our feeds are free for individual victims via Badrap.
         Enterprises can subscribe to our feeds for a price.
     links:
         linkedin: https://www.linkedin.com/company/fitsec-ltd
         web: https://www.fitsec.fi
   - name: Telia Darknet
     description: >
-        Telia in Finland protects their customers with the help of their Darknet and NCSC-FI's 
+        We protect our customers with the help of our Darknet and NCSC-FI's
         <a href="https://www.viestintavirasto.fi/kyberturvallisuus/viestintavirastontietoturvapalvelut/havainnointijaavunanto/autoreporter.html"
+        target="_blank">Autoreporter</a> service. Microsoft has referred to our work as
+        <a href="https://cloudblogs.microsoft.com/microsoftsecure/2012/03/07/teliasonera-finlands-secret-for-a-secure-internet/"
         target="_blank">
-        Autoreporter</a>
-        service. The Darknet is based on the 
+        Finland’s Secret for a Secure Internet</a>.
+        The Darknet is based on the
         <a href="https://tietoturva.fi/yhdistyksentoiminta/opinnaeytetyoekilpailu/aikaisemmat-opinnaeytetyoekilpailujen-voittajat/43-opinnaeytetyoekilpailun-voittajat-2010"
         target="_blank">
-        great MSc thesis work</a> by Markku Parviainen. Telia Darknet catches
+        great MSc thesis work</a> by Markku Parviainen. Our Darknet catches
         infected computers by recording connection attempts to unused IP-addresses. Only a fraction of our
-        findings is about our customers. That is why we offer our data for others to use and keep people secure.
+        findings is about our customers. That is why we offer our darknet data for others to use and keep people secure.
     links:
         linkedin: https://fi.linkedin.com/in/markku-parviainen
         web: https://www.tietoturva.fi/yhdistyksentoiminta/opinnaeytetyoekilpailu/aikaisemmat-opinnaeytetyoekilpailujen-voittajat/43-opinnaeytetyoekilpailun-voittajat-2010
   - name: Deutsche Telecom Honeypot Project
     logo: sicherheitstacho.png
-    description: 
-    links: 
+    description:
+    links:
         github: https://github.com/dtag-dev-sec/
         web: http://sicherheitstacho.eu/start/main
     description: >
-        In the last couple of years, we at Deutsche Telekom’s honeypot project have 
-        set up several honeypots in our home networks, Telekom’s access networks and 
-        at partner locations all around the globe. The data gathered by those honeypots 
-        is a core component of our Early Warning System and feeds the data for the 
+        In the last couple of years, we at Deutsche Telekom’s honeypot project have
+        set up several honeypots in our home networks, Telekom’s access networks and
+        at partner locations all around the globe. The data gathered by those honeypots
+        is a core component of our Early Warning System and feeds the data for the
         <a href="http://sicherheitstacho.eu" target="_blank">Sicherheitstacho</a> security dashboard.
 ---
+<div class="container-fluid researcher rapdark">
+    <div class="row ">
+        <div class="column  col-md-3">
+            <h1>Badrap Security Researchers</h1>
+        </div>
+    </div>
+</div>
+<div class="containerf-fluid rapwhite" style="background-color: #f6f6f6;">
+    <div class="row py-5 justify-content-center">
+        <div class="column col-md-9">
+            <h1 class="text-center">Become a Badrap Security Researcher</h1>
+            <p class="text-center">
+            Do you scan the net and have tons of trivial issues, but no good way to reach the
+            victims? Do you monitor the dark corners of the Internet, and discover stolen data?
+            Join to the Badrap security researcher community. Get a profile page and share the data
+            you have. Offer your feeds for free or work only for bounties.
+            Serve individuals and enterprises. Sign up and start building your reputation today. </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEiku2UKg4OQxl0hBfzVuUHOk_ZeE4ygpx40gdLv2NaP6Amw/viewform?usp=sf_link">
+            <button type="button" class="btn btn-rap">Sign Up!</button>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container rapwhite">
+    <div class="row pt-5 justify-content-center">
+        <div class="column col-md-12">
+            <h1 class="text-center">Early adopters</h1>
+        </div>
+    </div>
+</div>
 
 {% for researcher in page.researchers %}
-<div class="container rapwhite">
+<div class="container-fluid rapwhite">
 
-    <div class="row py-4 px-3">
+    <div class="row resercherrow pb-5 px-3">
         <div class="circle column col-md-3 d-flex align-items-center justify-content-center">
             {% if researcher.logo %}
             <img src="{{researcher.logo}}" alt="logo" width="100%"> {% else %}
@@ -76,8 +108,8 @@ researchers:
             {% endif %}
         </div>
 
-        <div class="column col-md-7 align-items-center">
-            <h1>{{researcher.name}}</h1>
+        <div class="column col-md-7 justify-content-center align-items-center">
+            <h2>{{researcher.name}}</h2>
 
             <p class="py-2"> {{researcher.description}} </p>
         </div>
