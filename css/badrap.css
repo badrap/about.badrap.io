@@ -182,9 +182,10 @@ h1 {
     text-transform: uppercase;
     font-style: normal;
     justify-items: left;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-right: 20px;
     margin-top: 20px;
+    color: #80217e;
 }
 
 h2,
@@ -196,17 +197,12 @@ h5 {
     padding-right: 20px;
 }
 
-.rapwhite h1 {
-    color: #80217e;
-}
 
 .rapwhite p {
     color: #4c4d4f !important;
 }
 
-.rapdark h1,
-p,
-i {
+.rapdark h1, .rapdark p, .rapdark i, .rapdark li {
     color: #fff;
 }
 
@@ -215,13 +211,8 @@ button {
     margin-right: 20px;
 }
 
-.rapdark h3,
-li {
-    color: #fff;
-}
-
 .fa-heart {
-    color: #d53ad1;
+    color: #d53ad1 !important;
 }
 
 p {
