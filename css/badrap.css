@@ -202,7 +202,7 @@ h5 {
     color: #4c4d4f !important;
 }
 
-.rapdark h1, .rapdark p, .rapdark i, .rapdark li {
+.rapdark h1, .rapdark h2, .rapdark h3, .rapdark p, .rapdark i, .rapdark li {
     color: #fff;
 }
 
