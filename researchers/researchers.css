@@ -31,7 +31,11 @@ h1 {
     img {
         width: 50%;
     }
-    .resercherrow {
-        background: #f6f6f6;
+}
+
+@media(max-width:576px) {
+    .researcher h1 {
+        font-size: 30pt !important;
+        font-weight: 600;
     }
 }
