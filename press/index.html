@@ -15,7 +15,7 @@ published:
 
     {% for file in site.posts %}
     <div class="column col-md-4">
-      <a href="{{file.url}}">{{file.title}}</a>
+      <a href="{{file.url}}">({{file.lang}}) - {{file.title}}</a>
     </div>
     <div class="column col-md-8">
      {{file.short}}
