@@ -1,0 +1,17 @@
+.press {
+    min-height: 50vh;
+    background-image: url('press.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 40%;
+}
+
+.press h1 {
+    font-size: 50pt !important;
+    font-weight: 600;
+}
+
+.thumbnail {
+    max-height: 100%;
+    max-width: 100%;
+}
