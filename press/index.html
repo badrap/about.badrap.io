@@ -1,65 +1,92 @@
 ---
-layout: press
+layout: page
 title: Press
 styles:
   - /vendor/agency/css/agency.min.css
   - /css/badrap.css
-published:
-  - 2018-03-22-mdns.md
+  - custom.css
+
+assets:
+  - name: Logo
+    thumbnail: badrap-logo.svg
+    description: PNG-version with dark background to shows how letter b goes over the painted area.
+    assetlist:
+      - PNG:
+        name: PNG
+        link: badrap-logo.png
+      - PDF:
+        name: PDF
+        link: badrap-logo.pdf
+      - PDF (Black):
+        name: PDF (Black)
+        link: badrap-logo-black.pdf
+      - SVG:
+        name: SVG
+        link: badrap-logo.svg
+  - name: Netizen
+    thumbnail: cartoon.jpg
+    description: We use this image when talking about individuals who keep themselves safe.
+    assetlist:
+      - JPG:
+        name: JPG
+        link: cartoon.jpg
+
+
 ---
-
-<h1> Press Releases </h1>
-
-<div class="container">
-  <div class="row pb-5">
-
-    {% for file in site.posts %}
-    <div class="column col-md-4">
-      <a href="{{file.url}}">({{file.lang}}) - {{file.title}}</a>
-    </div>
-    <div class="column col-md-8">
-     {{file.short}}
-    </div>
-    {% endfor %}
+<div class="container-fluid press rapdark">
+  <div class="row ">
+      <div class="column  col-md-3">
+        <h1> Press </h1>
+      </div>
   </div>
 </div>
 
-<h1> Assets </h1>
+<div class="container-fluid rapgray">
+  <div class="container">
+    <div class="row py-5">
+      <div class="column">
+        <h1> Press Releases </h1>
+      </div>
+    </div>
+    <div class="row pb-5">
+      {% for file in site.posts %}
+      <div class="column col-md-4">
+        <a href="{{file.url}}">({{file.lang}}) - {{file.title}}</a>
+      </div>
+      <div class="column col-md-8">
+        {{file.short}}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
 
 <div class="container">
+  <div class="row">
+    <h1> Assets </h1>
+  </div>
+  {% for asset in page.assets %}
+
   <div class="row py-5">
-    <div class="column col-md-4">
-      <img src="badrap-logo.svg" height="200px">
+    <div class="column col-md-4 col-6 order-md-1 order-2 d-flex align-items-center justify-content-center">
+      <img class="thumbnail" src="{{asset.thumbnail}}">
     </div>
 
-    <div class="column col-md-6">
-      <h2>Logo</h2>
+    <div class="column col-md-6 col-12 order-md-2 order-1">
+      <h2>{{asset.name}}</h2>
       <p>
-        PNG-version with dark background to shows how letter b goes over the painted area.
+        {{asset.description}}
       </p>
     </div>
 
-    <div class="column col-md-2 d-flex align-items-center justify-content-center">
+    <div class="column col-md-2 col-6 order-md-3 order-3 d-flex align-items-center justify-content-center">
       <ul>
-        <li> <a href="badrap-logo.png"> PNG </a></li>
-        <li> <a href="badrap-logo.pdf"> PDF </a></li>
-        <li> <a href="badrap-logo-black.pdf"> PDF </a> Black </li>
-        <li> <a href="badrap-logo.svg"> SVG </a></li>
+          {% for assetitem in asset.assetlist %}
+          <li> <a href="{{assetitem.link}}"> {{assetitem.name}} </a></li>
+          {%endfor%}
+
       </ul>
     </div>
   </div>
-  <div class="row py-5">
-    <div class="column col-md-4">
-        <img src="cartoon.jpg" height="200px">
-    </div>
-    <div class="column col-md-6">
-      <h2> Netizen</h2>
-      <p>
-        We use this image when talking about individuals who keep themselves safe.
-      </p>
-    </div>
-    <div class="column col-md-2 d-flex align-items-center justify-content-center">
-        <li> <a href="cartoon.jpg"> JPG </a></li>
-    </div>
-  </div>
+  {%endfor%}
 </div>
