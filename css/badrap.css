@@ -271,6 +271,9 @@ a.btn {
     padding-bottom: 0;
 }
 
+.icon {
+    width: 200px;
+}
 /* #endglobal */
 
 /* #scale */
@@ -321,8 +324,14 @@ a.btn {
     header.masthead {
         background-image: none;
     }
+
 }
 
+@media (max-width: 767px) {
+    .icon {
+        width: 125px;
+    }
+}
 /* To be used later
 
 .menuhalf {
