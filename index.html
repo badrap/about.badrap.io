@@ -6,7 +6,7 @@ ogurl: http://www.badrap.io/
 ogimage: http://www.badrap.io/img/social-opengraph.jpg
 twittercard: summary_large_image
 twitter: "@BadRapIO"
-styles: 
+styles:
   - vendor/agency/css/agency.min.css
   - css/badrap.css
 ---
@@ -22,8 +22,8 @@ styles:
                             Society and individuals need safety to progress and prosper. Regular people need
                             help with their cyber security, and we see security experts
                             with information and ability to help. We are creating
-                            a place for them to meet and share security information. We 
-                            <a href="https://testaaverkkosi.fi">opened in Finland</a> and are working to 
+                            a place for them to meet and share security information. We
+                            <a id="go-to-testaaverkkosi" href="https://testaaverkkosi.fi">opened in Finland</a> and are working to
                             go global.
 
                             <br>
@@ -36,8 +36,18 @@ styles:
     </div>
 </header>
 
-<div class="container-fluid rapdark">
+<div class="container-fluid rapdark" id="ecosystem">
     <div class="row my-0 justify-content-center">
+        <div class="col-md-4 col-sm-6 mx-auto text-center rapborder">
+            <a class="js-scroll-trigger" href="#researchers">
+            <p class="tag" id="go-to-security-researchers-short"> Security Researchers </p>
+            </a>
+            <i class="fas fa-user-ninja fa-5x py-3"></i>
+            <br>
+            <i class="fas fa-heart fa-2x"></i>
+            </p>
+            <p class="tag">Companies and individuals</p>
+        </div>
         <div class="col-md-4 mx-auto text-center rapborder">
             <p class="tag">Individuals</p>
 
@@ -49,30 +59,20 @@ styles:
 
         </div>
 
-        <div class="col-md-4 col-sm-6 mx-auto text-center rapborder">
-            <p class="tag">Companies</p>
-
-            <i class="fas fa-handshake fa-5x py-3"></i>
-            <br>
-            <i class="fas fa-heart fa-2x"></i>
-            </p>
-            <p class="tag">Security Researchers and individuals</p>
-
-        </div>
-
         <div class="col-md-4 col-sm-6 mx-auto text-center">
-            <p class="tag">Security Researchers</p>
-            <i class="fas fa-user-ninja fa-5x py-3"></i>
-            <br>
-            <i class="fas fa-heart fa-2x"></i>
-            </p>
-            <p class="tag">Companies and individuals</p>
+                <p class="tag">Companies</p>
 
-        </div>
+                <i class="fas fa-handshake fa-5x py-3"></i>
+                <br>
+                <i class="fas fa-heart fa-2x"></i>
+                </p>
+                <p class="tag">Security Researchers and individuals</p>
+            </div>
     </div>
 </div>
+</div>
 
-<div class="container-fluid rapwhite">
+<div class="container-fluid py-5 px-5">
     <div class="row space">
 
         <div class="col-md-6 illustrate connects order-md-1 order-sm-2 order-2"></div>
@@ -92,5 +92,7 @@ styles:
         </div>
     </div>
 </div>
+
+{% include frontpage-researchers.html %}
 
 {% include frontpage-team.html %}

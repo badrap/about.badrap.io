@@ -117,6 +117,13 @@ header.masthead .intro-text {
 
 /* #content */
 
+.rapgray {
+    background-color: #f6f6f6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 0px;
+}
+
 .illustrate {
     background-size: contain;
     background-repeat: no-repeat;
@@ -159,6 +166,7 @@ section.anchor {
 
 section {
     padding-top: 0;
+    padding-bottom: 0;
 }
 
 .space {
@@ -202,15 +210,27 @@ h5 {
     color: #4c4d4f !important;
 }
 
-.rapdark h1, .rapdark p, .rapdark i, .rapdark li {
+.rapdark h1, .rapdark h2, .rapdark h3, .rapdark p, .rapdark i, .rapdark li {
     color: #fff;
 }
 
+.rapwhite h1 {
+    color: #80217e;
+}
+.rapwhite h2, .rapwhite h3, .rapwhite p {
+    color: #1c2022;
+}
 button {
     margin-left: 20px;
     margin-right: 20px;
 }
 
+.btn-rap {
+    background-color: #92278f;
+    color: #fff;
+    font-size: 10pt;
+    font-weight: 400;
+}
 .fa-heart {
     color: #d53ad1 !important;
 }
@@ -240,6 +260,9 @@ a {
     text-decoration: underline;
 }
 
+#ecosystem a  {
+    color: #fff !important;
+}
 a.btn {
     text-decoration: none;
 }
@@ -248,6 +271,9 @@ a.btn {
     padding-bottom: 0;
 }
 
+.icon {
+    width: 200px;
+}
 /* #endglobal */
 
 /* #scale */
@@ -298,8 +324,14 @@ a.btn {
     header.masthead {
         background-image: none;
     }
+
 }
 
+@media (max-width: 767px) {
+    .icon {
+        width: 125px;
+    }
+}
 /* To be used later
 
 .menuhalf {
@@ -399,10 +431,4 @@ ite p {
     color: #222;
 }
 
-.btn-rap {
-    background-color: #92278f;
-    color: #fff;
-    font-size: 10pt;
-    font-weight: 400;
-}
 */
