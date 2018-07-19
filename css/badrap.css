@@ -28,13 +28,14 @@
     color: #1c2022;
 }
 
-a:hover {
+#mainNav a:hover {
     color: #80217e;
 }
 
 #mainNav a {
     text-decoration: none;
 }
+
 
 #mainNav .navbar-toggler {
     background-color: #1c2022;
@@ -190,8 +191,6 @@ h1 {
     text-transform: uppercase;
     font-style: normal;
     justify-items: left;
-    padding-left: 15px;
-    padding-right: 20px;
     margin-top: 20px;
     color: #80217e;
 }
@@ -201,8 +200,6 @@ h3,
 h4,
 h5 {
     padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 
@@ -220,17 +217,19 @@ h5 {
 .rapwhite h2, .rapwhite h3, .rapwhite p {
     color: #1c2022;
 }
-button {
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
 .btn-rap {
     background-color: #92278f;
     color: #fff;
     font-size: 10pt;
-    font-weight: 400;
 }
+
+a.btn-rap:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #81167e;
+}
+
 .fa-heart {
     color: #d53ad1 !important;
 }
@@ -238,14 +237,10 @@ button {
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
-    padding-left: 20px;
-    padding-right: 20px;
 }
-
 .btn {
     font-weight: 400;
 }
-
 table {
     margin-left: 20px;
     margin-right: 20px;
@@ -275,6 +270,10 @@ a.btn {
     width: 200px;
 }
 
+.column {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 /* #endglobal */
 
 /* #scale */
