@@ -1,55 +1,36 @@
 /* #nav */
-
 #mainNav {
-    background-color: transparent;
+    background-color: rgba(255,255,255,0.95);
+}
+#mainNav .nav .nav-item .nav-link {
+    color: black;
+    font-size: 9pt;
 }
 
-#mainNav .navbar-nav .nav-item .nav-link {
-    color: black;
-    font-size: 8pt;
+
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #f0f0f0 !important;
+  color: #80217e !important;
 }
+
 
 #mainNav img {
     padding-right: 50px;
-    padding-top: 0px;
-    padding-bottom: 0px;
     margin-right: 50px;
-}
-
-#mainNav.navbar-shrink {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: #f6f6f6;
-    transition: all 0.3s;
-}
-
-#mainNav .navbar-nav .nav-item .nav-link.active,
-#mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #1c2022;
-}
-
-a:hover {
-    color: #80217e;
+    height: 60px;
 }
 
 #mainNav a {
     text-decoration: none;
 }
 
-#mainNav .navbar-toggler {
-    background-color: #1c2022;
+#mainNav .nav-link:hover {
+    color: #92278f;
 }
-
-#mainNav {
-    background-color: transparent;
-}
-
-.navbar-inner {
-    background-color: transparent;
-}
-
-.navbar-brand {
-    margin-left: 25px;
+#mainNav.navbar-shrink {
+    background-color: rgba(246,246,246,0.99);
 }
 
 /* #endnav */
@@ -118,7 +99,7 @@ header.masthead .intro-text {
 /* #content */
 
 .rapgray {
-    background-color: #f6f6f6;
+    background-color: #fffaff;
     padding-top: 30px;
     padding-bottom: 30px;
     border: 0px;
