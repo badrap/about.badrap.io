@@ -1,7 +1,7 @@
 
 
 .companies {
-    min-height: 60vh;
+    min-height: 75vh;
     background-image: url('companies.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,6 +13,11 @@
     font-weight: 600;
 }
 
+.illustrate img {
+    max-width: 400px;
+    vertical-align: middle;
+
+}
 h1 {
     justify-items: center;
 }
