@@ -317,9 +317,12 @@ a.btn {
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .icon {
         width: 125px;
+    }
+    .rapborder {
+        border-right-width: 0px;
     }
 }
 /* To be used later
