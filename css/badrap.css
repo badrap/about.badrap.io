@@ -92,8 +92,13 @@ header.masthead .intro-text {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 10pt;
+    line-height: 1.4em;
 }
 
+.tag em {
+    color: #d53ad1;
+    font-style: normal;
+}
 /* #endicons*/
 
 /* #content */

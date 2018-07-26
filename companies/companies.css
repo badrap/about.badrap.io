@@ -18,8 +18,21 @@
     vertical-align: middle;
 
 }
+
 h1 {
     justify-items: center;
+}
+
+.large {
+    font-size: 25px;
+}
+
+.rapdark blockquote {
+    color: #f6f6f6;
+}
+
+.rapdark a {
+    color: #f6f6f6;
 }
 @media(max-width:767px) {
     li {
