@@ -7,14 +7,14 @@
     font-size: 9pt;
 }
 
-
-
+#mainNav .navbar-toggler {
+    background-color: #92278f;
+}
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background-color: #f0f0f0 !important;
   color: #80217e !important;
 }
-
 
 #mainNav img {
     padding-right: 50px;
