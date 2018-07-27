@@ -1,55 +1,36 @@
 /* #nav */
-
 #mainNav {
-    background-color: transparent;
+    background-color: rgba(255,255,255,0.95);
+}
+#mainNav .nav .nav-item .nav-link {
+    color: black;
+    font-size: 9pt;
 }
 
-#mainNav .navbar-nav .nav-item .nav-link {
-    color: black;
-    font-size: 8pt;
+#mainNav .navbar-toggler {
+    background-color: #92278f;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #f0f0f0 !important;
+  color: #80217e !important;
 }
 
 #mainNav img {
     padding-right: 50px;
-    padding-top: 0px;
-    padding-bottom: 0px;
     margin-right: 50px;
-}
-
-#mainNav.navbar-shrink {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: #f6f6f6;
-    transition: all 0.3s;
-}
-
-#mainNav .navbar-nav .nav-item .nav-link.active,
-#mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #1c2022;
-}
-
-a:hover {
-    color: #80217e;
+    height: 60px;
 }
 
 #mainNav a {
     text-decoration: none;
 }
 
-#mainNav .navbar-toggler {
-    background-color: #1c2022;
+#mainNav .nav-link:hover {
+    color: #92278f;
 }
-
-#mainNav {
-    background-color: transparent;
-}
-
-.navbar-inner {
-    background-color: transparent;
-}
-
-.navbar-brand {
-    margin-left: 25px;
+#mainNav.navbar-shrink {
+    background-color: rgba(246,246,246,0.99);
 }
 
 /* #endnav */
@@ -111,14 +92,19 @@ header.masthead .intro-text {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 10pt;
+    line-height: 1.4em;
 }
 
+.tag em {
+    color: #d53ad1;
+    font-style: normal;
+}
 /* #endicons*/
 
 /* #content */
 
 .rapgray {
-    background-color: #f6f6f6;
+    background-color: #fffaff;
     padding-top: 30px;
     padding-bottom: 30px;
     border: 0px;
@@ -137,6 +123,10 @@ header.masthead .intro-text {
     margin-bottom: auto;
 }
 
+.row {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 /* #endcontent */
 
 /* #contactbanner */
@@ -170,7 +160,7 @@ section {
 }
 
 .space {
-    min-height: 70vh;
+    min-height: 50vh;
 }
 
 body,
@@ -190,8 +180,6 @@ h1 {
     text-transform: uppercase;
     font-style: normal;
     justify-items: left;
-    padding-left: 15px;
-    padding-right: 20px;
     margin-top: 20px;
     color: #80217e;
 }
@@ -201,8 +189,6 @@ h3,
 h4,
 h5 {
     padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 
@@ -220,17 +206,25 @@ h5 {
 .rapwhite h2, .rapwhite h3, .rapwhite p {
     color: #1c2022;
 }
-button {
-    margin-left: 20px;
-    margin-right: 20px;
+
+.btn {
+    font-weight: 400;
 }
 
 .btn-rap {
     background-color: #92278f;
     color: #fff;
     font-size: 10pt;
-    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+a.btn-rap:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #70056d;
+}
+
 .fa-heart {
     color: #d53ad1 !important;
 }
@@ -238,13 +232,8 @@ button {
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 12pt;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
-.btn {
-    font-weight: 400;
-}
 
 table {
     margin-left: 20px;
@@ -328,9 +317,12 @@ a.btn {
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .icon {
         width: 125px;
+    }
+    .rapborder {
+        border-right-width: 0px;
     }
 }
 /* To be used later

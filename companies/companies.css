@@ -1,0 +1,63 @@
+
+
+.companies {
+    min-height: 75vh;
+    background-image: url('companies.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 40%;
+}
+
+.researcher h1 {
+    font-size: 50pt !important;
+    font-weight: 600;
+}
+
+.illustrate img {
+    max-width: 400px;
+    vertical-align: middle;
+
+}
+
+h1 {
+    justify-items: center;
+}
+
+.large {
+    font-size: 25px;
+}
+
+.rapdark blockquote {
+    color: #f6f6f6;
+}
+
+.rapdark a {
+    color: #f6f6f6;
+}
+@media(max-width:767px) {
+    li {
+        padding-left: 20px;
+    }
+    img {
+        width: 50%;
+    }
+}
+
+.face {
+    border-width: 7px;
+    border-color: #92278f;
+    border-style: solid;
+    max-width: 150px;
+}
+
+blockquote {
+    color: #666666;
+}
+
+
+@media(max-width:576px) {
+    .researcher h1 {
+        font-size: 30pt !important;
+        font-weight: 600;
+    }
+}
