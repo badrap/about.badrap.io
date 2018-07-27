@@ -9,25 +9,43 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-5 offset-md-1 order-md-1 order-sm-1">
+                <div class="col-md-6 order-md-1 order-sm-1">
                     <h3>Founded by</h3>
                     <ul>
-                        <li>Jani Kenttälä, CEO</li>
-                        <li>Joachim Viide, CTO</li>
-                        <li>Hillar Aarelaid, Speaks for the Researchers</li>
-                        <li>Heikki Kortti, Speaks for the Victims</li>
-                        <li>Ville Alatalo, DevPubOps</li>
+                        {% for founder in site.data.founders %}
+                        <li> {{founder.name}}, {{founder.title}}
+
+                            {% if founder.linkedin %}
+                                <a href="{{founder.linkedin}}" target="_blank">
+                                    <i class="founderlink first fab fa-linkedin"></i>
+                                </a>
+                            {% endif %}
+
+                            {% if founder.twitter %}
+                                <a href="{{founder.twitter}}" target="_blank">
+                                     <i class="founderlink fab fa-twitter-square"></i>
+                                </a>
+                            {% endif %}
+
+                            {% if founder.github %}
+                            <a href="{{founder.github}}" target="_blank">
+                                 <i class="founderlink fab fa-github-square"></i>
+                            </a>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+
                     </ul>
                 </div>
 
-                <div class="col-md-5 offset-md-1  order-md-2 order-sm-3">
+                <div class="col-md-6 order-md-2 order-sm-3">
                     <h3>Funded by</h3>
                     <ul>
                         <li>Ääkköset Oy</li>
                         <li>Business Finland</li>
                     </ul>
                 </div>
-                <div class="col-md-5 offset-md-1  order-md-3 order-sm-2">
+                <div class="col-md-6 order-md-3 order-sm-2">
                     <p>
                         <em> "We are security professionals and entrepreneurs who have
                             served businesses and citizens of the digital society
@@ -38,7 +56,7 @@
                     </p>
                 </div>
 
-                <div class="col-md-5 offset-md-1  order-md-4 order-sm-4">
+                <div class="col-md-6 order-md-4 order-sm-4">
                     <p>
                         <em>"Today access to security information is still a privilege
                             of a few. Badrap's seasoned team is dead set on democratizing

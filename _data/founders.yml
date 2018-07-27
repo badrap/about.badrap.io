@@ -1,0 +1,35 @@
+- name: Jani Kenttälä
+  title: CEO
+  face: ../img/jani2.jpg
+  facepos: 50% 70%
+  linkedin: https://www.linkedin.com/in/janikenttala/
+  twitter: https://twitter.com/janikenttala
+  medium: https://medium.com/@janikenttala
+  github: https://github.com/evilon
+
+- name: Joachim Viide
+  title: CTO
+  linkedin: https://www.linkedin.com/in/jviide/
+  twitter: https://twitter.com/jviide
+  github: https://github.com/jviide
+  medium: https://medium.com/@jviide
+  face: ../img/jviide.jpg
+
+- name: Heikki Kortti
+  title: Speaks for the victims
+  face: ../img/heikki.jpg
+  facepos: 50% 0%
+
+- name: Hillar Aarelaid
+  title: Speaks for the Researchers
+  linkedin: https://www.linkedin.com/in/hillaraarelaid/
+  github: https://github.com/hillar
+  face: ../img/hillar.jpg
+
+- name: Ville Alatalo
+  title: DevPubOps
+  linkedin: https://www.linkedin.com/in/alatalo/
+  twitter: https://twitter.com/alatalo
+  github: https://github.com/alatalo
+  medium: https://medium.com/@ville.alatalo
+  face: ../img/ville.jpg
