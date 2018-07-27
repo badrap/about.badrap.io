@@ -30,7 +30,31 @@ assets:
       - JPG:
         name: JPG
         link: cartoon.jpg
-
+stylespecs:
+  - name: Background white
+    background: "#fff"
+    foreground: "#040404"
+    description: "Background #fff, foreground #040404"
+  - name: Background gray
+    background: "#f6f6f6"
+    foreground: "#040404"
+    description: "Background #fff, foreground #040404"
+  - name: Background dark
+    background: "#1c2022"
+    foreground: "#fff"
+    description: "Background #1c2022, foreground #fff"
+  - name: Pink with white background
+    background: "#fff"
+    foreground: "#80217e"
+    description: "Background #fff, foreground #80217e"
+  - name: Pink with dark background
+    background: "#1c2022"
+    foreground: "#d53ad1"
+    description: "Background 1c2022, foreground #d53ad1"
+  - name: Button with pink background
+    background: "#92278f"
+    foreground: "#fff"
+    description: "Background #92278f, foreground #fff"
 
 ---
 <div class="container-fluid press rapdark">
@@ -89,4 +113,22 @@ assets:
     </div>
   </div>
   {%endfor%}
+</div>
+<!-- style specs -->
+<div class="container rapwhite px-5">
+    <div class="row pb-5 px-3">
+        <div class="col-md-12">
+            <h1> Colors </h1>
+        </div>
+    </div>
+    {% for stylespec in page.stylespecs %}
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <p style="background-color: {{stylespec.background}}; color: {{stylespec.foreground}} !important;"> {{stylespec.name}} </p>
+        </div>
+        <div class="col-md-6">
+          <p> {{stylespec.description}} </p>
+        </div>
+    </div>
+    {% endfor %}
 </div>
