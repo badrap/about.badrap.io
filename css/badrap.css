@@ -129,6 +129,22 @@ header.masthead .intro-text {
 }
 /* #endcontent */
 
+.founderlink {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.founderlink:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+.first {
+    margin-left: 10px;
+}
+
+.close {
+    margin-left: 5px;
+}
 /* #contactbanner */
 
 .network-name {
