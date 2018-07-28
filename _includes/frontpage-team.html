@@ -13,25 +13,13 @@
                     <h3>Founded by</h3>
                     <ul>
                         {% for founder in site.data.founders %}
+
+                        {% if founder.linkedin %}
+                        <a class="founderlink" href="{{founder.linkedin}}" target="_blank">
+                            <li> {{founder.name}},</a> {{founder.title}}
+                        {% else %}
                         <li> {{founder.name}}, {{founder.title}}
-
-                            {% if founder.linkedin %}
-                                <a href="{{founder.linkedin}}" target="_blank">
-                                    <i class="founderlink first fab fa-linkedin"></i>
-                                </a>
-                            {% endif %}
-
-                            {% if founder.twitter %}
-                                <a href="{{founder.twitter}}" target="_blank">
-                                     <i class="founderlink fab fa-twitter-square"></i>
-                                </a>
-                            {% endif %}
-
-                            {% if founder.github %}
-                            <a href="{{founder.github}}" target="_blank">
-                                 <i class="founderlink fab fa-github-square"></i>
-                            </a>
-                            {% endif %}
+                        {% endif %}
                         </li>
                         {% endfor %}
 
