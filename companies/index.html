@@ -11,6 +11,11 @@ styles:
   - /css/badrap.css
   - companies.css
   - prices.css
+
+product-employees: Data Breach Protection for Employees
+product-companies: Data Breach Protection for Companies
+product-customers: Data Breach Protection for Customers
+
 ---
 <div class="container-fluid companies rapdark">
     <div class="row">
@@ -56,16 +61,16 @@ styles:
                 -->
             </div>
             <div class="col-lg-6 col-xl-4 offset-xl-1">
-                <h3>Employee Personal Data Breach Monitoring</h3>
+                <h3>{{page.product-employees}}</h3>
 
                 <p>81% of confirmed data breaches involved leveraging weak or stolen
                     passwords, says Spycloud. Sometimes your employees need to rely on
                     equipment and networks not fully under your control.
-                    Be proactive and sponsor personal data breach monitoring for
+                    Be proactive and sponsor personal data breach protection for
                     your employees and road warriors.
                 </p>
 
-                <h3>Company Data Breach Monitoring</h3>
+                <h3>{{page.product-companies}}</h3>
                 <p> Ponemon  Institute's
                     <a target="_blank" href="https://www.ibm.com/account/reg/us-en/signup?formid=urx-33316">
                         research</a>  that companies who quickly detected data breaches shaved
@@ -73,7 +78,7 @@ styles:
                     Let Badrap researchers warn you with Company Data Breach Monitoring.
                 </p>
 
-                <h3>Customer Personal Data Breach Monitoring</h3>
+                <h3>{{page.product-customers}}</h3>
                 <p>
                     Your customer data got stolen, and you are worried about the public
                     reaction? Good news, your next actions can preserve your reputation
@@ -130,18 +135,18 @@ styles:
         </div>
         <div class="col-lg-1 order-lg-3"></div>
         <div class="col-lg-6 my-auto order-1 order-lg-1">
-            <h3>Employee Personal Data Breach Monitoring</h3>
+            <h3>{{page.product-employees}}</h3>
             <p>
                 <!-- what -->
-                Employee Personal Data Breach Monitoring warns your employees if they
-                become victims of identity theft become victims of identity theft or are using high
+                {{page.product-employees}} warns your employees if they
+                become victims of identity theft or are using high
                 risk network assets on the road or at home.
                 <!-- reinforce why -->
                 20% of users reuse passwords, and 27%
                 use nearly identical passwords says (HPI). Criminals load stolen usernames
                 and passwords and run automated attacks against companies.
                 <!-- how it works -->
-                You'll get an invitation letter
+                When you subscribe to this service, you'll get an invitation letter
                 you can forward to your employees. Employees register their online
                 identities, such as email addresses, for monitoring. If those identities appear in the suspicious
                 places, employees will receive an alert via email, accompanied by instructions
@@ -155,22 +160,19 @@ styles:
     </div>
 </div>
 
-<div class="container-fluid">
-    <div class="row space rapgray" id="company">
+<div class="container-fluid rapgray">
+    <div class="row space" id="company">
         <div class="col-lg-5 illustrate assets order-2 order-lg-2">
             <img class="pt-5 mx-auto d-block" src="/img/researcher-company.svg" alt="Researcher -> Company">
         </div>
 
         <div class="col-lg-6 col-lg-offset-1 my-auto order-1 order-lg-4">
-            <h3>Company Data Breach Monitoring</h3>
+            <h3>{{page.product-companies}}</h3>
 
             <p>
                 <!-- What -->
-                Company Data Breach Monitoring alerts you if identities related to your company
+                {{page.product-companies}} alerts you if identities related to your company
                 appear in the dark corners of the Internet or are otherwise at risk.
-                <!-- Reinforce why -->
-                Be the first to hear about data breaches affecting you. Get more time to contain
-                the breach and damages.
                 <!-- How it works -->
                 Security Researchers monitor the dark corners of the net, as well as other typical
                 places where stolen information gets delivered. You will provide a list of
@@ -180,6 +182,7 @@ styles:
                 some of your information with vetted Badrap Security Researchers so that they can
                 watch closely identies requiring special protection
                 <!-- CTA -->
+                Get more time to contain the breach and damages.
                 Let security researchers warn you before the information becomes public.
             </p>
         </div>
@@ -191,7 +194,7 @@ styles:
     <div class="row featurette space" id="recover">
         <div class="col-lg-6 my-auto">
             <h3>
-                Customer Personal Data Breach Monitoring
+                {{page.product-customers}}
             </h3>
 
             <p>
@@ -204,7 +207,7 @@ styles:
                 Due to frequent password reuse, stolen data fuels
                 new attacks. Hacked online accounts are sold in underground market under $2 per account
                 (Ponemon). Customers need protection.
-                With Customer Personal Data Breach Monitoring, your customers will get an alert when
+                With {{page.product-customers}}, your customers will get an alert when
                 their identities pop up in the dark corners of the Internet.
                 <!-- CTA -->
                 When you deliver the bad news, demonstrate your care by subscribing your customers
@@ -223,7 +226,7 @@ styles:
 </section>
 
 <div class="pricing-header px-1 pb-3 pt-lg-5 pb-lg-4 mx-auto text-center">
-    <h1 class="display-4">Data Breach Monitoring Bundles</h1>
+    <h1 class="display-4">Protection Plans</h1>
 </div>
 <div class="container">
     <div class="card-deck mb-3 text-center">
@@ -250,12 +253,12 @@ styles:
             </div>
             <div class="card-body">
                 <h1 class="card-title pricing-card-title">2 950€
-                    <small class="text-muted">/month</small>
+                    <small class="text-muted">/ month</small>
                 </h1>
                 <ul class="list-unstyled mt-3 mb-0">
                     <li class="py-1">Up to 25 company identities</li>
                     <li class="py-1">Up to 250 protected employees</li>
-                    <li class="py-1">Up to 1000 protected customers in case of data breach30</li>
+                    <li class="py-1">Up to 1000 protected customers in case of data breach</li>
                 </ul>
                 <p class="pt-3"><strong>Included Premium Services</strong></p>
                 <ul class="list-unstyled mt-3 mb-0">
