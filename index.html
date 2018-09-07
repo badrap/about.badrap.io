@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Badrap - Security Information Marketplace
+title: Badrap - Security Information for All
 ogdescription: We are working on a way to help victims and researchers to alert you if they find out that your devices are hacked, or could be hacked.
 ogurl: http://about.badrap.io/
 ogimage: http://about.badrap.io/img/social-opengraph.jpg
@@ -22,9 +22,7 @@ styles:
                             Society and individuals need safety to progress and prosper. Regular people need
                             help with their cyber security, and we see security experts
                             with information and ability to help. We also see victims, who are attacked via hacked
-                            devices. We are creating a place for them to meet and warn each other. We
-                            <a id="go-to-testaaverkkosi" href="https://testaaverkkosi.fi">opened in Finland</a> and are working to
-                            go global.
+                            devices. We are creating a place for them to meet and warn each other.
                             <br>
                             <br>
                         </p>
@@ -48,8 +46,9 @@ styles:
             <p class="tag">Companies and individuals</p>
         </div>
         <div class="col-md-4 mx-auto text-center rapborder">
-            <p class="tag">Individuals</p>
-
+            <a class="js-scroll-trigger" href="#individuals">
+            <p class="tag" id="go-to-individuals short">Individuals</p>
+            </a>
             <i class="fas fa-users fa-5x py-3"></i>
             <br>
             <i class="fas fa-heart fa-2x"></i>
@@ -92,4 +91,5 @@ styles:
     </div>
 </div>
 {% include frontpage-researchers.html %}
+{% include frontpage-individuals.html %}
 {% include frontpage-team.html %}
