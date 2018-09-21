@@ -8,6 +8,42 @@
     background-position: 30% 40%;
 }
 
+.sporty {
+    font-style: italic;
+    text-shadow: 1px 2px 3px #222;
+
+}
+
+h1.sporty {
+    font-weight: 700;
+    font-size: 50pt;
+    text-align: center;
+    text-transform: none;
+    font-family: sans-serif;
+}
+a.social {
+    text-decoration: none;
+}
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 40px;
+    height: 0px;
+    border-bottom: 4px solid #fff;
+}
+h2.sporty {
+    font-size: 20pt;
+}
+
+h3.sporty  {
+    font-size: 15pt !important;
+    padding-top: 0;
+}
+
+h4.sporty {
+    color: #fff;
+    font-size: 15pt;
+}
 .researcher h1 {
     font-size: 50pt !important;
     font-weight: 600;
