@@ -88,11 +88,6 @@ h1 {
 .rapdark a {
     color: #f6f6f6;
 }
-
-
-#modelimg {
-    width: 90%;
-}
 @media(max-width:767px) {
     li {
         padding-left: 20px;
