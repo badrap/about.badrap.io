@@ -1,4 +1,11 @@
 
+.planning {
+    min-height: 60vh;
+    background-image: url('planning.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 40%;
+}
 
 .companies {
     min-height: 75vh;
@@ -14,6 +21,17 @@
 
 }
 
+h1.white {
+    font-weight: 400;
+    font-size: 40pt;
+    text-transform: none;
+    color: #fff;
+    text-transform: uppercase !important;
+}
+
+h4.white {
+    color: #fff;
+}
 h1.sporty {
     font-weight: 700;
     font-size: 50pt;
