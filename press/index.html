@@ -72,16 +72,21 @@ stylespecs:
         <h1> Press Releases </h1>
       </div>
     </div>
+    {% for file in site.posts %}
+
     <div class="row pb-5">
-      {% for file in site.posts %}
-      <div class="column col-md-4">
+      <div class="column col-lg-2">
+        <p>{{file.releasedate}}</p>
+      </div>
+      <div class="column col-lg-3">
         <a href="{{file.url}}">({{file.lang}}) - {{file.title}}</a>
       </div>
-      <div class="column col-md-8">
+      <div class="column col-lg-7">
         {{file.short}}
       </div>
-      {% endfor %}
     </div>
+    {% endfor %}
+
   </div>
 </div>
 
