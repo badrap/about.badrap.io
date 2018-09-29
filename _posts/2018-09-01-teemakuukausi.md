@@ -41,3 +41,12 @@ Toimitusjohtaja Jani Kenttälä, Badrap Oy, p. +358 45 1224 601
 <https://badrap.io><br>
 contact@badrap.io<br>
 <https://cybersecuritymonth.eu/>
+
+----
+## Kuvitus
+
+* Kansalaiset käyttämässä verkkoa turvallisesti: [(JPG)](/press/cartoon.jpg)
+* Verkkoturvallisuuskuukauden logo: [(JPG)](https://cybersecuritymonth.eu/press-campaign-toolbox/visual-identity/ecsm-logos/fi-ecsm-logo.jpg)
+* [Verkkoturvallisuuskuukauden lehdistön työkalupakki](https://cybersecuritymonth.eu/press-campaign-toolbox)
+
+----

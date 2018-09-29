@@ -22,3 +22,12 @@ Additional information:
 <https://badrap.io><br>
 contact@badrap.io<br>
 <https://cybersecuritymonth.eu/><br>
+
+----
+## Images
+
+* Citizens using the net safely: [(JPG)](/press/cartoon.jpg)
+* Cyber Security Month logo: [(JPG)](https://cybersecuritymonth.eu/press-campaign-toolbox/visual-identity/logo)
+* [EU press campaign toolbox](https://cybersecuritymonth.eu/press-campaign-toolbox)
+
+----
