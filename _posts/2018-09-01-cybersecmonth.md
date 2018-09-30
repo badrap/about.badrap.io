@@ -6,7 +6,7 @@ styles:
   - /vendor/agency/css/agency.min.css
   - /css/badrap.css
 short: >
-  EU Cyber Security Awareness Month begins on October 1. The theme for the first week is Practicing Basic Cyber Hygiene, meaning how anyone can take care of their security as part of daily life.
+  EU Cyber Security Awareness Month begins on October 1. Finnish security company Badrap Ltd encourages all Internet users to check the security of the networks they use.
 releasedate: 2018-10-01
 ---
 

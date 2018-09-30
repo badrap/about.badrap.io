@@ -6,7 +6,7 @@ styles:
   - /vendor/agency/css/agency.min.css
   - /css/badrap.css
 short: >
-  Euroopan verkkoturvallisuuden teemakuukausi alkaa maanantaina 1. lokakuuta. Ensimmäisen viikon aiheena on tietoturvahygienia, eli miten jokainen voi huolehtia omasta tietoturvastaan osana päivittäistä arkea.
+  Euroopan verkkoturvallisuuden teemakuukausi alkaa maanantaina 1. lokakuuta. Oululainen tietoturvayritys Badrap Oy kannustaa kaikkia netin käyttäjiä tarkistamaan käyttämiensä verkkojen tietoturvan.
 releasedate: 2018-10-01
 
 ---
