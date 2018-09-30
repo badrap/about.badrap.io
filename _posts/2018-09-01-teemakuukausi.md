@@ -36,9 +36,11 @@ Palvelua ovat käyttäneet ennen EU:n laajuista julkaisua sekä kotikäyttäjät
 Eräs käyttäjä kertoo kokemuksestaan näin: “Uuteen reitittimeeni oli jäänyt vahingossa päälle avoin DNS-palvelu. Badrapin kautta sain automaattisesti tiedon haavoittuvuudesta, ja sain korjattua ongelman nopeasti ennenkuin isompaa vahinkoa ehti tapahtua. Tietoturva-alan ammattilaisena arvostan että saan tiedot virheistä välittömästi ja selkeästi, eikä minun tarvitse asentaa mitään ylimääräistä verkkooni.”
 
 ----
+
 ## Kuvitus
 
 * Kansalaiset käyttämässä verkkoa turvallisesti: [(JPG)](/press/cartoon.jpg)
-* Verkkoturvallisuuskuukauden logo: [(JPG)](https://cybersecuritymonth.eu/press-campaign-toolbox/visual-identity/ecsm-logos/fi-ecsm-logo.jpg)
-* [Verkkoturvallisuuskuukauden lehdistön työkalupakki](https://cybersecuritymonth.eu/press-campaign-toolbox)
+* Verkkoturvallisuuden teemakuukauden logo: [(JPG)](https://cybersecuritymonth.eu/press-campaign-toolbox/visual-identity/ecsm-logos/fi-ecsm-logo.jpg)
+* [Verkkoturvallisuuden teemakuukauden lehdistön työkalupakki](https://cybersecuritymonth.eu/press-campaign-toolbox)
+
 ----
