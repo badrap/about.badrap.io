@@ -1,0 +1,85 @@
+---
+layout: page
+title: Badrap for Companies
+ogdescription: Badrap relays security researchers' warnings for you.
+twittercard: summary_large_image
+twitter: "@BadRapIO"
+styles:
+  - /vendor/agency/css/agency.min.css
+  - /css/badrap.css
+  - companies.css
+  - employees.css
+product: Cyber Hygiene for Employees
+tagline: Protect the Employees, Protect the Company
+points:
+  - title: Introduction Mail
+    text: >
+      We tell together about badrap.io to your employees.
+      We explain that you have sponsored a cyber hygiene
+      campaign for your employees for a month.
+    icon: <i class="fas fa-3x fa-envelope"></i>
+  - title: Web Service
+    text: >
+      Employees use badrap.io to hunt vulnerabilities at home,
+      relatives and other places they care about. They can also
+      opt-in for a data leak check. Badrap.io service takes care
+      of your employees' privacy - their findings are their own.
+    icon: <i class="fab fa-3x fa-chrome"></i>
+  - title: Help
+    text: >
+      If an employee finds an issue, Badrap's provides instructions on how to solve it.
+      If the instructions are not enough, Badrap team will support your employees.
+
+    icon: <i class="fas fa-3x fa-headset"></i>
+  - title: Reward
+    text: >
+      At the end of the campaign we'll reward the most active employee. In practice
+      the employee who has
+      checked the most places will receive F-Secure Sense or Google Wifi routher.
+
+    icon: <i class="fas fa-3x fa-award"></i>
+---
+<div class="container planning">
+    <div clas="row">
+        <div class="column col-12 text-center my-auto">
+            <h1 class="heading pt-5 pb-0 mx-auto">{{page.product}}</h1>
+            <h2 class="tagline pt-0"><em>{{page.tagline}}</em></h2>
+
+        </div>
+    </div>
+</div>
+
+<div class="container px-0">
+    {% for point in page.points %}
+    {% assign loopindex = forloop.index | modulo: 2 %}
+    {% if loopindex == 1 %}
+        {% assign picposition = "order-sm-1" %}
+        {% assign titlealign = "mx-auto" %}
+        {% assign offset = "offset-sm-0" %}
+
+        {% else %}
+        {% assign picposition = "order-sm-3" %}
+        {% assign titlealign = "text-right" %}
+        {% assign offset = "offset-sm-1" %}
+
+
+    {% endif %}
+
+    <div class="row headline" style="background-color: #fff0ff;">
+        <div class="column index col-lg-1 col-sm-2 col-12 {{picposition}}">
+            <h1>{{forloop.index}}</h1>
+        </div>
+        <div class="column {{offset}} col-lg-10 col-sm-9 col-12 order-sm-2 my-auto">
+           <h1 class="point my-3 {{titlealign}}"> {{point.title}} </h1>
+        </div>
+    </div>
+    <div class="row description mx-0">
+        <div class="column icon col-lg-1 col-sm-2 col-12 {{picposition}}">
+            {{point.icon}}
+        </div>
+        <div class="column {{offset}} col-lg-10 col-sm-9 col-12 order-sm-2">
+                <p class="my-3 {{titlealign}}">{{point.text}}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
