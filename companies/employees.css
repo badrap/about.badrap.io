@@ -52,6 +52,25 @@ p {
     font-size: 15pt;
 }
 
+.btn-primary {
+    background-color: #92278f;
+    border-color: #92278f;
+    margin: 10px;
+    width: 70%;
+
+}
+
+.mycard {
+    border-color: rgba(0,0,0,.1);
+    border-style: solid;
+    border-width: 1px;
+    margin: 10px;
+    padding: 0;
+    border-radius: 5px;
+
+}
+
+
 
 @media(max-width:576px) {
     .text-right {

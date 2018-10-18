@@ -39,7 +39,7 @@ points:
 
     icon: <i class="fas fa-3x fa-award"></i>
 ---
-<div class="container planning">
+<div class="container-fluid home">
     <div clas="row">
         <div class="column col-12 text-center my-auto">
             <h1 class="heading pt-5 pb-0 mx-auto">{{page.product}}</h1>
@@ -49,7 +49,22 @@ points:
     </div>
 </div>
 
-<div class="container px-0">
+<div class="container-fluid rapgray" id="signup">
+        <div class="row py-5 justify-content-center">
+            <div class="column col-md-9 text-center">
+                <h1>What is Cyber Hygiene for Emploees</h1>
+                <p>
+                    Cyber Hygiene for Employees provides an excellent opportunity for you
+                    to increase your employee security awareness. Your employees get to hunt
+                    security issues with a browser-based badrap.io service. They check their
+                    homes, relatives, schools and other places they care about. Empower your
+                    employees and make the more security aware!
+                </p>
+
+            </div>
+        </div>
+    </div>
+<div class="container px-0 pt-5">
     {% for point in page.points %}
     {% assign loopindex = forloop.index | modulo: 2 %}
     {% if loopindex == 1 %}
@@ -82,4 +97,106 @@ points:
         </div>
     </div>
     {% endfor %}
+</div>
+
+<div class="container-fluid planning parallax rapdark px-0 pt-5">
+    <div class="row">
+        <div class="column col-8 offset-2">
+            <h1 class="white">Why work with us?</h1>
+
+        </div>
+        <div class="column col-8 offset-2">
+            <p class="white"> Badrap was founded be security veterans, who have served countries and critical
+                infrastructure organisations for ages. We have witnessed how the Finnish approach
+                of collecting and sharing security information with those in danger have helped
+                organisations and individuals to stay safe. We've
+                seen how other countries adapt that model. Now we want to make security information
+                accessible to everyone, including you and your employees. </p>
+        </div>
+    </div>
+</div>
+
+<div class="pricing-header px-1 pb-3 pt-lg-5 pb-lg-4 mx-auto text-center">
+        <h1 class="display-4">Pilot Packages</h1>
+</div>
+<div class="container">
+    <div class="row mb-3 justify-content-center text-center">
+        <div class="mycard col-12 col-lg-3 mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Small</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">1 900€
+                </h1>
+                <ul class="list-unstyled mt-3 mb-0">
+                    <li class="py-2">Introduction email</li>
+                    <li class="py-2">badrap.io service, including textual instructions if issues are found</li>
+                    <li class="py-2">Reward for the most active employee</li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="mycard col-12 col-lg-3 mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Medium</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">5 900€
+                </h1>
+                <ul class="list-unstyled mt-3 mb-0">
+                    <li class="py-2">Introduction email </li>
+                    <li class="py-2">badrap.io service, including textual instructions if issues are found</li>
+                    <li class="py-2"><strong>Opt-in identity leak check</strong></li>
+                    <li class="py-2"><strong>Badrap personal support M</strong> <small>(1)</small></li>
+                    <li class="py-2">Reward for the most active employee</li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="mycard col-12 col-lg-3 mb-4 shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Large</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card-title pricing-card-title">9 900€
+                </h1>
+                <ul class="list-unstyled mt-3 mb-0">
+                    <li class="py-2">Introduction email</li>
+                    <li class="py-2">badrap.io service, including textual instructions if issues are found</li>
+                    <li class="py-2">Opt-in identity leak check</li>
+                    <li class="py-2"><strong>Badrap personal support L</strong> <small>(2)</small></li>
+                    <li class="py-2">Reward for the most active employee</li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                    <p class="small py-0 my-0">(1) Personal Support M is available for organisations with less than 500 participating employees.</p>
+                    <p class="small py-0 my-0">(2) Personal Support L is available for organisations with less than 1000 participating employees.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid rapgray">
+    <div class="row py-5 justify-content-center text-center">
+        <div class="column col-12 col-md-6">
+            <h1> Want to talk more? </h1>
+            <p> You can contact us via email (contact@badrap.io) or leave your contact info to our
+                <a href="https://share.hsforms.com/1YYCtOd6TRR-94J91OfG_zw2ecmj"> contact form </a> and we'll be in touch
+                    promptly!</a>
+            </p>
+        </div>
+    </div>
+    <div class="row justify-content-center text-center">
+        <div class="column col-12 col-lg-9" >
+            <a href="https://share.hsforms.com/1YYCtOd6TRR-94J91OfG_zw2ecmj">
+            <img src="form-shot.jpg" width="100%" style="border: solid 1px black;">
+            </a>
+
+    </div>
+    </div>
 </div>
