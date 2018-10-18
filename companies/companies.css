@@ -1,4 +1,7 @@
-
+#form {
+    min-width: 100%;
+    max-width: 100%;
+}
 .planning {
     min-height: 60vh;
     background-image: url('planning.jpg');
