@@ -105,6 +105,12 @@ h1 {
 .rapdark a {
     color: #f6f6f6;
 }
+
+@media(max-width:992px) {
+    .rapborder {
+        border-right-style: none;
+    }
+}
 @media(max-width:767px) {
     li {
         padding-left: 20px;
