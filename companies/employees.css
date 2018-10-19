@@ -48,9 +48,23 @@
     color: #fff;
 }
 
+.featureicon {
+    height: 50px;
+}
+
+.featurediv {
+    max-width: 400px;
+    height: 220px;
+    background-color: white;
+    border: solid 1px white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
 p {
     font-size: 15pt;
 }
+
 
 .btn-primary {
     background-color: #92278f;
