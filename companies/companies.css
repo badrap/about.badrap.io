@@ -2,6 +2,11 @@
     min-width: 100%;
     max-width: 100%;
 }
+
+body {
+    position: relative;
+}
+
 .planning {
     min-height: 60vh;
     background-image: url('planning.jpg');
@@ -38,12 +43,15 @@
 
 }
 
-h1.white {
+h1.headline {
     font-weight: 400;
     font-size: 40pt;
     text-transform: none;
-    color: #fff;
     text-transform: uppercase !important;
+}
+
+h1.white {
+    color: #fff;
 }
 
 h4.white {
