@@ -1,11 +1,15 @@
 .headline {
     margin: 0;
     padding: 0;
+    background-color: #fff0ff;
+    border-radius: 5px;
 }
 
 .column.index {
     background-color: #92278f;
     text-align: center;
+    border-radius: 5px;
+
 }
 
 .column.index h1 {
@@ -25,6 +29,7 @@
 .description {
     padding-bottom: 30px;
 }
+
 .indexrect {
     border-radius: 50px;
 
@@ -32,8 +37,6 @@
     background-color: #92278f;
     border-style: none;
 }
-
-
 
 .point {
     padding: 0;
@@ -48,22 +51,33 @@
 }
 
 .featureicon {
-    height: 50px;
+    height: 60px;
 }
 
 .featurediv {
     max-width: 400px;
-    height: 220px;
-    background-color: white;
-    border: solid 1px white;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+
+.thin {
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 10pt;
+    line-height: 1.4em;
 }
 p {
     font-size: 15pt;
 }
 
+.description i {
+    color: #92278f
+}
 
 .btn-primary {
     background-color: #92278f;
