@@ -109,6 +109,13 @@ p {
     .icon {
         padding-top: 20px;
     }
+    .heading {
+        font-size: 35pt;
+    }
+
+    .tagline {
+        font-size: 25pt;
+    }
     p {
         text-align: center !important
     }
