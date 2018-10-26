@@ -15,8 +15,9 @@
                         {% for founder in site.data.founders %}
 
                         {% if founder.linkedin %}
-                        <a class="founderlink" href="{{founder.linkedin}}" target="_blank">
-                            <li> {{founder.name}},</a> {{founder.title}}
+                        <li>
+                            <a class="founderlink" href="{{founder.linkedin}}" target="_blank">
+                            {{founder.name}},</a> {{founder.title}}
                         {% else %}
                         <li> {{founder.name}}, {{founder.title}}
                         {% endif %}
