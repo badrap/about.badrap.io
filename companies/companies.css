@@ -1,3 +1,11 @@
+#form {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+body {
+    position: relative;
+}
 
 .planning {
     min-height: 60vh;
@@ -7,6 +15,20 @@
     background-position: 30% 40%;
 }
 
+.home {
+    min-height: 60vh;
+    background-image: url('home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .companies {
     min-height: 75vh;
     background-image: url('companies.jpg');
@@ -21,12 +43,15 @@
 
 }
 
-h1.white {
+h1.headline {
     font-weight: 400;
     font-size: 40pt;
     text-transform: none;
-    color: #fff;
     text-transform: uppercase !important;
+}
+
+h1.white {
+    color: #fff;
 }
 
 h4.white {
@@ -87,6 +112,12 @@ h1 {
 
 .rapdark a {
     color: #f6f6f6;
+}
+
+@media(max-width:992px) {
+    .rapborder {
+        border-right-style: none;
+    }
 }
 @media(max-width:767px) {
     li {
