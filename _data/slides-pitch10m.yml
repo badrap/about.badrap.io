@@ -9,7 +9,7 @@
     width: 30%
 
 - slide: what is the problem we solve
-  box: 
+  box:
     class: whitebox
     width: 50%
     float: right
@@ -18,11 +18,11 @@
   section-parameters: data-background-image="../../img/slides/problem.jpg"
 
 - slide: Domain Expertice
-  box: 
+  box:
     class: whitebox
     width: 50%
     float: right
-  section-parameters: data-background-image="../../img/slides/govware.jpg" 
+  section-parameters: data-background-image="../../img/slides/govware.jpg"
   title: Experience
   text: We worked with them <em>8 years</em> and witnessed awesome results.
 
@@ -31,7 +31,7 @@
   title: Solution
   subtitle: Rethink sharing for scale
   text: A marketplace for security information
-  img: 
+  img:
     src: ../../img/badrap-connects.svg
     position: 50% 50%
 
@@ -39,7 +39,7 @@
   layout: slide-image-and-text
   title: Bounties
   subtitle: HackerOne Model
-  text: $20M paid bounties, raised $74M 
+  text: $20M paid bounties, raised $74M
   img:
     src: ../../img/slides/models.jpg
     position: 50% 50%
@@ -54,11 +54,11 @@
       <li>Popularisation and Analytics </li>
       <li>Researcher -> Individual flow</li>
       <li><a href="https://testaaverkkosi.fi">testaaverkkosi.fi</a></li>
-     <ul>    
+     <ul>
   img:
     src: ../../img/slides/tivi.jpg
     position: 50% 50%
-  
+
 - slide: demo
   layout: slide-image-and-text
   title: Status
@@ -68,11 +68,11 @@
       <li>International site</li>
       <li>Localisation</li>
       <li>Data Leaks with Companies</li>
-     <ul>    
+     <ul>
   img:
     src: ../../img/slides/testaaverkkosi-2018-01.jpg
     position: 50% 50%
-  
+
 - slide: We have an awesome team
   title: The awesomers
   layout: slide-team
@@ -88,7 +88,7 @@
 
     - name: Joachim Viide
       title: CTO
-      linkedin: https://www.linkedin.com/in/jviide/  
+      linkedin: https://www.linkedin.com/in/jviide/
       twitter: https://twitter.com/jviide
       github: https://github.com/jviide
       medium: https://medium.com/@jviide
@@ -98,12 +98,12 @@
 
 
     - name: Ville Alatalo
-      title: DevPubOps 
+      title: DevPubOps
       linkedin: https://www.linkedin.com/in/alatalo/
       twitter: https://twitter.com/alatalo
       github: https://github.com/alatalo
       medium: https://medium.com/@ville.alatalo
-      face: ../img/ville.jpg  
+      face: ../img/ville.jpg
 
     - name: Heikki Kortti
       title: Netizens
@@ -124,14 +124,11 @@
     Achieve air dominance and leadership in this space.<br>Recruits, bounties and pressworthy cases with NGOs.<br>One year runway.
 
 - slide: none
-  title: Funded by 
+  title: Funded by
   layout: slide-two-images
-  img1: 
-    src: ../img/scanabc.jpg
-    caption: Ääkköset Oy invests in inspiring innovations driven by true entrepreneurs.
-  img2: 
-    src: ../img/businessfinland.jpg
-    link: https://www.businessfinland.fi
-    caption: Business Finland is the Finnish innovation funding, trade, investment, and travel promotion organisation.
-
-
+  img1: ../img/scanabc.jpg
+  img1-link: http://www.scanabc.com"
+  img1-caption: Ääkköset Oy invests in inspiring innovations driven by true entrepreneurs.
+  img2: ../img/businessfinland.jpg
+  img2-link: https://www.businessfinland.fi
+  img2-caption: Business Finland is the Finnish innovation funding, trade, investment, and travel promotion organisation.
