@@ -1,21 +1,34 @@
 
+
 <section {{slide.section-parameters}}>
 <div class="{{slide.box.class}}" style="width: {{slide.box.width}}; float: {{slide.box.float}}">
 
-    {% if slide.title %}
-    <h2>{{slide.title}} </h2>
+    {% if slide.title.text %}
+    <h2 class="{{slide.title.class}}">{{slide.title.text}} </h2>
     {% endif %}
 
-    {% if slide.subtitle %}
-    <h3>{{slide.subtitle}}</h3>
+    {% if slide.icon.src %}
+    <img src="{{slide.icon.src}}" class="{{slide.icon.class}}">
+    {% endif %}
+
+    {% if slide.subtitle.text %}
+    <h3 class="{{slide.subtitle.class}}">{{slide.subtitle.text}}</h3>
     {% endif %}
 
     {% if slide.text %}
-    <p>{{slide.text}}</p>
-    {% endif
-         %}
+    <p class="{{slide.text.class}}">{{slide.text.text}}</p>
+    {% endif %}
+
+    {% if slide.bullets %}
+    <ul>
+      {% for bullet in slide.bullets.list %}
+      <li> {{bullet}} </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
     {% if slide.img.src %}
-    <img src="{{slide.img.src}}" width="{{slide.img.width}}" alt="{{slide.img.alt}}">
+    <img src="{{slide.img.src}}" class="{{slide.img.class}}" width="{{slide.img.width}}" alt="{{slide.img.alt}}">
     {% endif %}
 
 </div>
