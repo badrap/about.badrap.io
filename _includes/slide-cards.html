@@ -1,0 +1,45 @@
+
+
+<section {{slide.section-parameters}}>
+<div class="{{slide.box.class}}" style="width: {{slide.box.width}}; float: {{slide.box.float}}">
+
+    {% if slide.title.text %}
+    <h2 class="{{slide.title.class}}">{{slide.title.text}} </h2>
+    {% endif %}
+
+    {% if slide.icon.src %}
+    <img src="{{slide.icon.src}}" class="{{slide.icon.class}}">
+    {% endif %}
+
+    {% if slide.subtitle.text %}
+    <h3 class="{{slide.subtitle.class}}">{{slide.subtitle.text}}</h3>
+    {% endif %}
+
+    <div class="deck">
+
+    {% for card in slide.cards %}
+      <div class="card">
+        <div class="card-icon">
+
+          {% if card.image %}
+          <img class="card-img-top" src="{{card.image}}" alt="Card image cap">
+          {% endif %}
+
+          {% if card.fa %}
+          <i class="{{card.fa}} card-img-top"></i>
+          {% endif %}
+        </div>
+        <div class="card-body">
+          <p class="title"> {{card.title}} </p>
+        </div>
+        <div class="text">
+          <p class="text"> {{card.text}} </p>
+        </div>
+      </div>
+    {% endfor %}
+
+    </div>
+
+</div>
+
+</section>
