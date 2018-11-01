@@ -1,15 +1,31 @@
-<section>
+<section {{slide.section-parameters}}>
+    <h2 class="{{slide.title.class}}">{{slide.title.text}} </h2>
+    <h3 class="{{slide.subtitle.class}}">{{slide.subtitle.text}}</h3>
 
-    <div class="container withtext">
+    <div class="container {{slide.container.class}}">
 
         <div class="column">
-            <h2>{{slide.title}} </h2>
-            <h3>{{slide.subtitle}}</h3>
-            <p>{{slide.text}}</p>
+            {% if slide.icon.src %}
+            <img src="{{slide.icon.src}}" class="{{slide.icon.class}}">
+            {% endif %}
+
+            {% if slide.text.text %}
+            <p class="{{slide.text.class}}">{{slide.text.text}}</p>
+            {% endif %}
+
+            {% if slide.bullets %}
+            <ul>
+              {% for bullet in slide.bullets.list %}
+              <li> {{bullet}} </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+
         </div>
 
-        <div class="column illustrate" style="background-image: url({{slide.img.src}});
-        background-position: {{slide.img.position}}; background-size: contain;">
+        <div class="column">
+
+        <img src="{{slide.img.src}}" style="max-height: 500px" class="{{slide.img.class}}">
         </div>
     </div>
 </section>

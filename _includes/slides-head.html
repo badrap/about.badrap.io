@@ -6,9 +6,11 @@
 
 		<title>{{page.title}}</title>
 
-		<link rel="stylesheet" href="reveal.js/css/reveal.css">
-		<link rel="stylesheet" href="reveal.js/css/theme/white.css">
-		<link rel="stylesheet" href="badrap.css">
+		{% for style in page.styles %}
+
+		<link href="{{style}}" rel="stylesheet">
+		{% endfor %}
+
 
 		<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -22,9 +24,9 @@
 		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','{{site.google_tag_manager}}');</script>
-		<!-- End Google Tag Manager -->	
+		<!-- End Google Tag Manager -->
 		{% endif %}
-		
+
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -33,7 +35,7 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
-		
+
 	</head>
 	<body>
 		{% if site.google_tag_manager and jekyll.environment != 'test' %}
@@ -46,4 +48,3 @@
 
         <div class="reveal">
             <div class="slides">
-        

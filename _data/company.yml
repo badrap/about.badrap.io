@@ -1,0 +1,49 @@
+tagline: Security Information for All
+team:
+  - name: Jani Kenttälä
+    status: founder
+    title: CEO
+    face: ../img/jani2.jpg
+    facepos: 50% 70%
+    linkedin: https://www.linkedin.com/in/janikenttala/
+    twitter: https://twitter.com/janikenttala
+    medium: https://medium.com/@janikenttala
+    github: https://github.com/evilon
+
+  - name: Joachim Viide
+    status: founder
+    title: CTO
+    linkedin: https://www.linkedin.com/in/jviide/
+    twitter: https://twitter.com/jviide
+    github: https://github.com/jviide
+    medium: https://medium.com/@jviide
+    face: ../img/jviide.jpg
+
+  - name: Heikki Kortti
+    status: founder
+    title: Speaks for the victims
+    face: ../img/heikki.jpg
+    facepos: 50% 0%
+    github: https://github.com/hkortti
+
+  - name: Hillar Aarelaid
+    status: founder
+    title: Speaks for the researchers
+    linkedin: https://www.linkedin.com/in/hillaraarelaid/
+    github: https://github.com/hillar
+    face: ../img/hillar.jpg
+
+  - name: Ville Alatalo
+    title: DevPubOps
+    status: founder
+    linkedin: https://www.linkedin.com/in/alatalo/
+    twitter: https://twitter.com/alatalo
+    github: https://github.com/alatalo
+    medium: https://medium.com/@ville.alatalo
+    face: ../img/ville.jpg
+
+  - name: Helka Kuorilehto
+    title: Governance
+    linkedin: https://www.linkedin.com/in/helka-kuorilehto/
+    face: ../img/helka.jpg
+
