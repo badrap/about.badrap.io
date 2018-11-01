@@ -31,6 +31,13 @@
     <img src="{{slide.img.src}}" class="{{slide.img.class}}" width="{{slide.img.width}}" alt="{{slide.img.alt}}">
     {% endif %}
 
+    {% for button in slide.buttons %}
+    <a href="{{button.link}}" class="button">
+
+      {{button.text}}
+    </a>
+
+    {% endfor %}
 </div>
 
 </section>

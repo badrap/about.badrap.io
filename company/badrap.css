@@ -1,6 +1,6 @@
 .whitebox {
     background-color: rgba(255, 240, 255, 0.9) !important;
-    box-shadow: 0px 0px 40px rgba(30, 30, 30, 0.2) !important;
+    box-shadow: 0px 0px 180px rgba(30, 30, 30, 0.2) !important;
 
     border-radius: 10px;
     margin: auto;
@@ -9,14 +9,15 @@
 
 @supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
     .whitebox {
-        background-color: rgba(255, 255, 255, 0.3) !important;
-        -webkit-backdrop-filter: blur(4px);
+        background-color: rgba(255, 240, 255, 0.5) !important;
+        -webkit-backdrop-filter: blur(6px);
         backdrop-filter: blur(8px);
+
     }
 }
 
 .shadow {
-    box-shadow: 0px 0px 40px rgba(30, 30, 30, 0.3) !important;
+    box-shadow: 0px 5px 60px rgba(50, 50, 50, 0.1) !important;
 }
 
 .white {
@@ -166,10 +167,25 @@ div.name p {
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 0.25rem;
-
 }
 
 p.caption {
     font-size: 10px !important;
     margin-top: 0;
+}
+
+a.button {
+    font-weight: 400;
+    font-size: 12pt;
+    color: #fff;
+    background-color: #92278f;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+}
+
+a.button:hover {
+    color: #fff;
+    box-shadow: 0px 0px 10px rgb(224, 157, 230) !important;
+
 }
