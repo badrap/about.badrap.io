@@ -1,8 +1,14 @@
 <section>
-    <h2>{{slide.title}} </h2>
-    <h3>{{slide.subtitle}}</h3>
+    {% if slide.title.text %}
+    <h2>{{slide.title.text}} </h2>
+    {% endif %}
+
+    {% if slide.subtitle.text %}
+    <h3>{{slide.subtitle.text}}</h3>
+    {% endif %}
+
     <div class="people-grid">
-    {% for person in site.data.founders %}
+    {% for person in site.data.company.team %}
         <div class="grid-card">
             <!-- picture -->
             <div class="picture" style="background-image: url({{person.face}});

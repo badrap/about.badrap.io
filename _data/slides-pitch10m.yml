@@ -1,6 +1,4 @@
 - slide: title
-  title: Badrap
-  subtitle: The Security Information Marketplace
   section-parameters: data-background-image="./../img/slides/estonia.jpg"
   layout: slide-coverpage
   img:
@@ -13,8 +11,10 @@
     class: whitebox
     width: 50%
     float: right
-  title: The problem
-  text: Today access to security information is still a privilege of a few.
+  title:
+    text: The problem
+  text:
+    text: Today access to security information is still a privilege of a few.
   section-parameters: data-background-image="../../img/slides/problem.jpg"
 
 - slide: Domain Expertice
@@ -23,112 +23,96 @@
     width: 50%
     float: right
   section-parameters: data-background-image="../../img/slides/govware.jpg"
-  title: Experience
-  text: We worked with them <em>8 years</em> and witnessed awesome results.
+  title:
+    text: Experience
+  text:
+    text: We worked with them <em>8 years</em> and witnessed awesome results.
 
 - slide: Why do we do it
   layout: slide-image-and-text
-  title: Solution
-  subtitle: Rethink sharing for scale
-  text: A marketplace for security information
+  title:
+    text: Solution
+  subtitle:
+    text: Rethink sharing for scale
+  text:
+    text: A marketplace for security information
   img:
     src: ../../img/badrap-connects.svg
     position: 50% 50%
 
 - slide: How are we going to do it
   layout: slide-image-and-text
-  title: Bounties
-  subtitle: HackerOne Model
-  text: $20M paid bounties, raised $74M
+  container:
+    class: half
+  title:
+    text: Bounties
+  subtitle:
+    text: HackerOne Model
+  bullets:
+    list:
+      - $20M paid bounties
+      - $74M funding
   img:
     src: ../../img/slides/models.jpg
     position: 50% 50%
 
 - slide: demo
   layout: slide-image-and-text
-  title: Status
-  subtitle: Validated&#58;
-  text: >
-     <ul>
-      <li>Core techologies </li>
-      <li>Popularisation and Analytics </li>
-      <li>Researcher -> Individual flow</li>
-      <li><a href="https://testaaverkkosi.fi">testaaverkkosi.fi</a></li>
-     <ul>
+  title:
+    text: Status
+  subtitle:
+    text: Validated
+  bullets:
+    list:
+      - Core techologies
+      - Popularisation and Analytics
+      - Researcher -> Individual flow
+      - <a href="https://testaaverkkosi.fi">testaaverkkosi.fi</a></li>
   img:
     src: ../../img/slides/tivi.jpg
     position: 50% 50%
 
 - slide: demo
   layout: slide-image-and-text
-  title: Status
-  subtitle: Next
-  text: >
-     <ul>
-      <li>International site</li>
-      <li>Localisation</li>
-      <li>Data Leaks with Companies</li>
-     <ul>
+  title:
+    text: Status
+  subtitle:
+    text: Next
+  bullets:
+    list:
+      - International site
+      - Localisation
+      - Data Leaks with Companies
   img:
     src: ../../img/slides/testaaverkkosi-2018-01.jpg
     position: 50% 50%
 
 - slide: We have an awesome team
-  title: The awesomers
+  title:
+    text: The team
   layout: slide-team
-  team:
-    - name: Jani Kenttälä
-      title: CEO
-      face: ../img/jani2.jpg
-      facepos: 50% 70%
-      linkedin: https://www.linkedin.com/in/janikenttala/
-      twitter: https://twitter.com/janikenttala
-      medium: https://medium.com/@janikenttala
-      github: https://github.com/evilon
-
-    - name: Joachim Viide
-      title: CTO
-      linkedin: https://www.linkedin.com/in/jviide/
-      twitter: https://twitter.com/jviide
-      github: https://github.com/jviide
-      medium: https://medium.com/@jviide
-      face: ../img/jviide.jpg
-
-    - name:
-
-
-    - name: Ville Alatalo
-      title: DevPubOps
-      linkedin: https://www.linkedin.com/in/alatalo/
-      twitter: https://twitter.com/alatalo
-      github: https://github.com/alatalo
-      medium: https://medium.com/@ville.alatalo
-      face: ../img/ville.jpg
-
-    - name: Heikki Kortti
-      title: Netizens
-      face: ../img/heikki.jpg
-      facepos: 50% 0%
-
-    - name: Hillar Aarelaid
-      title: Security Researchers
-      linkedin: https://www.linkedin.com/in/hillaraarelaid/
-      github: https://github.com/hillar
-      face: ../img/hillar.jpg
-
 
 - slide: But we need help
   layout: slide-default
-  title: Help
-  text: >
-    Achieve air dominance and leadership in this space.<br>Recruits, bounties and pressworthy cases with NGOs.<br>One year runway.
+  title:
+    text: Help
+  bullets:
+    list:
+      - Achieve air dominance and leadership in this space.
+      - Recruits, bounties and pressworthy cases with NGOs.
+      - One year runway.
 
 - slide: none
-  title: Funded by
+  title:
+    text: Funded by
   layout: slide-two-images
-  img1: ../img/scanabc.jpg
-  img1-link: http://www.scanabc.com"
-  img1-caption: Ääkköset Oy invests in inspiring innovations driven by true entrepreneurs.
-  img2: ../img/businessfinland.jpg
-  img2-link: https://www.businessfinland.fi
-  img2-caption: Business Finland is the Finnish innovation funding, trade, investment, and travel promotion organisation.
+  img1:
+    src: scanabc.jpg
+    link: http://www.scanabc.com"
+    caption: Ääkköset Oy invests in inspiring innovations driven by true entrepreneurs.
+    class: shadow top
+  img2:
+    src: businessfinland.jpg
+    link: https://www.businessfinland.fi
+    caption: Business Finland is the Finnish innovation funding organisation.
+    class: shadow top

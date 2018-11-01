@@ -12,7 +12,7 @@
                 <div class="col-md-6 order-md-1 order-sm-1">
                     <h3>Founded by</h3>
                     <ul>
-                        {% for founder in site.data.founders %}
+                        {% for founder in site.data.company.team %}
 
                         {% if founder.status != "founder" %}
                             {% continue %}

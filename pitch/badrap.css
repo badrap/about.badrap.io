@@ -41,7 +41,6 @@
     max-height: 320px !important;
 
 }
-
 .reveal {
     font-family: "Montserrat", "Source Sans Pro", Helvetica, sans-serif;
     color: #060606;
@@ -68,8 +67,7 @@
     padding-bottom: 0px;
 }
 
-.reveal p,
-.reveal ul {
+.reveal p, .reveal ul {
     font-weight: 200;
     font-size: 38px;
     color: #020202;
@@ -79,7 +77,6 @@
 .reveal li {
     color: #020202;
 }
-
 .reveal section img {
     border: 0;
     box-shadow: none;
