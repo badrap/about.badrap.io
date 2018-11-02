@@ -60,3 +60,11 @@ p.text {
     color: #555;
     padding: 15px;
 }
+
+p.white em {
+    color: #fff;
+    font-style: italic !important;
+}
+.reveal section img {
+    margin-bottom: 5px;
+}

@@ -1,6 +1,6 @@
 ---
 layout: slides
-title: Badrap - Company Intro
+title: Badrap - Tech Intro
 styles:
     - reveal.js/css/reveal.css
     - reveal.js/css/theme/white.css
@@ -22,13 +22,16 @@ slides:
       text: In a nutshell
     text:
       text: A modern cloud application to serve security researchers and individuals who need security information
+    img:
+      src: badrap-connects.svg
+      width: 400px;
 
   - slide:
     layout: slide-cards
     title:
       text: Proven tech stack
     subtitle:
-      text: Service has run flawlessly since 2017-11
+      text: badrap.io has without a hitch since 2017-11
     cards:
       - title: Google cloud
         image: google-cloud.svg
@@ -42,7 +45,7 @@ slides:
         text: Repeatable deployments with modern, containerised and immutable infrastructure
       - title: Continuous integration & deployment
         image: integration.png
-        text: Highly automated deployments with ....
+        text: Highly automatized deployments & integrations.
       - title: Node.js
         image: nodejs.svg
         text: Frontend and backend with Node.js (JavaScript and TypeScript)
@@ -57,7 +60,7 @@ slides:
       text: Security researchers
   - slide:
     title:
-      text: API for IP-based observations
+      text: An API for feeding IP-based observations
     img:
       src: api.jpg
       class: shadow
@@ -74,19 +77,29 @@ slides:
   - slide:
     title:
       text: Shadowserver streamlined to the max
+      class: white
     text:
-      text: We will give you an email-adress, such as <em>shadowserver-ro@badrap.io.</em> Reports sent to that address will be automatically available for badrap.io users.
+      text: We will give you an email-adress, such as <em>shadowserver-ro@badrap.io.</em> badrap.io will automatically consume the reports.
+      class: white
+    section-parameters: >
+      data-background-size="contain"
+      data-background-repeat="no-repeat"
+      data-background="linear-gradient(rgba(200, 60, 240, 0.9), rgba(255, 0, 0, 0.9)),
+        url(shadowserver.jpg)"
   - slide:
     title:
-      text: Badrap for users
+      text: Badrap for individuals
+    text:
+      text: Today we serve individuals, who know a little bit of technology and are curious about security.
   - slide:
     title:
       text: Check your IP
-    subtitle:
-      text: Single click. No login required.
+    text:
+      text: Check home, relatives, schools and other places you care about with a single click. No login required.
     img:
       src: 01-check.jpg
       class: shadow
+      width: 700px;
   - slide:
     layout: slide-image-and-text
     title:
@@ -119,6 +132,7 @@ slides:
   - slide:
     title:
       text: Email warnings
+    layout: slide-image-and-text
     text:
       text: >
         But when badrap.io receives information about the IPs you follow,
@@ -126,7 +140,7 @@ slides:
     img:
       src: 04-email-warning.jpg
       class: shadow
-      width: 450px;
+      width: 400px;
   - slide:
     title:
       text: Check the warning
@@ -147,11 +161,12 @@ slides:
       src: 07-vuepress-docs.jpg
       class: shadow
       width: 700px;
+      caption: https://docs.badrap.io/
   - slide:
     title:
       text: That is badrap.io
     text:
-      text: A scalable and fault-tolerant service for security researchers and individuals.
+      text: A scalable and fault-tolerant service to connect security researchers and individuals.
     buttons:
       - button:
         link: https://badrap.io
