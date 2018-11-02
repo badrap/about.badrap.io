@@ -1,0 +1,205 @@
+---
+layout: slides
+title: Badrap - Tech Intro
+styles:
+    - reveal.js/css/reveal.css
+    - reveal.js/css/theme/white.css
+    - badrap.css
+    - tech.css
+    - vendor/font-awesome-v5.4.2/css/all.css
+
+slides:
+  - slide:
+    title:
+      text: Badrap
+    layout: slide-coverpage
+    img:
+      src: badrap-logo.svg
+      alt: Badrap logo
+      width: 30%
+  - slide:
+    title:
+      text: In a nutshell
+    text:
+      text: A modern cloud application to serve security researchers and individuals who need security information
+    img:
+      src: badrap-connects.svg
+      width: 400px;
+
+  - slide:
+    layout: slide-cards
+    title:
+      text: Proven tech stack
+    subtitle:
+      text: badrap.io has without a hitch since 2017-11
+    cards:
+      - title: Google cloud
+        image: google-cloud.svg
+        text: >
+          Runs on Google Cloud.
+          No vendor lock-in thanks to Kubernetes.
+          Observable, fault tolerant, scalable.
+
+      - title: Containerised infrastructure
+        fa: fas fa-box
+        text: Repeatable deployments with modern, containerised and immutable infrastructure
+      - title: Continuous integration & deployment
+        image: integration.png
+        text: Highly automatized deployments & integrations.
+      - title: Node.js
+        image: nodejs.svg
+        text: Frontend and backend with Node.js (JavaScript and TypeScript)
+      - title: Vue.js
+        image: vuejs.svg
+        text: Vue.js frontend for high development velocity
+      - title: Mailgun
+        text: Mailgun for customer notifications and receiving feed data
+        image: mailgun.svg
+  - slide:
+    title:
+      text: Security researchers
+  - slide:
+    title:
+      text: An API for feeding IP-based observations
+    img:
+      src: api.jpg
+      class: shadow
+  - slide:
+    layout: slide-image-and-text
+    title:
+      text: We use the APIs
+    text:
+      text: Automatic consumption of data provided by Fitsec, Telia, Deutsche Telekom and Shadowserver
+    img:
+      src: consumedbyus.jpg
+      class: shadow
+
+  - slide:
+    title:
+      text: Shadowserver streamlined to the max
+      class: white
+    text:
+      text: We will give you an email-add ress, such as <em>shadowserver-ro@badrap.io.</em> badrap.io will automatically consume the reports.
+      class: white
+    section-parameters: >
+      data-background-size="contain"
+      data-background-repeat="no-repeat"
+      data-background="linear-gradient(rgba(200, 60, 240, 0.9), rgba(255, 0, 0, 0.9)),
+        url(shadowserver.jpg)"
+  - slide:
+    title:
+      text: Badrap for individuals
+    text:
+      text: Today we serve individuals, who know a little bit of technology and are curious about security.
+  - slide:
+    title:
+      text: Check Networks You Care About
+    text:
+      text: Home, relatives, schools, cafes. Single click. No login required.
+    img:
+      src: 01-check.jpg
+      class: shadow
+      width: 700px;
+  - slide:
+    layout: slide-image-and-text
+    title:
+      text: Get email warnings
+    text:
+      text: By registering, you can start following IP-addresses important to you
+    img:
+      src: 02-register.jpg
+      class: shadow
+  - slide:
+    title:
+      text: Add, rename, delete
+    text:
+      text: You can follow, name, rename and delete IP-addresses you use
+    img:
+      src: 03-follow.jpg
+      class: shadow
+      width: 700px;
+
+  - slide:
+    title:
+      text: All good confirmation
+    text:
+      text: Usually, you get a monthly all-good confirmation.
+    img:
+      src: 05-email-allgood.jpg
+      class: shadow
+      width: 500px;
+
+  - slide:
+    title:
+      text: Email warnings
+    layout: slide-image-and-text
+    text:
+      text: >
+        But when badrap.io receives information about the IPs you follow,
+        it will warn you via email
+    img:
+      src: 04-email-warning.jpg
+      class: shadow
+      width: 400px;
+  - slide:
+    title:
+      text: Check the warning
+    text:
+      text: in badrap.io
+    img:
+      src: 06-web-warning.jpg
+      class: shadow
+      width: 700px;
+  - slide:
+    title:
+      text: Read more
+    text:
+      text: >
+        badrap.io links to furthter information.
+        Thanks to VuePress and Github, details can be localised by a third party.
+    img:
+      src: 07-vuepress-docs.jpg
+      class: shadow
+      width: 700px;
+      caption: https://docs.badrap.io/
+  - slide:
+    title:
+      text: That is badrap.io
+    text:
+      text: A scalable and fault-tolerant service to connect security researchers and individuals.
+    buttons:
+      - button:
+        link: https://badrap.io
+        text: Use badrap.io
+        social:
+      - button:
+        link: https://about.badrap.io
+        text: Our web pages
+      - button:
+        link: https://www.twitter.com/badrapio
+        text: Twitter
+      - button:
+        link: https://medium.com/badrapio
+        text: Medium
+      - button:
+        link: https://share.hsforms.com/1YYCtOd6TRR-94J91OfG_zw2ecmj
+        text: Contact us
+
+
+---
+
+{% for slide in page.slides %}
+
+    <!--- post post post -->
+
+    {% if slide.layout == null %}
+        {% assign layout = "slide-default" %}
+    {% else %}
+        {% assign layout = slide.layout %}
+    {% endif %}
+
+    {% include {{layout}}.html %}
+
+    <!--- END post post post -->
+
+{% endfor %}
