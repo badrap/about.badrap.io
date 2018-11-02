@@ -28,7 +28,12 @@
     {% endif %}
 
     {% if slide.img.src %}
-    <img src="{{slide.img.src}}" class="{{slide.img.class}}" width="{{slide.img.width}}" alt="{{slide.img.alt}}">
+
+    <img src="{{slide.img.src}}" class="{{slide.img.class}}" alt="{{slide.img.caption}}" width="{{slide.img.width}}" alt="{{slide.img.alt}}">
+    {% if slide.img.caption %}
+    <p class="caption"> {{slide.img.caption}}</p>
+    {% endif %}
+
     {% endif %}
 
     {% for button in slide.buttons %}
