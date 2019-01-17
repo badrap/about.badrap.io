@@ -1,4 +1,4 @@
-= Background =
+# Background
 
 Data breaches happen on daily basis. Hundreds of companies leak billions of customer records left and right. 
 Criminals take the leaked information and use it to attack others. 
