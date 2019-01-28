@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Badrap for Employees
-ogdescription: Protect the Employees, Protect the Company
+title: Cyber Hygiene for Employees
+ogdescription: Protect the Employees, Protect the Business
 twittercard: summary_large_image
 twitter: "@BadRapIO"
 styles:
@@ -10,15 +10,66 @@ styles:
   - companies.css
   - employees.css
 product: Cyber Hygiene for Employees
-tagline: Protect the Employees, Protect the Company
-what:
+tagline: Protect the Employees, Protect the Business
+benefits-old:
     heading: What is Cyber Hygiene for Employees
     description: >
-      Cyber Hygiene for Employees provides an excellent opportunity for you
-      to increase your employee security awareness. Your employees get to hunt
+      Cyber Hygiene for Employees increases your employee security awareness  Your employees get to hunt
       security issues with a browser-based badrap.io service. They check their
       homes, relatives, schools and other places they care about. Empower your
       employees and make the more security aware!
+
+benefits:
+    - benefit: Avoid Data Breaches
+      icon: <i class="fas fa-database fa-5x"></i>
+      tagline: Personal Data Breach Monitoring
+      morelink: ./employees#databreaches
+      long: >
+        81% of confirmed data breaches involved leveraging weak or stolen
+        passwords, says Spycloud. 27% of users recycle passwords, says (HPI).
+        Criminals use stolen usernames and passwords in automated attacks
+        against companies. Let security researchers warn your employees if
+        their passwords are stolen from the services they use in their free
+        time.
+
+    - benefit: Keep good reputation
+      icon: <i class="far fa-comments fa-5x"></i>
+      tagline: Employees, recruits and customers
+      morelink: ./employees#pr
+      long: >
+        You care about your employees and security. Let it show! Current
+        employees stay longer when they feel appreciated. Future employees
+        are more inclined to work with you when they know you care about them.
+        And customers will appreciate how far you are willing to go with
+        security improvements.
+
+
+    - benefit: Preserve privacy
+      icon: <i class="fas fa-briefcase-medical fa-5x"></i>
+      tagline: Occupational health approach to security
+      morelink: ./employees#privacy
+      long: >
+        Badrap service was build for individuals. That is why we
+        can provide personal service similar to the occupational health
+        services. And that is why your employees can start protecting all their
+        assets withouth worrying their employer is watching over.
+
+    - benefit: Protect outside perimeter
+      icon: <i class="fas fa-home fa-5x"></i>
+      tagline: Protect nomad and BYOD employees
+      morelink: ./employees#perimeter
+      long: >
+        Employees work from home and on the go. They bring their own devices to
+        the their work. Some of them use similar passwords everywhere, so their
+        passwords stolen from third parties may be used against you. Protect
+        your employees, protect your business.
+
+founderquote:
+    image: jani-face-round.png
+    name: Jani, CEO
+    blurp: >
+        Data breaches happen at recor pace. We want to democratise information sharing.
+
 how:
     heading: How Does it Work?
 
@@ -120,21 +171,74 @@ moreinfo:
         <div class="column col-12 text-center my-auto">
             <h1 class="heading pt-5 pb-0 mx-auto">{{page.product}}</h1>
             <h2 class="tagline pt-0"><em>{{page.tagline}}</em></h2>
-
         </div>
     </div>
 </div>
 
-<div class="container-fluid rapgray" id="signup">
-        <div class="row py-5 justify-content-center">
-            <div class="column col-md-9 text-center">
-                <h1>{{page.what.heading}}</h1>
-                <p>
-                    {{page.what.description}}
-                </p>
+<!-- Benefits -->
+<div class="container-fluid px-0" id="benefitsr">
+
+    <div class="row my-0 mx-0 rapwhite justify-content-center">
+
+        {% for benefit in page.benefits %}
+
+        <div class="col-lg-3 col-md-6 col-sm-12 mx-auto rapborder text-center justify-content-center">
+            <div class="featurediv mx-2  mx-auto">
+                <p class="tag mt-4"> {{benefit.benefit}} </p>
+                {{benefit.icon}}
+                <p class="thin">{{benefit.tagline}}</p>
+                <a href="{{benefits.morelink}}" id="benefits-read-more">
+                    <button type="button" class="btn btn-rap">Read more</button>
+                </a>
             </div>
         </div>
+        {% endfor %}
     </div>
+</div>
+
+
+<!-- Quote -->
+
+<div class="container-fluid rapgray" id="founderquote">
+    <div class="row py-5 justify-content-center">
+        <div class="column col-md-4 text-center">
+            <img src="{{page.founderquote.image}}" class="face mx-auto d-block">
+            <p> {{page.founderquote.name}}</p>
+        </div>
+        <div class="column col-md-8 my-auto text-center">
+            <quote class="blockquote">
+                {{page.founderquote.blurp}}
+            </quote>
+        </div>
+    </div>
+</div>
+
+<!-- More about the benefits -->
+<div class="container px-0" id="morebenefits">
+    {% for benefit in page.benefits %}
+        {% assign loopindex = forloop.index | modulo: 2 %}
+        {% if loopindex == 1 %}
+            {% assign picorder = "order-sm-1" %}
+            {% assign textorder = "order-sm-2" %}
+        {% else %}
+            {% assign picorder = "order-sm-2" %}
+            {% assign textorder = "order-sm-1" %}
+        {% endif %}
+
+    <div class="row my-5 mx-5 justify-content-center">
+        <div class="col-md-6 col-sm-12 mx-auto text-center
+        justify-content-center {{textorder}}">
+            <h2> {{benefit.benefit}} </h2>
+            <p>{{benefit.long}}</p>
+        </div>
+        <div class="col-md-6 col-sm-12 mx-auto my-auto text-center
+        justify-content-center {{picorder}}">
+                {{benefit.icon}}
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
 
 
 <div class="container-fluid px-0" id="featurebanner">
@@ -147,7 +251,6 @@ moreinfo:
 
         <div class="col-lg-3 col-sm-6 col-12 mx-auto rapborder text-center justify-content-center">
             <div class="featurediv mx-2  mx-auto">
-
                     <p class="tag mt-4"> {{feature.feature}} </p>
                 {{feature.icon}}
                 <p class="thin">{{feature.tagline}}</p>
