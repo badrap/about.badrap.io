@@ -6,18 +6,14 @@
   experiences from the pre-trial marketing.
 * 2019-01-25 Second sparring session. Sales material, [Cyber Hygiene intro page]
   as the main focus.
-  * Separate domain for the product? Not right now, trying to keep different
-    brands in check.
-  * Also looked forward a bit and considered the product naming model.
-    * Cyber Hygiene for Employees - a tad long. Alternatives:
-      * Badrap + angle -> Badrap Employees. Badrap Companies. etc.
 
 Upcoming:
 
 * 2019-01-20 Round three with Teemu
 * 2019-01-31 Kickoff with trial marketeers
+  * [ ] Write background during the intros
   * [ ] Set up hubspot accounts
-  * [ ] Make sure access rights are there
+  * [ ] Make sure access rights are there
   * [ ] Go through existing material
   * [ ] Map progress/prospects in Hubspot
 
@@ -46,6 +42,13 @@ We have qualified three contractors for reaching out and getting feedback:
 
 ### Landing page
 
+![Mindmap](mindmap.png)
+
+* [x] Separate domain for the product? Not right now, trying to keep different
+    brands in check.
+* Also looked forward a bit and considered the product naming model.
+  * Cyber Hygiene for Employees - a tad long. Alternatives:
+  * Badrap + angle -> Badrap Employees. Badrap Cloud
 * [ ]Landing page starts with protect employees = protect business
 * Security pro's picked up the PR angle in pre-trial marketing. Remember to
   include PR & HR values
