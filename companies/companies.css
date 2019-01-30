@@ -37,6 +37,11 @@ body {
     background-position: 30% 40%;
 }
 
+.connects-companies {
+    background-image: url('badrap-companies-employees.svg');
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .sporty {
     font-style: italic;
     text-shadow: 1px 2px 3px #222;
