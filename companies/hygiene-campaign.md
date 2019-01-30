@@ -10,12 +10,8 @@
 Upcoming:
 
 * 2019-01-20 Round three with Teemu
-* 2019-01-31 Kickoff with trial marketeers
-  * [ ] Write background during the intros
-  * [ ] Set up hubspot accounts
-  * [ ] Make sure access rights are there
-  * [ ] Go through existing material
-  * [ ] Map progress/prospects in Hubspot
+* 2019-01-31 [Kickoff with trial marketeers](2019-01-31-kickoff.md)
+
 
 ## Prospecting
 
