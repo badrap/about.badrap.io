@@ -15,13 +15,6 @@ body {
     background-position: 30% 40%;
 }
 
-.home {
-    min-height: 60vh;
-    background-image: url('home.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 30% 50%;
-}
 
 .parallax {
     background-attachment: fixed;

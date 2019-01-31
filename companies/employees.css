@@ -12,6 +12,15 @@
 
 }
 
+.home {
+    min-height: 60vh;
+    background-image: url('home.jpg');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+}
+
 .column.index h1 {
     padding: 5px;
     margin-top: 0;
