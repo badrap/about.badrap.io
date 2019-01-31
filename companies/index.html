@@ -8,42 +8,50 @@ styles:
   - /vendor/agency/css/agency.min.css
   - /css/badrap.css
   - companies.css
+
+headline: Prevent Data Breaches with Badrap Security Researchers
+tagline: >
+    Security researchers already produce information about you.<br>
+    Some for free, some commercially.<br>
+    Take the most out of it with Badrap.
+
+
+intro:
+  heading: Let security researchers tell you what they found
+  quote: The only thing missing is the link between you and what they found about you.
+  description: >
+    Security researchers already scan vulnerabilities from all
+    your Internet-facing infrastructure. They discover services that
+    leak business critical information. And they find the leaks too.
+    The only thing missing is the link between you and what they found
+    about you. Let us be that link!
+
 ---
 <div class="container-fluid planning">
     <div clas="row">
         <div class="column col-8 offset-1">
-            <h1 class="white headline pt-5">Use security information
-                efficiently</h1>
-            <h4 class="white pt-0">Security researchers already produce
-                information
-                about you.<br>
-                Some for free, some commercially.<br>
-                Learn how to take the most out of it.</h4>
+            <h1 class="white headline pt-5">{{page.headline}}</h1>
+            <h4 class="white pt-0">{{page.tagline}}</h4>
         </div>
     </div>
 </div>
-<div class="container" id="signup">
+
+
+<div class="container">
     <div class="row py-5">
         <div class="column col-xl-6 col-12 text-center my-auto">
-            <h1>Let security researchers tell you what they found </h1>
-            <p><em>"The only thing missing is the link between you and what
-                    they found about you."</em></p>
+            <h1>{{page.intro.heading}} </h1>
+            <p><em>{{page.intro.quote}}</em></p>
 
-            <p>Security researchers already scan vulnerabilities from all
-                your Internet-facing infrastructure. They crawl the dark
-                corners of the net and
-                run honeypots to see if malicious programs
-                try to connect out from your networks. The only thing missing
-                is
-                the link between you and what they found about you. Could
-                Badrap be that link? </p>
-
-
+            <p>{{page.intro.description}}</p>
         </div>
-        <div class="illustrate connects col-xl-6">
+        <div class="illustrate connects-companies col-xl-6">
         </div>
     </div>
 </div>
+
+<!-- Benefits -->
+
 <div class="container-fluid" id="Agenda">
 
     <div class="row py-5">
@@ -51,9 +59,7 @@ styles:
         <div class="column col-lg-6 col-12">
             <h1>Agenda</h1>
             <p>Have a conversation with Jani and learn how you can take the
-                most out
-                of the security information!
-
+               most out of the security information!
             </p>
             <ul class="mr-4">
                 <li /> Why we want to democratize information sharing

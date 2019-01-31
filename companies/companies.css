@@ -15,13 +15,6 @@ body {
     background-position: 30% 40%;
 }
 
-.home {
-    min-height: 60vh;
-    background-image: url('home.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 30% 50%;
-}
 
 .parallax {
     background-attachment: fixed;
@@ -37,6 +30,11 @@ body {
     background-position: 30% 40%;
 }
 
+.connects-companies {
+    background-image: url('badrap-companies-employees.svg');
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .sporty {
     font-style: italic;
     text-shadow: 1px 2px 3px #222;
@@ -129,9 +127,6 @@ h1 {
 }
 
 .face {
-    border-width: 7px;
-    border-color: #92278f;
-    border-style: solid;
     max-width: 150px;
 }
 
