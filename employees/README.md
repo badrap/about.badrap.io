@@ -30,9 +30,14 @@ Upcoming:
 
 ![Mindmap](mindmap.png)
 
-* [Plan](plan.md)
+[Plan](plan.md)
 
 ## Assets
 
 * Banner Photo by [Annie Spratt on Unsplash](https://unsplash.com/photos/g9KFpAfQ5bc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 more h
+
+## Links
+
+* [Employees Landing Page](https://about.badrap.io/employees/)
+* [Hubspot](https://www.hubspot.com/)
