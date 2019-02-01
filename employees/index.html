@@ -7,13 +7,9 @@ twitter: "@BadRapIO"
 styles:
   - /vendor/agency/css/agency.min.css
   - /css/badrap.css
-  - companies.css
-  - employees.css
+  - custom.css
 headline: Cyber Hygiene for Employees
 tagline: Protect the Employees, Protect the Business
-what:
-    heading: What is Cyber Hygiene for Employees
-    description: >
 
 founderquote:
     image: jani-face-round.png
@@ -24,7 +20,6 @@ founderquote:
         who takes care of the employees? Modern attacks to companies go through them. We
         created Cyber Hygiene for Employees to keep your workforce safe in their free
         time. When they stay safe, you stay safe.
-
 benefits:
     - benefit: Avoid Data Breaches
       tagline: by protecting employee's identities
@@ -60,10 +55,10 @@ benefits:
       icon: <i class="fas fa-briefcase-medical fa-5x"></i>
       morelink: ./employees#privacy
       long: >
-            Badrap started off with helping individuals. That is why we
-            can provide personal service online, similar to the occupational health.
-            And that is why your employees can start protecting all their
-            assets withouth worrying their employer is watching over.
+          Badrap started off with helping individuals. That is why we
+          can provide personal service online, similar to the occupational health.
+          And that is why your employees can start protecting all their
+          assets withouth worrying their employer is watching over.
 
 how:
     heading: How Does it Work?
@@ -114,19 +109,18 @@ features:
       longid: reward
 
 whyus:
-  heading: Why work with us?
-  description: >
-    Badrap was founded by security veterans, who have served countries, and critical
-    infrastructure organisations for ages. We have witnessed how the Finnish approach
-    of collecting and sharing security information with those in danger have helped
-    organisations and individuals to stay safe. We've
-    seen how other countries adapt to that model. Now we want to make security information
-    accessible to everyone, including you and your employees.
-
+    heading: Why work with us?
+    description: >
+      Badrap was founded by security veterans, who have served countries, and critical
+      infrastructure organisations for ages. We have witnessed how the Finnish approach
+      of collecting and sharing security information with those in danger have helped
+      organisations and individuals to stay safe. We've
+      seen how other countries adapt to that model. Now we want to make security information
+      accessible to everyone, including you and your employees.
 
 packages:
-  heading: Campaign Packages
-  prices:
+    heading: Campaign Packages
+    prices:
     - title: Small
       price: 3 400€
       features:
@@ -160,14 +154,13 @@ packages:
 moreinfo:
     heading: Want to talk more?
     how: >
-      You can contact us via email (contact@badrap.io) or leave your contact info to our
-      <a href="https://share.hsforms.com/1YYCtOd6TRR-94J91OfG_zw2ecmj"> contact form</a>,
-      and we'll be in touch promptly!
+        You can contact us via email (contact@badrap.io) or leave your contact info to our
+        <a href="https://share.hsforms.com/1YYCtOd6TRR-94J91OfG_zw2ecmj"> contact form</a>,
+        and we'll be in touch promptly!
     contactform: https://share.hsforms.com/1YYCtOd6TRR-94J91OfG_zw2ecmj
     formscreenshot: form-shot.jpg
-
-
 ---
+
 <div class="container-fluid home">
     <div clas="row">
         <div class="column col-12 text-center my-auto">
@@ -179,64 +172,63 @@ moreinfo:
 
 <div class="container-fluid px-0" id="benefits">
 
-        <div class="row my-0 mx-0 rapdark justify-content-center">
+    <div class="row my-0 mx-0 rapdark justify-content-center">
 
-            {% for benefit in page.benefits %}
+        {% for benefit in page.benefits %}
 
-            <div class="col-lg-3 col-md-6 col-sm-12 mx-auto rapborder text-center justify-content-center">
-                <div class="featurediv mx-2  mx-auto">
-                    <p class="tag mt-4"> {{benefit.benefit}} </p>
-                    {{benefit.icon}}
-                    <p class="thin">{{benefit.tagline}}</p>
-                    <a href="{{benefits.morelink}}" id="benefits-read-more">
-                        <button type="button" class="btn btn-rap">Read more</button>
-                    </a>
-                </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mx-auto rapborder text-center justify-content-center">
+            <div class="featurediv mx-2  mx-auto">
+                <p class="tag mt-4"> {{benefit.benefit}} </p>
+                {{benefit.icon}}
+                <p class="thin">{{benefit.tagline}}</p>
+                <a href="{{benefits.morelink}}">
+                    <button type="button" class="btn btn-rap">Read more</button>
+                </a>
             </div>
-            {% endfor %}
         </div>
+        {% endfor %}
     </div>
-
 </div>
+
 <!-- Quote -->
 
 <div class="container-fluid rapgray" id="founderquote">
-        <div class="row py-5 justify-content-center">
-            <div class="column col-md-4 text-center">
-                <img src="{{page.founderquote.image}}" class="face mx-auto d-block">
-                <p> {{page.founderquote.name}}</p>
-            </div>
-            <div class="column col-md-8 my-auto text-center">
-                <quote class="blockquote">
-                    {{page.founderquote.blurp}}
-                </quote>
-            </div>
+    <div class="row py-5 justify-content-center">
+        <div class="column col-md-4 text-center">
+            <img src="{{page.founderquote.image}}" class="face mx-auto d-block">
+            <p> {{page.founderquote.name}}</p>
+        </div>
+        <div class="column col-md-8 my-auto text-center">
+            <quote class="blockquote">
+                {{page.founderquote.blurp}}
+            </quote>
         </div>
     </div>
+</div>
 
 <!-- More about the benefits -->
 
 <div class="container px-0" id="morebenefits">
     {% for benefit in page.benefits %}
 
-        {% assign loopindex = forloop.index | modulo: 2 %}
-        {% if loopindex == 1 %}
-            {% assign picorder = "order-sm-1" %}
-            {% assign textorder = "order-sm-2" %}
-        {% else %}
-            {% assign picorder = "order-sm-2" %}
-            {% assign textorder = "order-sm-1" %}
-        {% endif %}
+    {% assign loopindex = forloop.index | modulo: 2 %}
+    {% if loopindex == 1 %}
+    {% assign picorder = "order-sm-1" %}
+    {% assign textorder = "order-sm-2" %}
+    {% else %}
+    {% assign picorder = "order-sm-2" %}
+    {% assign textorder = "order-sm-1" %}
+    {% endif %}
 
     <div class="row my-5 mx-5 justify-content-center">
         <div class="col-md-6 col-sm-12 mx-auto text-center
-        justify-content-center {{textorder}}">
+            justify-content-center {{textorder}}">
             <h2> {{benefit.benefit}} </h2>
             <p>{{benefit.long}}</p>
         </div>
         <div class="col-md-6 col-sm-12 mx-auto my-auto text-center
-        justify-content-center {{picorder}}">
-                {{benefit.icon}}
+            justify-content-center {{picorder}}">
+            {{benefit.icon}}
         </div>
     </div>
     {% endfor %}
@@ -254,7 +246,7 @@ moreinfo:
 
         <div class="col-lg-3 col-sm-6 col-12 mx-auto rapborder text-center justify-content-center">
             <div class="featurediv mx-2  mx-auto">
-                    <p class="tag mt-4"> {{feature.feature}} </p>
+                <p class="tag mt-4"> {{feature.feature}} </p>
                 {{feature.icon}}
                 <p class="thin">{{feature.tagline}}</p>
             </div>
@@ -269,24 +261,24 @@ moreinfo:
     {% for long in page.features %}
     {% assign loopindex = forloop.index | modulo: 2 %}
     {% if loopindex == 1 %}
-        {% assign picposition = "order-sm-1" %}
-        {% assign titlealign = "mx-auto" %}
-        {% assign offset = "offset-sm-0" %}
+    {% assign picposition = "order-sm-1" %}
+    {% assign titlealign = "mx-auto" %}
+    {% assign offset = "offset-sm-0" %}
 
-        {% else %}
-        {% assign picposition = "order-sm-3" %}
-        {% assign titlealign = "text-right" %}
-        {% assign offset = "offset-sm-1" %}
+    {% else %}
+    {% assign picposition = "order-sm-3" %}
+    {% assign titlealign = "text-right" %}
+    {% assign offset = "offset-sm-1" %}
 
 
     {% endif %}
 
-    <div class="row headline" id="{{point.id}}" >
+    <div class="row headline" id="{{point.id}}">
         <div class="column index col-lg-1 col-sm-2 col-12 {{picposition}}">
             <h1>{{forloop.index}}</h1>
         </div>
         <div class="column {{offset}} col-lg-10 col-sm-9 col-12 order-sm-2 my-auto">
-           <h1 class="point my-3 {{titlealign}}"> {{long.feature}} </h1>
+            <h1 class="point my-3 {{titlealign}}"> {{long.feature}} </h1>
         </div>
     </div>
     <div class="row description mx-0">
@@ -294,7 +286,7 @@ moreinfo:
             {{long.longicon}}
         </div>
         <div class="column {{offset}} col-lg-10 col-sm-9 col-12 order-sm-2">
-                <p class="my-3 {{titlealign}}">{{long.long}}</p>
+            <p class="my-3 {{titlealign}}">{{long.long}}</p>
         </div>
     </div>
     {% endfor %}
@@ -323,7 +315,7 @@ moreinfo:
     <div class="row justify-content-center text-center">
         <div class="column col-6 col-sm-4 col-md-3 col-lg-2">
             <a href="https://share.hsforms.com/11bom_nMgRBWoa6yhdsRoiA2ecmj"
-               class="btn btn-primary mx-0">Order »
+                class="btn btn-primary mx-0">Order »
             </a>
         </div>
     </div>
@@ -354,7 +346,8 @@ moreinfo:
 
     <div class="row justify-content-center text-center">
         <div class="column col-6 col-sm-4 col-md-3 col-lg-2">
-            <a href="https://share.hsforms.com/11bom_nMgRBWoa6yhdsRoiA2ecmj" class="btn btn-primary mx-0">Order
+            <a href="https://share.hsforms.com/11bom_nMgRBWoa6yhdsRoiA2ecmj"
+                class="btn btn-primary mx-0">Order
                 »
             </a>
         </div>
@@ -369,5 +362,3 @@ moreinfo:
         </div>
     </div>
 </div>
-
-
