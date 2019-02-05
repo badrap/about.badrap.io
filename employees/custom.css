@@ -23,7 +23,7 @@ p {
 .thin {
     font-weight: 400;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
     text-transform: uppercase;
@@ -40,6 +40,8 @@ p {
     padding: 0;
     border-radius: 5px;
 }
+
+
 
 .face {
     max-width: 150px;
@@ -80,6 +82,7 @@ p {
     background-repeat: no-repeat;
     background-position: 30% 40%;
 }
+
 
 .btn-primary {
     background-color: #92278f;
@@ -135,7 +138,16 @@ p.thin {
 
 
 }
+@media (max-width: 991px) {
+    .rapborder {
+        border-right-width: 0px;
+    }
+    .benefits {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
 
+}
 @media print {
     .container {
         page-break-after: always;
