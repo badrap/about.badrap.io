@@ -38,8 +38,14 @@ p {
 .headline {
     margin: 0;
     padding: 0;
-    background-color: #fff0ff;
     border-radius: 5px;
+}
+.gradient-toright {
+    background-image: linear-gradient(to right,#fff0ff, #ffffff);
+}
+
+.gradient-toleft {
+    background-image: linear-gradient(to left,#fff0ff, #ffffff);
 }
 
 .column.index {
