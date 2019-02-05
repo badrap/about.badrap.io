@@ -14,18 +14,17 @@ tagline: Protect the Employees, Protect the Business
 founderquote:
     image: jani-face-round.png
     name: Jani, CEO
-    heading: A fun way to learn about security.
+    heading: A Fun Way to Learn About Security
     blurp: >
         There are plenty of
         security solutions to protect your perimeter and your IT-systems. But
-        who takes care of the employees? Modern attacks on companies go through
-        them. We created Cyber Hygiene for Employees to take care of the people
-        who work with critical information but are not necessarily security
-        professionals.
+        what happens when your employees get compromised during their free
+        time? Modern attacks on companies are indirect. First they take the employee, then
+        they take the company. When you protect your employees, you protect your business.
 benefits:
     - benefit: Avoid Data Breaches
       tagline: by protecting employee's identities
-      icon: <i class="fas fa-database fa-5x"></i>
+      icon: <i class="fas fa-database fa-4x"></i>
       morelink: databreaches
       long: >
         81% of confirmed data breaches involved leveraging weak or stolen
@@ -34,27 +33,29 @@ benefits:
         risk increases. Let Badrap security researchers
         warn your employees when their information leaks.
 
-    - benefit: Win hearts and minds
-      icon: <i class="far fa-comments fa-5x"></i>
+    - benefit: Win Hearts and Minds
+      icon: <i class="far fa-comments fa-4x"></i>
       tagline: You care about security and your employees. Let it show!
       morelink: pr
       long: >
         Employees stay longer when they feel appreciated. Future employees
         are more inclined to work with you when they know how much you care about them.
         Customers appreciate your efforts to keep their data safe.
-    - benefit: Beyond perimeter protection
+    - benefit: Beyond Perimeter Protection
       tagline: Shifting focus to Users & Devices
-      icon: <i class="fas fa-home fa-5x"></i>
+      icon: <i class="fas fa-home fa-4x"></i>
       morelink: perimeter
       long: >
-        The security industry focuses on protecting the perimeter. We have
-        almost missed the fact that the employees can get compromised in
-        their free time. Their identities and personal information leak
-        from third-party services.
+        Remember the times when work was done only at the office?
+        Now we work at home among our IoT devices. We use our own devices
+        (BYOD), shared by the family. What if you could
+        help your employees to notice when bad things happen? Protect your
+        employees in their free time! If the worst
+        happens, we can turn the situation into a learning experience.
 
     - benefit: Occupational Cyber Health
       tagline: We'll be the doctor. You focus on your business.
-      icon: <i class="fas fa-briefcase-medical fa-5x"></i>
+      icon: <i class="fas fa-briefcase-medical fa-4x"></i>
       morelink: privacy
       long: >
         Badrap started by helping individuals.
@@ -184,7 +185,7 @@ moreinfo:
         {% for benefit in page.benefits %}
 
         <div class="col-lg-3 col-md-6 col-sm-12 mx-auto rapborder text-center justify-content-center">
-            <div class="featurediv mx-2  mx-auto">
+            <div class="featurediv mx-2 mx-auto">
                 <p class="tag mt-4"> {{benefit.benefit}} </p>
                 {{benefit.icon}}
                 <p class="thin">{{benefit.tagline}}</p>
@@ -200,13 +201,14 @@ moreinfo:
 <!-- Quote -->
 
 <div class="container-fluid rapgray" id="founderquote">
-    <div class="row py-5 justify-content-center">
-        <div class="column col-md-4 text-center">
+    <div class="row py-3 justify-content-center">'
+        <div class="column col-md-4 align-items-center text-center">
+
             <img src="{{page.founderquote.image}}" class="face mx-auto d-block">
             <p> {{page.founderquote.name}}</p>
         </div>
-        <div class="column col-md-8 my-auto text-center">
-            <h2>{{page.founderquote.heading}}</h2>
+        <div class="column col-md-6 my-auto text-center">
+
             <quote class="blockquote">
                 {{page.founderquote.blurp}}
             </quote>
@@ -217,6 +219,7 @@ moreinfo:
 <!-- More about the benefits -->
 
 <div class="container px-0" id="morebenefits">
+
     {% for benefit in page.benefits %}
 
     {% assign loopindex = forloop.index | modulo: 2 %}

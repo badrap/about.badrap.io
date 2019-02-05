@@ -1,5 +1,5 @@
 .home {
-    min-height: 60vh;
+    min-height: 55vh;
     background-image: url('home.jpg');
     background-color: black;
     background-size: cover;
@@ -39,6 +39,10 @@ p {
     margin: 0;
     padding: 0;
     border-radius: 5px;
+}
+
+.face {
+    max-width: 150px;
 }
 .gradient-toright {
     background-image: linear-gradient(to right,#fff0ff, #ffffff);
