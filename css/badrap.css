@@ -84,6 +84,9 @@ header.masthead .intro-text {
     border-right-width: 0.5px;
     border-color: #999;
 }
+.rapborder:last-child {
+    border-style: none;
+}
 
 .tag {
     margin-top: 20px;
@@ -229,9 +232,12 @@ h5 {
 .btn-rap {
     background-color: #92278f;
     color: #fff;
-    font-size: 10pt;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 8pt;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
 }
 
 a.btn-rap:hover {
@@ -338,6 +344,7 @@ a.btn {
     }
     .rapborder {
         border-right-width: 0px;
+        border-bottom-width: 1px;
     }
 }
 /* To be used later
