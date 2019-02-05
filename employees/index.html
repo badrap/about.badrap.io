@@ -26,7 +26,7 @@ benefits:
     - benefit: Avoid Data Breaches
       tagline: by protecting employee's identities
       icon: <i class="fas fa-database fa-5x"></i>
-      morelink: ./employees#databreaches
+      morelink: databreaches
       long: >
         81% of confirmed data breaches involved leveraging weak or stolen
         passwords, says Spycloud. And no wonder, 27% of users recycle
@@ -37,7 +37,7 @@ benefits:
     - benefit: Win hearts and minds
       icon: <i class="far fa-comments fa-5x"></i>
       tagline: You care about security and your employees. Let it show!
-      morelink: ./employees#pr
+      morelink: pr
       long: >
         Employees stay longer when they feel appreciated. Future employees
         are more inclined to work with you when they know how much you care about them.
@@ -45,7 +45,7 @@ benefits:
     - benefit: Beyond perimeter protection
       tagline: Shifting focus to Users & Devices
       icon: <i class="fas fa-home fa-5x"></i>
-      morelink: ./employees#perimeter
+      morelink: perimeter
       long: >
         The security industry focuses on protecting the perimeter. We have
         almost missed the fact that the employees can get compromised in
@@ -55,7 +55,7 @@ benefits:
     - benefit: Occupational Cyber Health
       tagline: We'll be the doctor. You focus on your business.
       icon: <i class="fas fa-briefcase-medical fa-5x"></i>
-      morelink: ./employees#privacy
+      morelink: privacy
       long: >
         Badrap started by helping individuals.
         That is why we can provide personal service online, similar to
@@ -188,7 +188,7 @@ moreinfo:
                 <p class="tag mt-4"> {{benefit.benefit}} </p>
                 {{benefit.icon}}
                 <p class="thin">{{benefit.tagline}}</p>
-                <a href="{{benefits.morelink}}">
+                <a href="./#{{benefit.morelink}}" class="js-scroll-trigger">
                     <button type="button" class="btn btn-rap">Read more</button>
                 </a>
             </div>
@@ -228,7 +228,7 @@ moreinfo:
     {% assign textorder = "order-sm-1" %}
 
     {% endif %}
-
+    <section class="anchor" id="{{benefit.morelink}}"></section>
     <div class="row my-5 mx-5 justify-content-center">
         <div class="col-md-6 col-sm-12 mx-auto text-center
             justify-content-center {{textorder}}">
