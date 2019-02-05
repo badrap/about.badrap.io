@@ -14,12 +14,14 @@ tagline: Protect the Employees, Protect the Business
 founderquote:
     image: jani-face-round.png
     name: Jani, CEO
+    heading: A fun way to learn about security.
     blurp: >
         There are plenty of
         security solutions to protect your perimeter and your IT-systems. But
-        who takes care of the employees? Modern attacks on companies go through them. We
-        created Cyber Hygiene for Employees to keep your workforce safe in their free
-        time. When they stay safe, you stay safe.
+        who takes care of the employees? Modern attacks on companies go through
+        them. We created Cyber Hygiene for Employees to take care of the people
+        who work with critical information but are not necessarily security
+        professionals.
 benefits:
     - benefit: Avoid Data Breaches
       tagline: by protecting employee's identities
@@ -70,9 +72,10 @@ features:
       tagline: Introduction email to your employees
       long: >
         We tell together about badrap.io to your employees.
-        We explain that you have sponsored a badrap.io cyber hygiene
-        campaign for them. The campaign lasts for a month, and
-        there is a reward at the end.
+        We explain that you have sponsored a fun way to check their
+        personal security. The campaign -part lasts for a month, and
+        there is a reward at the end. After the campaign, employees
+        can continue to use the free badrap.io service to stay safe in the future.
       longicon: <i class="fas fa-3x fa-envelope"></i>
       longid: inform
 
@@ -83,16 +86,19 @@ features:
         Employees use badrap.io to receive security researcher warnings at
         home and other places they care about. They also list their
         email-addresses to get warnings when third parties leak their
-        personal information.
+        personal information. The large package includes also
+        data breach check for business emails powered by commercial Fitsec
+        Asset Tracker product.
       longicon: <i class="fab fa-3x fa-chrome"></i>
       longid: hunt
 
-    - feature: Learn and act
+    - feature: Employees learn and act
       icon: <img src="help.svg" class="featureicon">
       tagline: Badrap helps if they find security issues
       long: >
+        With Badrap, employees learn about security through personal experience.
         If an employee finds an issue, Badrap explains it in human-friendly
-        terms and tells how to solve the issue. If the instructions are not
+        terms and tells how to solve the problem. If the instructions are not
         enough, Badrap team supports your employees via mail or phone.
       longicon: <i class="fas fa-3x fa-headset"></i>
       longid: discover
@@ -125,11 +131,11 @@ packages:
     - title: Small
       price: 3 400€
       features:
-        - One month active campaing for up to 1000 employees
+        - One month active campaign for up to 1000 employees
         - Introduction email template
         - badrap.io service, including textual instructions if issues are found
-        - Automatic email warnings for newly found issues
-        - Reward for the most active employee
+        - Automatic email warnings for newly discovered issues
+        - The reward for the most active employee
 
     - title: Medium
       price: 6 900€
@@ -138,7 +144,7 @@ packages:
         - Introduction email template
         - badrap.io service, including textual instructions if issues are found
         - Automatic email warnings for newly found issues
-        - Reward for the most active employee
+        - The reward for the most active employee
         - <strong>Badrap mail & phone support for employees</strong>
 
     - title: Large
@@ -148,9 +154,9 @@ packages:
         - Introduction email template
         - badrap.io service, including textual instructions if issues are found
         - Automatic email warnings for newly found issues
-        - Reward for the most active employee
+        - The reward for the most active employee
         - <strong>Badrap mail & phone support for employees</strong>
-        - <strong>Dark net data breach check with Fitsec Asset Tracker</strong>
+        - <strong>Data breach check of company emails with Fitsec Asset Tracker</strong>
 
 moreinfo:
     heading: Want to talk more?
@@ -200,6 +206,7 @@ moreinfo:
             <p> {{page.founderquote.name}}</p>
         </div>
         <div class="column col-md-8 my-auto text-center">
+            <h2>{{page.founderquote.heading}}</h2>
             <quote class="blockquote">
                 {{page.founderquote.blurp}}
             </quote>
@@ -219,6 +226,7 @@ moreinfo:
     {% else %}
     {% assign picorder = "order-sm-2" %}
     {% assign textorder = "order-sm-1" %}
+
     {% endif %}
 
     <div class="row my-5 mx-5 justify-content-center">
@@ -257,6 +265,7 @@ moreinfo:
     </div>
 </div>
 
+<!-- How it works -->
 <div class="container px-0 pt-5" id="howitworks">
 
     {% for long in page.features %}
@@ -265,16 +274,19 @@ moreinfo:
     {% assign picposition = "order-sm-1" %}
     {% assign titlealign = "mx-auto" %}
     {% assign offset = "offset-sm-0" %}
+    {% assign gradient = "gradient-toright" %}
 
     {% else %}
+
     {% assign picposition = "order-sm-3" %}
     {% assign titlealign = "text-right" %}
     {% assign offset = "offset-sm-1" %}
+    {% assign gradient = "gradient-toleft" %}
 
 
     {% endif %}
 
-    <div class="row headline" id="{{point.id}}">
+    <div class="row headline {{gradient}}" id="{{point.id}}">
         <div class="column index col-lg-1 col-sm-2 col-12 {{picposition}}">
             <h1>{{forloop.index}}</h1>
         </div>
@@ -286,8 +298,8 @@ moreinfo:
         <div class="column icon col-lg-1 col-sm-2 col-12 {{picposition}}">
             {{long.longicon}}
         </div>
-        <div class="column {{offset}} col-lg-10 col-sm-9 col-12 order-sm-2">
-            <p class="my-3 {{titlealign}}">{{long.long}}</p>
+        <div class="column {{offset}} col-lg-10 col-sm-9 col-12 order-sm-2 py-5">
+            <p class="{{titlealign}}">{{long.long}}</p>
         </div>
     </div>
     {% endfor %}
