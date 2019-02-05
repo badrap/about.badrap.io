@@ -104,15 +104,16 @@ features:
       longicon: <i class="fas fa-3x fa-headset"></i>
       longid: discover
 
-    - feature: The Reward
+    - feature: The Most Active Employee Gets a Reward
       icon: <img src="reward.svg" class="featureicon">
       tagline: The most active employee gets a reward
       long: >
-        At the end of the campaign, we'll reward the most active employee. In practice,
-        the employee who has
-        checked the most places receives F-Secure Sense or Google Wifi mesh router.
-        The employees can keep using the
-        free badrap.io service after the campaign as a regular user.
+        At the end of the campaign, we'll reward the most active employee.
+        The employee who has subscribed security warnings for the most
+        networks and email addresses receives a secure home router or
+        WiFi basestation. After the campaign, employees can keep using the
+        free badrap.io service to stay safe.
+
       longicon: <i class="fas fa-3x fa-award"></i>
       longid: reward
 
@@ -218,19 +219,22 @@ moreinfo:
 
 <!-- More about the benefits -->
 
-<div class="container px-0" id="morebenefits">
 
-    {% for benefit in page.benefits %}
+{% for benefit in page.benefits %}
 
-    {% assign loopindex = forloop.index | modulo: 2 %}
-    {% if loopindex == 1 %}
-    {% assign picorder = "order-sm-1" %}
-    {% assign textorder = "order-sm-2" %}
-    {% else %}
-    {% assign picorder = "order-sm-2" %}
-    {% assign textorder = "order-sm-1" %}
+{% assign loopindex = forloop.index | modulo: 2 %}
+{% if loopindex == 1 %}
+{% assign picorder = "order-md-1 order-sm-1" %}
+{% assign textorder = "order-md-2 order-sm-2" %}
+{% assign bg = "rapwhite" %}
+{% else %}
+{% assign picorder = "order-md-2 order-sm-1" %}
+{% assign textorder = "order-md-1 order-sm-2" %}
+{% assign bg = "rapgray" %}
 
-    {% endif %}
+{% endif %}
+<div class="container-fluid {{bg}} px-0">
+
     <section class="anchor" id="{{benefit.morelink}}"></section>
     <div class="row my-5 mx-5 justify-content-center">
         <div class="col-md-6 col-sm-12 mx-auto text-center
@@ -238,14 +242,14 @@ moreinfo:
             <h2> {{benefit.benefit}} </h2>
             <p>{{benefit.long}}</p>
         </div>
-        <div class="col-md-6 col-sm-12 mx-auto my-auto text-center
+        <div class="col-md-6 col-sm-12 colmx-auto my-auto text-center
             justify-content-center {{picorder}}">
             {{benefit.icon}}
         </div>
     </div>
-    {% endfor %}
-
 </div>
+{% endfor %}
+
 
 
 <div class="container-fluid px-0" id="featurebanner">
