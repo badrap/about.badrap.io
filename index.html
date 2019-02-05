@@ -56,12 +56,15 @@ styles:
         </div>
 
         <div class="col-md-4 col-sm-6 mx-auto text-center">
-                <p class="tag">Companies</p>
+                <a class="js-scroll-trigger" href="#companies">
+                <p class="tag" id="go-to-security-companies-short">Companies</p>
+                </a>
 
                 <i class="fas fa-handshake fa-5x py-3"></i>
                 <br>
                 <i class="fas fa-heart fa-2x"></i>
-                <p class="tag">Security Researchers and individuals</p>
+                <p class="tag">Security
+                Researchers and individuals</p>
             </div>
     </div>
 </div>
@@ -89,5 +92,5 @@ styles:
 </div>
 {% include frontpage-researchers.html %}
 {% include frontpage-individuals.html %}
-
+{% include frontpage-companies.html %}
 {% include frontpage-team.html %}
