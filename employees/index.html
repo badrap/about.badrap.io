@@ -14,15 +14,16 @@ tagline: Protect the Employees, Protect the Business
 founderquote:
     image: jani-face-round.png
     name: Jani, CEO
-    heading: A Fun Way to Learn About Security
     blurp: >
-        There are plenty of
-        security solutions to protect your IT-systems and employees at work. But
-        what happens when your employees get compromised during their free
-        time? Modern attacks on companies are indirect. First they take the employee, then
-        they take the company. When you protect your employees, you protect your business.
+      There are plenty of security solutions to protect your IT-systems and employees at work. But
+      what happens when your employees get compromised during their free
+      time? Modern attacks are indirect - first they take the employee, then
+      they take the business. Protect your employees, you protect your
+      business.
+
 benefits:
     - benefit: Avoid Data Breaches
+      insummary: true
       tagline: by protecting employee's identities
       icon: <i class="fas fa-database fa-4x"></i>
       morelink: databreaches
@@ -34,6 +35,7 @@ benefits:
         warn your employees when their information leaks.
 
     - benefit: Win Hearts and Minds
+      insummary: true
       icon: <i class="far fa-comments fa-4x"></i>
       tagline: You care about security and your employees. Let it show!
       morelink: pr
@@ -41,6 +43,30 @@ benefits:
         Employees stay longer when they feel appreciated. Future employees
         are more inclined to work with you when they know how much you care about them.
         Customers appreciate your efforts to keep their data safe.
+
+    - benefit: Only Actionable Alerts
+      insummary: true
+      tagline: No alert fatigue
+      icon: <i class="far fa-bell-slash fa-4x"></i>
+      morelink: actionable
+      long: >
+        Regular people have a lot on their mind. Badrap warns only
+        about practical security events impacting your employees' life,
+        such as home routers having serious vulnerability bad guys actively
+        exploit, or data breaches, where your employee's data has leaked and
+        might be used to compromise you or the employee.
+
+    - benefit: Occupational Cyber Health
+      insummary: true
+      tagline: We'll be the doctor. You focus on your business.
+      icon: <i class="fas fa-briefcase-medical fa-4x"></i>
+      morelink: privacy
+      long: >
+        Privacy has been at the heart of our desing from the get-go.
+        Just like with occupational health, you don't see your employees
+        problems. Your employees can begin protecting all their assets
+        without worrying if their employer watching over their personal life.
+
     - benefit: Think Outside the Perimeter
       tagline: Shifting focus to Users & Devices
       icon: <i class="fas fa-home fa-4x"></i>
@@ -52,17 +78,6 @@ benefits:
         help your employees to notice when bad things happen? Protect your
         employees in their free time! If the worst
         happens, we can turn the situation into a learning experience.
-
-    - benefit: Occupational Cyber Health
-      tagline: We'll be the doctor. You focus on your business.
-      icon: <i class="fas fa-briefcase-medical fa-4x"></i>
-      morelink: privacy
-      long: >
-        Badrap started by helping individuals.
-        That is why we can provide personal service online, similar to
-        occupational health services. And that is why your employees can begin
-        protecting all their assets without worrying about their employer is
-        watching over.
 
 how:
     heading: How Does it Work?
@@ -104,7 +119,7 @@ features:
       longicon: <i class="fas fa-3x fa-headset"></i>
       longid: discover
 
-    - feature: We'll reward the most active employee
+    - feature: We reward
       icon: <img src="reward.svg" class="featureicon">
       tagline: The most active employee gets a reward
       long: >
@@ -184,6 +199,9 @@ moreinfo:
     <div class="row my-0 mx-0 rapdark justify-content-center">
 
         {% for benefit in page.benefits %}
+        {% if benefit.insummary != true %}
+          {% continue %}
+        {% endif %}
 
         <div class="benefits col-lg-3 col-md-6 col-9 mx-auto rapborder text-center justify-content-center">
             <div class="featurediv mx-2 mx-auto">
@@ -203,16 +221,14 @@ moreinfo:
 
 <div class="container-fluid rapgray" id="founderquote">
     <div class="row py-3 justify-content-center">'
-        <div class="column col-md-4 align-items-center text-center">
-
-            <img src="{{page.founderquote.image}}" class="face mx-auto d-block">
-            <p> {{page.founderquote.name}}</p>
-        </div>
-        <div class="column col-md-6 my-auto text-center">
-
+        <div class="column col-md-8 my-auto text-center">
             <quote class="blockquote">
                 {{page.founderquote.blurp}}
             </quote>
+        </div>
+        <div class="column col-md-3 align-items-center text-center">
+            <img src="{{page.founderquote.image}}" class="face mx-auto">
+            <p> {{page.founderquote.name}}</p>
         </div>
     </div>
 </div>
