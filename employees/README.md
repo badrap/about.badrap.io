@@ -21,6 +21,10 @@
   as the main focus.
 * 2019-01-31 [Kickoff with trial marketeers](2019-01-31-kickoff.md) - recapped
   what Badrap is about, arranged Hubspot access and envisioned first target customers.
+* 2019-02-06 [Employee Cyber Hygiene Updates](https://about.badrap.io/employees),
+  [Explainer video
+  tests](https://www.youtube.com/playlist?list=PLOg26p9j1bIux5wvlMJ1bYFI_5PhrNjtt),
+  and [social media badges](badges.md)
 
 Upcoming:
 
