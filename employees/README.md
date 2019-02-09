@@ -24,7 +24,8 @@
 * 2019-02-06 [Employee Cyber Hygiene Updates](https://about.badrap.io/employees),
   [Explainer video
   tests](https://www.youtube.com/playlist?list=PLOg26p9j1bIux5wvlMJ1bYFI_5PhrNjtt),
-  and [social media badges](badges.md)
+  and [social media gitbadges](badges.md)
+* 2019-02-08 [Trial marketing sparring](2019-02-08-sparring.md) with Teemu @ Tecinspire.
 
 Upcoming:
 
