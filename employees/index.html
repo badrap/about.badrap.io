@@ -128,7 +128,7 @@ whyus:
 packages:
     heading: Packages
     prices:
-    - title: Personal
+    - title: Personal Free
       price: Free »
       link: https://badrap.io
       features:
@@ -141,7 +141,7 @@ packages:
       price: Contact sales  »
       link: https://share.hsforms.com/1YYCtOd6TRR-94J91OfG_zw2ecmj
       features:
-        - Everything in <em>Free</em> and
+        - Everything in <em>Personal Free</em> and
         - Introduction letter to your employees
         - We care for our employees -badges for web and social media
         - One month <strong>intensive care</strong> period for your employees
@@ -151,9 +151,9 @@ packages:
       price: Contact sales »
       link: https://share.hsforms.com/1YYCtOd6TRR-94J91OfG_zw2ecmj
       features:
-        - Everything in <em>Medium</em> and
+        - Everything in <em>Company M</em> and
         - Two month <strong> intensive care</strong> period instead of one
-        - Data breach check for <strong>company email</strong> addresses with Fitsec Asset Tracker
+        - Data breach check for <strong>company email addresses</strong>with Fitsec Asset Tracker
 
 moreinfo:
     heading: Want to talk more?
@@ -187,7 +187,7 @@ moreinfo:
           {% continue %}
         {% endif %}
 
-        <div class="benefits col-lg-3 col-md-6 col-9 mx-auto rapborder text-center justify-content-center">
+        <div class="benefits col-lg-4 col-9 mx-auto rapborder text-center justify-content-center">
             <div class="featurediv mx-2 mx-auto">
                 <p class="tag mt-4"> {{benefit.benefit}} </p>
                 {{benefit.icon}}
@@ -242,7 +242,7 @@ moreinfo:
             <h2> {{benefit.benefit}} </h2>
             <p>{{benefit.long}}</p>
         </div>
-        <div class="col-md-6 col-sm-12 colmx-auto my-auto text-center
+        <div class="col-md-6 col-sm-12 mx-auto my-auto text-center
             justify-content-center {{picorder}}">
             {{benefit.icon}}
         </div>
@@ -251,7 +251,7 @@ moreinfo:
 {% endfor %}
 
 
-
+<!-- How it works short -->
 <div class="container-fluid px-0" id="featurebanner">
     <div class="row justify-content-center text-center">
         <h1 class="py-5">{{page.how.heading}}</h1>
@@ -260,7 +260,7 @@ moreinfo:
 
         {% for feature in page.features %}
 
-        <div class="col-lg-3 col-sm-6 col-12 mx-auto rapborder text-center justify-content-center">
+        <div class="col-lg-4 col-9 mx-auto rapborder text-center justify-content-center">
             <div class="featurediv mx-2  mx-auto">
                 <p class="tag mt-4"> {{feature.feature}} </p>
                 {{feature.icon}}
@@ -272,40 +272,38 @@ moreinfo:
     </div>
 </div>
 
-<!-- How it works -->
+<!-- How it works long -->
 <div class="container px-0 pt-5" id="howitworks">
 
     {% for long in page.features %}
     {% assign loopindex = forloop.index | modulo: 2 %}
     {% if loopindex == 1 %}
-    {% assign picposition = "order-sm-1" %}
-    {% assign titlealign = "mx-auto" %}
-    {% assign offset = "offset-sm-0" %}
+    {% assign indexposition = "order-md-1" %}
+    {% assign titlealign = "text-left" %}
     {% assign gradient = "gradient-toright" %}
 
     {% else %}
 
-    {% assign picposition = "order-sm-3" %}
+    {% assign indexposition = "order-md-3" %}
     {% assign titlealign = "text-right" %}
-    {% assign offset = "offset-sm-1" %}
     {% assign gradient = "gradient-toleft" %}
 
 
     {% endif %}
 
     <div class="row headline {{gradient}}" id="{{point.id}}">
-        <div class="column index col-lg-1 col-sm-2 col-12 {{picposition}}">
+        <div class="column index col-lg-1 col-md-2 col-12 order-1 {{indexposition}}">
             <h1>{{forloop.index}}</h1>
         </div>
-        <div class="column {{offset}} col-lg-10 col-sm-9 col-12 order-sm-2 my-auto">
+        <div class="column col-lg-11 col-md-10 col-12 order-2 my-auto">
             <h1 class="point my-3 {{titlealign}}"> {{long.feature}} </h1>
         </div>
     </div>
     <div class="row description mx-0">
-        <div class="column icon col-lg-1 col-sm-2 col-12 {{picposition}}">
+        <div class="column icon col-lg-1 col-md-2 col-12 order-1 {{indexposition}}">
             {{long.longicon}}
         </div>
-        <div class="column {{offset}} col-lg-10 col-sm-9 col-12 order-sm-2 py-5">
+        <div class="column col-lg-11 col-md-10 col-12 order-2 py-5">
             <p class="{{titlealign}}">{{long.long}}</p>
         </div>
     </div>
@@ -313,12 +311,12 @@ moreinfo:
 </div>
 
 <div class="container-fluid planning parallax rapdark px-0 pb-0 pt-5">
-    <div class="row">
-        <div class="column col-8 offset-2">
+    <div class="row justify-content-center text-center">
+        <div class="column col-12 col-md-8">
             <h1 class="white">{{page.whyus.heading}}</h1>
 
         </div>
-        <div class="column col-8 offset-2">
+        <div class="column col-12 cold-md-8">
             <p class="white">{{page.whyus.description}}</p>
 
         </div>
