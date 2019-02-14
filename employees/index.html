@@ -192,8 +192,12 @@ moreinfo:
                 <p class="tag mt-4"> {{benefit.benefit}} </p>
                 {{benefit.icon}}
                 <p class="thin">{{benefit.tagline}}</p>
-                <a href="./#{{benefit.morelink}}" class="js-scroll-trigger">
-                    <button type="button" class="btn btn-rap">Read more »</button>
+                <a href="./#{{benefit.morelink}}"
+
+                class="js-scroll-trigger">
+                    <button type="button"
+                    id="go-to-morelink-{{benefit.morelink}}" class="btn
+                    btn-rap">Read more »</button>
                 </a>
             </div>
         </div>
