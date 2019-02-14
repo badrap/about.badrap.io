@@ -1,5 +1,5 @@
 .home {
-    min-height: 60vh;
+    min-height: 55vh;
     background-image: url('home.jpg');
     background-color: black;
     background-size: cover;
@@ -23,7 +23,7 @@ p {
 .thin {
     font-weight: 400;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
     text-transform: uppercase;
@@ -38,8 +38,18 @@ p {
 .headline {
     margin: 0;
     padding: 0;
-    background-color: #fff0ff;
     border-radius: 5px;
+}
+
+.face {
+    max-width: 150px;
+}
+.gradient-toright {
+    background-image: linear-gradient(to right,#fff0ff, #ffffff);
+}
+
+.gradient-toleft {
+    background-image: linear-gradient(to left,#fff0ff, #ffffff);
 }
 
 .column.index {
@@ -71,11 +81,11 @@ p {
     background-position: 30% 40%;
 }
 
+
 .btn-primary {
     background-color: #92278f;
     border-color: #92278f;
-    margin: 10px;
-    width: 70%;
+    padding: 10px;
 
 }
 
@@ -100,15 +110,9 @@ p.thin {
     min-height: 50px;
 }
 
-
-
 @media(max-width:576px) {
-    .text-right {
-        text-align: center !important;
-    }
-    .point {
-        text-align: center!important;
-    }
+
+
     .icon {
         padding-top: 20px;
     }
@@ -126,6 +130,34 @@ p.thin {
 
 }
 
+
+@media(max-width:767px) {
+    .gradient-toright {
+        background-image: none;
+    }
+
+    .gradient-toleft {
+        background-image: none;
+    }
+    .text-right {
+        text-align: center !important;
+    }
+    .text-left {
+        text-align: center !important;
+    }
+}
+@media (max-width: 991px) {
+    .rapborder {
+        border-right-width: 0px;
+        border-bottom-width: 1px;
+    }
+
+
+    .point {
+        text-align: center!important;
+    }
+
+}
 @media print {
     .container {
         page-break-after: always;

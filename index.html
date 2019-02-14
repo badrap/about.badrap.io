@@ -35,7 +35,7 @@ styles:
 
 <div class="container-fluid rapdark" id="ecosystem">
     <div class="row my-0 justify-content-center">
-        <div class="col-md-4 col-sm-6 mx-auto text-center rapborder">
+        <div class="col-md-4 col-sm-9 mx-auto text-center rapborder">
             <a class="js-scroll-trigger" href="#researchers">
             <p class="tag" id="go-to-security-researchers-short"> Security Researchers </p>
             </a>
@@ -44,7 +44,7 @@ styles:
             <i class="fas fa-heart fa-2x"></i>
             <p class="tag">Companies and individuals</p>
         </div>
-        <div class="col-md-4 mx-auto text-center rapborder">
+        <div class="col-md-4 col-sm-9 mx-auto text-center rapborder">
             <a class="js-scroll-trigger" href="#individuals">
             <p class="tag" id="go-to-individuals short">Individuals</p>
             </a>
@@ -55,13 +55,16 @@ styles:
 
         </div>
 
-        <div class="col-md-4 col-sm-6 mx-auto text-center">
-                <p class="tag">Companies</p>
+        <div class="col-md-4 col-sm-9 mx-auto text-center">
+                <a class="js-scroll-trigger" href="#companies">
+                <p class="tag" id="go-to-security-companies-short">Companies</p>
+                </a>
 
                 <i class="fas fa-handshake fa-5x py-3"></i>
                 <br>
                 <i class="fas fa-heart fa-2x"></i>
-                <p class="tag">Security Researchers and individuals</p>
+                <p class="tag">Security
+                Researchers and individuals</p>
             </div>
     </div>
 </div>
@@ -89,5 +92,5 @@ styles:
 </div>
 {% include frontpage-researchers.html %}
 {% include frontpage-individuals.html %}
-
+{% include frontpage-companies.html %}
 {% include frontpage-team.html %}
