@@ -131,15 +131,11 @@ header.masthead .intro-text {
 }
 /* #endcontent */
 
-.founderlink {
+.rapdark a {
     text-decoration: underline;
     color: #fff;
 }
 
-.founderlink:hover {
-    text-decoration: underline;
-    color: #fff;
-}
 .first {
     margin-left: 10px;
 }
