@@ -17,19 +17,17 @@
 * 2019-01-22 First sparring session with Teemu. Badrap intro and
   experiences from the pre-trial marketing.
 * 2019-01-25 Second sparring session. Sales material,
-  [Cyber Hygiene for employees intro page](https://about.badrap.io/employees)
+  [Cyber Hygiene for Employees intro page](https://about.badrap.io/employees)
   as the main focus.
-* 2019-01-31 [Kickoff with trial marketeers](2019-01-31-kickoff.md) - recapped
+* 2019-01-31 [Kickoff with trial marketeers](notes/2019-01-31-kickoff.md) - recapped
   what Badrap is about, arranged Hubspot access and envisioned first target customers.
 * 2019-02-06 [Employee Cyber Hygiene Updates](https://about.badrap.io/employees),
   [Explainer video
   tests](https://www.youtube.com/playlist?list=PLOg26p9j1bIux5wvlMJ1bYFI_5PhrNjtt),
   and [social media gitbadges](badges.md)
-* 2019-02-08 [Trial marketing sparring](2019-02-08-sparring.md) with Teemu @ Tecinspire.
-
-Upcoming:
-
-* 2019-02-03 US Partnership exploration and round 3 with Teemu.
+* 2019-02-08 [Trial marketing sparring](notes/2019-02-08-sparring.md) with Teemu @ Tecinspire.
+* 2019-02-15 [Social media reachout](notes/2019-02-15-social-media.md) with Teemu @
+  Tecinspire
 
 ## Plan
 
