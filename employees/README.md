@@ -28,6 +28,9 @@
 * 2019-02-08 [Trial marketing sparring](notes/2019-02-08-sparring.md) with Teemu @ Tecinspire.
 * 2019-02-15 [Social media reachout](notes/2019-02-15-social-media.md) with Teemu @
   Tecinspire
+* 2019-02-15 [Efforts started](campaign/README.md)
+* 2019-02-24 Stats: *95* potential customers, working on *10*. *9* potential partners,
+  working on *3*.
 
 ## Plan
 
