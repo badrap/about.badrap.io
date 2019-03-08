@@ -1,5 +1,10 @@
 # Cyber Hygiene for Employees
 
+Hello (potentially) stranger! In the spirit of transparency we are keeping
+these notes on a public repository. Enjoy! If you somehow ended up reading
+this, please say "Hello @badrapio, I see what you are doing." in Twitter to
+satisfy our curiosity. ;)
+
 ## Team
 
 * [Jani Kenttälä](https://www.linkedin.com/in/janikenttala/), Badrap CEO, founder
