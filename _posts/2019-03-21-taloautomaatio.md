@@ -7,10 +7,10 @@ styles:
   - /css/badrap.css
 short: >
   Ylen uusi hakkerisarja inspiroi Badrap Oy:n ja Remod Oy:n talkootöihin kitkemään Suomesta tietoturvaltaan heikkoja taloautomaatiojärjestelmiä.
-releasedate: 2019-03-XX
+releasedate: 2019-03-21
 ---
 
-# Tiedote XX.3.2019 VAPAA JULKAISTAVAKSI
+# Tiedote 21.3.2019 VAPAA JULKAISTAVAKSI
 
 ## {{page.title}}
 
