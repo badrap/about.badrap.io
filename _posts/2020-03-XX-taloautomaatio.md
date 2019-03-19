@@ -16,7 +16,7 @@ releasedate: 2019-03-XX
 
 ##### Ylen uusi hakkerisarja inspiroi Badrap Oy:n ja Remod Oy:n talkootöihin kitkemään Suomesta tietoturvaltaan heikkoja taloautomaatiojärjestelmiä.
 
-Yle TV2 esitti hiljattain uuden suomalaisen Docstop-sarjan "Team Whack - kaikki on hakkeroitavissa". Ohjelman ensimmäisessä jaksossa kolmihenkinen Team Whack löysi yli 1000 rakennusautomaatiovalmistaja Fidelixin taloautomaatiojärjestelmää, jotka olivat liian avoimesti hallittavissa Internetistä. Jakson mittaa ryhmä havainnollisti tällaisten järjestelmien riskejä ottamalla Internetin yli haltuunsa kokonaisen naapuruston pihavalaistuksen, ilmastoinnin ja lämmityksen.
+Yle TV2 esitti hiljattain uuden suomalaisen Docstop-sarjan "Team Whack - kaikki on hakkeroitavissa". Ohjelman ensimmäisessä jaksossa kolmihenkinen Team Whack löysi yli 1000 rakennusautomaatiovalmistaja Fidelixin taloautomaatiojärjestelmää, jotka olivat liian avoimesti hallittavissa Internetistä. Jakson mittaan ryhmä havainnollisti tällaisten järjestelmien riskejä ottamalla Internetin yli haltuunsa kokonaisen naapuruston pihavalaistuksen, ilmastoinnin ja lämmityksen.
 
 Jakso innosti oululaista tietoturvayritystä Badrap Oy:ta etsimään ja auttamaan suomalaisia, joilla on vielä käytössään asetuksiltaan turvattomia Fidelix-järjestelmiä. Tarve tempaukseen tiivistyi sarjassa esitettyyn Fidelixin edustaja Antti Koskisen kommenttiin: “_Ongelmana on se, että nämä päivitykset ei kovin usein sinne kentälle valu, varsinkaan tämmöisessä asunto-osakeyhtiötapauksessa._”
 
