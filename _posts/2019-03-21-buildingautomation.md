@@ -1,16 +1,16 @@
 ---
 layout: pressrelease
 lang: EN
-title: Companies launch a campaign to secure Finnish building automation systems
+title: Finnish companies launch a campaign to secure local building automation systems
 styles:
   - /vendor/agency/css/agency.min.css
   - /css/badrap.css
 short: >
   A new TV series inspired two companies to launch a community effort to rid Finland of insecure building automation systems.
-releasedate: 2019-03-18
+releasedate: 2019-03-21
 ---
 
-# PRESS RELEASE 2019-03-18
+# PRESS RELEASE March 21, 2019
 
 ## {{page.title}}
 
