@@ -1,6 +1,6 @@
 ---
 layout: pressrelease
-lang: EN
+lang: FI
 title: Oululaisyritykset turvaavat taloautomaatiota talkoovoimin
 styles:
   - /vendor/agency/css/agency.min.css
