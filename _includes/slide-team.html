@@ -9,6 +9,9 @@
 
     <div class="people-grid">
     {% for person in site.data.company.team %}
+        {% if person.status != "founder" %}
+        {% continue %}
+        {% endif %}
         <div class="grid-card">
             <!-- picture -->
             <div class="picture" style="background-image: url({{person.face}});
