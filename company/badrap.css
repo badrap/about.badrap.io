@@ -1,5 +1,5 @@
 .whitebox {
-    background-color: rgba(255, 240, 255, 0.9) !important;
+    background-color: rgba(249, 244, 249, 0.9) !important;
     box-shadow: 0px 0px 180px rgba(30, 30, 30, 0.2) !important;
 
     border-radius: 10px;
@@ -44,7 +44,7 @@
 }
 
 .reveal {
-    font-family: "Montserrat", "Source Sans Pro", Helvetica, sans-serif;
+    font-family: Lato,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
     color: #060606;
 }
 
@@ -55,15 +55,14 @@
 .reveal h5,
 .reveal h6 {
 
-    color: #80217e;
-    font-family: "Montserrat", "Source Sans Pro", Helvetica, sans-serif;
+    color: #b73a7d;
+    font-family: "Lato", "Source Sans Pro", Helvetica, sans-serif;
     font-weight: 400;
     margin-bottom: 0;
 }
 
 
 .reveal h3 {
-    font-size: 40px;
     color: #020202;
     text-transform: none;
     padding-bottom: 0px;
@@ -92,7 +91,7 @@
 }
 
 .reveal em {
-    color: #91268e;
+    color: #b73a7d;
     font-style: normal !important;
 }
 
@@ -124,6 +123,7 @@ div.column {
     grid-row-gap: 15px;
     grid-template-columns: 285px 285px 285px;
     grid-template-rows: 292px 292px;
+    margin-left: 15px !important;
     width: 935px;
     height: 600px;
 }
@@ -160,7 +160,7 @@ div.name p {
 }
 
 .fa {
-    color: #ccc;
+    color: #b5b5b5;
     font-size: 25px !important;
     padding-left: 10px;
     padding-right: 10px;
@@ -178,7 +178,7 @@ a.button {
     font-weight: 400;
     font-size: 12pt;
     color: #fff;
-    background-color: #92278f;
+    background-color: #b73a7d;
     border-radius: 4px;
     padding: 10px;
     margin: 5px;
