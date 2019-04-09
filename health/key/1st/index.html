@@ -1,0 +1,119 @@
+---
+layout: health
+title: Cyber Health for Employees
+styles:
+  - ../../custom.css
+
+heading: Stay safe online
+subheading: Cyber Health Month for the Employees - Week 1
+
+leftbox:
+  - Learn:
+    heading: Learn
+    text: >
+      During this month you will learn how to protect yourself and your family online.
+      Each week you will receive a small doze of information related to your personal
+      online safety.
+  - Personal Tools:
+    heading: Get Personal Tools
+    text: >
+      You need tools to stay safe. This week you will get to know an easy-to-use tool
+      which tells you if you are in danger. If the tool reveals an issue, it will also help you to mitigate
+      them. If you need help with the instructions, you can call or message Badrap and get a human explanation.
+      The number is +358 40 148 5100
+  - Rewards:
+    heading: Get Rewards
+    text: >
+      The most active employees will be rewarded. You don't need to be a security expert to win.
+      Just take the ten minutes per week to learn and use the tool according to the instructions
+      we will provide.
+  - Get started:
+    heading: Get started
+    text: >
+      Register at <a href="https://badrap.io/?utm_source=hygiene&utm_medium=landing-page&utm_campaign=hygiene-key&utm_content=week1">badrap.io </a> to keep yourself and your family out of the harm's way.
+      It takes about five minutes. Use your work email to register. More next week!
+rightbox:
+  - Ingress:
+    heading: Your Personal Safety Matters
+    text: >
+      People can get hacked at work and in their free time.
+      Sometimes your personal data leaks from the third party Internet services,
+      like Facebook or Strava. Criminals may hack you to conduct further attacks or run
+      credible-looking scams against you or your employer. It is important that you detect if
+      you are in danger at work or at home.
+  - Picture:
+    img: badrapio.jpg
+    img-text: Week 1 - see if you or your family are in danger.
+  - Mission:
+    subheading: Your mission this week
+    text: >
+      Your mission this week, should you accept it, is to improve your ability to detect if you are in danger.
+      That way you can protect yourself, people close to you, and your employer.
+      See "Get Started" at the bottom left corner to register to badrap.io.
+      Next week, we will teach you how to add your personal email and network addresses
+      to data breach monitoring.
+  - Privacy:
+    subheading: Privacy First - Occupational Health Approach
+    text: Just like with the traditional occupational health, Badrap does not share any details about you to your employer. Even Badrap staff can't easily access your personal information. And we will not send you marketing messages. Just important warnings and monthly "all good" email.
+
+missionbox:
+  heading: Your mission for the week 1
+  steps:
+    - Understand why your personal safety matters (read above)
+    - Start detecting if you are in danger with <a href="https://badrap.io">badrap.io</a> (example below)
+    - <a href="https://www.fi/">Tell us </a> you have completed this week's mission.
+---
+<div class="container horizontal-border">
+  <div class="row row-header mb-5">
+    <div class="column col-12 col-header px-0 text-center">
+      <h1> {{page.heading}}</h1>
+      <h2> {{page.subheading}}</h2>
+    </div>
+  </div>
+  <div class="row bottom-border pb-4">
+    <div class="column col-left col-4">
+      <div class="rapdark">
+        {% for feature in page.leftbox %}
+        <h3>{{feature.heading}}</h3>
+        <p> {{feature.text}} </p>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="col-right column col-8 left-border">
+      {% for item in page.rightbox %}
+      {% if item.heading != null %}
+      <h3>{{item.heading}}</h3>
+      {% endif %}
+
+      {% if item.subheading != null %}
+      <h4>{{item.subheading}}</h4>
+      {% endif %}
+
+      {% if item.img != null %}
+      <img src="{{item.img}}" width="100%">
+      <p class="img-text">{{item.img-text}}</p>
+      {% endif %}
+
+      {% if item.text != null %}
+      <p>{{item.text}}</p>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row justify-content-md-center pt-5">
+    <div class="column mission col-7 py-2 mb-5">
+      <h2>{{page.missionbox.heading}}</h2>
+      <p> Take these three easy steps to qualify for rewards:</p>
+      <ul>
+        {% for listitem in page.missionbox.steps %}
+        <li>{{listitem}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column col-12">
+      <img src="example.jpg" width="100%">
+    </div>
+  </div>
+</div>
