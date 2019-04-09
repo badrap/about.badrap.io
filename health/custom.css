@@ -14,11 +14,18 @@ p {
     color: #212529;
 }
 
-a, a:visited {
-    text-decoration: underline;
-    color: #B63A7D;
 
+
+.btn-primary {
+    background-color: #B63A7D;
+    border-color: #B63A7D
 }
+
+.btn-primary:hover {
+    background-color: #C74B8E;
+    border-color: #C74B8E;
+}
+
 .horizontal-border {
     border-right: 1px solid #aaa;
     border-left: 1px solid #aaa;

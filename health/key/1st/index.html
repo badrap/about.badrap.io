@@ -19,8 +19,7 @@ leftbox:
     text: >
       You need tools to stay safe. This week you will get to know an easy-to-use tool
       which tells you if you are in danger. If the tool reveals an issue, it will also help you to mitigate
-      them. If you need help with the instructions, you can call or message Badrap and get a human explanation.
-      The number is +358 40 148 5100
+      them. You will get instructions. If you need help, call us and get your assigned expert Jani to talk with you&#58 +358 40 148 5100 
   - Rewards:
     heading: Get Rewards
     text: >
@@ -30,20 +29,18 @@ leftbox:
   - Get started:
     heading: Get started
     text: >
-      Register at <a href="https://badrap.io/?utm_source=hygiene&utm_medium=landing-page&utm_campaign=hygiene-key&utm_content=week1" target="_blank">badrap.io </a> to keep yourself and your family out of the harm's way.
-      It takes about five minutes. Use your work email to register. More next week!
+      Follow the three simple steps in your mission file below. It takes about 10 minutes. See you next week with a new mission!
 rightbox:
   - Ingress:
     heading: Your Personal Safety Matters
     text: >
-      People can get hacked at work and in their free time.
-      Sometimes your personal data leaks from the third party Internet services,
-      like Facebook or Strava. Criminals may hack you to conduct further attacks or run
-      credible-looking scams against you or your employer. It is important that you detect if
-      you are in danger at work or at home.
+      Sometimes personal data leaks from Internet services, like Facebook or Strava.
+      Criminals use this information to conduct further attacks or run credible-looking scams.
+      Sometimes Internet connected devices gets compromised and abused.
+      It is important to make sure that your data or devices are not used as stepping stones in any attack.
   - Picture:
     img: badrapio.jpg
-    img-text: Week 1 - see if you or your family are in danger.
+    img-text: Week 1 - check that you are not in danger.
   - Mission:
     subheading: Your mission this week
     text: >
@@ -53,15 +50,14 @@ rightbox:
       Next week, we will teach you how to add your personal email and network addresses
       to data breach monitoring.
   - Privacy:
-    subheading: Privacy First - Occupational Health Approach
-    text: Just like with the traditional occupational health, Badrap does not share any details about you to your employer. Even Badrap staff can't easily access your personal information. And we will not send you marketing messages. Just important warnings and monthly "all good" email.
+    subheading: Occupational Cyber Health
+    text: Employees are entitled to preventive occupational health care financed and arranged by the employer. Your employer wants to help you in same way with cyber security. This works both ways, by making sure you are safe you help to create a more secure workspace.<br><br>Just like with the traditional occupational health, Badrap does not share any details about you to your employer. Even Badrap staff can't easily access your personal information. And we will not send you marketing messages. Just important warnings and monthly "all good" email.
 
 missionbox:
   heading: Your mission for the week 1
   steps:
-    - Understand why your personal safety matters (read above)
-    - Start detecting if you are in danger with <a href="https://badrap.io/?utm_source=hygiene&utm_medium=landing-page&utm_campaign=hygiene-key&utm_content=week1" target="_blank">badrap.io</a> (example below)
-    - <a href="https://www.fi/" target="_blank">Tell us </a> you have completed this week's mission.
+    - Click the button below to register at badrap.io. Return to this page when you are done for the step 2.
+    - Read above why your personal security matters and click the button below to give your employer plus point in cyber security awareness 
 ---
 <div class="container horizontal-border">
   <div class="row row-header mb-5">
@@ -76,6 +72,9 @@ missionbox:
         {% for feature in page.leftbox %}
         <h3>{{feature.heading}}</h3>
         <p> {{feature.text}} </p>
+        {% if feature.button != null %}
+        {{feature.button}}
+        {% endif %}
         {% endfor %}
       </div>
     </div>
@@ -103,17 +102,16 @@ missionbox:
   <div class="row justify-content-md-center pt-5">
     <div class="column mission col-7 py-2 mb-5">
       <h2>{{page.missionbox.heading}}</h2>
-      <p> Take these three easy steps to qualify for rewards:</p>
-      <ul>
+      <p> Take these easy steps to qualify for rewards:</p>
+      <ol>
         {% for listitem in page.missionbox.steps %}
         <li>{{listitem}}</li>
         {% endfor %}
-      </ul>
+      </ol>
+      <a class="btn btn-primary" target="_blank" role="button" href="https://badrap.io/?utm_source=hygiene-week-1&utm_medium=landing-page&utm_campaign=hygiene-key&utm_content=week1">Register</a>
+      <a class="btn btn-primary" target="_blank" role="button" href="https://docs.google.com/forms/d/e/1FAIpQLScHn0tu44OX-R2Oeqk8rDyByg2XUSD2Foh4UlDSp183AYJ9pg/viewform">+1 for employer</a>
+
     </div>
   </div>
-  <div class="row">
-    <div class="column col-12">
-      <img src="example.jpg" width="100%">
-    </div>
-  </div>
+
 </div>
