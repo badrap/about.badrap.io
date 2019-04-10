@@ -29,7 +29,7 @@ leftbox:
   - Get started:
     heading: Get started
     text: >
-      Follow the three simple steps in your mission file below. It takes about 10 minutes. See you next week with a new mission!
+      Follow the simple steps in your mission box below. It takes about 10 minutes. See you next week with a new mission!
 rightbox:
   - Ingress:
     heading: Your Personal Safety Matters
@@ -55,6 +55,7 @@ rightbox:
 
 missionbox:
   heading: Your mission for the week 1
+  text: Take these easy steps to qualify for rewards&#58
   steps:
     - Click the button below to register at badrap.io. Return to this page when you are done for the step 2.
     - Read above why your personal safety matters and click the button below to give your employer plus point in cyber security awareness 
@@ -102,7 +103,7 @@ missionbox:
   <div class="row justify-content-md-center pt-5">
     <div class="column mission col-7 py-2 mb-5">
       <h2>{{page.missionbox.heading}}</h2>
-      <p> Take these easy steps to qualify for rewards:</p>
+      <p> {{page.missionbox.text}}</p>
       <ol>
         {% for listitem in page.missionbox.steps %}
         <li>{{listitem}}</li>
