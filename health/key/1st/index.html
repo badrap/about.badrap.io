@@ -19,7 +19,7 @@ leftbox:
     text: >
       You need tools to stay safe. This week you will get to know an easy-to-use tool
       which tells you if you are in danger. If the tool reveals an issue, it will also help you to mitigate
-      them. You will get instructions. If you need help, call us and get your assigned expert Jani to talk with you&#58 +358 40 148 5100 
+      them. You will get instructions. If you need help, call us and get your assigned expert Jani to talk with you&#58 +358 40 148 5100
   - Rewards:
     heading: Get Rewards
     text: >
@@ -29,7 +29,7 @@ leftbox:
   - Get started:
     heading: Get started
     text: >
-      Follow the simple steps in your mission box below. It takes about 10 minutes. See you next week with a new mission!
+      Follow the simple steps in your mission box at the end of this page. It takes about 10 minutes. See you next week with a new mission!
 rightbox:
   - Ingress:
     heading: Your Personal Safety Matters
@@ -60,7 +60,7 @@ missionbox:
     - Click the button below to register at badrap.io. Return to this page when you are done for the step 2.
     - Read above why your personal safety matters and click the button below to give your employer plus point in cyber security awareness 
 ---
-<div class="container horizontal-border">
+<div class="container horizontal-border wider-mobile">
   <div class="row row-header mb-5">
     <div class="column col-12 col-header px-0 text-center">
       <h1> {{page.heading}}</h1>
@@ -68,7 +68,7 @@ missionbox:
     </div>
   </div>
   <div class="row bottom-border pb-4">
-    <div class="column col-left col-4">
+    <div class="column col-left col-12 col-lg-4">
       <div class="rapdark">
         {% for feature in page.leftbox %}
         <h3>{{feature.heading}}</h3>
@@ -79,7 +79,7 @@ missionbox:
         {% endfor %}
       </div>
     </div>
-    <div class="col-right column col-8 left-border">
+    <div class="col-right column col-12 col-lg-8 left-border">
       {% for item in page.rightbox %}
       {% if item.heading != null %}
       <h3>{{item.heading}}</h3>
@@ -101,7 +101,7 @@ missionbox:
     </div>
   </div>
   <div class="row justify-content-md-center pt-5">
-    <div class="column mission col-7 py-2 mb-5">
+    <div class="column mission col-md-11 col-lg-8 py-2 mb-5">
       <h2>{{page.missionbox.heading}}</h2>
       <p> {{page.missionbox.text}}</p>
       <ol>
