@@ -1,0 +1,118 @@
+---
+layout: health
+title: Cyber Health for Employees
+styles:
+  - ../../custom.css
+
+heading: Stay safe online
+subheading: Cyber Health Month for the Employees - Week 2
+
+leftbox:
+  - Learn:
+    heading: Learn
+    text: >
+      During this month you will learn how to protect yourself and your family online.
+      Each week you will receive a small dose of information related to your personal
+      online safety.
+  - Personal Tools:
+    heading: Get Personal Tools
+    text: >
+      You need tools to stay safe. This week you will get to know an easy-to-use tool
+      which tells you if you are in danger. If the tool reveals an issue, it will also help you to mitigate
+      them. You will get instructions. If you need help, call us and get your assigned expert Jani to talk with you&#58 +358 40 148 5100
+  - Rewards:
+    heading: Get Rewards
+    text: >
+      The most active employees will be rewarded. You don't need to be a security expert to win.
+      Just take the ten minutes per week to learn and use the tool according to the instructions
+      we will provide.
+  - Get started:
+    heading: Get started
+    text: >
+      Follow the simple steps in your mission box at the end of this page. It takes about 10 minutes. See you next week with a new mission!
+rightbox:
+  - Ingress:
+    heading: Protect your personal information
+    text: >
+      Do you handle personal data of others, or other critical information? Then protect your personal information.
+    text2: >
+      Internet knows us better than we do. Service providers collect a vast amount of information to profile us.
+      They want to serve us better, create more meaningful ads and use our profiles as merchandise to sell to third
+      parties. Sometimes service providers have a data breach and our personal information gets into the hands of
+      criminals. Protect yourself and people you care about by taking back control over your personal information!
+  - Picture:
+    img: badrapio.jpg
+    img-text: Week 2 - check if your personal information has leaked from third parties
+  - Mission:
+    subheading: Your mission this week
+    text: >
+      Your mission this week is to check if your personal information has already leaked. If it has, don't panic.
+      There are steps you can take to prevent further issues from happening. We will guide you. And you can take the
+      most out of the experience and start practicing strict online hygiene.
+  - Privacy:
+    subheading: Help others
+    text: Your 
+missionbox:
+  heading: Your mission for week 1
+  text: Take these easy steps to qualify for rewards&#58
+  steps:
+    - Click the button below to register at badrap.io. Return to this page when you are done for the step 2.
+    - Read above why your personal safety matters and click the button below to give your employer plus point in cybersecurity awareness
+
+---
+<div class="container horizontal-border wider-mobile">
+  <div class="row row-header mb-5">
+    <div class="column col-12 col-header px-0 text-center">
+      <h1> {{page.heading}}</h1>
+      <h2> {{page.subheading}}</h2>
+    </div>
+  </div>
+  <div class="row bottom-border pb-4">
+    <div class="column col-left col-12 col-lg-4">
+      <div class="rapdark">
+        {% for feature in page.leftbox %}
+        <h3>{{feature.heading}}</h3>
+        <p> {{feature.text}} </p>
+        {% if feature.button != null %}
+        {{feature.button}}
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="col-right column col-12 col-lg-8 left-border">
+      {% for item in page.rightbox %}
+      {% if item.heading != null %}
+      <h3>{{item.heading}}</h3>
+      {% endif %}
+
+      {% if item.subheading != null %}
+      <h4>{{item.subheading}}</h4>
+      {% endif %}
+
+      {% if item.img != null %}
+      <img src="{{item.img}}" width="100%">
+      <p class="img-text">{{item.img-text}}</p>
+      {% endif %}
+
+      {% if item.text != null %}
+      <p>{{item.text}}</p>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row justify-content-md-center pt-5">
+    <div class="column mission col-md-11 col-lg-8 py-2 mb-5">
+      <h2>{{page.missionbox.heading}}</h2>
+      <p> {{page.missionbox.text}}</p>
+      <ol>
+        {% for listitem in page.missionbox.steps %}
+        <li>{{listitem}}</li>
+        {% endfor %}
+      </ol>
+      <a class="btn btn-primary" target="_blank" role="button" href="https://badrap.io/?utm_source=hygiene-week-1&utm_medium=landing-page&utm_campaign=hygiene-key&utm_content=week1">Register</a>
+      <a class="btn btn-primary" target="_blank" role="button" href="https://docs.google.com/forms/d/e/1FAIpQLScHn0tu44OX-R2Oeqk8rDyByg2XUSD2Foh4UlDSp183AYJ9pg/viewform">+1 for employer</a>
+
+    </div>
+  </div>
+
+</div>
