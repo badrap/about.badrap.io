@@ -13,7 +13,7 @@
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background-color: #f0f0f0 !important;
-  color: #80217e !important;
+  color: #B63A7D !important;
 }
 
 #mainNav img {
@@ -27,7 +27,7 @@
 }
 
 #mainNav .nav-link:hover {
-    color: #92278f;
+    color: #B63A7D;;
 }
 #mainNav.navbar-shrink {
     background-color: rgba(246,246,246,0.99);
@@ -51,7 +51,7 @@ header.masthead .intro-text {
 }
 
 .intro-lead-in h1 {
-    color: #80217e;
+    color: #B63A7D;
     font-size: 26pt;
     text-transform: uppercase;
     font-style: normal;
@@ -195,7 +195,7 @@ h1 {
     font-style: normal;
     justify-items: left;
     margin-top: 20px;
-    color: #80217e;
+    color: #B63A7D;;
 }
 
 h2,
@@ -215,7 +215,7 @@ h5 {
 }
 
 .rapwhite h1 {
-    color: #80217e;
+    color: #B63A7D;;
 }
 .rapwhite h2, .rapwhite h3, .rapwhite p {
     color: #1c2022;
@@ -263,7 +263,7 @@ th {
 }
 
 a {
-    color: #80217e;
+    color: #B63A7D;
     text-decoration: underline;
 }
 
