@@ -12,6 +12,19 @@ h6 {
 p { 
     line-height: 1.75;
     color: #212529;
+    font-family: "Lato", "Source Sans Pro", Helvetica, sans-serif;
+
+}
+.topbanner {
+    min-height: 50vh;
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 60%;
+}
+
+.topbanner h1 {
+    font-size: 35pt;
 }
 
 .btn-primary {
@@ -119,6 +132,9 @@ p {
 
     .col-right {
         margin-top: 20px;
+    }
+    .container {
+        padding-left: 5px;
     }
 
 }
