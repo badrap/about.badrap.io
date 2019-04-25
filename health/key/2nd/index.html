@@ -39,37 +39,36 @@ rightbox:
       This week you will get tips on how to protect your personal information and what to do if
       you become a victim of a data breach. You will also get bonus material you can study in your
       free time to see practical examples.
-  - Picture:
-    img: email-assets.jpg
-    img-text: Add more email addresses
   - Mission:
     subheading: Your mission this week
     text: >
-      Your mission this week is to enable data breach monitoring and claim more email addresses. Claim means
-      that you add a new email address for monitoring and verify that the address belongs to you. Add
-      your email addresses with the "add email" -button. Verify your ownership from the verification
-      email badrap.io sends to the addresses you claimed. Note that the emails and results appear
-      to your list only after verification.
+      Your mission this week is to claim more email addresses and enable data breach monitoring if you haven't
+      already done so. Claim means that you add a new email address for monitoring and verify that the
+      address belongs to you. Add your email addresses with the "add email" -button. Verify your
+      ownership from the verification email badrap.io sends to the addresses you claimed. Note that the
+      emails and results appear to your asset list only after verification.
+    img: email-assets.jpg
+    img-text: Add more email addresses
   - Picture2:
     img: enable-monitoring.jpg
-    img-text: Grant badrap.io permission to check if your data has leaked
+    img-text: Enable data breach monitoring
   - Alert:
     subheading: Did you get an alert?
     text: >
-      Don't panic! The bonus material at the bottom of this page has a link on instructions. Also, use this
+      Don't panic. The bonus material at the bottom of this page has a link on instructions. Also, use this
       experience to educate others. Your family, your colleagues, or anyone
       you care about. Point them to the same instructions you read when you went through your experience.
 missionbox:
   heading: Your mission for week 2
   text: Take these easy steps to qualify for rewards&#58
   steps:
-    - Go to badrap.io with the button below and add more email addresses as shown in the first picture above. 
+    - Go to badrap.io with the button below and add more email addresses as shown in the first picture above.
     - Verify that you own the email addresses from the verification mails badrap.io sends to each address.
     - Give badrap.io permission to check if your email has appeared in the known data breaches, as shown on the second picture.
     - Click the button below to give your employer plus point in cyber security awareness and to know what is the most common data breach among badrap.io users.
 
 ---
-<div class="container horizontal-border wider-mobile">
+<div class="container horizontal-border wider-mobile px-2">
   <div class="row row-header mb-5">
     <div class="column col-12 col-header px-0 text-center">
       <h1> {{page.heading}}</h1>
@@ -77,13 +76,14 @@ missionbox:
     </div>
   </div>
   <div class="row bottom-border pb-4">
-    <div class="column col-left col-12 col-lg-4">
+    <div class="column align-content-center col-left col-12 col-lg-4 px-2">
+
       <div class="rapdark">
-        {% for feature in page.leftbox %}
-        <h3>{{feature.heading}}</h3>
-        <p> {{feature.text}} </p>
-        {% if feature.button != null %}
-        {{feature.button}}
+        {% for section in page.leftbox %}
+        <h3>{{section.heading}}</h3>
+        <p> {{section.text}} </p>
+        {% if section.img != null %}
+        {{section.img}}
         {% endif %}
         {% endfor %}
       </div>
@@ -118,7 +118,7 @@ missionbox:
         <li>{{listitem}}</li>
         {% endfor %}
       </ol>
-      <a class="btn btn-primary" target="_blank" role="button" href="https://badrap.io/?utm_source=hygiene-week-1&utm_medium=landing-page&utm_campaign=hygiene-key&utm_content=week1">Register</a>
+      <a class="btn btn-primary" target="_blank" role="button" href="https://badrap.io/?utm_source=hygiene-week-2&utm_medium=landing-page&utm_campaign=hygiene-key&utm_content=week2">Go to Badrap</a>
       <a class="btn btn-primary" target="_blank" role="button" href="https://docs.google.com/forms/d/e/1FAIpQLSciljvu5ZPx1lge0oO9c6Z0_FoZvvAH60qtOXDFiUwNr8YRQQ/viewform">+1 for employer</a>
     </div>
   </div>
@@ -137,7 +137,7 @@ missionbox:
             </li>
 
             <li>Password managers: Browsers such as Chrome, Firefox and Safari have built-in password managers.
-                Also Apps such as
+                Also apps such as
                 <a href="https://1password.com/" target="_blank">1Password</a>,
                 <a href="https://www.lastpass.com/" target="_blank">LastPass</a>, and
                 <a href="https://keepass.info/" target="_blank">KeePass</a> are as good as any.
