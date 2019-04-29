@@ -122,6 +122,26 @@ p {
 a, a:hover {
     color: #B63A7D;
 }
+.infobox {
+    height: 95%;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 2px solid #f6f6f6;
+
+}
+
+.infobox h3 {
+    text-align: justify;
+    color: #B63A7D;
+    text-align: center;
+
+}
+
+.video h3 {
+    color: #B63A7D;
+}
 @media (max-width: 992px) {
 
     .left-border {
@@ -156,7 +176,5 @@ a, a:hover {
     }
     p {
         text-align: justify;
-    }
-
- 
+    } 
 }
