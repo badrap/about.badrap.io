@@ -9,7 +9,7 @@ subheading: Cyber Health Month for the Employees - Week 2
 
 leftbox:
   - First:
-    heading: Attacking Other Services
+    heading: Using Stolen Passwords to Attack Other Services
     text: >
       27% of us use the same or similar password in different services. Criminals buy or steal usernames and passwords
       to run automated attacks against other services. Make their life harder by using unique passwords in
@@ -29,7 +29,7 @@ leftbox:
       when the organisations don't adequately protect the data they collect. Criminals can take this information and impersonate you while
       scamming others.
       Treat personal information like money. Give it away only when necessary. Remove unnecessary personal details
-      such as your birthday and home address from online services. When a smart-phone app asks permission to personal information, such as
+      such as your birthday and home address from online services. When a smartphone app asks permission to personal information, such as
       your contacts or location data, deny it when ever you can.
 
 rightbox:
@@ -79,7 +79,7 @@ missionbox:
     </div>
   </div>
   <div class="row bottom-border pb-4">
-    <div class="column align-content-center col-left col-12 col-lg-4 px-2">
+    <div class="column align-content-center col-left col-12 order-2 order-lg-1 col-lg-4 px-2">
 
       <div class="rapdark">
         {% for section in page.leftbox %}
@@ -91,7 +91,7 @@ missionbox:
         {% endfor %}
       </div>
     </div>
-    <div class="col-right column col-12 col-lg-8 left-border">
+    <div class="col-right column col-12 col-lg-8 order-1 order-lg-2 left-border">
       {% for item in page.rightbox %}
       {% if item.heading != null %}
       <h3>{{item.heading}}</h3>
