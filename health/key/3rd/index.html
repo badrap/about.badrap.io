@@ -1,0 +1,132 @@
+---
+layout: health
+title: Cyber Health for Employees
+styles:
+  - ../../custom.css
+
+heading: Stay safe online
+subheading: Cyber Health Month for the Employees - Week 3
+
+leftbox:
+  - First:
+    heading: Criminals take over vulnerable devices
+    text: >
+      Sometimes attacks against popular Internet-services, such as Netflix or different Internet banks get into the
+      general news. The news rarely tell why these attacks are possible. Criminals use Internet-connected devices
+      which have security vulnerabilities to attack others. They take over vulnerable devices and make them to attack
+      others. If you experience a really slow connection to all the Internet services you try,
+      one of your devices might be participating in these attacks.
+  - Second:
+    heading: They also reflect their attacks via home routers
+    text: >
+      Criminals can also reflect and amplify their attacks by misusing services which are open in home routers.
+      They send packets to the router's service with a forged sender address. The router then responds to the forged address.
+      With hundreds of thousands of routers even the strongest services go down. Typical targets are popular Internet-services,
+      but the same method can be used to take down critical services of our society. Complete this week's mission to check
+      if security researchers have reported your router can be used in attacks.
+
+  - Third:
+    heading: Ransomware
+    text: >
+      Criminals spread malicious programs via email and try to get you to download them from the net. Some
+      programs are nasty as they encrypt the contents in your hard drive and network drives. After encryption
+      is completed, the program asks for money to open the files. You can't rely on anti-virus to protect your
+      as they can fail to detect the latest versions. Good cyberhygiene practices you learned last week help
+      here also. Think before you click. Open attachents only if you are certain they are legitimate. Before
+      clicking a link, hover your mouse on top of it and let the application show you with where the link actually
+      leads. The real destination is typically shown as a tooltip or in the status bar at the bottom of the window.
+
+rightbox:
+  - Ingress:
+    heading: Be Smart with Smart Devices
+    text: >
+      So far you have learned why your personal online safety matters and how to protect your personal
+      information online. This week you will learn if the networks you use to connect to Internet can be
+      hacked, or have already been hacked and used to attack others.
+  - Mission:
+    subheading: Your mission this week
+    text: >
+      Your mission this week is to become aware if you connect to the Internet from networks which are vulnerable
+      to hacking or have already been hacked and used to attack others. Log in to the WiFi at
+      your home and check your home IP with badrap.io. Save your home IP with "Save asset" -button so that you will get
+      email warnings if something is found in future. You can also check other places you visit. A guest WiFi at a hotel
+      or a business meeting, your relatives and so on. Save the ones you want to keep guarding with "Save asset" button.
+    img: ip-assets.jpg
+    img-text: Check more IP-addresses.
+  - How:
+    subheading: Make it a habit
+    text: >
+      Just like in the real-world, good habits lay out the foundation for good online health. It is not easy to
+      change habits, but we all have learned to brush our teeth and wash our hands, so it is possible. In the online world,
+      automation picks up our habits over time. For example software updates are mostly
+      automatic these days. Create a habit of visiting badrap.io once per month. Your que is the montly "All good" -email.
+      Check that you have up to date IP-address for your home. Check also if you have created new email addresses to follow.
+    img: all-good.jpg
+    img-text: Your monthly all-good email is your que to visit badrap and check your assets are up to date.
+missionbox:
+  heading: Your mission for week 2
+  text: Take these easy steps to qualify for rewards&#58
+  steps:
+    - Click the button below to give your employer another plus point and to learn for how many IP-addresses badrap.io has received security reports.
+    - Visit badrap.io from your home WiFi. To remember, write the address down or forward this week's email to an email service you have access from home.
+
+---
+<div class="container horizontal-border wider-mobile px-2">
+  <div class="row row-header mb-5">
+    <div class="column col-12 col-header px-0 text-center">
+      <h1> {{page.heading}}</h1>
+      <h2> {{page.subheading}}</h2>
+    </div>
+  </div>
+  <div class="row bottom-border pb-4">
+    <div class="column align-content-center col-left col-12 order-2 order-lg-1 col-lg-4 px-2">
+
+      <div class="rapdark">
+        {% for section in page.leftbox %}
+        <h3>{{section.heading}}</h3>
+        {% if section.img != null %}
+        {{section.img}}
+        {% endif %}
+        <p> {{section.text}} </p>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="col-right column col-12 col-lg-8 order-1 order-lg-2 left-border">
+      {% for item in page.rightbox %}
+      {% if item.heading != null %}
+      <h3>{{item.heading}}</h3>
+      {% endif %}
+
+      {% if item.subheading != null %}
+      <h4>{{item.subheading}}</h4>
+      {% endif %}
+
+      {% if item.img != null %}
+      <img src="{{item.img}}" width="{{item.img-size | default: '100%' }}">
+      <p class="img-text">{{item.img-text}}</p>
+      {% endif %}
+
+      {% if item.text != null %}
+      <p>{{item.text}}</p>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row justify-content-md-center bottom-border pt-5">
+    <div class="column mission col-md-12 col-lg-10 py-3 mb-5">
+      <h2>{{page.missionbox.heading}}</h2>
+      <p> {{page.missionbox.text}}</p>
+      <ol>
+        {% for listitem in page.missionbox.steps %}
+        <li>{{listitem}}</li>
+        {% endfor %}
+      </ol>
+      <a class="btn btn-primary" target="_blank" role="button"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSciljvu5ZPx1lge0oO9c6Z0_FoZvvAH60qtOXDFiUwNr8YRQQ/viewform">+1
+        for employer</a>
+      <a class="btn btn-primary" target="_blank" role="button"
+        href="https://badrap.io/?utm_source=hygiene-week-3&utm_medium=landing-page&utm_campaign=hygiene-key&utm_content=week3">Go
+        to badrap.io</a>
+    </div>
+  </div>
+</div>
