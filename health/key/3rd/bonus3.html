@@ -21,8 +21,10 @@ infoboxes:
     heading: Secure the router settings
     text: >
       Once you have updated your router, secure the settings. Search for the settings related to how your router shows up
-      on the Internet. Look for keywords such as "Internet" or "WAN" or "Services". Disable the services that
-      are enabled, unless you know you need them. Finally, find if the router has a firewall. Look for keywords
+      on the Internet. Look for keywords such as "Internet" or "WAN" or "Services". Disable unnecessary services, such as
+      Samba or SMB, ftp, telnet. There are few services that you need inside your network, but you don't want to provide
+      them to outside network: NTP and DNS. If you disable them, try to figure out from the user interface if they
+      are open for your own network, or to the Internet. Finally, find if the router has a firewall. Look for keywords
       such as "Security" or "Firewall". You should usually be able to use the highest security settings at home.
   - online:
     heading: Use ad blockers in your personal devices
@@ -44,7 +46,7 @@ infoboxes:
       <a href="https://badrap.io">badrap.io</a> (see the image below) and see what your current IP-address is. Then go to
       <a href="https://shodan.io">shodan.io </a>
       and search your IP address. If you get results, remember that these are not necessarily vulnerabilities. Just services,
-      which could be found vulnerable in the future.
+      which could be found vulnerable in the future. 
 
 ---
 <div class="container horizontal-border wider-mobile px-2">
