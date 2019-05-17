@@ -29,7 +29,8 @@ p {
 
 .btn-primary {
     background-color: #B63A7D;
-    border-color: #B63A7D
+    border-color: #B63A7D;
+    color: #fff !important;
 }
 
 .btn-primary:hover {
