@@ -139,8 +139,23 @@ a, a:hover {
 
 }
 
+.bonus h2,h3 {
+    color: #B63A7D;
+}
 .video h3 {
     color: #B63A7D;
+}
+
+.stats {
+    font-size: 15pt;
+    color: #3a3a3a;
+    font-style: italic;
+    margin-bottom: 5px;
+
+}
+.mutedstats {
+    color: #aaa !important;
+    font-size: 10pt;
 }
 @media (max-width: 992px) {
 
