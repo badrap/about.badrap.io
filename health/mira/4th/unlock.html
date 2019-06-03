@@ -1,0 +1,134 @@
+---
+layout: health
+title: Cyber Health for Employees
+styles:
+  - ../../custom.css
+
+heading: Stay safe online
+subheading: Cyber Health Month for the Employees - Phase 4
+
+leftbox:
+  - First:
+    heading: Guard the most assets - win three movie tickets
+    text: >
+      Become a guardian of as many IP-addresses and email addresses you can. We will reward the employee
+      who guards most assets.
+      Check from the top of the "My Assets" page how many assets you are guarding right now.
+  - Second:
+    heading: Be a good mentor - win two movie tickets
+    text: >
+      Being a good mentor starts by realising why security is everybody's business. We want to reward those
+      who have taken a moment to consider the topics of this month. We will analyse your answers and
+      reward best answers with movie tickets. Both single answers and consistent activity qualify.
+  - Third:
+    heading: Stay safe in the future
+    text: >
+      This is the last mission of the cyber health month. After you have completed, keep using badrap.io to get warnings
+      also in the future. It will not spam you - 98% of our users keep their email notifications enabled.
+      We will contact the winners separately, using the email you have provided in your answers. The Cyber Health Month
+      ends at 1.7 12:00 GMT+3.
+
+rightbox:
+  - Ingress:
+    heading: Become a Guardian, a Mentor, or both
+    text: >
+      You have learned how your personal security can affect others, as criminals exploit trust relationships to scam others.
+      Now let's turn that around. Be a mentor for someone by talking with your colleagues about Cyber Health Month. Or become
+      a guardian by claiming assets that are relevant to those you can help. If you haven't had yet time to read the material,
+      it is not too late - start with the button below. You still have time to learn and an opportunity to win rewards.
+      <br><br> <a class="btn btn-primary" target="_blank" role="button" href="../">Start from the beginning</a>
+
+  - Mission:
+    subheading: Your phase 4 mission
+    img: add-assets.jpg
+    img-text: Claim assets that are relevant to those you can help.
+    text: >
+      Become a guardian by checking networks
+      (IP-addresses) and email addresses that are relevant to those you can help.
+      Criminals can find the same information as our researchers do, so it is essential to reach anyone with issues.
+      Who could you help? At home: email addresses of your family members.
+      If you find an issue related to your family member, read the instructions together or contact us for help.
+      On the road: the guest WiFi at the hotel you are staying.
+      While working: the guest WiFi in a business meeting. If you find a
+      vulnerability from the guest WiFi, tell about it to your host, reception staff or similar
+      and ask them to report it to their service provider. You can
+      also ask them to contact us, and
+      we will explain the issue without an extra cost. Just ask them to tell us that the tip came from you.
+  - How:
+    subheading: Become a mentor by talking with your colleagues
+    text: >
+      This is a good topic for small talk. Chat with your colleagues about Cyber Health Month. Ask colleagues at a coffee or a lunch break
+      if they have noticed the campaign. Have they participated? What have they learned? Did they use badrap.io or just read the material?
+      You don't need to be an expert in the topics you have learned.
+      A simple reminder from you to participate might save their day in the future.
+
+missionbox:
+  heading: Your phase 4 mission
+  text: Take these easy steps to qualify for rewards&#58
+  steps:
+    - Become a guardian by claiming more assets. Visit badrap.io from other networks you care about. Claim email addresses of your family members with their consent.
+    - Click the button below to give your employer another plus point. Learn how jani@badrap.io dealt with the data breach related to his daughter. Give your consent to the asset count check for the competition.
+  plusone: https://docs.google.com/forms/d/e/1FAIpQLSfFN20MNtxydA_4-nNbj9WMXpEn_lzOo8UB-8LmA4qR2xW11Q/viewform
+  badrapio: https://badrap.io/?utm_source=hygiene-phase-4&utm_medium=landing-page&utm_campaign=hygiene-mira&utm_content=phase4
+
+---
+<div class="container horizontal-border wider-mobile px-2">
+  <div class="row row-header mb-5">
+    <div class="column col-12 col-header px-0 text-center">
+      <h1> {{page.heading}}</h1>
+      <h2> {{page.subheading}}</h2>
+    </div>
+  </div>
+  <div class="row bottom-border pb-4">
+    <div class="column align-content-center col-left col-12 order-2 order-lg-1 col-lg-4 px-2">
+
+      <div class="rapdark">
+        {% for section in page.leftbox %}
+        <h3>{{section.heading}}</h3>
+        {% if section.img != null %}
+        {{section.img}}
+        {% endif %}
+        <p> {{section.text}} </p>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="col-right column col-12 col-lg-8 order-1 order-lg-2 left-border">
+      {% for item in page.rightbox %}
+      {% if item.heading != null %}
+      <h3>{{item.heading}}</h3>
+      {% endif %}
+
+      {% if item.subheading != null %}
+      <h4>{{item.subheading}}</h4>
+      {% endif %}
+
+      {% if item.img != null %}
+      <img src="{{item.img}}" width="{{item.img-size | default: '100%' }}">
+      <p class="img-text">{{item.img-text}}</p>
+      {% endif %}
+
+      {% if item.text != null %}
+      <p>{{item.text}}</p>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="row justify-content-md-center bottom-border pt-5">
+    <div class="column mission col-md-12 col-lg-10 py-3 mb-5">
+      <h2>{{page.missionbox.heading}}</h2>
+      <p> {{page.missionbox.text}}</p>
+      <ol>
+        {% for listitem in page.missionbox.steps %}
+        <li>{{listitem}}</li>
+        {% endfor %}
+      </ol>
+      <a class="btn btn-primary" target="_blank" role="button"
+      href="{{page.missionbox.badrapio}}">Go
+      to badrap.io</a>
+      <a class="btn btn-primary" target="_blank" role="button"
+        href="{{page.missionbox.plusone}}">+1
+        for employer</a>
+
+    </div>
+  </div>
+</div>
