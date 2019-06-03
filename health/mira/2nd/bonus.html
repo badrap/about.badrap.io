@@ -1,0 +1,83 @@
+---
+layout: health
+title: Cyber Health for Employees
+styles:
+- ../../custom.css
+
+heading: Stay safe online
+subheading: Cyber Health Month for the Employees - Phase 2 Bonus Material
+
+infoboxes:
+  - twofactor:
+    heading: Enable Two-Factor Authentication
+    text: >
+      More and more services offer two-factor authentication, also called as multi-factor authentication - sometimes
+      shortened as 2FA or MFA.
+      Enable it whenever possible. With it, having your username password is not enough to get access to the service.
+      See the example instructions by <a href="https://www.google.com/landing/2step/" target="_blank">Google</a>
+      and <a href="https://www.facebook.com/help/148233965247823" target="_blank">Facebook</a>.
+      Add emergency contact information so that you can get your account back, should something happen.
+  - managers:
+    heading: Use Password Managers
+    text: >
+      Let password managers choose unique and strong passwords for you. Browsers such as Chrome, Firefox, and Safari have built-in password managers.
+      Also, apps such as
+      <a href="https://1password.com/" target="_blank">1Password</a>,
+      <a href="https://www.lastpass.com/" target="_blank">LastPass</a>, and
+      <a href="https://keepass.info/" target="_blank">KeePass</a> are as good as any.
+  - online:
+    heading: Stop Attempts to Steal Your Identity
+    text: >
+      <a href="https://youtu.be/R12_y2BhKbE" target="_blank"> Stay safe from Phishing and Scams </a>
+      -video (3 minutes 14 seconds) shows how to spot the signs of a scam.
+      In a hurry? Watch <a href="https://youtu.be/R12_y2BhKbE?t=115" target="_blank"> the most
+      relevant part</a> (1 min 19 seconds)
+  - monitor:
+    heading: Got a Data Breach Alert?
+    text: >
+      Did you get a data breach alert from badrap.io? Or do you want to prepare for it in advance?
+      Read <a href="https://medium.com/badrapio/i-got-a-data-breach-alert-what-next-d3fa36d9a7c7"
+        target="_blank"> our blog </a> to know about what to do.
+---
+<div class="container horizontal-border wider-mobile px-2">
+    <div class="row row-header mb-4">
+        <div class="column col-12 col-header px-0 text-center">
+            <h1> {{page.heading}}</h1>
+            <h2> {{page.subheading}}</h2>
+        </div>
+    </div>
+    <div class="row bottom-border">
+        <div class="column col-md-12 col-lg-12">
+            <p>
+                Good job completing the mission! Below we provide links you can study in your free time. Bookmark
+                this page or copy and paste the link from the address bar and send it to yourself via email to be able to return to this
+                page later.
+            </p>
+        </div>
+        {% for info in page.infoboxes %}
+        <div class="col col-12 col-lg-6 px-0">
+            <div class="infobox rapdark">
+                <h3 class="py-3">{{info.heading}}</h3>
+                <p> {{info.text}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row pt-5">
+        <div class="col col-12 col-lg-6">
+            <h3 class="video">Live Through the Experience</h3>
+
+            <p>Watch from the safety of your couch how YouTube star Soikku got hacked by Team Whack (13 minutes 34
+                seconds).
+                The episode has English subtitles.
+                <a href="https://www.youtube.com/watch?v=7ZtVsEsqjNs">
+                    Watch Team Whack Episode 2</a>
+        </div>
+        <div class="col col-12 col-lg-6">
+            <a href="https://www.youtube.com/watch?v=7ZtVsEsqjNs">
+                <img src="team-whack.jpg" width="100%">
+                <p class="img-text">Enable subtitles from the bottom-right corner in YouTube.</p>
+            </a>
+        </div>
+    </div>
+</div>

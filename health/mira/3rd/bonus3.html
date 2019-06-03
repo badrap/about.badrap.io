@@ -1,0 +1,84 @@
+---
+layout: health
+title: Cyber Health for Employees
+styles:
+- ../../custom.css
+
+heading: Stay safe online
+subheading: Cyber Health Month for the Employees - Phase 3 Bonus Material
+
+infoboxes:
+  - router:
+    heading: Update your home router's software
+    text: >
+      Computers get automatic updates. Unfortunately, this is rarely the case with home routers.
+      Check your home router's manual to see how you can log into it. If your manual is missing, try searching
+      the Internet with using the brand, model and the term "manual" as keywords. Example: <em>huawei b593s-22
+      manual</em>. Log in and browse through the settings. If the router has a default password, change it.
+      Check if you can update the firmware of the router to fix
+      any potential vulnerabilities. Search for keywords such as "firmware update" or just "update".
+      What other smart devices you could update?
+  - managers:
+    heading: Secure the router settings
+    text: >
+      Once you have updated your router, secure the settings. Search for the settings related to how your router shows up
+      on the Internet. Look for keywords such as "Internet" or "WAN" or "Services". Disable unnecessary services, such as
+      Samba or SMB, FTP, or Telnet. There are few services that you need inside your network, but you don't want to keep them open
+      to the Internet: NTP and DNS. If you disable them, try to figure out from the router's admin interface if they
+      are open only for your own network, or also to the Internet. Finally, find if the router has a firewall. Look for keywords
+      such as "Security" or "Firewall". You should usually be able to use the highest security settings at home.
+  - online:
+    heading: Use ad blockers in your personal devices
+    text: >
+      Ad blockers are designed to block tracking and remove ads from web pages you view. They are good for privacy, and
+      they have a positive effect for security. They make it more difficult for criminals to push malicious programs into
+      your devices through ads and third party javascript. Get the ad blockers from reputable download sources. For example,
+      uBlock Origin is available at the
+      <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en">
+        Chrome browser's Web Store</a>, and
+        1Blocker is available for iPhones at <a href="https://itunes.apple.com/us/app/1blocker-x-faster-safer-web/id1365531024?mt=8">App Store</a> 
+  - monitor:
+    heading: Check your network IP-address at Shodan
+    text: >
+      Security researchers report about specific vulnerabilities. Shodan.io service scans the Internet regularly for all
+      open services, not just the vulnerable ones. Use shodan.io to make sure
+      you don't have any services accessible from the Internet. They could be found vulnerable in the future. Go to the
+      "Home" tab in
+      <a href="https://badrap.io">badrap.io</a> (see the image below) and see what your current IP-address is. Then go to
+      <a href="https://shodan.io">shodan.io </a>
+      and search your IP address. If you get results, remember that these are not necessarily vulnerabilities. Just services,
+      which could be found vulnerable in the future. 
+
+---
+<div class="container horizontal-border wider-mobile px-2">
+    <div class="row row-header mb-4">
+        <div class="column col-12 col-header px-0 text-center">
+            <h1> {{page.heading}}</h1>
+            <h2> {{page.subheading}}</h2>
+        </div>
+    </div>
+    <div class="row bottom-border">
+        <div class="column col-md-12 col-lg-12">
+            <p>
+                Awesome, third mission completed! Ready to go one level higher? Below we provide links you can study in your free time. Bookmark
+                this page or copy and paste the link from the address bar and send it to yourself via email to
+                be able to return to this page later. If these tips are too challenging, show this page to a person
+                who could help you to secure the devices in your home network.
+            </p>
+        </div>
+        {% for info in page.infoboxes %}
+        <div class="col col-12 col-lg-6 px-0">
+            <div class="infobox rapdark">
+                <h3 class="py-3">{{info.heading}}</h3>
+                <p> {{info.text}}</p>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="row bottom-border">
+            <div class="col col-12 col-lg-8 offset-lg-2 px-2 justify-content-center">
+                <img src="useshodan.jpg" width="100%">
+                <p class="img-text px-2">Check your network IP-address at shodan.io</p>
+            </div>
+        </div>
+    </div>
+</div>
