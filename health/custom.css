@@ -38,6 +38,9 @@ p {
     border-color: #C74B8E;
 }
 
+.btn-primary.small {
+    font-size: 10pt;
+}
 .horizontal-border {
     border-right: 1px solid #aaa;
     border-left: 1px solid #aaa;
