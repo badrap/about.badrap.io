@@ -34,6 +34,7 @@ Tietoa Badrap.io:sta: <https://badrap.io/about>
 
 - Badrapin ilmaispalvelu omien verkkohaavoittuvuuksiesi ja tietovuotojesi tarkistamiseksi: <https://badrap.io/>
 - Logot ja muu grafiikka: <https://about.badrap.io/press/>
+- Esitys: [Warning the users of vulnerable building automation](https://about.badrap.io/press/)
 
 Tietoa Remodista: <https://remod.fi/>
 
