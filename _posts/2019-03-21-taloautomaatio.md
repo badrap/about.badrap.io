@@ -32,6 +32,7 @@ contact@badrap.io<br>
 
 Tietoa Badrap.io:sta: <https://badrap.io/about>
 
+- Esitys: [Warning the users of vulnerable building automation](https://about.badrap.io/press/badrap-remod-fidelix.pdf)
 - Badrapin ilmaispalvelu omien verkkohaavoittuvuuksiesi ja tietovuotojesi tarkistamiseksi: <https://badrap.io/>
 - Logot ja muu grafiikka: <https://about.badrap.io/press/>
 
