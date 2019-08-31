@@ -24,8 +24,13 @@
         </div>
 
         <div class="column">
-
+        {% if slide.img.src %}
         <img src="{{slide.img.src}}" style="max-height: 500px" class="{{slide.img.class}}">
+        {% endif %}
+        {% if slide.video.src %}
+        <video data-autoplay src="{{slide.video.src}}" type="{{slide.video.type}}" />
+        </video>
+        {% endif %}
         </div>
     </div>
 </section>
