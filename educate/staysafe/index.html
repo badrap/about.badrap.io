@@ -1,0 +1,137 @@
+---
+layout: slides
+title: Badrap - Company Intro
+styles:
+    - reveal.js/css/reveal.css
+    - reveal.js/css/theme/white.css
+    - badrap.css
+
+slides:
+  - slide:
+    title:
+      text: Badrapx
+    subtitle:
+      text: Your Personal Safety Matters
+    layout: slide-coverpage
+    img:
+      src: badrap-logo.svg
+      alt: Badrap logo
+      width: 30%
+
+  - slide:
+    layout: slide-image-and-text
+
+    title:
+      text: Your personal safety matters
+    text:
+      text: >
+        Others depend on you to stay safe. Criminals can use your devices and personal information to attack others.
+        Make sure that your data or devices are not used as stepping stones in any attack.
+
+    video:
+      src: img/others.mov
+      type: video/mp4
+  - slide:
+    title:
+      text: Take care of your assets
+    text:
+      text: Where is your personal information? What devices you use?
+    img:
+      src: img/basics-cropped.svg
+      width: 80%
+    
+  - slide:
+    layout: slide-image-and-text
+    title:
+      text: Third party services
+    text:
+      text: >
+        Criminals steal personal data from third party services.
+        They use your information to conduct further attacks or run credible-looking scams.
+    img:
+      src: img/basics-third-party.svg
+
+  - slide:
+    layout: slide-image-and-text
+    title:
+      text: Third party services
+    text:
+      text: >
+        Your providers should warn you when your data has been breached. But sometimes they don't.
+        Sometimes they don't even notice.
+        <a href="badrap.io">badrap.io</a> warns you if security researchers have found your
+        information available out in the open.
+    img:
+      src: img/basics-third-party.svg
+
+  - slide:
+    layout: slide-image-and-text
+    title:
+      text: Internet of Things (IoT)
+    text:
+      text: >
+        IoT-devices often have vulnerabilities. Security researchers scan the
+        Internet to find the vulnerabilities before attackers can use them.
+        And they monitor where the ongoing attacks are coming from.
+    img:
+      src: img/basics-internet-of-things.svg
+
+  - slide:
+    layout: slide-image-and-text
+    title:
+      text: Internet of Things (IoT)
+    text:
+      text: >
+        Get started by checking if there are updates for your home router. And make sure it does not use a default password.
+        Search the net for further instructions by using keywords such as router's brand, model and manual or security.
+    img:
+      src: img/basics-internet-of-things.svg
+
+  - slide:
+    layout: slide-image-and-text
+    title:
+      text: Internet of Things (IoT)
+    text:
+      text: >
+        And remember, IoT devices send data to the cloud. The personal information they collect
+        can also be breached. Turn those security cameras away from you and your neighbours.
+    img:
+      src: img/basics-internet-of-things.svg
+
+  - slide:
+    layout: slide-image-and-text
+    title:
+      text: Personal devices
+    text:
+      text: >
+        The personal devices you carry may provide the keys to the kingdom. You may access critical information or
+        systems with them. Or you may use them to be in contact with somebody who does.
+    img:
+      src: img/basics-byod.svg
+
+  - slide:
+    layout: slide-image-and-text
+    title:
+      text: Personal devices
+    text:
+      text: >
+        Software and operating system vendors try to eradicate vulnerabilities and ship regular updates to
+        keep you safe. So criminals often try to scam you to compromise their security. 
+    img:
+      src: img/basics-byod.svg
+---
+{% for slide in page.slides %}
+
+    <!--- post post post -->
+
+    {% if slide.layout == null %}
+        {% assign layout = "slide-default" %}
+    {% else %}
+        {% assign layout = slide.layout %}
+    {% endif %}
+
+    {% include {{layout}}.html %}
+
+    <!--- END post post post -->
+
+{% endfor %}
