@@ -10,7 +10,7 @@
             {% endif %}
 
             {% if slide.text.text %}
-            <p class="{{slide.text.class}}">{{slide.text.text}}</p>
+            <p class="left {{slide.text.class}}">{{slide.text.text}}</p>
             {% endif %}
 
             {% if slide.bullets %}
@@ -24,8 +24,13 @@
         </div>
 
         <div class="column">
-
+        {% if slide.img.src %}
         <img src="{{slide.img.src}}" style="max-height: 500px" class="{{slide.img.class}}">
+        {% endif %}
+        {% if slide.video.src %}
+        <video playsinline data-autoplay src="{{slide.video.src}}" type="{{slide.video.type}}" />
+        </video>
+        {% endif %}
         </div>
     </div>
 </section>

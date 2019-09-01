@@ -1,7 +1,11 @@
 <section {{slide.section-parameters}}>
     <div class="whitebox">
         <img src="{{slide.img.src}}" width="{{slide.img.width}}" alt="{{slide.img.alt}}">
+        {% if slide.subtitle %}
+        <h3 class="{{slide.subtitle.class}}">{{slide.subtitle.text}}</h3>
+        {% else %}
         <h3 class="{{slide.subtitle.class}}">{{site.data.company.tagline}}</h3>
+        {% endif %}
         {% if slide.notes != null %}
         <aside class="notes">
             {{slide.notes}}
