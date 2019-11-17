@@ -28,7 +28,7 @@
         <img src="{{slide.img.src}}" style="max-height: 500px" class="{{slide.img.class}}">
         {% endif %}
         {% if slide.video.src %}
-        <video playsinline data-autoplay src="{{slide.video.src}}" type="{{slide.video.type}}" />
+        <video playsinline data-autoplay muted src="{{slide.video.src}}" type="{{slide.video.type}}" poster="{{slide.video.poster}}"/>
         </video>
         {% endif %}
         </div>

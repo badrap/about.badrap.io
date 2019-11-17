@@ -10,32 +10,19 @@ styles:
     - reveal.js/css/reveal.css
     - reveal.js/css/theme/white.css
     - badrap.css
-
 slides:
   - slide:
-    title:
-      text: Badrapx
-    subtitle:
-      text: Your Personal Safety Matters
-    layout: slide-coverpage
-    img:
-      src: badrap-logo.svg
-      alt: Badrap logo
-      width: 30%
-
-  - slide:
     layout: slide-image-and-text
-
     title:
-      text: Your personal safety matters
+      text: Your safety matters
     text:
       text: >
-        Others depend on you to stay safe. Criminals can use your devices and personal information to attack others.
+        Others depend on you to stay safe.
         Make sure that your data or devices are not used as stepping stones in any attack.
-
     video:
       src: img/others.mov
       type: video/mov
+      poster: img/basics-others-depend.svg
   - slide:
     title:
       text: Take care of your assets
@@ -44,7 +31,6 @@ slides:
     img:
       src: img/basics-cropped.svg
       width: 80%
-    
   - slide:
     layout: slide-image-and-text
     title:
@@ -121,9 +107,24 @@ slides:
     text:
       text: >
         Software and operating system vendors try to eradicate vulnerabilities and ship regular updates to
-        keep you safe. So criminals often try to scam you to compromise their security. 
+        keep you safe. So criminals often try to scam you to compromise their security.
     img:
       src: img/basics-byod.svg
+  - slide:
+    title:
+      text: Let's step up our game!
+    text:
+      text: >
+        <em>Everyone</em>: use badrap.io to get warnings when your personal information has leaked and when your networks are vulnerable.
+        <em>Employer</em> get Employee Cyber Hygiene online training for your employees.
+    buttons:
+      - button:
+        link: https://badrap.io/?utm_source=landing-page&utm_medium=web&utm_campaign=staysafe&utm_content=deck
+        text: Everyone
+      - button:
+        link: https://hygiene.badrap.io/?utm_source=landing-page&utm_medium=web&utm_campaign=staysafe&utm_content=deck
+        text: Employer
+
 ---
 {% for slide in page.slides %}
 
