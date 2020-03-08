@@ -3,6 +3,20 @@
 This is the source repository for Badrap web pages and additional material available on the web
 unlinked.
 
+## Hierarchy
+
+* company/ - old company presentation
+* educate/ - WIP educational presentation
+* employees/ - employee cyber hygiene page
+* gov/ - a presentation for the gov
+* health/ - old hygiene deliveri  es
+* pitch/ - investor pitch
+* pmassets/ - Assets from PM
+* press/
+* researchers/
+* tech/ - fun tech and feature presentation
+* testdrive
+
 ## Contributing
 
 ```console
