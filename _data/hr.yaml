@@ -1,0 +1,247 @@
+pagetitle:
+  en: Employee Cyber Hygiene
+  fi: Kyberhygieniaa työntekijöille
+title: Employee Cyber Hygiene by Badrap
+tagline:
+  en: Protect your Employees » Protect your Business
+  fi: Suojaa työntekijäsi » Suojaat liiketoimintasi
+
+quote:
+    text:
+      en: >
+        Are you tired of hearing "humans are the weakest link in security"? We created this
+        service so you can make that link stronger.
+      fi: >
+        Oletko jo kyllästynyt fraasiin "ihminen on tietoturvan heikoin lenkki"? Sitä linkkiä pitää vahvistaa.
+        Työntekijöiden kyberhygienia on kybermaailman vastine työterveydelle. Luot sen avulla turvallisemman työympäristön.
+    face: /img/jani.jpg
+    name:
+      en: Jani Kenttälä, CEO
+      fi: Jani Kenttälä, Toimitusjohtaja
+
+benefits:
+    title:
+      en: Engage employees in cyber security
+      fi: Ota työntekijät osaksi puolustustasi
+    text:
+      en: >
+        Most attacks go through employees. Your workforce needs to be part of your defence.
+        You need to win everybody's hearts and minds to get them onboard. Let us help.
+      fi: >
+        Hyökkääjän tie yrityksen sydämeen käy työntekijöiden kautta. Työntekijät ovat alttiimmillaan vapaa-aikana,  työnantajan
+        suojan ulottumattomissa. Tuki rikollisten tavalliset reitit yritykseesi - ota työntekijät osaksi puolustustasi.
+    boxes:
+      - first:
+        icon: ti-thumb-up
+        title:
+          en: Training
+          fi: Motivoiva koulutus osallistuttaa työntekijäsi
+        text:
+          en: >
+            We designed our automated online security training to get regular people
+            curious about security. More fun, more personal approach, and less time. Peers acting as champions.
+          fi: >
+            Aivan ensimmäiseksi työntekijät täyty saada innostumaan
+            tietoturvasta. Palveluun kuuluu tiivis ja henkilökohtainen verkkokoulutus.
+      - second:
+        icon: ti-pulse
+        title:
+          en: Better awareness
+          fi: Varoituspalvelu pitää heidät turvassa ja valppaana
+        text:
+          en: >
+            Courses alone won't produce awareness. Employees need to see their personal security issues.
+            Training includes our online service that warns and advises your employees when they are in danger - in a humane way.
+          fi: >
+            Kurssit yksin eivät nosta tietoisuutta. Työntekijöiden täytyy nähdä ja ymmärtää heidän tärkeimmät tietoturvaongelmansa.
+      - third:
+        icon: ti-cup
+        title:
+          en: Statistics and rewards
+          fi: Tilastot ja palkinnot kertovat edistyksestä
+        text:
+          en: >
+            Our statistics show how your workforce is making progress. How many did the course? How many
+            signed up for personal protection? Who won?
+          fi: >
+            Tilastomme näyttävät henkilöstösi kehittymisen. Kuinka moni suoritti kurssin? Kuinka moni otti
+            työkalun käyttöön?
+
+motivation:
+    title:
+      en: Attacks to the company's heart goes through the employees
+      fi: Tie yrityksen sydämeen käy työntekijöiden kautta
+    text:
+      en: >
+        Invoicing scams, CEO scams, account takeovers and ransomware - they all target people.
+        Once criminals get a foothold, they go after the victim's contacts. That includes friends, colleagues and the employer.
+        Are you responsible for the continuity of your business? Protect your employees to protect your business!
+      fi: >
+        Laskutushuijaukset, toimitusjohtajahuijaukset, tilien haltuunotot ja kiristyshaittaohjelmat - kaikki kohdistuvat ihmisiin.
+        Hyökkäykset voivat alkaa töissä tai vapaalla.
+        Jalansijan saatuaan rikolliset jatkavat pidemmälle. Oletko vastuussa yrityksesi liiketoiminnan jatkuvuudesta? Pidä huoli
+        työntekijöistäsi myös vapaalla. Pidät huolta yrityksestäsi.
+    image:
+        en: /img/basics-others-depend.svg
+        fi: /img/basics-others-depend-fi.svg
+
+motivation2:
+    title:
+      en: Employees are exposed in their free time
+      fi: Työntekijät ovat alttiita vapaa-ajallaan
+    text:
+      en: >
+        Data breaches in third-party services
+        help criminals to run sophisticated scams against your employees. Employees also use personal devices that are more vulnerable and less
+        protected than their work equipment. You can't fix what is not yours. But you can raise your workforce's immunity and stop attacks where they start.
+      fi: >
+        Internet-palvelut vuotavat työntekijöidesi henkilötietoja. Rikolliset käyttävät vuotaneita tietoja hyväksi huijatessaan työntekijöitä.
+        Lisäksi työntekijät ovat vapaa-aikanaan heikommin suojattujen IoT-laitteiden ja omien työvälineiden ympäröimänä. Työntekijät ovat keskeisessä
+        roollissa organisaatiosi turvallisuuden parantamisessa.
+    image:
+      en: /img/basics-cropped.svg
+      fi: /img/basics-cropped-fi.svg
+
+testimonials:
+  title:
+    en: What do Employee Cyber Hygiene participants say?
+    fi: Mitä osallistujat sanovat?
+  list:
+    en:
+      - Great initiative. Looking forward to what you have to teach us!
+      - I don't want to be connected to any suspicious activities
+      - The company's security is not stronger than the weakest link in the chain
+      - A nice way to introduce security!
+      - Badrap.io is an interesting service
+      - Wonder what we can learn
+      - If I’m not safe, neither is the employer
+      - I want to be safe, and if I learn how to be safe I can pass on my knowledge to others (family, friends, colleagues)
+    fi:
+      - Mahtava aloite. Jännä nähdä mitä opetatte!
+      - En halua, että minut liitetään epäilyttävään toimintaan
+      - Yrityksen turvallisuus on yhtä vahva kuin sen heikoin lenkki
+      - Badrap.io on mielenkiintoinen palvelu
+      - Työnantajani ei ole turvassa, ellen minä ole turvassa
+      - Haluan pysyä turvassa. Jos minä opin, voin jakaa tietoni muille (perhe, ystävät, kolleegat)
+
+packages:
+    title:
+      en: Pricing
+      fi: Hinnat
+    text:
+      en: >
+        You can either let the employees enroll themselves, or provide a list of email addresses for
+        us and we'll enroll everybody. Minimum order is 1800€ and volume discounts are available. Support and kickoff service are included.
+      fi: >
+        Voit antaa työntekijöiden ilmoittautua itse. Saat meiltä viestipohjan, jonka avulla kerrot työntekijöillesi kyberhygieniakurssista. Voit vaihtoehtoisesti toimittaa
+        listan työntekijöistä meille, jolloin käynnistämme kurssin automaattisesti. Minimitilaus 1800€.
+        Tuki- ja aloituspalvelu kuuluvat hintaan.
+    cta:
+      en: Try it out for free
+      fi: Kokeile ilmaiseksi
+
+    prices:
+      - title:
+         en: Self Enrollment
+         fi: Työntekijät ilmoittautuvat itse kurssille
+        price:
+          en: 40€
+          fi: 40€
+        time:
+          en: year / employee
+          fi: vuosi / työntekijä
+        features:
+          en:
+            - Pay only for those who enrolled.
+            - Get a signup form where your employees can enroll themselves.
+          fi:
+            - Maksat vain ilmoittautuneista
+            - Saat oman ilmoittautumissivun työntekijöillesi
+            - <a href="ilmoittaudu/demo-a/" target="_blank"> Toimiva esimerkki</a> - katso ja kokeile!
+        ctaid: gt-selfenroll
+        cta:
+          en: Try free
+          fi: Hanki
+        cta-url:
+          en: "https://share.hsforms.com/1ErF1f7a8RS-UDUjBDVvhww2ecmj"
+          fi: "https://share.hsforms.com/1sESSoe-qSdytuBJmHtPozQ2ecmj"
+      - title:
+          en: Automatic Enrollment
+          fi: Työnantaja ilmoittaa
+        price:
+          en: 20€
+          fi: 20€
+        time:
+          en: year / employee
+          fi: vuosi / työntekijä
+        features:
+          en:
+            - Get as much people onboard as possible.
+            - Provide us with a list of email addresses. We'll launch the course for your employees.
+          fi:
+            - Takaa paras mahdollinen osallistumisprosentti
+            - Toimita meille työntekijöiden sähköpostiosoitteet, me käynnistämme kurssin kaikille.
+        ctaid: gt-autoenroll
+        cta:
+          en: Get it
+          fi: Hanki
+        cta-url:
+          en: "https://share.hsforms.com/1ErF1f7a8RS-UDUjBDVvhww2ecmj"
+          fi: "https://share.hsforms.com/1sESSoe-qSdytuBJmHtPozQ2ecmj"
+theend:
+  talk:
+    en: Want to talk with us?
+    fi: Haluatko jutella?
+  email:
+    en: Send an email to <a href="mailto:contact@badrap.io">contact@badrap.io</a>
+    fi: Lähetä meille sähköpostia osoitteeseen <a href="mailto:contact@badrap.io">contact@badrap.io</a>.
+  form:
+    en: or leave us your contact information
+    fi: Tai jätä yhteydenottopyyntö
+  contact-url:
+    en: "https://share.hsforms.com/1ErF1f7a8RS-UDUjBDVvhww2ecmj"
+    fi: "https://share.hsforms.com/1sESSoe-qSdytuBJmHtPozQ2ecmj"
+  wellgetback:
+    en: and we'll be in touch promptly!
+    fi: ja olemme pian yhteydessä.
+  newsletter:
+    en: Want to come back later? Make sure you won't forget -
+    fi: Haluatko palata asiaan myöhemmin?
+  newsletter-cta:
+    en: subscribe to our newsletter.
+    fi: Tilaa uutiskirje, jotta muistat.
+
+  newsletter-url:
+    en: https://share.hsforms.com/1e7yiEVMdQzmeonVJBy8S0g2ecmj
+    fi: https://share.hsforms.com/1W2fWYPdtTZKwxpmPe6E_Yw2ecmj
+
+eval:
+    title:
+      en: Try it out
+      fi: Kokeile ilmaiseksi
+    cta-text:
+      en: >
+        Try out the first phase of our four-phase engagement. When you sign up, you will get an email pointing you to
+        the phase one training material.
+    text:
+      en: >
+        Crosskey had the most active employees in 2019. Could your organisation get the title for 2020?
+      fi: >
+        Kun ilmoittaudut, saat meiltä sähköpostitse linkin koulutusmateriaaliin. Suorita tehtävät ja näe kurssin kaikki neljä vaihetta.
+        Vuoden 2019 aktiivisimmat työntekijät löytyivät Crosskeyltä. Voisiko sinun organisaatiosi napata saman tittelin vuodelle 2020?
+
+    testimonial:
+      fi: >
+        "Pitämällä työntekijämme tietoisina kyberasioista, pidämme
+        samalla omat ympäristömme ja asiakkaiden tiedot turvassa."-- Kim Halavakoski
+      en: >
+        "By ensuring our employees are cyber aware we also ensure that we keep our environments and customers' data safe." -- Kim Halavakoski
+    ac-form-id:
+      en: 2
+      fi: 11
+    policy:
+      en: Privacy policy
+      fi: Tietosuojapolitiikka
+    policy-url:
+      en: https://docs.badrap.io/privacy-company.html#data-controller-contact-details
+      fi: https://docs.badrap.io/privacy-company.html#data-controller-contact-details

@@ -1,0 +1,100 @@
+---
+layout: mombo
+styles:
+    - ../css/mombo-fixes.css
+    - custom.css
+lang: en
+ogurl: https://hygiene.badrap.io/
+ogtitle: Employee Cyber Hygiene
+title: Employee Cyber Hygiene
+
+ogdescription:  Protect your Employees » Protect your Business
+ogimage: https://hygiene.badrap.io/ogimage.jpg
+twitter: "@badrapio"
+twittercard: summary_large_image
+pagetitle: Employee Cyber Hygiene
+
+---
+{% assign content = site.data.hr %}
+<!-- Main -->
+<main>
+    <!-- Home Banner -->
+    <section id="home" class="effect-section">
+        <div class="effect-shape theme-bg"></div>
+        <div class="container">
+            <div class="row full-screen align-items-center justify-content-between lg-m-80px-tb">
+                <div class="col-lg-6 m-50px-tb">
+                    <h1 class="white-color display-4 m-20px-b">{{content.pagetitle[page.lang]}}
+                    </h1>
+                    <p class="font-2 white-color-light">{{content.tagline[page.lang]}}</p>
+                </div>
+                <div class="col-lg-6">
+                    <img class="max-width-auto" src="blog-post-bro.svg" title="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Home Banner -->
+
+            <!-- Section -->
+            <section id="about" class="section gray-bg">
+                <div class="container">
+                    <div class="row md-m-25px-b m-45px-b justify-content-center text-center">
+                        <div class="col-lg-8">
+                            <h3 class="h1 m-20px-b p-20px-b theme-after after-50px">{{content.benefits.title[page.lang]}}</h3>
+                            <p class="m-0px font-2">{{content.benefits.text[page.lang]}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        {% assign i = 0 %}
+                        {% for item in content.benefits.boxes %}
+                        {% assign i = i | plus:1 %}
+                        <div class="col-md-12 col-lg-4 m-15px-tb">
+                            <div class="sameheight p-50px-tb p-25px-lr box-shadow-hover hover-top hover-rotate white-bg text-center border-radius-5">
+                                <div class="ef-2 icon-80 theme-bg border-radius-50 theme2nd-color d-inline-block m-20px-b hr-rotate-after">
+                                    <i class="{{item.icon}} white-color"></i>
+                                </div>
+                                <h5 class="h6 m-10px-b">{{item.title[page.lang]}}</h5>
+                                <p class="m-0px">{{item.text[page.lang]}}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            <!-- End Section -->
+                <!-- section -->
+                <section class="section bg-cover bg-no-repeat effect-section" style="background-image: url(/img/companies.jpg);">
+                <div class="container">
+                    <div class="row justify-content-center justify-content-lg-between align-items-center">
+                        <div class="col-sm-8 col-lg-6 col-xl-5 order-lg-2">
+                            <div class="card box-shadow-lg">
+                                <div class="card-body">
+                                    <h3 class="font-w-600 dark-color">Mobilize your employees</h3>
+                                    <p>See how it works! When you sign up, you will get an email pointing you to
+                                        the phase one training material.</p>
+                                    <div class="_form_{{content.eval.ac-form-id[page.lang]}}"></div>
+                                    <script
+                                        src="https://badrap.activehosted.com/f/embed.php?id={{content.eval.ac-form-id[page.lang]}}"
+                                        type="text/javascript" charset="utf-8"></script>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="{{content.eval.policy-url[page.lang]}}" class="small font-w-600">{{content.eval.policy[page.lang]}}</a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 order-lg-1 d-none d-lg-block">
+                            <blockquote class="blockquote">
+                                <h3 class="white-color font-w-500 h3 m-15px-b">{{content.quote.text[page.lang]}}</h3>
+                                <footer class="blockquote-footer white-color-light"><cite title="Source Title">Jani Kenttälä, CEO</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end section -->
+</main>
+
+
+
+

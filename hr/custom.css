@@ -1,0 +1,15 @@
+.example-badge {
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+    padding: 0px;
+    max-width: 100%;
+}
+
+.example-badge-text {
+    margin-right: 30px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+._form_2 {
+    padding: 0 !important;
+    margin: 0 !important;
+}
