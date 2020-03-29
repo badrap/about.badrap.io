@@ -1,0 +1,173 @@
+---
+layout: mombo
+header: true
+lang: en
+ogdescription: Remote work primer
+ogimage: https://hygiene.badrap.io/company/ogimage.jpg
+title: Company Cyber Hygiene by Badrap
+tagline:
+  en: Unleash your social superpowers to stay safe online.
+intro:
+  en: >
+    Many of us are now working from home like never before. Fortunately you have social superpowers: Communication, Collaboration,
+    and Community. You can use them to stay safe online and work safely.
+cta1:
+  en:
+    Read more
+styles:
+    - form15.css
+
+individuals:
+  header:
+    en: Free course for individuals
+  text:
+    en: >
+      Remote workers and their employers have found our online security training fun
+      and useful. We have now opened this course free for individuals and small companies to help you get more
+      out of your superpowers in this new situation.
+signup:
+  header:
+    en: Cultivate real-life connections to stay safer online
+  text:
+    en: Sign-up with your email and you will get automated email that will kick-off the course.
+  form_id:
+    en: 15
+  privacy_policy_text:
+    en: Privacy policy
+  questions:
+    en: Do you have any questions? Contact us at
+
+testimonials:
+  header:
+    en: What people say
+  text:
+    en: >
+      We studied what participants think about the course. 81% would like their employer to arrange courses like this.
+      86% thinks the course length was good and 81% the level of detail in the material is good. Below are some comments from the participants.
+
+employers:
+  header:
+    en: Free support for employers
+  text:
+    en: >
+      Contact us to arrange this course for your whole company. You can launch the course for all your remote workers as a campaign.
+      We now offer free campaign support for small companies and institutions and discounts for larger ones whose costs
+      we can't carry as a startup by ourselves.
+  cta:
+    en: Contact us
+
+---
+{% assign content = page %}
+{% assign testimonials = site.data.hygiene-landing-page.testimonials %}
+    <!-- Main -->
+    <main>
+        <!-- Home Banner -->
+        <section class="section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 m-15px-tb">
+                        <h1 class="dark-color h1 font-w-400 m-15px-b">{{content.tagline[page.lang]}}</h1>
+                        <p class="font-1 font-w-400 m-20px-b">{{content.intro[page.lang]}}</p>
+                        <div class="p-10px-t">
+                            <a class="m-btn m-btn-theme2nd m-btn-radius" href="#free-course">{{content.cta1[page.lang]}}<i class="fas fa-arrow-right d-none d-md-inline m-10px-l"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 m-15px-tb">
+                        <img src="live2.svg" title="" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Home Banner -->
+
+
+        <!-- Section -->
+        <section class="section gray-bg" id="free-course">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6 order-lg-2 m-15px-tb">
+                        <h3 class="dark-color font-w-500">{{content.individuals.header[page.lang]}}</h3>
+                        <p class="font-2">{{content.individuals.text[page.lang]}}</p>
+
+                        <label class="font-w-500 font-2 theme-color m-10px-b">
+                            {{content.signup.header[page.lang]}}</label>
+                        <p class="font-1 mb-0">{{content.signup.text[page.lang]}}</p>
+                        <div class="_form_{{content.signup.form_id[page.lang]}}">
+                    </div>
+                    <script src="https://badrap.activehosted.com/f/embed.php?id={{content.signup.form_id[page.lang]}}" type="text/javascript"
+                        charset="utf-8"></script>
+                    <p class="small mt-2">
+                        <a href="https://docs.badrap.io/privacy-company.html#employee-cyber-hygiene-online-training">
+                            {{content.signup.privacy_policy_text[page.lang]}}</a>.
+                        {{content.signup.questions[page.lang]}}:
+                        <a href="mailto:support@badrap.io">support@badrap.io</a>.</p>
+                    </div>
+                    <div class="col-lg-5 order-lg-1">
+                        <img src="study.svg" title="" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Section -->
+        <section class="section" id="testimonials">
+            <div class="container">
+                <div class="row md-m-25px-b m-45px-b justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h3 class="h1 font-w-600 dark-color m-20px-b p-20px-b theme-after after-50px">{{content.testimonials.header[page.lang]}}</h3>
+                        <p class="m-0px font-1">{{content.testimonials.text[page.lang]}}</p>
+                    </div>
+                </div>
+                <div class="owl-carousel" data-items="3" data-nav-dots="true" data-md-items="3" data-sm-items="2" data-xs-items="1" data-xx-items="1" data-space="30">
+                    {% for item in testimonials.list[page.lang] %}
+                    <div class="border-all-1 border-color-dark-gray text-center m-25px-t m-20px-b">
+                        <div class="icon-60 border-radius-50 theme2nd-bg white-color d-inline-block mt-n5">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="p-25px">
+                            <p>{{item}}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Section -->
+        <section class="section gray-bg">
+            <div class="container">
+                <div class="row md-m-25px-b m-45px-b mb-0 justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h3 class="h1 font-w-400 dark-color m-10px-b">{{content.employers.header[page.lang]}}</h3>
+                        <p class="font-1 m-0px">{{content.employers.text[page.lang]}}</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Section -->
+
+        <!-- Section -->
+        <section class="section effect-section p-0px-t gray-bg">
+            <div class="effect effect-bg-40 bottom theme3rd-bg"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="box-shadow-lg white-bg p-40px md-p-25px border-radius-10 border-top-3 border-color-theme">
+                            <h3 class="h4 font-w-500 dark-color m-30px-b">{{content.employers.cta[page.lang]}}</h3>
+                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                            <script>
+                              hbspt.forms.create({
+                                portalId: "4028779",
+                                formId: "df8f4703-9e73-4e48-9ee8-cd4a97117c9d"
+                            });
+                            </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+    </main>
+    <!-- End Main -->
