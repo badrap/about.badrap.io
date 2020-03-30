@@ -1,0 +1,148 @@
+@for $i from 3 through 12 {
+    .icon-#{$i * 10} {
+        width: #{$i * 10}px;
+        height: #{$i * 10}px;
+        text-align:center;
+        font-size: #{$i * 10 / 2 - 4}px;
+        i {
+            line-height: #{$i * 10}px;
+        }
+    }
+}
+
+.arrow-icon {
+    width: 32px;
+    height: 12px;
+    position: relative;
+    &:before {
+        width: 32px;
+        height: 2px;
+        background: currentColor;
+        content: "";
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 12px;
+        height: 12px;
+        border-right: 2px solid currentColor;
+        border-bottom: 2px solid currentColor;
+        margin: auto;
+        right: 0;
+        @include rotate(-45);
+    }
+}
+
+.arrow-hover {
+    position: relative;
+    .arrow-icon {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        right: 30px;
+        margin: auto;
+        @include transition(ease all 0.35s);
+    }
+    &:hover {
+        .arrow-icon {
+            opacity: 1;
+            right: 15px;
+        }
+    }
+}
+
+/* ----------------------
+* Dots
+---------------------------*/
+.dots-icon {
+    position: relative;
+}
+.dots {
+  z-index: 0;
+  animation: dots 6s infinite linear;
+    .dot {
+        width: 5px;
+        height: 5px;
+        border-radius: 100px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -3px;
+        margin-top: -3px;
+    }
+    .dot1 {
+        background-color: #8ad9fd;
+        transform: translate(15px, 5px);
+        animation: dot1 1.5s infinite alternate;
+    }
+    .dot2 {
+        background-color: #b8a6f7;
+        transform: translate(-8px, 8px);
+        animation: dot2 1.5s infinite alternate;
+        animation-delay: .5s;
+    }
+    .dot3 {
+        background-color: #fac5a7;
+        transform: translate(-5px, -12px);
+        animation: dot3 1.5s infinite alternate;
+        animation-delay: 1s;
+    }
+}
+
+@keyframes dots {
+  from {
+    transform: rotate(-360deg)
+  }
+
+  to {
+    transform: rotate(0)
+  }
+
+}
+
+@keyframes dot1 {
+  from {
+    transform: translate(15px, 5px);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(25px, 5px);
+    opacity: 1;
+  }
+
+}
+
+@keyframes dot2 {
+  from {
+    transform: translate(-8px, 8px);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(-19px, 19px);
+    opacity: 1;
+  }
+
+}
+
+@keyframes dot3 {
+  from {
+    transform: translate(-5px, -12px);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(-10px, -24px);
+    opacity: 1;
+  }
+
+}

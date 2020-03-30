@@ -1,0 +1,42 @@
+.our-team {
+	.team-img {
+		position: relative;
+		overflow: hidden;
+		&:after {
+			content:"";
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			opacity: 0;
+			@include transition(ease all 0.33s);
+		}
+		img {
+			@include scale(1);
+			@include transition(ease all 0.33s);
+		}
+	}
+	.social-icon {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		opacity: 0;
+		z-index: 1;
+	}
+	&:hover {
+		.team-img {
+			&:after {
+				opacity:0.5;
+			}
+			img {
+				@include scale(1.1);
+			}
+		}
+		.social-icon {
+			opacity: 1;
+		}
+	}
+}

@@ -1,0 +1,129 @@
+/* Background color
+-------------------------------*/
+@each $color, $value in $theme-colors {
+    .#{$color}-bg-alt {
+        background-color: rgba($value, .1);
+    }
+    .#{$color}-bg {
+        background-color: $value;
+    }
+    .#{$color}-after {
+      &:after {
+        background-color: $value;
+      }
+    }
+    .#{$color}-before {
+      &:before {
+        background-color: $value;
+      }
+    }
+    .#{$color}-color-alt {
+        color: rgba($value, .65);
+    }
+    .#{$color}-color {
+        color: $value;
+    }
+}
+
+.white-color-light {
+	color: rgba($px-white, 0.65);
+}
+
+.bg-transparent {
+	background-color: transparent;
+}
+
+.theme-g-bg {
+	background: linear-gradient(to right, $px-theme, $px-theme3rd);
+}
+.dark-g-bg {
+    background: linear-gradient(50deg,#273444 0,#272b44 100%);
+}
+
+/*	Property
+---------------------------*/
+.bg-cover {
+	background-size: cover;
+}
+.bg-no-repeat {
+ 	background-repeat: no-repeat;
+ }
+.bg-fixed {
+ 	background-attachment: fixed;
+}
+.bg-center {
+	background-position: center;
+} 
+
+/* hover color
+-------------------------------*/
+.theme-hover-bg {
+    &:hover {
+        background: $px-theme;
+        .dark-color {
+            color: $px-white;
+        }
+        p {
+            color: $px-white;   
+        }
+    }
+}
+
+
+/*	SVG fill
+---------------------------*/
+.svg_img {
+    polygon,
+	path {
+		fill: currentColor;
+	}
+}
+
+mark {
+    color: inherit;
+    padding: 0;
+    background: 0 0;
+    background-image: linear-gradient(120deg,rgba($px-theme,.4) 0,rgba($px-theme,.4) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% .3em;
+    background-position: 0 80%;
+    position: relative;
+}
+
+/*  Gradient Bg
+---------------------------*/
+.g-bg-1 {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%); }
+
+.g-bg-2 {
+  background-color: #FEE140;
+  background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%); }
+
+.g-bg-3 {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); }
+
+.g-bg-4 {
+  background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%); }
+
+.g-bg-5 {
+  background-color: #FAD961;
+  background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%); }
+
+.g-bg-6 {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); }
+
+.g-bg-7 {
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); }
+
+.g-bg-8 {
+  background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%); }
+
+.g-bg-9 {
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); }
+
+.g-bg-9 {
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%); }
