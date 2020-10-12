@@ -1,0 +1,21 @@
+- product:
+    name: badrap.io for personal use
+    description: Keep people you care about safe with all-in-one identity monitoring service badrap.io.
+    cta: Take me to badrap.io
+    icon: ti-home
+    producturl: https://badrap.io/
+
+- product:
+    name: Employee cyber hygiene
+    description: Mobilize your employees and decision makers to actively protect themselves and your company.
+    tagline: Protect your Employees » Protect your Business
+    cta: Read more
+    icon: ti-heart
+    producturl: /employees/
+- product:
+    name: IT cyber hygiene
+    description: Keep track of your cloud, no fuss. Autodiscovery of your cloud asset. Targeted security information.
+    tagline: Cover your company assets. 
+    cta: Read more
+    icon: ti-cloud
+    producturl: /it/

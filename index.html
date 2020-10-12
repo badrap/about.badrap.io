@@ -12,8 +12,8 @@ layout: mombo
                 <div class="row align-items-center justify-content-center">
                     <div class="col-12 col-lg-10 text-center">
                         <div class="p-100px-t m-60px-t p-60px-b md-m-40px-t sm-m-20px-t">
-                            <h3 class="white-color display-3 m-30px-b">Democratizing security informaton</h3>
-                            <p class="white-color-light lead m-0px">Masses need better access and more targeted security information.</p>
+                            <h3 class="white-color display-3 m-30px-b">Cyber Security Information Made Easy</h3>
+                            <p class="white-color-light lead m-0px">Masses need better access and targeted security information and fixes.</p>
                             </p>
                         </div>
                     </div>
@@ -26,9 +26,10 @@ layout: mombo
         <!-- End Home Banner -->
 
         <!-- Section -->
-        <section id="producs" class="section gray-bg effect-section">
+        <section id="products" class="section gray-bg effect-section">
             <div class="effect-img effect bottom"><img src="{{settings.mombo}}/static/img/effect/home-effect-1.svg" title="" alt=""></div>
             <div class="container">
+     
                 <div class="row md-m-25px-b m-45px-b justify-content-center text-center">
                     <div class="col-lg-8">
                         <label class="border-bottom-2 font-w-600 theme-color border-color-theme2nd">How we help you</label>
@@ -36,48 +37,24 @@ layout: mombo
                     </div>
                 </div>
                 <div class="row">
+                    {% for product in site.data.products %}
+
                     <div class="col-md-4 m-15px-tb">
                         <div class="box-shadow-hover hover-top hover-rotate white-bg text-center border-radius-5">
                             <div class="icon-100 border-radius-50 theme-bg white-color d-inline-block m-20px-b m-40px-t">
-                                <i class="ti-home"></i>
+                                <i class="{{product.product.icon}}"></i>
                             </div>
                             <div class="p-25px-lr">
-                                <h5 class="h6 m-10px-b">Cyber Hygiene Management<br>for Individuals</h5>
-                                <p class="m-0px">Cover your digital assets with our all-in-one identity monitoring service badrap.io.</p>
+                                <h5 class="h6 m-10px-b">{{product.product.name}}</h5>
+                                <p class="m-0px">{{product.product.description}}</p>
                             </div>
                             <div class="border-top-1 border-color-dark-gray p-10px m-20px-t">
-                                <a class="font-w-600" href="#">Take me to badrap.io</a>
+                                <a class="font-w-600" href="{{product.product.producturl}}">{{product.product.cta}}</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 m-15px-tb">
-                        <div class="box-shadow-hover hover-top hover-rotate white-bg text-center border-radius-5">
-                            <div class="icon-100 border-radius-50 theme-bg white-color d-inline-block m-20px-b m-40px-t">
-                                <i class="ti-heart"></i>
-                            </div>
-                            <div class="p-25px-lr">
-                                <h5 class="h6 m-10px-b">Cyber Hygiene Management<br>for HR</h5>
-                                <p class="m-0px">Mobilize your employees and decision makers to actively protect themselves and your company.</p>
-                            </div>
-                            <div class="border-top-1 border-color-dark-gray p-10px m-20px-t">
-                                <a class="font-w-600" href="#">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 m-15px-tb">
-                        <div class="box-shadow-hover hover-top hover-rotate white-bg text-center border-radius-5">
-                            <div class="icon-100 border-radius-50 theme-bg white-color d-inline-block m-20px-b m-40px-t">
-                                <i class="ti-cloud"></i>
-                            </div>
-                            <div class="p-25px-lr">
-                                <h5 class="h6 m-10px-b">Cyber Hygiene Management<br>for IT</h5>
-                                <p class="m-0px">Keep track of your cloud, no fuss. Autodiscovery of your cloud asset. Targeted security information.</p>
-                            </div>
-                            <div class="border-top-1 border-color-dark-gray p-10px m-20px-t">
-                                <a class="font-w-600" href="#">Read More</a>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
+
                 </div>
             </div>
         </section>

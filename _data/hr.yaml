@@ -6,6 +6,32 @@ tagline:
   en: Protect your Employees » Protect your Business
   fi: Suojaa työntekijäsi » Suojaat liiketoimintasi
 
+testimonials:
+  header:
+    en: Four out of five love it
+  text:
+    en: >
+      We studied what participants think about our course. <em>81%</em> would like their employer to arrange more courses like this.
+      <em>86%</em> think the course length was good and <em>81%</em> said the level of detail in the material is good.
+      Below are some comments from the participants.
+  list:
+    en:
+      - Great initiative. Looking forward to what you have to teach us!
+      - I don't want to be connected to any suspicious activities.
+      - The company's security is not stronger than the weakest link in the chain.
+      - A nice way to introduce security!
+      - Badrap.io is an interesting service.
+      - Wonder what we can learn.
+      - If I’m not safe, neither is the employer.
+      - I want to be safe, and if I learn how to be safe I can pass on my knowledge to others (family, friends, colleagues).
+    fi:
+      - Mahtava aloite. Jännä nähdä mitä opetatte!
+      - En halua, että minut liitetään epäilyttävään toimintaan.
+      - Yrityksen turvallisuus on yhtä vahva kuin sen heikoin lenkki.
+      - Badrap.io on mielenkiintoinen palvelu.
+      - Työnantajani ei ole turvassa, ellen minä ole turvassa.
+      - Haluan pysyä turvassa. Jos minä opin, voin jakaa tietoni muille (perhe, ystävät, kolleegat).
+
 quote:
     text:
       en: >
@@ -102,7 +128,7 @@ motivation2:
       en: /img/basics-cropped.svg
       fi: /img/basics-cropped-fi.svg
 
-testimonials:
+testimonialsold:
   title:
     en: What do Employee Cyber Hygiene participants say?
     fi: Mitä osallistujat sanovat?
@@ -144,6 +170,11 @@ packages:
       - title:
          en: Self Enrollment
          fi: Työntekijät ilmoittautuvat itse kurssille
+        iconcredit: <a href="https://stories.freepik.com/web">Illustration by Freepik Stories</a>
+        icon: 
+          url: form.svg
+          title: Employee signing up
+          alt: form
         price:
           en: 40€
           fi: 40€
@@ -152,12 +183,13 @@ packages:
           fi: vuosi / työntekijä
         features:
           en:
-            - Pay only for those who enrolled.
-            - Get a signup form where your employees can enroll themselves.
+            - Get your own company signup form
+            - Ask your employees to enroll themselves
+            - Pay only for those who enrolled
           fi:
-            - Maksat vain ilmoittautuneista
             - Saat oman ilmoittautumissivun työntekijöillesi
-            - <a href="ilmoittaudu/demo-a/" target="_blank"> Toimiva esimerkki</a> - katso ja kokeile!
+            - Maksat vain ilmoittautuneista
+            - <a href="ilmoittaudu/demo-a/" target="_blank"> Toimiva esimerkki</a> - katso ja kokeile
         ctaid: gt-selfenroll
         cta:
           en: Try free
@@ -168,6 +200,11 @@ packages:
       - title:
           en: Automatic Enrollment
           fi: Työnantaja ilmoittaa
+        iconcredit: <a href="https://stories.freepik.com/marketing">Illustration by Freepik Stories</a>
+        icon:
+          url: email.svg
+          alt: email
+          title: Employee receiving invitation
         price:
           en: 20€
           fi: 20€
@@ -177,10 +214,12 @@ packages:
         features:
           en:
             - Get as much people onboard as possible.
-            - Provide us with a list of email addresses. We'll launch the course for your employees.
+            - Provide us with a list of email addresses. 
+            - We'll launch the course for your employees.
           fi:
             - Takaa paras mahdollinen osallistumisprosentti
-            - Toimita meille työntekijöiden sähköpostiosoitteet, me käynnistämme kurssin kaikille.
+            - Toimita meille työntekijöiden sähköpostiosoitteet.
+            - Me käynnistämme kurssin kaikille.
         ctaid: gt-autoenroll
         cta:
           en: Get it
