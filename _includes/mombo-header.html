@@ -12,7 +12,7 @@
             <div class="container container-large">
                 <div class="navbar navbar-default navbar-expand-lg main-navbar">
                     <div class="navbar-brand">
-                        <a href="index.html" title="Mombo" class="logo">
+                        <a href="/index.html" title="Mombo" class="logo">
                             <img src="/img/badrap-horizontal-logo-white.svg" height="30px" class="light-logo"
                                 alt="Badrap" title="Badrap Oy">
                             <img src="/img/badrap-horizontal-logo.svg" height="30px" class="dark-logo" alt="Badrap"
@@ -25,13 +25,15 @@
                                 <a href="#products">Products</a>
                                 <i class="fa fa-angle-down px-nav-toggle"></i>
                                 <ul class="px-dropdown-menu mm-dorp-in">
-                                    <li><a href="https://badrap.io/">badrap.io for individuals</a></li>
-                                    <li><a href="hr/">Cyber Hygiene Management for HR</a></li>
-                                    <li><a href="it/">Cyber Hygiene Management for IT</a></li>
+                                    {% for product in site.data.products %}
+
+                                    <li><a href="{{product.product.producturl}}">{{product.product.name}}</a></li>
+                                 
+                                    {% endfor %}
                                 </ul>
                             </li>
                             <li><a class="nav-link" href="/#team">The team</a></li>
-                            <li><a class="nav-link" href="#contact">Contact Us</a></li>
+                            <li><a class="nav-link" href="/#contact">Contact us</a></li>
                             <li><a class="nav-link" href="/remote-work">Remote work primer</a></li>
 
                         </ul>
