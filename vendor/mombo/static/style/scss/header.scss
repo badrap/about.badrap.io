@@ -1,0 +1,151 @@
+/*	Toggle Menu
+-------------------------*/
+.navbar-toggler {
+	width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    margin-left: 15px;
+	background: $px-theme;
+	border: none;
+	.header-white & {
+		background: $px-white;
+	}
+	span {
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    width: 25px;
+	    height: 2px;
+	    margin: auto;
+	    box-shadow: 0px -8px 0 0px currentColor, 0px 8px 0 0px currentColor;
+		background: $px-white;
+		color: $px-white;
+		.header-white & {
+			background: $px-dark;
+			color: $px-dark;
+		}
+	}
+}
+
+
+.fixed-header-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+	.header-white.fixed-header & {
+		background: $px-white;
+		box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+	}
+	.header-dark.fixed-header & {
+		background: $px-white;
+		box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.1);
+	}
+	.header-height & {
+		background: $px-white;
+	}
+}
+
+.main-navbar {
+	padding: 0;
+	.navbar-brand {
+		.light-logo {
+			.fixed-header & {
+				display: none;
+			}
+		}
+		.dark-logo {
+			display: none;
+			.fixed-header & {
+				display: block;
+			}
+		}
+	}
+	@include up-lg {
+		.navbar-nav {
+			> li {
+				> a {
+					font-size: 15px;
+					font-weight: 500;
+					padding: 24px 12px !important;
+					display: inline-block;
+					.header-white:not(.fixed-header) & {
+						color: rgba($px-white, .8);
+						&.active {
+							color: $px-white;
+						}
+					}
+					.header-white & {
+						color: $px-dark;
+						&.active {
+							color: $px-theme;
+						}
+					}
+					.header-dark & {
+						color: $px-dark;
+						&.active {
+							color: $px-theme;
+						}
+					}
+				}
+				&:hover {
+					> a {
+						.header-white:not(.fixed-header) & {
+							color: $px-white;
+						}
+						.header-white & {
+							color: $px-theme;
+						}
+						.header-dark & {
+							color: $px-theme;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Responsive Menu
+-----------------------------*/
+@include down-lg {
+	.main-navbar {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		> .container {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		.navbar-collapse {
+		    position: absolute;
+		    top: 100%;
+		    left: 0;
+		    right: 0;
+		    background: $px-white;
+	        max-height: 80vh;
+			overflow-y: auto;
+			box-shadow: 0px 11px 20px 0px rgba(38, 59, 94, 0.2);
+		}
+		.navbar-nav {
+			> li  {
+				margin: 0;
+				border-top:1px solid #e6e6e6;
+		    	> a {
+				    text-transform: uppercase;
+					font-size: 13px;
+					font-weight: 700;
+					padding: 0 15px;
+    				line-height: 40px;
+					display: block;
+					color: $px-dark;
+		    	}
+			}
+		}
+	}
+}

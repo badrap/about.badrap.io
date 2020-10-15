@@ -1,0 +1,86 @@
+{% assign settings = site.data.site %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="99pixel" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="{{page.keywords}}" />
+
+    {% if page.ogdescription %}
+    <!-- open graph -->
+    <meta name="description" content="{{page.ogdescription}}" />
+    <meta property="og:title" content="{{page.title}}" />
+    <meta property="og:description" content="{{page.ogdescription}}" />
+    <meta property="og:url" content="{{page.ogurl}}" />
+    <meta property="og:image" content="{{page.ogimage}}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    {% elsif site.ogdescription %}
+    <meta name="description" content="{{page.ogdescription}}" />
+    <meta property="og:title" content="{{site.ogtitle}}" />
+    <meta property="og:description" content="{{site.ogdescription}}" />
+    <meta property="og:url" content="{{site.ogurl}}" />
+    <meta property="og:image" content="{{site.ogimage}}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    {% endif %}
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@badrapio" />
+    <meta name="twitter:creator" content="@badrapio" />
+    <!-- title -->
+    <title>{{page.title}}</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <!-- plugin CSS -->
+    <link href="{{settings.mombo}}/static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{settings.mombo}}/static/plugin/font-awesome/css/all.min.css" rel="stylesheet">
+    <link href="{{settings.mombo}}/static/plugin/et-line/style.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+
+    {% for style in page.styles %}
+
+    <link href="{{style}}" rel="stylesheet">
+    {% endfor %}
+
+    {% if site.google_tag_manager and jekyll.environment != 'test' %}
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', '{{site.google_tag_manager}}');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    {% endif %}
+    <link href="{{settings.mombo}}/static/plugin/themify-icons/themify-icons.css" rel="stylesheet">
+    <link href="{{settings.mombo}}/static/plugin/owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="{{settings.mombo}}/static/plugin/magnific/magnific-popup.css" rel="stylesheet">
+    <!-- theme css -->
+    <link href="{{settings.mombo}}/static/style/master.css" rel="stylesheet">
+</head>
+<!-- Body Start -->
+
+{% if page.header != false %}
+{% include mombo-header.html %}
+{% endif %}

@@ -1,0 +1,28 @@
+.effect-section {
+	background-position: 50% 50%;
+	height: 50vh;
+}
+
+em {
+	color: #b73a7d;
+	font-weight: 600;
+	font-style: normal;
+}
+
+
+
+.btn-primary:focus {
+	box-shadow: 0 0 0 0.2rem rgba(200,75,143,0.5) !important;
+
+}
+
+#signup {min-height: 800px;}
+
+@media only screen and (max-width: 991px) {
+	#signup {min-height: 800px;}
+}
+
+
+@media only screen and (max-width: 446px) {
+	#signup {min-height: 800px;}
+}

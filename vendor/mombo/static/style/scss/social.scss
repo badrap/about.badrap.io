@@ -1,0 +1,83 @@
+.social-icon {
+	a {
+		margin: 0 4px;
+		&:first-child {
+			margin-left:0px;
+		}
+		&:last-child {
+			margin-right:0px;
+		}
+	}
+	&.si-30 {
+		a {
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			font-size: 13px;
+		}
+	}
+	&.si-40 {
+		a {
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+		}
+	}
+	&.white-icon {
+		a {
+			color: $px-white;
+		}
+	}
+	&.theme {
+		a {
+			background-color: $px-theme;
+			color: $px-white;
+			&:hover {
+				background-color: $px-theme2nd;
+			}
+		}
+	}
+	&.theme2nd {
+		a {
+			background-color: $px-theme2nd;
+			color: $px-white;
+			&:hover {
+				background-color: $px-theme;
+			}
+		}
+	}
+	&.white {
+		a {
+			background-color: $px-white;
+			color: $px-dark;
+			border: 1px solid $px-white;
+			&:hover {
+				background-color: transparent;
+				color: $px-white;
+			}
+		}
+	}
+	&.gray {
+		a {
+			background-color: #eee;
+			color: $px-dark;
+			border: 1px solid #eee;
+			&:hover {
+				background-color: $px-dark;
+				color: $px-white;
+			}
+		}
+	}
+	&.radius {
+		a {
+			border-radius: 50%;
+		}
+	}
+	&.round {
+		a {
+			border-radius: 3px;
+		}
+	}
+}
