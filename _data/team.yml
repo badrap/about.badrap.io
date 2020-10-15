@@ -24,19 +24,10 @@ team:
           medium: https://medium.com/@jviide
           img:
             src: /img/jviide.jpg
-        - Bruno:
-          name: Bruno Triani
-          nick: btriani
-          title: Business Developer
-          img:
-            src: /img/bruno.jpg
-          linkedin: https://www.linkedin.com/in/btriani/
-          medium: https://medium.com/@btriani
-          twitter: https://twitter.com/bruno_triani
         - Heikki:
           name: Heikki Kortti
           nick: hkortti
-          title: Speaks for the victims
+          title: Customer success
           img:
             src: /img/heikki.jpg
           github: https://github.com/hkortti
