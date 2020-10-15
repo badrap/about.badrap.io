@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap');
+
+
+// Color system
+$px-theme:						#573351 !default; 
+$px-theme2nd:					#b73a7d !default; 
+$px-theme3rd:					#051b35 !default; 
+
+// colors
+$px-body-color:				#666 !default; 
+$px-black:						#000000 !default; 
+$px-white:						#ffffff !default;
+$px-dark:						  #1d1d33 !default;
+$px-medium-dark:			#1d1d1d !default;
+$px-gray:						  #f9f4f9 !default;
+$px-light-gray:				#eee !default;
+$px-yellow:           #f5a416 !default;
+$px-green:            #11e279 !default;
+$px-blue:             #99b2ec !default;
+$px-pink:             #f12699 !default;
+
+// color map
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "theme":        $px-theme,
+    "theme2nd":     $px-theme2nd,
+    "theme3rd":     $px-theme3rd,
+    "dark":         $px-dark,
+    "gray":         $px-gray,
+    "light-gray":   $px-light-gray,
+    "medium-dark":  $px-medium-dark,
+    "white":        $px-white,
+    "black":        $px-black,
+    "yellow":       $px-yellow,
+    "green":        $px-green,
+    "blue":         $px-blue,
+    "pink":         $px-pink,
+    "body":         $px-body-color,
+  ),
+  $theme-colors
+);
+
+// card
+$px-card-border: 				#eaedf2 !default;
+
+// Font system
+$px-base-font:					.94rem !default;
+$px-font-family:				'Poppins', sans-serif; // Main Font Family
+$px-font-family-alt:		'Quicksand', sans-serif;	  // Alternative Font Family	
+
+// Breakpoints
+$px-media-sm:					567px !default;
+$px-media-md:					767px !default;
+$px-media-lg:					991px !default;
+$px-media-xl:					1199px !default;
+
+
+// Buttons 
+$button-padding-y:          .75rem;
+$button-padding-x:          1.75rem;
+
+$button-padding-y-sm:       .3rem;
+$button-padding-x-sm:       1rem;
+
+$button-padding-y-lg:       1rem;
+$button-padding-x-lg:       1.875rem;
+
+$button-padding-y-xl:       1.5rem;
+$button-padding-x-xl:       2rem;
+
+$button-wight:              600;
+
+$button-font-size:          .80rem;
+$button-font-size-sm:       .65rem;
+$button-font-size-lg:       1rem;
+$button-font-size-xl:       1.5rem;
+
+$button-shadow:             0 21px 35px -5px rgba(0,0,0,0.30);
+$button-round:              5rem;
+$button-radius:             .3125rem;
+
+// Input 
+$form-control-border:   #ced4da;
+
+// Buttons color map
+$button-colors: ();
+$button-colors: map-merge(
+  (
+    "theme":        $px-theme,
+    "theme2nd":     $px-theme2nd,
+    "theme3rd":     $px-theme3rd,
+    "dark":         $px-dark,
+    "yellow":       $px-yellow,
+    "green":        $px-green,
+    "blue":         $px-blue,
+    "pink":         $px-pink,
+  ),
+  $button-colors
+);
