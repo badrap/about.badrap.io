@@ -1,21 +1,109 @@
-- product:
-    name: badrap.io for personal use
-    description: Keep people you care about safe with all-in-one identity monitoring service badrap.io.
-    cta: Take me to badrap.io
-    icon: ti-home
-    producturl: https://badrap.io/
 
-- product:
-    name: Employee cyber hygiene
-    description: Mobilize your employees and decision makers to actively protect themselves and your company.
-    tagline: Protect your Employees » Protect your Business
-    cta: Read more
-    icon: ti-heart
-    producturl: /employees/
-- product:
-    name: IT cyber hygiene
-    description: Keep track of your cloud, no fuss. Autodiscovery of your cloud asset. Targeted security information.
-    tagline: Cover your company assets. 
-    cta: Read more
-    icon: ti-cloud
-    producturl: /it/
+solution:
+    benefits:
+      - remote:
+        name: 
+            en: Employees protect themselves
+        description: 
+            en: Embrace remote work and make employees your strongest link with badrap.io personal service
+        cta: 
+            en: Try badrap.io
+        icon: ti-home
+        producturl: https://badrap.io/
+        target: target="_blank"
+        id: gt-badrap-personal
+
+      - discover:
+        name: 
+            en: You protect your infrastructure
+        description: 
+            en: Disocver your digital footprint automatically and get relevant and easy-to-understand warnings.
+        cta: 
+            en: Read more
+        icon: ti-cloud
+        producturl: /employees/
+        id: gt-badrap-companies
+        largeicon:
+            src:
+                en: it/cloud-banner.svg
+            alt:
+                en: People operating cloud
+      - fixes:
+        name: 
+            en: We help you with fixes
+        description:   
+            en: Found issues? It's the response which matters. Badrap playbooks provide you with the fixes.
+        tagline: 
+            en: Cover your company assets. 
+        cta: 
+            en: Read more
+        icon: ti-book
+        producturl: /it/
+        id: gt-badrap-product
+
+    features:
+        content:
+            headline:
+                en: We connect security content providers with you
+            description:
+                en: Badrap APIs make it dead asy for content creators to help you. Our reputable content creator partners produce over two million security events per month about vulnerabilities, incidents and data leaks.
+        apps:
+            headline:
+                en: Apps make it happen
+            description:
+                en: >
+                    Discover your email addresses, IPs and domain names on three leading cloud platforms: Amazon, Google and Microsoft. Integrate your own security providers and share up-to-date asset infromation to them, or receive their alerts.
+            list:
+              - aws:
+                name:
+                    en: Amazon Web Services
+                description:
+                    en: Synchronize your public IPs and domains from Amazon Web Services to Badrap
+                icon:
+                    src: img/aws.svg
+              - azure:
+                name: 
+                    en: Microsoft Azure
+                icon:
+                    src: img/azure.svg
+                description:
+                    en: Synchronize your public IPs and domains from Microsoft Azure to Badrap
+              - o365:
+                name:
+                    en: Microsoft Office 365
+                icon:
+                    src: img/office365.svg
+                description:
+                    en: Syncrhonize email addresses from O365 to Badrap
+              - gcp:
+                name:
+                    en: Google Cloud Platform
+                description:
+                    en: Synchronize your public IPs and domains from Google Cloud Platform to Badrap
+                icon:
+                    src: img/gcp.png
+              - gsuite:
+                name: 
+                    en: Google G Suite
+                description:
+                    en: Syncrhonize email addresses from Google G Suite to Badrap
+                icon:
+                    src: img/gsuite.png
+              - beacon:
+                name: 
+                    en: SensorFu Beacon
+                description:
+                    en: Get leak alerts from SensorFu Beacon to Badrap
+                icon:
+                    src: img/beacon.svg
+
+              - traficom:
+                name:
+                    en: Traficom
+                description:
+                    en: Share assets with Traficom's National Cyber Security Center
+                icon:
+                    src: img/traficom.svg
+
+
+        

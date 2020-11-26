@@ -21,17 +21,9 @@
                     </div>
                     <div class="navbar-collapse justify-content-end" id="navbar-collapse-toggle">
                         <ul class="nav navbar-nav m-auto">
-                            <li class="mm-in px-dropdown">
-                                <a href="#products">Products</a>
-                                <i class="fa fa-angle-down px-nav-toggle"></i>
-                                <ul class="px-dropdown-menu mm-dorp-in">
-                                    {% for product in site.data.products %}
+                       
+                            <li><a class="nav-link" href="/#products">Products</a>
 
-                                    <li><a href="{{product.product.producturl}}">{{product.product.name}}</a></li>
-                                 
-                                    {% endfor %}
-                                </ul>
-                            </li>
                             <li><a class="nav-link" href="/#team">The team</a></li>
                             <li><a class="nav-link" href="/#contact">Contact us</a></li>
                             <li><a class="nav-link" href="/remote-work">Remote work primer</a></li>

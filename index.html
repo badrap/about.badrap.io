@@ -1,7 +1,142 @@
 ---
 layout: mombo
+lang: en
+about:
+    heading:
+        en: Keep track of your cloud, no fuss
+    heading2:
+        en: In practice
+    text:
+        en: Keep track of your assets, correlate them against security reports, and get warnings. Always and automatically.
+    text2:
+        en: Security products should be as easy to use as the best consumer services. Let us show you how easy it is to improve your security with Badrap.
+ 
+    features:
+      - O365:
+        id: o365-discovery
+        icon: fab fa-microsoft
+        heading:
+            en: Discover email assets
+        text:
+            en: See if your employees are at risk of being compromised used against their employer.
+        img:
+            src: o365.jpg
+            alt: O365 screenshot
+
+        details:
+            en: >
+                First, you enable the integration and approve the strictest possible set of permissions needed for O365 asset discovery.
+                Then Badrap starts fetching your O365 email addresses and shows them in your asset list.
+        highlight:
+            heading:
+                en: Three-click setup
+            text:
+                en: When was the last time adopting a new security feature was this easy?
+        highlight2:
+            heading:
+                en: Continuous autodiscovery
+            text:
+                en: Badrap works 24/7 keeping your asset list fresh, as it should be.
+
+      - AWS:
+        id: aws-discovery
+        icon: fab fa-aws
+        img:
+            src: aws.jpg
+            alt: AWS
+        heading:
+            en: Discover your AWS assets
+        text:
+            en: Map your AWS attack surface and get security warnings for it.
+        details:
+            en: First Badrap instructs you on how to create a new AWS IAM role for asset discovery. It will also provide a readily-made IAM policy with strictest possible permissions for asset discovery. Once enabled, you will see your AWS assets in your asset list, along with the warnings.
+        highlight:
+            heading:
+                en: Use it yourself
+            text:
+                en: Get an always-up-to-date list of your Internet-facing assets.
+        highlight2:
+            heading:
+                en: Get visibility to your teams
+            text:
+                en: Got many teams working on AWS? This is your way to get visibility to their assets and security issues.
+
+                
+      - Correlation:
+        id: security-correlation
+        icon: fas fa-sync-alt
+        img:
+            src: researcher.jpg
+            alt: Researcher
+        heading:
+            en: Correlate with reports
+        text:
+            en: Badrap monitors if your assets appear in security researchers' reports.
+        details:
+            en: >
+                Badrap does that automatically for you. We receive reports from security researchers.
+                Reports contain information about vulnerabilities, infections and data breaches.
+                Every report is tied up to certain identity, such as IP or email address.
+                When Badrap knows your public IP addresses and email addresses, it can detect if you are on their lists.
+        highlight:
+            heading:
+                en: Standard reports
+            text:
+                en: Badrap receives regular reports from hand-picked security researchers. Are your assets on their lists?
+        highlight2:
+            heading:
+                en: Custom reports
+            text:
+                en: Make things easy for yourself. Get all your external security reports from one place.
+
+      - Warnings:
+        id: security-warnings
+        icon: fas fa-exclamation-triangle
+        img:
+            src: warning.jpg
+            alt: warning
+        heading:
+            en: Get security warnings
+
+        text:
+            en: If Badrap notices any critical issues, it will notify you via email.
+
+        details:
+            en: You can see all your alerts from Badrap's dashboard. Badrap will also warn you via email if something new has been found.
+        highlight:
+            heading:
+                en: Email warnings
+            text:
+                en: We won't spam. The security researchers we have picked produce only high-quality findings. 98% of our users keep email notifications on.
+        highlight2:
+            heading:
+                en: Dashboard
+            text:
+                en: Review all your assets quickly. O365, Amazon and even your personal assets, all neatly grouped.
+
+home:
+    heading:
+        en: Introducing Company Cyber Hygiene
+    text:
+        en: Discover and protect your cloud assets
+    cta-text:
+        en: Sign up for a free pilot
+    cta:
+        en: Try it
+    form:
+        en: https://share.hsforms.com/1NgC7RX4rQZ6BcH6M0xGk0A2ecmj
+    img:
+        src:
+            en: it/cloud-banner.svg
+        title:
+            en:
+        alt:
+            en:
 ---
 {% assign settings = site.data.site %}
+{% assign company = site.data.company %}
+{% assign products = site.data.products %}
+{% assign content = page %}
 
     <!-- Main -->
     <main>
@@ -12,8 +147,8 @@ layout: mombo
                 <div class="row align-items-center justify-content-center">
                     <div class="col-12 col-lg-10 text-center">
                         <div class="p-100px-t m-60px-t p-60px-b md-m-40px-t sm-m-20px-t">
-                            <h3 class="white-color display-3 m-30px-b">Cyber Security Information Made Easy</h3>
-                            <p class="white-color-light lead m-0px">Masses need better access to targeted security information and fixes.</p>
+                            <h3 class="white-color display-3 m-30px-b">{{company.What[page.lang]}}</h3>
+                            <p class="white-color-light lead m-0px">{{company.Why[page.lang]}}</p>
                             </p>
                         </div>
                     </div>
@@ -25,31 +160,33 @@ layout: mombo
         </section>
         <!-- End Home Banner -->
 
+
         <!-- Section -->
-        <section id="products" class="section gray-bg effect-section">
+        <section id="products" class="section effect-section">
             <div class="effect-img effect bottom"><img src="{{settings.mombo}}/static/img/effect/home-effect-1.svg" title="" alt=""></div>
             <div class="container">
      
                 <div class="row md-m-25px-b m-45px-b justify-content-center text-center">
                     <div class="col-lg-8">
-                        <label class="border-bottom-2 font-w-600 theme-color border-color-theme2nd">How we help you</label>
-                        <h3 class="m-0px">We help you to identify your assets and receive targeted security information. </h3>
+                        <label class="border-bottom-2 font-w-600 theme-color border-color-theme2nd">{{company.How.question[page.lang]}}</label>
+                        <h3 class="m-0px">{{company.How.answer[page.lang]}}  
+                           </h3>
                     </div>
                 </div>
                 <div class="row">
-                    {% for product in site.data.products %}
-
+                    {% for benefit in products.solution.benefits %}
+  
                     <div class="col-md-4 m-15px-tb">
                         <div class="box-shadow-hover hover-top hover-rotate white-bg text-center border-radius-5">
                             <div class="icon-100 border-radius-50 theme-bg white-color d-inline-block m-20px-b m-40px-t">
-                                <i class="{{product.product.icon}}"></i>
+                                <i class="{{benefit.icon}}"></i>
                             </div>
                             <div class="p-25px-lr">
-                                <h5 class="h6 m-10px-b">{{product.product.name}}</h5>
-                                <p class="m-0px">{{product.product.description}}</p>
+                                <h5 class="h6 m-10px-b">{{benefit.name[page.lang]}}</h5>
+                                <p class="m-0px">{{benefit.description[page.lang]}}</p>
                             </div>
                             <div class="border-top-1 border-color-dark-gray p-10px m-20px-t">
-                                <a class="font-w-600" href="{{product.product.producturl}}">{{product.product.cta}}</a>
+                                <a class="font-w-600" id="{{benefit.id}}" {{benefit.target}} href="{{benefit.producturl}}">{{benefit.cta[page.lang]}}</a>
                             </div>
                         </div>
                     </div>
@@ -59,7 +196,54 @@ layout: mombo
             </div>
         </section>
         <!-- End Section -->
+    
+        <!-- Section -->
+        {% assign benefit = products.solution.benefits[1] %}
+        <section id="home" class="effect-section">
+            <div class="effect theme-bg effect-skew"></div>
+            <div class="particles-box" id="particles-box"></div>
+            <div class="container container-large">
+                <div class="row full-screen align-items-center p-100px-tb">
+                    <div class="col-10 col-lg-5 col-xl-4 p-50px-tb px-5">
+                        <h1 class="white-color h1 font-w-600 m-15px-b">{{products.solution.features.content.headline[page.lang]}}</h1>
+                        <p class="font-1 white-color-light font-w-400 m-20px-b">{{products.solution.features.content.description[page.lang]}}</p>
+                    </div>
+                    <div class="col-lg-7 col-xl-8">
+                        <img class="max-width-auto" src="{{benefit.largeicon.src[page.lang]}}" title="{{benefit.largeicion.title[page.lang]}}" alt="{{benefit.largeicon.alt[page.lang]}}">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
+        <!-- Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="row md-m-25px-b m-45px-b justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h3 class="h1 font-w-600 dark-color m-20px-b p-20px-b theme-after after-50px">{{products.solution.features.apps.headline[page.lang]}}</h3>
+                        <p class="m-0px font-1">{{products.solution.features.apps.description[page.lang]}}</p>
+                    </div>
+                </div>
+                <div class="row">
 
+                    {% for app in products.solution.features.apps.list %}
+                    <div class="col-sm-6 col-lg-4 m-15px-t m-30px-b">
+                        <div class="box-shadow white-bg hover-top border-radius-10 text-center">
+                            <div class="icon-90 white-bg theme-color border-radius-10 shadow d-inline-block mt-n3">
+                                <img src={{app.icon.src}} width=80%>
+                            </div>
+                            <div class="p-25px">
+                                <h5>{{app.name[page.lang]}}</h5>
+                                <p class="m-0px">{{app.description[page.lang]}}</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <!-- End Section -->
 
         <!-- Section -->
 

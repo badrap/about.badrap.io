@@ -1,5 +1,16 @@
-tagline: Security Information for All
-team:
+What: 
+    en: Security Information Made Easy
+Why:
+  en: Masses need better access to targeted security inromation and fixes.
+
+How: 
+  question:
+    en: How we help you
+  answer: 
+    en: Badrap.io delivers you accurate and timely security information about your assets, with easy fixes.
+
+To Whom: 
+Who:
   - name: Jani Kenttälä
     status: founder
     title: CEO
