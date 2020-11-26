@@ -13,7 +13,7 @@ team:
           medium: https://medium.com/@janikenttala
           github: https://github.com/evilon
           img:
-            src: /img/jani.jpg
+            src: /img/janismall.jpg
         - Jukke:
           name: Joachim Viide
           nick: jviide
@@ -46,4 +46,4 @@ team:
           twitter: https://twitter.com/estodoubleshot
           linkedin: https://www.linkedin.com/in/merike-kaeo-52910a/
           img:
-            src: /img/merike.jpg
+            src: /img/merikesmall.jpg
