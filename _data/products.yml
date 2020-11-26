@@ -32,7 +32,7 @@ solution:
         name: 
             en: We help you with fixes
         description:   
-            en: Found issues? It's the response which matters. Badrap playbooks provide you with the fixes.
+            en: Found issues or want to proactively prevent bad things from happening? Use Badrap playbooks to step up your game.
         tagline: 
             en: Cover your company assets. 
         cta: 
@@ -49,7 +49,7 @@ solution:
                 en: Badrap APIs make it dead asy for content creators to help you. Our reputable content creator partners produce over two million security events per month about vulnerabilities, incidents and data leaks.
         apps:
             headline:
-                en: Apps make it happen
+                en: Badrap Apps
             description:
                 en: >
                     Discover your email addresses, IPs and domain names on three leading cloud platforms: Amazon, Google and Microsoft. Integrate your own security providers and share up-to-date asset infromation to them, or receive their alerts.
