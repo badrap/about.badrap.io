@@ -23,3 +23,9 @@ gem install github-pages
   * ```git push --set-upstream origin contributing```
   * Go to GitHub and create a pull request
   * Ask feedback for your pull request
+
+
+## References
+
+* <https://www.freepik.com/vectors/technology>
+
