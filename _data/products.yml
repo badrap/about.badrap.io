@@ -5,40 +5,39 @@ solution:
         name: 
             en: Discover Assets
         description: 
-            en: Badrap discovers your digital footprint always automatically 
+            en: Use badrap.io to discover your digital footprint automatically 
         cta: 
-            en: Try badrap.io
-        icon: ti-cloud
-        producturl: https://badrap.io/
-        target: target="_blank"
+            en: Read more
+        icon: fas fa-clipboard-list
+        producturl: \#assets 
         id: gt-badrap-personal
 
       - discover:
         name: 
             en: Get relevant security content
         description: 
-            en: Badrap steers you to relevant security information.
+            en: badrap.io connects you with relevant security information
         cta: 
             en: Read more
-        icon: ti-cloud
-        producturl: /employees/
+        icon: fas fa-stethoscope
+        producturl: \#content
         id: gt-badrap-companies
         largeicon:
             src:
-                en: it/cloud-banner.svg
+                en: img/rap.png
             alt:
                 en: People operating cloud
       - fixes:
         name: 
-            en: Fixes issues
+            en: Fix with playbooks
         description:   
-            en: Alerts alone are a distraction. Badrap helps you with fixes.
+            en: If you discover issues, playbooks help you with fixes.
         tagline: 
             en: Cover your company assets. 
         cta: 
             en: Read more
-        icon: ti-book
-        producturl: /it/
+        icon: fas fa-hammer
+        producturl: \#fixes
         id: gt-badrap-product
 
     features:
@@ -49,10 +48,10 @@ solution:
                 en: "Always up to date information what you have in cloud. Discover your email addresses, IPs and domain names on three leading cloud platforms: Microsoft, Amazon and Google."
         apps:
             headline:
-                en: Badrap Apps
+                en: Powered by Badrap Apps
             description:
                 en: >
-                     Integrate your own security providers and share up-to-date asset infromation to them, or receive their alerts.
+                     Discover assets, share asset information and get security content. Use the Badrap stock apps, or get one of your own. 
             list:
               - aws:
                 name:
@@ -79,7 +78,7 @@ solution:
                 name:
                     en: Google Cloud Platform
                 description:
-                    en: Synchronize your public IPs and domains from Google Cloud Platform to Badrap
+                    en: Synchronize your public IPs and domains from Google Cloud to Badrap
                 icon:
                     src: img/gcp.png
               - gsuite:
@@ -118,8 +117,10 @@ playbooks:
         show: show
         name:
             en: Employee Cyber Hygiene
+        heading:
+            en: Mitigate data leaks
         subheading: 
-            en: Mitigate data leaks.
+            en:
         description:
             en: Data leaks fuel phishing and scams. Protect your business by protecting your employees.
         steps:
@@ -144,3 +145,22 @@ playbooks:
         img:
             src: /img/cloud.svg
             alt: Learning
+      - isolation:
+        id: "tab3_sec3"
+        name:
+            en: Network Isolation Testing
+        heading:
+            en: Seal your isolated networks
+        description:
+            en: Put Beacons in your networks and they will alert if your networks leak.
+        steps:
+            - Get SesorFu Beacon devices, virtual machines or app
+            - Deploy them in your isolated networks, and enable Beacon App in badrap.io
+            - Receive alerts and fix the leaks as soon as they appears
+        img:
+            src: /img/beacons.svg
+            alt: Beacons
+        more:
+            link: https://sensorfu.com
+            id: gt-goto-sensorfucom
+            
