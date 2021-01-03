@@ -24,7 +24,7 @@ solution:
         id: gt-badrap-companies
         largeicon:
             src:
-                en: img/rap.png
+                en: img/rap.webp
             alt:
                 en: People operating cloud
       - fixes:

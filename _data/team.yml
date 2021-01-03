@@ -13,7 +13,7 @@ team:
           medium: https://medium.com/@janikenttala
           github: https://github.com/evilon
           img:
-            src: /img/janismall.jpg
+            src: /img/janismall.webp
         - Jukke:
           name: Joachim Viide
           nick: jviide
@@ -23,7 +23,7 @@ team:
           github: https://github.com/jviide
           medium: https://medium.com/@jviide
           img:
-            src: /img/jviide.jpg
+            src: /img/jviide.webp
         - Heikki:
           name: Heikki Kortti
           nick: hkortti
