@@ -109,7 +109,7 @@ playbooks:
     heading:
         en: Fix issues with Badrap playbooks
     subheading:
-        en: We learn from the best - our customers - about the best ways to fix issues. We add that knowledge to our product, along with easy access to the right fixers.
+        en: We learn from the best - our customers. Badrap playbooks describe how others in your industry are fixing issues. 
     list:
       - hygiene:
         id: "tab3_sec1"
@@ -155,10 +155,10 @@ playbooks:
             en: Put Beacons in your networks and they will alert if your networks leak.
         steps:
             - Get SesorFu Beacon devices, virtual machines or app
-            - Deploy them in your isolated networks, and enable Beacon App in badrap.io
+            - Deploy them in your isolated networks, and enable Beacon App in badrap.io  
             - Receive alerts and fix the leaks as soon as they appears
         img:
-            src: /img/beacons.svg
+            src: /img/beacon-screenshot.webp
             alt: Beacons
         more:
             link: https://sensorfu.com

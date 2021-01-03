@@ -28,12 +28,16 @@ References:
   - name: Turun Seudun Puhdistamo
     img:
       src: /img/turunseudunpuhdistamo.svg
+  - name: HSY
+    img:
+      src: /img/hsy.svg
   - name: Askel Healthcare
     img:
       src: /img/askelhealthcare.svg
   - name: Buutti
     img:
       src: /img/buutti.svg
+
 Who:
   - name: Jani Kenttälä
     status: founder
