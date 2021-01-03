@@ -37,7 +37,7 @@ Table of contents
 body {
   font-family: "Poppins", sans-serif;
   font-size: 0.94rem;
-  color: #666;
+  color: #363636;
   font-weight: 400;
   line-height: 1.7;
   font-smoothing: antialiased;
@@ -1334,7 +1334,7 @@ figcaption {
 }
 
 .theme-g-bg {
-  background: linear-gradient(to right, #573351, #051b35);
+  background: linear-gradient(to right, #4d2e48, #914985);
 }
 
 .dark-g-bg {
