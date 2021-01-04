@@ -80,7 +80,7 @@ lang: en
                     {% for reference in company.References %}
                     <div class="grayscale-hover">
                         <a href="#">
-                            <img src="{{reference.img.src}}" title="" alt="{{reference.name}}">
+                            <img src="{{reference.img.src}}" loading="lazy" title="" alt="{{reference.name}}">
                         </a>
                     </div>
                     {% endfor %}
