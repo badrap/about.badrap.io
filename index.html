@@ -24,7 +24,7 @@ ogdescription: Badrap - Cyber Security Information Made Easy
                     </div>
                 </div>
                 <div class="col-12">
-                    <img src="online-world-2.svg" title="Connected world" alt="{{company.How.answer[page.lang]}}">
+                    <img src="online-world-2.svg" loading="lazy" title="Connected world" alt="{{company.How.answer[page.lang]}}">
                 </div>
             </div>
         </div>
@@ -100,9 +100,9 @@ ogdescription: Badrap - Cyber Security Information Made Easy
                 <div class="row full-screen align-items-center p-100px-tb">
                     <div class="col-10 col-lg-5 col-xl-4 p-50px-tb px-5">
                         <h1 class="white-color h1 font-w-600 m-15px-b">
-                            {{products.solution.features.content.headline[page.lang]}}</h1>
+                            {{products.solution.features.cloud.headline[page.lang]}}</h1>
                         <p class="font-1 white-color-light font-w-400 m-20px-b">
-                            {{products.solution.features.content.description[page.lang]}}</p>
+                            {{products.solution.features.cloud.description[page.lang]}}</p>
                     </div>
                     <div class="col-12 col-lg-7 col-xl-6 px-5 justify-content-center">
                         <img class="mw-100 shadow-sm" loading="lazy" src="{{benefit.largeicon.src[page.lang]}}"
@@ -118,9 +118,8 @@ ogdescription: Badrap - Cyber Security Information Made Easy
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 m-15px-tb">
-                        <h2 class="m-20px-b h1">Get relevant security content</h2>
-                        <p class="font-2">Badrap tracks your assets and recommends content others in your industry are
-                            reacting to.</p>
+                        <h2 class="m-20px-b h1">{{products.solution.features.content.headline[page.lang]}}</h2>
+                        <p class="font-2">{{products.solution.features.content.description[page.lang]}}</p>
 
                     </div>
                     <div class="col-lg-6 m-15px-tb">
@@ -134,9 +133,8 @@ ogdescription: Badrap - Cyber Security Information Made Easy
                                         <span class="dots"><i class="dot dot1"></i><i class="dot dot2"></i><i
                                                 class="dot dot3"></i></span>
                                     </div>
-                                    <h6>Data leaks</h6>
-                                    <p class="m-0px">Data leaks fuel phishing and scams. Keep your company safe, protect
-                                        your employees.</p>
+                                    <h6>{{products.solution.features.content.dataleaks.name[page.lang]}}</h6>
+                                    <p class="m-0px">{{products.solution.features.content.dataleaks.description[page.lang]}}</p>
                                 </div>
                                 <div
                                     class="box-shadow hover-top white-bg border-radius-5 theme-hover-bg p-20px-lr p-40px-tb text-center m-30px-b">
@@ -146,9 +144,8 @@ ogdescription: Badrap - Cyber Security Information Made Easy
                                         <span class="dots"><i class="dot dot1"></i><i class="dot dot2"></i><i
                                                 class="dot dot3"></i></span>
                                     </div>
-                                    <h6>Vulnerabilities</h6>
-                                    <p class="m-0px">Configuration errors and vulnerabilities lead to data breaches.
-                                        Discover your potential soft spots.</p>
+                                    <h6>{{products.solution.features.content.vulnerabilities.name[page.lang]}}</h6>
+                                    <p class="m-0px">{{products.solution.features.content.vulnerabilities.description[page.lang]}}</p>
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -160,9 +157,8 @@ ogdescription: Badrap - Cyber Security Information Made Easy
                                         <span class="dots"><i class="dot dot1"></i><i class="dot dot2"></i><i
                                                 class="dot dot3"></i></span>
                                     </div>
-                                    <h6>Incidents</h6>
-                                    <p class="m-0px">Attackers may use you to hide their tracks. Get alerts if your
-                                        assets are attacking others.</p>
+                                    <h6>{{products.solution.features.content.incidents.name[page.lang]}}</h6>
+                                    <p class="m-0px">{{products.solution.features.content.incidents.description[page.lang]}}</p>
                                 </div>
                             </div>
                         </div>
@@ -332,7 +328,7 @@ ogdescription: Badrap - Cyber Security Information Made Easy
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 p-20px-b justify-content-center text-center">
-                        <h1 class="white-color h1 font-w-600 m-15px-b">{{company.contact.text[page.lang]}}</h1>
+                        <h2 class="white-color h1 font-w-600 m-15px-b">{{company.contact.text[page.lang]}}</h2>
                     </div>
                     <div class="col-lg-8 m-15px-tb">
 
@@ -353,8 +349,8 @@ ogdescription: Badrap - Cyber Security Information Made Easy
 
                                 </div>
                                 <div class="card-footer">
-                                    <a href="https://docs.badrap.io/privacy-company.html#data-controller-contact-details"
-                                        class="small font-w-400">Privacy Policy</a>
+                                    <a href="{{company.privacy.src}}"
+                                        class="small font-w-400" target="_blank" rel="noopener" id="gt-privacy-policy">{{company.privacy.name}}</a>
                                 </div>
                             </div>
 
