@@ -2,6 +2,7 @@
 layout: mombo
 lang: en
 title: About Badrap
+ogdescription: Badrap - Cyber Security Information Made Easy 
 ---
 {% assign settings = site.data.site %}
 {% assign company = site.data.company %}
@@ -220,7 +221,7 @@ title: About Badrap
                                         </ul>
                                         {% if playbook.more %}
                                         <a class="mt-4 m-btn m-btn-theme m-btn-radius"
-                                            href="{{playbook.more.link}}" target="_blank">{{playbook.more.cta}}</a>
+                                            href="{{playbook.more.link}}" rel="noopener" target="_blank">{{playbook.more.cta}}</a>
                                         {% endif %}
                                     </div>
                                     <div class="col-lg-6 m-15px-tb">
@@ -258,7 +259,7 @@ title: About Badrap
                     <div class="col-sm-6 col-lg-4 m-15px-t m-30px-b">
                         <div class="box-shadow white-bg hover-top border-radius-10 text-center h-100">
                             <div class="icon-90 white-bg theme-color border-radius-10 shadow d-inline-block mt-n3">
-                                <img src={{app.icon.src}} width="80%" loading="lazy">
+                                <img src={{app.icon.src}} width="80%" loading="lazy" alt="{{app.icon.alt}}">
                             </div>
                             <div class="p-25px">
                                 <h5>{{app.name[page.lang]}}</h5>
@@ -343,7 +344,7 @@ title: About Badrap
                                     <script charset="utf-8" type="text/javascript"
                                         src="//js.hsforms.net/forms/shell.js">
                                     </script>
-                                    <script>
+                                    <script defer>
                                         hbspt.forms.create({
                                             portalId: "4028779",
                                             formId: "6180ad39-de93-451f-bde0-9f7539f1bfcf"
