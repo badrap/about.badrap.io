@@ -160,7 +160,8 @@ playbooks:
         img:
             src: /img/beacon-screenshot.webp
             alt: Beacons
+            class: shadow
         more:
-            link: https://sensorfu.com
+            link: https://www.sensorfu.com/
             id: gt-goto-sensorfucom
             

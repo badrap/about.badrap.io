@@ -11,7 +11,7 @@ lang: en
     <!-- Home Banner -->
     <section id="home" class="effect-section theme-g-bg">
         <div class="effect-img effect bottom"><img src="{{settings.mombo}}/static/img/effect/home-effect-1.svg" title=""
-                alt=""></div>
+                alt="Home banner"></div>
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-12 col-lg-10 text-center">
@@ -103,7 +103,7 @@ lang: en
                             {{products.solution.features.content.description[page.lang]}}</p>
                     </div>
                     <div class="col-12 col-lg-7 col-xl-6 px-5 justify-content-center">
-                        <img class="mw-100 shadow-sm" src="{{benefit.largeicon.src[page.lang]}}"
+                        <img class="mw-100 shadow-sm" loading="lazy" src="{{benefit.largeicon.src[page.lang]}}"
                             title="{{benefit.largeicion.title[page.lang]}}" alt="{{benefit.largeicon.alt[page.lang]}}">
                     </div>
                 </div>
@@ -221,13 +221,13 @@ lang: en
                                             {% endfor %}
                                         </ul>
                                         {% if playbook.more %}
-                                        <a class="popup-youtube mt-4 m-btn m-btn-theme m-btn-radius"
-                                            href="{{playbook.more.link}}" target="_blank">Lear More</a>
+                                        <a class="mt-4 m-btn m-btn-theme m-btn-radius"
+                                            href="{{playbook.more.link}}" target="_blank">Learn More</a>
                                         {% endif %}
                                     </div>
                                     <div class="col-lg-6 m-15px-tb">
-                                        <img src="{{playbook.img.src}}" title="{{playbook.img.title}}"
-                                            alt="{{playbook.img.alt}}">
+                                        <img src="{{playbook.img.src}}" loading="lazy" title="{{playbook.img.title}}"
+                                            alt="{{playbook.img.alt}}" class="{{playbook.img.class}}">
                                     </div>
                                 </div>
                             </div>
@@ -260,7 +260,7 @@ lang: en
                     <div class="col-sm-6 col-lg-4 m-15px-t m-30px-b">
                         <div class="box-shadow white-bg hover-top border-radius-10 text-center h-100">
                             <div class="icon-90 white-bg theme-color border-radius-10 shadow d-inline-block mt-n3">
-                                <img src={{app.icon.src}} width=80%>
+                                <img src={{app.icon.src}} width="80%" loading="lazy">
                             </div>
                             <div class="p-25px">
                                 <h5>{{app.name[page.lang]}}</h5>
@@ -292,7 +292,7 @@ lang: en
                     <div class="col-lg-4 col-sm-6 m-15px-tb">
                         <div class="hover-top-in text-center">
                             <div class="avatar-220 border-radius-50 d-inline-block">
-                                <img src="{{member.img.src}}" title="" alt="">
+                                <img src="{{member.img.src}}" loading="lazy" title="" alt="{{member.name}}">
                             </div>
                             <div
                                 class="m-10px-lr box-shadow border-radius-5 position-relative mt-n4 white-bg p-20px text-center hover-top--in">
