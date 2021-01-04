@@ -60,11 +60,14 @@ solution:
                     en: Synchronize your public IPs and domains from Amazon Web Services to Badrap
                 icon:
                     src: img/aws.svg
+                    alt: "AWS app"
               - azure:
                 name: 
                     en: Microsoft Azure
                 icon:
                     src: img/azure.svg
+                    alt: "Azure app"
+
                 description:
                     en: Synchronize your public IPs and domains from Microsoft Azure to Badrap
               - o365:
@@ -72,6 +75,7 @@ solution:
                     en: Microsoft Office 365
                 icon:
                     src: img/office365.svg
+                    alt: Microsoft Office 365 App
                 description:
                     en: Syncrhonize email addresses from O365 to Badrap
               - gcp:
@@ -81,13 +85,15 @@ solution:
                     en: Synchronize your public IPs and domains from Google Cloud to Badrap
                 icon:
                     src: img/gcp.png
+                    alt: Google Cloud Platform App
               - gsuite:
                 name: 
-                    en: Google G Suite
+                    en: Google Workplace
                 description:
                     en: Syncrhonize email addresses from Google G Suite to Badrap
                 icon:
                     src: img/gsuite.png
+                    alt: Google Workplace App
               - beacon:
                 name: 
                     en: SensorFu Beacon
@@ -95,6 +101,7 @@ solution:
                     en: Get leak alerts from SensorFu Beacon to Badrap
                 icon:
                     src: img/beacon.svg
+                    alt: Sensorfu Beacon App
 
               - traficom:
                 name:
@@ -103,6 +110,7 @@ solution:
                     en: Share assets with Traficom's National Cyber Security Center
                 icon:
                     src: img/traficom.svg
+                    alt: Traficom App
 
 
 playbooks:
@@ -164,4 +172,5 @@ playbooks:
         more:
             link: https://www.sensorfu.com/
             id: gt-goto-sensorfucom
+            cta: Sensorfu Website
             
