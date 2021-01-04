@@ -41,11 +41,31 @@ solution:
         id: gt-badrap-product
 
     features:
-        content:
+        cloud:
             headline:
                 en: Keep track of your cloud, no fuss.
             description:
-                en: "Always up to date information what you have in cloud. Discover your email addresses, IPs and domain names on three leading cloud platforms: Microsoft, Amazon and Google."
+                en: "Keep taps on what you, your teams and venrods are running in your cloud setups. Discover your email addresses, IPs and domain names on three leading cloud platforms: Microsoft, Amazon and Google."
+        content:
+            headline: 
+                en: Get relevant security content
+            description:
+                en: Badrap tracks your assets and recommends content others in your industry are reacting to.
+            dataleaks:
+                name: 
+                    en: Data leaks
+                description:
+                    en: Data leaks fuel phishing and scams. Keep your company safe, protect your employees.
+            incidents:
+                name:
+                    en: Incidents
+                description:
+                    en: Attackers may use you to hide their tracks. Get alerts if your assets are attacking others.
+            vulnerabilities:
+                name:
+                    en: Vulnerabilities
+                description:
+                    en: Configuration errors and vulnerabilities lead to data breaches. Discover your potential soft spots.
         apps:
             headline:
                 en: Powered by Badrap Apps

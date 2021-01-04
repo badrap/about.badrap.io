@@ -104,3 +104,7 @@ social:
   - linkedin:
     icon: fab fa-linkedin-in
     link: https://www.linkedin.com/company/badrap
+
+privacy:
+  src: https://docs.badrap.io/privacy-company.html#data-controller-contact-details
+  name: Privacy Policy
