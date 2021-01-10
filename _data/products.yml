@@ -45,7 +45,7 @@ solution:
             headline:
                 en: Keep track of your cloud, no fuss.
             description:
-                en: "Keep taps on what you, your teams and venrods are running in your cloud setups. Discover your email addresses, IPs and domain names on three leading cloud platforms: Microsoft, Amazon and Google."
+                en: "Keep taps on what you, your teams and vendors are running in your cloud setups. Discover your email addresses, IPs and domain names on three leading cloud platforms: Microsoft, Amazon and Google."
         content:
             headline: 
                 en: Get relevant security content
@@ -97,7 +97,7 @@ solution:
                     src: img/office365.svg
                     alt: Microsoft Office 365 App
                 description:
-                    en: Syncrhonize email addresses from O365 to Badrap
+                    en: Synchronize email addresses from O365 to Badrap
               - gcp:
                 name:
                     en: Google Cloud Platform
@@ -110,7 +110,7 @@ solution:
                 name: 
                     en: Google Workplace
                 description:
-                    en: Syncrhonize email addresses from Google G Suite to Badrap
+                    en: Synchronize email addresses from Google G Suite to Badrap
                 icon:
                     src: img/gsuite.png
                     alt: Google Workplace App
@@ -154,7 +154,7 @@ playbooks:
         steps:
             - Subscribe to data leak content
             - Enable O365 or G Suite integration
-            - Receive alerts about data leak victims in your organisation and launch vitcim training.
+            - Receive alerts about data leak victims in your organisation and launch victim training.
         img:
             src: /img/study.svg
             alt: Learning
