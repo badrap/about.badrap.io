@@ -182,9 +182,9 @@ playbooks:
         description:
             en: Put Beacons in your networks and they will alert if your networks leak.
         steps:
-            - Get SesorFu Beacon devices, virtual machines or app
+            - Get SensorFu Beacon devices, virtual machines or app
             - Deploy them in your isolated networks, and enable Beacon App in badrap.io  
-            - Receive alerts and fix the leaks as soon as they appears
+            - Receive alerts and fix the leaks as soon as they appear
         img:
             src: /img/beacon-screenshot.webp
             alt: Beacons
