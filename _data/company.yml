@@ -1,7 +1,7 @@
 What: 
-    en: Security Information Made Easy
+    en: Cyber Security Made Easy
 Why:
-  en: Security products should be as easy as the best consumer products.
+  en: DIY platform and cyber security playbooks
 
 How: 
   question:
@@ -106,5 +106,5 @@ social:
     link: https://www.linkedin.com/company/badrap
 
 privacy:
-  src: https://docs.badrap.io/privacy-company.html#data-controller-contact-details
+  src: https://docs.badrap.io/privacy-company.html
   name: Privacy Policy

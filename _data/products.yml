@@ -3,9 +3,9 @@ solution:
     benefits:
       - remote:
         name: 
-            en: Discover Assets
+            en: Find
         description: 
-            en: Use badrap.io to discover your digital footprint automatically 
+            en: badrap.io discovers your digital footprint automatically 
         cta: 
             en: Read more
         icon: fas fa-clipboard-list
@@ -14,9 +14,9 @@ solution:
 
       - discover:
         name: 
-            en: Get relevant security content
+            en: Focus
         description: 
-            en: badrap.io connects you with relevant security information
+            en: Badrap 
         cta: 
             en: Read more
         icon: fas fa-stethoscope
