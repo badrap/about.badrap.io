@@ -13,7 +13,7 @@ gem install github-pages
 ### Commits
 
 * Commits through pull requests
-  * Trival typo fixes etc can be pushed straight to master.
+  * Trival typo fixes etc can be pushed straight to the main branch.
 
 * Local edits example:
   * ```bundle install --path vendor/bundle```
