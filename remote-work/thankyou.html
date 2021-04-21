@@ -1,0 +1,69 @@
+---
+layout: health
+title: Työntekijöiden Kyberhygienia - vaihe 1 kiitos.
+styles:
+  - ../../custom.css
+heading: Thank you!
+text: >
+  Talk to you soon! Do you want to read more about us? Go to the main page of Employee Cyber Hygiene site, or check out our badrap.io service.
+back: Employee Cyber Hygiene
+back-url: /index.html
+continue: badrap.io
+continue-url: https://badrap.io/
+---
+<div class="container wider-mobile mt-5 ">
+    <div class="row row-header justify-content-center ">
+      <div class="column col-12 col-lg-6 col-header p-4 text-center thankyou-top raplight">
+        <h2> {{page.heading}}</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="column col-12 col-lg-6 col-header p-4 thankyou-middle">
+        <p>{{page.text}}</p>
+        <p class="small">{{page.options}}</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="column col-4 col-lg-2 text-left thankyou-bottom-left">
+        <a id="back2phase" href="{{page.back-url}}" class="btn mb-3">{{page.back}}</a>
+      </div>
+      <div class="column col-4 col-lg-2 text-center thankyou-bottom-middle">
+      {% if page.bonus != null %}
+      <a id="bonus" href="{{page.bonus-url}}" target="_blank" class="btn mb-3">{{page.bonus}}</a>.
+      {% endif %}
+      </div>
+      <div class="column col-4 col-lg-2 text-right thankyou-bottom-right">
+        <a id="continue" href="{{page.continue-url}}" class="btn mb-3">{{page.continue}}</a>
+      </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+  backlink = $("a#back2phase")
+  backlink.attr("href", backlink.attr("href") + location.search)
+
+  bonuslink = $("a#bonus")
+  bonuslink.attr("href", bonuslink.attr("href") + location.search)
+
+  continuebutton = $("a#continue")
+  continuebutton.attr("href", continuebutton.attr("href") + location.search)
+</script>
+
+<script type="text/javascript">
+  (function (e, t, o, n, p, r, i) {
+    e.visitorGlobalObjectAlias = n;
+    e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () {
+      (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments)
+    };
+    e[e.visitorGlobalObjectAlias].l = (new Date).getTime();
+    r = t.createElement("script");
+    r.src = o;
+    r.async = true;
+    i = t.getElementsByTagName("script")[0];
+    i.parentNode.insertBefore(r, i)
+  })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
+  vgo('setAccount', '252349489');
+  vgo('setTrackByDefault', true);
+
+  vgo('process');
+</script>

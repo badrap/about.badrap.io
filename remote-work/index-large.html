@@ -1,0 +1,66 @@
+---
+layout: health
+styles:
+  - ../../custom.css
+lang: en
+title: ABC of saferremote work
+---
+{% assign content = site.data.remotework %}
+
+<div class="container wider-mobile">
+  <div class="row row-header mb-5">
+    <div class="column col-12 col-header px-0 text-center">
+      <h1 class="mt-5"> {{content.heading[page.lang]}}</h1>
+      <h2> {{content.subheading[page.lang]}}</h2>
+    </div>
+  </div>
+  <div class="row pb-4">
+    <div class="column col-left order-2 order-lg-1 col-12 col-lg-4">
+      <div class="raplight">
+        {% for feature in content.leftbox %}
+        <h3><span class="ABC">{{feature.letter}}</span>{{feature.heading[page.lang]}}</h3>
+        <h4>{{feature.subheading[page.lang]}}</h4>
+        <p> {{feature.text[page.lang]}} </p>
+        {% if feature.button != null %}
+        {{feature.button}}
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <div class="col-right column order-1 order-lg-2 col-12 col-lg-8 left-border">
+      {% for item in content.rightbox %}
+      {% if item.heading[page.lang] != null %}
+      <h3><span class="ABC">{{item.letter}}</span> {{item.heading[page.lang]}}</h3>
+      {% endif %}
+      {% if item.subheading != null %}
+      <h4><span class="ABC">{{item.letter}}</span> {{item.subheading[page.lang]}}</h4>
+      {% endif %}
+
+      {% if item.img != null %}
+      <img src="{{item.img}}" width="100%">
+      <p class="img-text">{{item.img-text[page.lang]}}</p>
+      {% endif %}
+
+      {% if item.include != null %}
+      {% include youtube.html video="5MPn7gMZvz4" %}
+      <p class="img-text">{{item.video-text}}</p>
+      {% endif %}
+
+      {% if item.text[page.lang] != null %}
+      <p>{{item.text[page.lang]}}</p>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="row rapdark justify-content-center wider-mobile mt-md-5 mt-sm-3 mt-0 pt-5 pb-5">
+  <div class="column col-12 col-md-10 col-lg-8 col-xl-6 mission-area">
+    <h2>{{content.missionbox.heading[page.lang]}}</h2>
+    <h3>{{content.missionbox.subheading[page.lang]}}</h3>
+    <p>{{content.missionbox.text[page.lang]}}</p>
+    <a class="btn" target="_blank"
+      href="{{content.missionbox.cta1-url[page.lang]}}">
+      {{content.missionbox.cta1[page.lang]}} </a>
+  </div>
+</div>
+

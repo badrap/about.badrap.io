@@ -1,0 +1,196 @@
+
+solution:
+    benefits:
+      - remote:
+        name: 
+            en: Find
+        description: 
+            en:  
+        cta: 
+            en: Read more
+        icon: fas fa-clipboard-list
+        producturl: \#assets 
+        id: gt-badrap-personal
+
+      - discover:
+        name: 
+            en: Focus
+        description: 
+            en: Badrap  
+        cta: 
+            en: Read more
+        icon: fas fa-stethoscope
+        producturl: \#content
+        id: gt-badrap-companies
+        largeicon:
+            src:
+                en: img/rap.webp
+            alt:
+                en: People operating cloud
+      - fixes:
+        name: 
+            en: Fix with playbooks
+        description:   
+            en: If you discover issues, playbooks help you with fixes.
+        tagline: 
+            en: Cover your company assets. 
+        cta: 
+            en: Read more
+        icon: fas fa-hammer
+        producturl: \#fixes
+        id: gt-badrap-product
+
+    features:
+        cloud:
+            headline:
+                en: Keep track of your cloud, no fuss.
+            description:
+                en: "Keep taps on what you, your teams and vendors are running in your cloud setups. Discover your email addresses, IPs and domain names on three leading cloud platforms: Microsoft, Amazon and Google."
+        content:
+            headline: 
+                en: Get relevant security content
+            description:
+                en: Badrap tracks your assets and recommends content others in your industry are reacting to.
+            dataleaks:
+                name: 
+                    en: Data leaks
+                description:
+                    en: Data leaks fuel phishing and scams. Keep your company safe, protect your employees.
+            incidents:
+                name:
+                    en: Incidents
+                description:
+                    en: Attackers may use you to hide their tracks. Get alerts if your assets are attacking others.
+            vulnerabilities:
+                name:
+                    en: Vulnerabilities
+                description:
+                    en: Configuration errors and vulnerabilities lead to data breaches. Discover your potential soft spots.
+        apps:
+            headline:
+                en: Powered by Badrap Apps
+            description:
+                en: >
+                     Discover assets, share asset information and get security content. Use the Badrap stock apps, or get one of your own. 
+            list:
+              - aws:
+                name:
+                    en: Amazon Web Services
+                description:
+                    en: Synchronize your public IPs and domains from Amazon Web Services to Badrap
+                icon:
+                    src: img/aws.svg
+                    alt: "AWS app"
+              - azure:
+                name: 
+                    en: Microsoft Azure
+                icon:
+                    src: img/azure.svg
+                    alt: "Azure app"
+
+                description:
+                    en: Synchronize your public IPs and domains from Microsoft Azure to Badrap
+              - o365:
+                name:
+                    en: Microsoft Office 365
+                icon:
+                    src: img/office365.svg
+                    alt: Microsoft Office 365 App
+                description:
+                    en: Synchronize email addresses from O365 to Badrap
+              - gcp:
+                name:
+                    en: Google Cloud Platform
+                description:
+                    en: Synchronize your public IPs and domains from Google Cloud to Badrap
+                icon:
+                    src: img/gcp.png
+                    alt: Google Cloud Platform App
+              - gsuite:
+                name: 
+                    en: Google Workplace
+                description:
+                    en: Synchronize email addresses from Google G Suite to Badrap
+                icon:
+                    src: img/gsuite.png
+                    alt: Google Workplace App
+              - beacon:
+                name: 
+                    en: SensorFu Beacon
+                description:
+                    en: Get leak alerts from SensorFu Beacon to Badrap
+                icon:
+                    src: img/beacon.svg
+                    alt: Sensorfu Beacon App
+
+              - traficom:
+                name:
+                    en: Traficom
+                description:
+                    en: Share assets with Traficom's National Cyber Security Center
+                icon:
+                    src: img/traficom.svg
+                    alt: Traficom App
+
+
+playbooks:
+    heading:
+        en: Fix issues with Badrap playbooks
+    subheading:
+        en: We learn from the best - our customers. Badrap playbooks describe how others in your industry are fixing issues. 
+    list:
+      - hygiene:
+        id: "tab3_sec1"
+        status: active
+        show: show
+        name:
+            en: Employee Cyber Hygiene
+        heading:
+            en: Mitigate data leaks
+        subheading: 
+            en:
+        description:
+            en: Data leaks fuel phishing and scams. Protect your business by protecting your employees.
+        steps:
+            - Subscribe to data leak content
+            - Enable O365 or G Suite integration
+            - Receive alerts about data leak victims in your organisation and launch victim training.
+        img:
+            src: /img/study.svg
+            alt: Learning
+      - supplychain:
+        id: "tab3_sec2"
+        name:
+            en: Supply Chain Caretaking
+        heading:
+            en: Address 3rd party security lapses
+        description:
+            en: Check third party security issues and get them fixed
+        steps:
+            - Subscribe to vulnerability and incident content
+            - Enable cloud asset discovery Apps to identify your cloud assets
+            - Receive alerts about security lapses in your cloud infra and ticket your contractors to demand fixes
+        img:
+            src: /img/cloud.svg
+            alt: Learning
+      - isolation:
+        id: "tab3_sec3"
+        name:
+            en: Network Isolation Testing
+        heading:
+            en: Seal your isolated networks
+        description:
+            en: Put Beacons in your networks and they will alert if your networks leak.
+        steps:
+            - Get SensorFu Beacon devices, virtual machines or app
+            - Deploy them in your isolated networks, and enable Beacon App in badrap.io  
+            - Receive alerts and fix the leaks as soon as they appear
+        img:
+            src: /img/beacon-screenshot.webp
+            alt: Beacons
+            class: shadow
+        more:
+            link: https://www.sensorfu.com/
+            id: gt-goto-sensorfucom
+            cta: Sensorfu Website
+            

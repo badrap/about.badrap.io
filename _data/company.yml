@@ -1,5 +1,44 @@
-tagline: Security Information for All
-team:
+What: 
+    en: Cyber Security Made Easy
+Why:
+  en: DIY platform and cyber security playbooks
+
+How: 
+  question:
+    en: How we help you
+  answer: 
+    en: Badrap.io delivers you accurate and timely security information about your assets, with easy fixes.
+
+References:
+  - name: Traficom
+    img:
+      src: /img/traficom.svg
+  - name: Caruna
+    img:
+      src: /img/caruna.svg
+  - name: Crosskey
+    img:
+      src: /img/crosskey.svg
+  - name: Seinäjoen Energia
+    img:
+      src: /img/senfi.svg
+  - name: Kuopion Energia
+    img:
+      src: /img/kuopionenergia.svg
+  - name: Turun Seudun Puhdistamo
+    img:
+      src: /img/turunseudunpuhdistamo.svg
+  - name: HSY
+    img:
+      src: /img/hsy.svg
+  - name: Askel Healthcare
+    img:
+      src: /img/askelhealthcare.svg
+  - name: Buutti
+    img:
+      src: /img/buutti.svg
+
+Who:
   - name: Jani Kenttälä
     status: founder
     title: CEO
@@ -47,3 +86,25 @@ team:
     linkedin: https://www.linkedin.com/in/helka-kuorilehto/
     face: ../img/helka.jpg
 
+
+contact:
+  text:
+    en: Contact Us
+  street: Teknologiantie 18 B
+  city: FI-90590 Oulu
+  country: Finland
+  email: contact@badrap.io
+  phone: +358 40 148 5100
+  id: 2846254-9
+
+social:
+  - twitter:
+    icon: fab fa-twitter
+    link: https://twitter.com/badrapio/
+  - linkedin:
+    icon: fab fa-linkedin-in
+    link: https://www.linkedin.com/company/badrap
+
+privacy:
+  src: https://docs.badrap.io/privacy-company.html
+  name: Privacy Policy

@@ -40,9 +40,17 @@
     <title>{{page.title}}</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <!-- Lighthouse: preload declarations -->
+    <link rel="preload" href="{{settings.mombo}}/static/plugin/font-awesome/webfonts/fa-solid-900.woff2" as="font" crossorigin>
+    <link rel="preload" href="{{settings.mombo}}/static/plugin/font-awesome/webfonts/fa-brands-400.woff2" as="font" crossorigin>
+
     <!-- plugin CSS -->
     <link href="{{settings.mombo}}/static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{settings.mombo}}/static/plugin/font-awesome/css/all.min.css" rel="stylesheet">
+    <link href="/vendor/fontawesome-pro-5.15.1-web/css/fontawesome.min.css" rel="stylesheet">
+    <link href="/vendor/fontawesome-pro-5.15.1-web/css/solid.min.css" rel="stylesheet">
+    <link href="/vendor/fontawesome-pro-5.15.1-web/css/brands.min.css" rel="stylesheet">
+    <link href="/vendor/fontawesome-pro-5.15.1-web/css/light.min.css" rel="stylesheet">
+
     <link href="{{settings.mombo}}/static/plugin/et-line/style.css" rel="stylesheet">
     <link href="custom.css" rel="stylesheet">
 
