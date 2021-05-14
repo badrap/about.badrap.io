@@ -1,4 +1,4 @@
-# Badrap web pages
+# Badrap Web Pages
 
 This is the source repository for Badrap web pages and additional material available on the web
 unlinked.
