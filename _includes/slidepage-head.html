@@ -10,23 +10,13 @@
 
   <!-- Bootstrap core CSS -->
   <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  
+
   <!-- Custom fonts for this template -->
   <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="/css/landing-page.css" rel="stylesheet">
-
-  {% if site.google_tag_manager and jekyll.environment != 'test' %}
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','{{site.google_tag_manager}}');</script>
-  <!-- End Google Tag Manager -->
-  {% endif %}
 
   <!-- title -->
   <title>{{page.title}}</title>
@@ -59,12 +49,6 @@
 
 <body>
 
-    {% if site.google_tag_manager and jekyll.environment != 'test' %}
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{site.google_tag_manager}}"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    {% endif %}
   <div>
 
     <!-- Navigation -->
